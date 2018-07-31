@@ -1,0 +1,111 @@
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+margin:0;
+padding:0;
+line-height: 1.5em;
+}
+
+b{font-size: 110%;}
+em{color: red;}
+
+#topsection{
+background: #EAEAEA;
+height: 65px; /*Height of top section*/
+}
+
+#topsection h1{
+margin: 0;
+padding-top: 15px;
+}
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#contentcolumn{
+margin: 0 200px 0 230px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+
+}
+
+
+#leftcolumn{
+float: left;
+width: 230px; /*Width of left column*/
+margin-left: -100%;
+
+}
+
+#rightcolumn{
+float: left;
+width: 200px; /*Width of right column*/
+margin-left: -200px; /*Set left marginto -(RightColumnWidth)*/
+
+}
+
+#footer{
+clear: left;
+width: 100%;
+background: black;
+color: #FFF;
+text-align: center;
+padding: 4px 0;
+}
+
+#footer a{
+color: #FFFF80;
+}
+
+.innertube{
+margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+margin-top: 0;
+}
+.clearfix{
+	clear:both;
+}
+.btndialer{
+	float:left; margin-top:20px; width:261px;
+}
+.dialerBody{
+	float:left; width:100%; height:600px; background:#FFF; margin-top:20px;
+}
+.dialerWrapper{
+	padding:10px; margin:0 0 0 150px
+}
+.dialertxtArea{
+	background:url(../img/dialertextarea.png) no-repeat;
+	width:261px;
+	height:92px;
+}
+
+.dialerPopup{
+	background:url(../img/dialertextareaPop.png) no-repeat;
+	width:261px;
+	height:92px;
+}
+input[type=text]
+{
+   font-size:16px;
+    height: 33px;
+    padding-left:5px;
+    width: 218px;
+	border: 2px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 4px  rgba(0,0,0,0.1),
+            0 0 8px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 4px  rgba(0,0,0,0.1),
+            0 0 8px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 4px  rgba(0,0,0,0.1),
+            0 0 8px rgba(0,0,0,0.1); 
+   
+    background: rgba(255,255,255,0.5);
+	font-weight:bold;
+  
+
+}
+.dialerBottom{
+	background:url(../img/dialerBottom.png) no-repeat; width:260px; height:42px;
+}

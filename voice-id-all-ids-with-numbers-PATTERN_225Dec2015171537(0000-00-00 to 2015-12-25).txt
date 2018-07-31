@@ -1,0 +1,1036 @@
+exten => 6670311,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670311/ringtimer)} > 0]?${DB(AMPUSER/6670311/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670311,n,Macro(exten-vm,novm,6670311,0,0,0)
+exten => 6670311,n(dest),Set(__PICKUPMARK=)
+exten => 6670311,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670311,n,Goto(from-internal,6670311,1)
+exten => 6670311,hint,SIP/13866771493@voip&Custom:DND6670311,CustomPresence:6670311
+
+exten => 6670312,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670312/ringtimer)} > 0]?${DB(AMPUSER/6670312/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670312,n,Macro(exten-vm,novm,6670312,0,0,0)
+exten => 6670312,n(dest),Set(__PICKUPMARK=)
+exten => 6670312,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670312,n,Goto(from-internal,6670312,1)
+exten => 6670312,hint,SIP/12056823223@voip&Custom:DND6670312,CustomPresence:6670312
+
+exten => 6670313,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670313/ringtimer)} > 0]?${DB(AMPUSER/6670313/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670313,n,Macro(exten-vm,novm,6670313,0,0,0)
+exten => 6670313,n(dest),Set(__PICKUPMARK=)
+exten => 6670313,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670313,n,Goto(from-internal,6670313,1)
+exten => 6670313,hint,SIP/13053782481@voip&Custom:DND6670313,CustomPresence:6670313
+
+exten => 6670314,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670314/ringtimer)} > 0]?${DB(AMPUSER/6670314/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670314,n,Macro(exten-vm,novm,6670314,0,0,0)
+exten => 6670314,n(dest),Set(__PICKUPMARK=)
+exten => 6670314,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670314,n,Goto(from-internal,6670314,1)
+exten => 6670314,hint,SIP/17058742460@voip&Custom:DND6670314,CustomPresence:6670314
+
+exten => 6670315,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670315/ringtimer)} > 0]?${DB(AMPUSER/6670315/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670315,n,Macro(exten-vm,novm,6670315,0,0,0)
+exten => 6670315,n(dest),Set(__PICKUPMARK=)
+exten => 6670315,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670315,n,Goto(from-internal,6670315,1)
+exten => 6670315,hint,SIP/16312235777@voip&Custom:DND6670315,CustomPresence:6670315
+
+exten => 6670316,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670316/ringtimer)} > 0]?${DB(AMPUSER/6670316/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670316,n,Macro(exten-vm,novm,6670316,0,0,0)
+exten => 6670316,n(dest),Set(__PICKUPMARK=)
+exten => 6670316,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670316,n,Goto(from-internal,6670316,1)
+exten => 6670316,hint,SIP/14145416087@voip&Custom:DND6670316,CustomPresence:6670316
+
+exten => 6670318,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670318/ringtimer)} > 0]?${DB(AMPUSER/6670318/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670318,n,Macro(exten-vm,novm,6670318,0,0,0)
+exten => 6670318,n(dest),Set(__PICKUPMARK=)
+exten => 6670318,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670318,n,Goto(from-internal,6670318,1)
+exten => 6670318,hint,SIP/13187411471@voip&Custom:DND6670318,CustomPresence:6670318
+
+exten => 6670317,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670317/ringtimer)} > 0]?${DB(AMPUSER/6670317/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670317,n,Macro(exten-vm,novm,6670317,0,0,0)
+exten => 6670317,n(dest),Set(__PICKUPMARK=)
+exten => 6670317,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670317,n,Goto(from-internal,6670317,1)
+exten => 6670317,hint,SIP/447956067067@voip&Custom:DND6670317,CustomPresence:6670317
+
+exten => 6670319,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670319/ringtimer)} > 0]?${DB(AMPUSER/6670319/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670319,n,Macro(exten-vm,novm,6670319,0,0,0)
+exten => 6670319,n(dest),Set(__PICKUPMARK=)
+exten => 6670319,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670319,n,Goto(from-internal,6670319,1)
+exten => 6670319,hint,SIP/61470026257@voip&Custom:DND6670319,CustomPresence:6670319
+
+exten => 6670320,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670320/ringtimer)} > 0]?${DB(AMPUSER/6670320/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670320,n,Macro(exten-vm,novm,6670320,0,0,0)
+exten => 6670320,n(dest),Set(__PICKUPMARK=)
+exten => 6670320,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670320,n,Goto(from-internal,6670320,1)
+exten => 6670320,hint,SIP/16473416449@voip&Custom:DND6670320,CustomPresence:6670320
+
+exten => 6670324,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670324/ringtimer)} > 0]?${DB(AMPUSER/6670324/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670324,n,Macro(exten-vm,novm,6670324,0,0,0)
+exten => 6670324,n(dest),Set(__PICKUPMARK=)
+exten => 6670324,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670324,n,Goto(from-internal,6670324,1)
+exten => 6670324,hint,SIP/14106386251@voip&Custom:DND6670324,CustomPresence:6670324
+
+exten => 6670321,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670321/ringtimer)} > 0]?${DB(AMPUSER/6670321/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670321,n,Macro(exten-vm,novm,6670321,0,0,0)
+exten => 6670321,n(dest),Set(__PICKUPMARK=)
+exten => 6670321,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670321,n,Goto(from-internal,6670321,1)
+exten => 6670321,hint,SIP/16309245284@voip&Custom:DND6670321,CustomPresence:6670321
+
+exten => 6670322,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670322/ringtimer)} > 0]?${DB(AMPUSER/6670322/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670322,n,Macro(exten-vm,novm,6670322,0,0,0)
+exten => 6670322,n(dest),Set(__PICKUPMARK=)
+exten => 6670322,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670322,n,Goto(from-internal,6670322,1)
+exten => 6670322,hint,SIP/19172380134@voip&Custom:DND6670322,CustomPresence:6670322
+
+exten => 6670323,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670323/ringtimer)} > 0]?${DB(AMPUSER/6670323/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670323,n,Macro(exten-vm,novm,6670323,0,0,0)
+exten => 6670323,n(dest),Set(__PICKUPMARK=)
+exten => 6670323,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670323,n,Goto(from-internal,6670323,1)
+exten => 6670323,hint,SIP/61861501174@voip&Custom:DND6670323,CustomPresence:6670323
+
+exten => 6670325,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670325/ringtimer)} > 0]?${DB(AMPUSER/6670325/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670325,n,Macro(exten-vm,novm,6670325,0,0,0)
+exten => 6670325,n(dest),Set(__PICKUPMARK=)
+exten => 6670325,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670325,n,Goto(from-internal,6670325,1)
+exten => 6670325,hint,SIP/15127562382@voip&Custom:DND6670325,CustomPresence:6670325
+
+exten => 6670326,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670326/ringtimer)} > 0]?${DB(AMPUSER/6670326/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670326,n,Macro(exten-vm,novm,6670326,0,0,0)
+exten => 6670326,n(dest),Set(__PICKUPMARK=)
+exten => 6670326,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670326,n,Goto(from-internal,6670326,1)
+exten => 6670326,hint,SIP/1111111111111@voip&Custom:DND6670326,CustomPresence:6670326
+
+exten => 6670327,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670327/ringtimer)} > 0]?${DB(AMPUSER/6670327/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670327,n,Macro(exten-vm,novm,6670327,0,0,0)
+exten => 6670327,n(dest),Set(__PICKUPMARK=)
+exten => 6670327,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670327,n,Goto(from-internal,6670327,1)
+exten => 6670327,hint,SIP/614700262@voip&Custom:DND6670327,CustomPresence:6670327
+
+exten => 6670328,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670328/ringtimer)} > 0]?${DB(AMPUSER/6670328/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670328,n,Macro(exten-vm,novm,6670328,0,0,0)
+exten => 6670328,n(dest),Set(__PICKUPMARK=)
+exten => 6670328,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670328,n,Goto(from-internal,6670328,1)
+exten => 6670328,hint,SIP/447584123947@voip&Custom:DND6670328,CustomPresence:6670328
+
+exten => 6670329,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670329/ringtimer)} > 0]?${DB(AMPUSER/6670329/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670329,n,Macro(exten-vm,novm,6670329,0,0,0)
+exten => 6670329,n(dest),Set(__PICKUPMARK=)
+exten => 6670329,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670329,n,Goto(from-internal,6670329,1)
+exten => 6670329,hint,SIP/440744637283@voip&Custom:DND6670329,CustomPresence:6670329
+
+exten => 6670330,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670330/ringtimer)} > 0]?${DB(AMPUSER/6670330/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670330,n,Macro(exten-vm,novm,6670330,0,0,0)
+exten => 6670330,n(dest),Set(__PICKUPMARK=)
+exten => 6670330,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670330,n,Goto(from-internal,6670330,1)
+exten => 6670330,hint,SIP/13067642082@voip&Custom:DND6670330,CustomPresence:6670330
+
+exten => 6670331,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670331/ringtimer)} > 0]?${DB(AMPUSER/6670331/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670331,n,Macro(exten-vm,novm,6670331,0,0,0)
+exten => 6670331,n(dest),Set(__PICKUPMARK=)
+exten => 6670331,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670331,n,Goto(from-internal,6670331,1)
+exten => 6670331,hint,SIP/12818562136@voip&Custom:DND6670331,CustomPresence:6670331
+
+exten => 6670333,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670333/ringtimer)} > 0]?${DB(AMPUSER/6670333/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670333,n,Macro(exten-vm,novm,6670333,0,0,0)
+exten => 6670333,n(dest),Set(__PICKUPMARK=)
+exten => 6670333,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670333,n,Goto(from-internal,6670333,1)
+exten => 6670333,hint,SIP/17864407717@voip&Custom:DND6670333,CustomPresence:6670333
+
+exten => 6670332,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670332/ringtimer)} > 0]?${DB(AMPUSER/6670332/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670332,n,Macro(exten-vm,novm,6670332,0,0,0)
+exten => 6670332,n(dest),Set(__PICKUPMARK=)
+exten => 6670332,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670332,n,Goto(from-internal,6670332,1)
+exten => 6670332,hint,SIP/17804371994@voip&Custom:DND6670332,CustomPresence:6670332
+
+exten => 6670335,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670335/ringtimer)} > 0]?${DB(AMPUSER/6670335/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670335,n,Macro(exten-vm,novm,6670335,0,0,0)
+exten => 6670335,n(dest),Set(__PICKUPMARK=)
+exten => 6670335,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670335,n,Goto(from-internal,6670335,1)
+exten => 6670335,hint,SIP/15192654905@voip&Custom:DND6670335,CustomPresence:6670335
+
+exten => 6670334,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670334/ringtimer)} > 0]?${DB(AMPUSER/6670334/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670334,n,Macro(exten-vm,novm,6670334,0,0,0)
+exten => 6670334,n(dest),Set(__PICKUPMARK=)
+exten => 6670334,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670334,n,Goto(from-internal,6670334,1)
+exten => 6670334,hint,SIP/61452211792@voip&Custom:DND6670334,CustomPresence:6670334
+
+exten => 6670338,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670338/ringtimer)} > 0]?${DB(AMPUSER/6670338/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670338,n,Macro(exten-vm,novm,6670338,0,0,0)
+exten => 6670338,n(dest),Set(__PICKUPMARK=)
+exten => 6670338,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670338,n,Goto(from-internal,6670338,1)
+exten => 6670338,hint,SIP/989199358821@voip&Custom:DND6670338,CustomPresence:6670338
+
+exten => 6670336,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670336/ringtimer)} > 0]?${DB(AMPUSER/6670336/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670336,n,Macro(exten-vm,novm,6670336,0,0,0)
+exten => 6670336,n(dest),Set(__PICKUPMARK=)
+exten => 6670336,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670336,n,Goto(from-internal,6670336,1)
+exten => 6670336,hint,SIP/16476222402@voip&Custom:DND6670336,CustomPresence:6670336
+
+exten => 6670337,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670337/ringtimer)} > 0]?${DB(AMPUSER/6670337/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670337,n,Macro(exten-vm,novm,6670337,0,0,0)
+exten => 6670337,n(dest),Set(__PICKUPMARK=)
+exten => 6670337,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670337,n,Goto(from-internal,6670337,1)
+exten => 6670337,hint,SIP/15408993721@voip&Custom:DND6670337,CustomPresence:6670337
+
+exten => 6670337,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670337/ringtimer)} > 0]?${DB(AMPUSER/6670337/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670337,n,Macro(exten-vm,novm,6670337,0,0,0)
+exten => 6670337,n(dest),Set(__PICKUPMARK=)
+exten => 6670337,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670337,n,Goto(from-internal,6670337,1)
+exten => 6670337,hint,SIP/15144029019@voip&Custom:DND6670337,CustomPresence:6670337
+
+exten => 6670339,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670339/ringtimer)} > 0]?${DB(AMPUSER/6670339/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670339,n,Macro(exten-vm,novm,6670339,0,0,0)
+exten => 6670339,n(dest),Set(__PICKUPMARK=)
+exten => 6670339,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670339,n,Goto(from-internal,6670339,1)
+exten => 6670339,hint,SIP/17807434014@voip&Custom:DND6670339,CustomPresence:6670339
+
+exten => 6670340,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670340/ringtimer)} > 0]?${DB(AMPUSER/6670340/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670340,n,Macro(exten-vm,novm,6670340,0,0,0)
+exten => 6670340,n(dest),Set(__PICKUPMARK=)
+exten => 6670340,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670340,n,Goto(from-internal,6670340,1)
+exten => 6670340,hint,SIP/14135254147@voip&Custom:DND6670340,CustomPresence:6670340
+
+exten => 6670341,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670341/ringtimer)} > 0]?${DB(AMPUSER/6670341/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670341,n,Macro(exten-vm,novm,6670341,0,0,0)
+exten => 6670341,n(dest),Set(__PICKUPMARK=)
+exten => 6670341,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670341,n,Goto(from-internal,6670341,1)
+exten => 6670341,hint,SIP/14035670031@voip&Custom:DND6670341,CustomPresence:6670341
+
+exten => 6670350,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670350/ringtimer)} > 0]?${DB(AMPUSER/6670350/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670350,n,Macro(exten-vm,novm,6670350,0,0,0)
+exten => 6670350,n(dest),Set(__PICKUPMARK=)
+exten => 6670350,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670350,n,Goto(from-internal,6670350,1)
+exten => 6670350,hint,SIP/12044178422@voip&Custom:DND6670350,CustomPresence:6670350
+
+exten => 6670344,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670344/ringtimer)} > 0]?${DB(AMPUSER/6670344/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670344,n,Macro(exten-vm,novm,6670344,0,0,0)
+exten => 6670344,n(dest),Set(__PICKUPMARK=)
+exten => 6670344,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670344,n,Goto(from-internal,6670344,1)
+exten => 6670344,hint,SIP/15086750610@voip&Custom:DND6670344,CustomPresence:6670344
+
+exten => 6670342,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670342/ringtimer)} > 0]?${DB(AMPUSER/6670342/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670342,n,Macro(exten-vm,novm,6670342,0,0,0)
+exten => 6670342,n(dest),Set(__PICKUPMARK=)
+exten => 6670342,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670342,n,Goto(from-internal,6670342,1)
+exten => 6670342,hint,SIP/16474706576@voip&Custom:DND6670342,CustomPresence:6670342
+
+exten => 6670343,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670343/ringtimer)} > 0]?${DB(AMPUSER/6670343/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670343,n,Macro(exten-vm,novm,6670343,0,0,0)
+exten => 6670343,n(dest),Set(__PICKUPMARK=)
+exten => 6670343,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670343,n,Goto(from-internal,6670343,1)
+exten => 6670343,hint,SIP/16474706576@voip&Custom:DND6670343,CustomPresence:6670343
+
+exten => 6670345,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670345/ringtimer)} > 0]?${DB(AMPUSER/6670345/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670345,n,Macro(exten-vm,novm,6670345,0,0,0)
+exten => 6670345,n(dest),Set(__PICKUPMARK=)
+exten => 6670345,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670345,n,Goto(from-internal,6670345,1)
+exten => 6670345,hint,SIP/18045502720@voip&Custom:DND6670345,CustomPresence:6670345
+
+exten => 6670347,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670347/ringtimer)} > 0]?${DB(AMPUSER/6670347/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670347,n,Macro(exten-vm,novm,6670347,0,0,0)
+exten => 6670347,n(dest),Set(__PICKUPMARK=)
+exten => 6670347,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670347,n,Goto(from-internal,6670347,1)
+exten => 6670347,hint,SIP/17343251927@voip&Custom:DND6670347,CustomPresence:6670347
+
+exten => 6670346,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670346/ringtimer)} > 0]?${DB(AMPUSER/6670346/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670346,n,Macro(exten-vm,novm,6670346,0,0,0)
+exten => 6670346,n(dest),Set(__PICKUPMARK=)
+exten => 6670346,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670346,n,Goto(from-internal,6670346,1)
+exten => 6670346,hint,SIP/12895270257@voip&Custom:DND6670346,CustomPresence:6670346
+
+exten => 6670348,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670348/ringtimer)} > 0]?${DB(AMPUSER/6670348/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670348,n,Macro(exten-vm,novm,6670348,0,0,0)
+exten => 6670348,n(dest),Set(__PICKUPMARK=)
+exten => 6670348,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670348,n,Goto(from-internal,6670348,1)
+exten => 6670348,hint,SIP/2003001811150@voip&Custom:DND6670348,CustomPresence:6670348
+
+exten => 6670349,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670349/ringtimer)} > 0]?${DB(AMPUSER/6670349/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670349,n,Macro(exten-vm,novm,6670349,0,0,0)
+exten => 6670349,n(dest),Set(__PICKUPMARK=)
+exten => 6670349,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670349,n,Goto(from-internal,6670349,1)
+exten => 6670349,hint,SIP/441142646060@voip&Custom:DND6670349,CustomPresence:6670349
+
+exten => 6670351,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670351/ringtimer)} > 0]?${DB(AMPUSER/6670351/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670351,n,Macro(exten-vm,novm,6670351,0,0,0)
+exten => 6670351,n(dest),Set(__PICKUPMARK=)
+exten => 6670351,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670351,n,Goto(from-internal,6670351,1)
+exten => 6670351,hint,SIP/19283281148@voip&Custom:DND6670351,CustomPresence:6670351
+
+exten => 6670354,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670354/ringtimer)} > 0]?${DB(AMPUSER/6670354/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670354,n,Macro(exten-vm,novm,6670354,0,0,0)
+exten => 6670354,n(dest),Set(__PICKUPMARK=)
+exten => 6670354,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670354,n,Goto(from-internal,6670354,1)
+exten => 6670354,hint,SIP/16477657644@voip&Custom:DND6670354,CustomPresence:6670354
+
+exten => 6670356,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670356/ringtimer)} > 0]?${DB(AMPUSER/6670356/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670356,n,Macro(exten-vm,novm,6670356,0,0,0)
+exten => 6670356,n(dest),Set(__PICKUPMARK=)
+exten => 6670356,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670356,n,Goto(from-internal,6670356,1)
+exten => 6670356,hint,SIP/447440420667@voip&Custom:DND6670356,CustomPresence:6670356
+
+exten => 6670353,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670353/ringtimer)} > 0]?${DB(AMPUSER/6670353/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670353,n,Macro(exten-vm,novm,6670353,0,0,0)
+exten => 6670353,n(dest),Set(__PICKUPMARK=)
+exten => 6670353,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670353,n,Goto(from-internal,6670353,1)
+exten => 6670353,hint,SIP/18478734332@voip&Custom:DND6670353,CustomPresence:6670353
+
+exten => 6670355,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670355/ringtimer)} > 0]?${DB(AMPUSER/6670355/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670355,n,Macro(exten-vm,novm,6670355,0,0,0)
+exten => 6670355,n(dest),Set(__PICKUPMARK=)
+exten => 6670355,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670355,n,Goto(from-internal,6670355,1)
+exten => 6670355,hint,SIP/7441332512520@voip&Custom:DND6670355,CustomPresence:6670355
+
+exten => 6670357,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670357/ringtimer)} > 0]?${DB(AMPUSER/6670357/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670357,n,Macro(exten-vm,novm,6670357,0,0,0)
+exten => 6670357,n(dest),Set(__PICKUPMARK=)
+exten => 6670357,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670357,n,Goto(from-internal,6670357,1)
+exten => 6670357,hint,SIP/14162379880@voip&Custom:DND6670357,CustomPresence:6670357
+
+exten => 6670358,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670358/ringtimer)} > 0]?${DB(AMPUSER/6670358/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670358,n,Macro(exten-vm,novm,6670358,0,0,0)
+exten => 6670358,n(dest),Set(__PICKUPMARK=)
+exten => 6670358,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670358,n,Goto(from-internal,6670358,1)
+exten => 6670358,hint,SIP/441332512520@voip&Custom:DND6670358,CustomPresence:6670358
+
+exten => 6670359,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670359/ringtimer)} > 0]?${DB(AMPUSER/6670359/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670359,n,Macro(exten-vm,novm,6670359,0,0,0)
+exten => 6670359,n(dest),Set(__PICKUPMARK=)
+exten => 6670359,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670359,n,Goto(from-internal,6670359,1)
+exten => 6670359,hint,SIP/15107691155@voip&Custom:DND6670359,CustomPresence:6670359
+
+exten => 6670360,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670360/ringtimer)} > 0]?${DB(AMPUSER/6670360/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670360,n,Macro(exten-vm,novm,6670360,0,0,0)
+exten => 6670360,n(dest),Set(__PICKUPMARK=)
+exten => 6670360,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670360,n,Goto(from-internal,6670360,1)
+exten => 6670360,hint,SIP/7447462979967@voip&Custom:DND6670360,CustomPresence:6670360
+
+exten => 6670352,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670352/ringtimer)} > 0]?${DB(AMPUSER/6670352/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670352,n,Macro(exten-vm,novm,6670352,0,0,0)
+exten => 6670352,n(dest),Set(__PICKUPMARK=)
+exten => 6670352,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670352,n,Goto(from-internal,6670352,1)
+exten => 6670352,hint,SIP/12815615298@voip&Custom:DND6670352,CustomPresence:6670352
+
+exten => 6670361,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670361/ringtimer)} > 0]?${DB(AMPUSER/6670361/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670361,n,Macro(exten-vm,novm,6670361,0,0,0)
+exten => 6670361,n(dest),Set(__PICKUPMARK=)
+exten => 6670361,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670361,n,Goto(from-internal,6670361,1)
+exten => 6670361,hint,SIP/16179231759@voip&Custom:DND6670361,CustomPresence:6670361
+
+exten => 6670362,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670362/ringtimer)} > 0]?${DB(AMPUSER/6670362/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670362,n,Macro(exten-vm,novm,6670362,0,0,0)
+exten => 6670362,n(dest),Set(__PICKUPMARK=)
+exten => 6670362,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670362,n,Goto(from-internal,6670362,1)
+exten => 6670362,hint,SIP/447799057537@voip&Custom:DND6670362,CustomPresence:6670362
+
+exten => 6670363,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670363/ringtimer)} > 0]?${DB(AMPUSER/6670363/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670363,n,Macro(exten-vm,novm,6670363,0,0,0)
+exten => 6670363,n(dest),Set(__PICKUPMARK=)
+exten => 6670363,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670363,n,Goto(from-internal,6670363,1)
+exten => 6670363,hint,SIP/441376795707@voip&Custom:DND6670363,CustomPresence:6670363
+
+exten => 6670364,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670364/ringtimer)} > 0]?${DB(AMPUSER/6670364/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670364,n,Macro(exten-vm,novm,6670364,0,0,0)
+exten => 6670364,n(dest),Set(__PICKUPMARK=)
+exten => 6670364,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670364,n,Goto(from-internal,6670364,1)
+exten => 6670364,hint,SIP/17812721736@voip&Custom:DND6670364,CustomPresence:6670364
+
+exten => 6670365,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670365/ringtimer)} > 0]?${DB(AMPUSER/6670365/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670365,n,Macro(exten-vm,novm,6670365,0,0,0)
+exten => 6670365,n(dest),Set(__PICKUPMARK=)
+exten => 6670365,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670365,n,Goto(from-internal,6670365,1)
+exten => 6670365,hint,SIP/441214746424@voip&Custom:DND6670365,CustomPresence:6670365
+
+exten => 6670366,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670366/ringtimer)} > 0]?${DB(AMPUSER/6670366/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670366,n,Macro(exten-vm,novm,6670366,0,0,0)
+exten => 6670366,n(dest),Set(__PICKUPMARK=)
+exten => 6670366,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670366,n,Goto(from-internal,6670366,1)
+exten => 6670366,hint,SIP/442089630941@voip&Custom:DND6670366,CustomPresence:6670366
+
+exten => 6670367,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670367/ringtimer)} > 0]?${DB(AMPUSER/6670367/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670367,n,Macro(exten-vm,novm,6670367,0,0,0)
+exten => 6670367,n(dest),Set(__PICKUPMARK=)
+exten => 6670367,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670367,n,Goto(from-internal,6670367,1)
+exten => 6670367,hint,SIP/14106611627@voip&Custom:DND6670367,CustomPresence:6670367
+
+exten => 6670368,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670368/ringtimer)} > 0]?${DB(AMPUSER/6670368/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670368,n,Macro(exten-vm,novm,6670368,0,0,0)
+exten => 6670368,n(dest),Set(__PICKUPMARK=)
+exten => 6670368,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670368,n,Goto(from-internal,6670368,1)
+exten => 6670368,hint,SIP/16478305550@voip&Custom:DND6670368,CustomPresence:6670368
+
+exten => 6670369,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670369/ringtimer)} > 0]?${DB(AMPUSER/6670369/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670369,n,Macro(exten-vm,novm,6670369,0,0,0)
+exten => 6670369,n(dest),Set(__PICKUPMARK=)
+exten => 6670369,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670369,n,Goto(from-internal,6670369,1)
+exten => 6670369,hint,SIP/17183774409@voip&Custom:DND6670369,CustomPresence:6670369
+
+exten => 6670370,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670370/ringtimer)} > 0]?${DB(AMPUSER/6670370/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670370,n,Macro(exten-vm,novm,6670370,0,0,0)
+exten => 6670370,n(dest),Set(__PICKUPMARK=)
+exten => 6670370,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670370,n,Goto(from-internal,6670370,1)
+exten => 6670370,hint,SIP/61430111975@voip&Custom:DND6670370,CustomPresence:6670370
+
+exten => 6670371,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670371/ringtimer)} > 0]?${DB(AMPUSER/6670371/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670371,n,Macro(exten-vm,novm,6670371,0,0,0)
+exten => 6670371,n(dest),Set(__PICKUPMARK=)
+exten => 6670371,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670371,n,Goto(from-internal,6670371,1)
+exten => 6670371,hint,SIP/115627899812@voip&Custom:DND6670371,CustomPresence:6670371
+
+exten => 6670372,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670372/ringtimer)} > 0]?${DB(AMPUSER/6670372/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670372,n,Macro(exten-vm,novm,6670372,0,0,0)
+exten => 6670372,n(dest),Set(__PICKUPMARK=)
+exten => 6670372,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670372,n,Goto(from-internal,6670372,1)
+exten => 6670372,hint,SIP/16105835170@voip&Custom:DND6670372,CustomPresence:6670372
+
+exten => 6670373,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670373/ringtimer)} > 0]?${DB(AMPUSER/6670373/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670373,n,Macro(exten-vm,novm,6670373,0,0,0)
+exten => 6670373,n(dest),Set(__PICKUPMARK=)
+exten => 6670373,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670373,n,Goto(from-internal,6670373,1)
+exten => 6670373,hint,SIP/16475346857@voip&Custom:DND6670373,CustomPresence:6670373
+
+exten => 6670374,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670374/ringtimer)} > 0]?${DB(AMPUSER/6670374/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670374,n,Macro(exten-vm,novm,6670374,0,0,0)
+exten => 6670374,n(dest),Set(__PICKUPMARK=)
+exten => 6670374,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670374,n,Goto(from-internal,6670374,1)
+exten => 6670374,hint,SIP/16475346857@voip&Custom:DND6670374,CustomPresence:6670374
+
+exten => 6670375,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670375/ringtimer)} > 0]?${DB(AMPUSER/6670375/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670375,n,Macro(exten-vm,novm,6670375,0,0,0)
+exten => 6670375,n(dest),Set(__PICKUPMARK=)
+exten => 6670375,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670375,n,Goto(from-internal,6670375,1)
+exten => 6670375,hint,SIP/447736814253@voip&Custom:DND6670375,CustomPresence:6670375
+
+exten => 6670376,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670376/ringtimer)} > 0]?${DB(AMPUSER/6670376/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670376,n,Macro(exten-vm,novm,6670376,0,0,0)
+exten => 6670376,n(dest),Set(__PICKUPMARK=)
+exten => 6670376,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670376,n,Goto(from-internal,6670376,1)
+exten => 6670376,hint,SIP/47736814253@voip&Custom:DND6670376,CustomPresence:6670376
+
+exten => 6670377,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670377/ringtimer)} > 0]?${DB(AMPUSER/6670377/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670377,n,Macro(exten-vm,novm,6670377,0,0,0)
+exten => 6670377,n(dest),Set(__PICKUPMARK=)
+exten => 6670377,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670377,n,Goto(from-internal,6670377,1)
+exten => 6670377,hint,SIP/16312710430@voip&Custom:DND6670377,CustomPresence:6670377
+
+exten => 6670378,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670378/ringtimer)} > 0]?${DB(AMPUSER/6670378/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670378,n,Macro(exten-vm,novm,6670378,0,0,0)
+exten => 6670378,n(dest),Set(__PICKUPMARK=)
+exten => 6670378,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670378,n,Goto(from-internal,6670378,1)
+exten => 6670378,hint,SIP/61466057590@voip&Custom:DND6670378,CustomPresence:6670378
+
+exten => 6670379,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670379/ringtimer)} > 0]?${DB(AMPUSER/6670379/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670379,n,Macro(exten-vm,novm,6670379,0,0,0)
+exten => 6670379,n(dest),Set(__PICKUPMARK=)
+exten => 6670379,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670379,n,Goto(from-internal,6670379,1)
+exten => 6670379,hint,SIP/16044331454@voip&Custom:DND6670379,CustomPresence:6670379
+
+exten => 6670380,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670380/ringtimer)} > 0]?${DB(AMPUSER/6670380/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670380,n,Macro(exten-vm,novm,6670380,0,0,0)
+exten => 6670380,n(dest),Set(__PICKUPMARK=)
+exten => 6670380,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670380,n,Goto(from-internal,6670380,1)
+exten => 6670380,hint,SIP/16044331454@voip&Custom:DND6670380,CustomPresence:6670380
+
+exten => 6670451,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670451/ringtimer)} > 0]?${DB(AMPUSER/6670451/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670451,n,Macro(exten-vm,novm,6670451,0,0,0)
+exten => 6670451,n(dest),Set(__PICKUPMARK=)
+exten => 6670451,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670451,n,Goto(from-internal,6670451,1)
+exten => 6670451,hint,SIP/15145421093@voip&Custom:DND6670451,CustomPresence:6670451
+
+exten => 6670453,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670453/ringtimer)} > 0]?${DB(AMPUSER/6670453/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670453,n,Macro(exten-vm,novm,6670453,0,0,0)
+exten => 6670453,n(dest),Set(__PICKUPMARK=)
+exten => 6670453,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670453,n,Goto(from-internal,6670453,1)
+exten => 6670453,hint,SIP/61497765928@voip&Custom:DND6670453,CustomPresence:6670453
+
+exten => 6670452,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670452/ringtimer)} > 0]?${DB(AMPUSER/6670452/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670452,n,Macro(exten-vm,novm,6670452,0,0,0)
+exten => 6670452,n(dest),Set(__PICKUPMARK=)
+exten => 6670452,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670452,n,Goto(from-internal,6670452,1)
+exten => 6670452,hint,SIP/61497765928@voip&Custom:DND6670452,CustomPresence:6670452
+
+exten => 6670454,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670454/ringtimer)} > 0]?${DB(AMPUSER/6670454/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670454,n,Macro(exten-vm,novm,6670454,0,0,0)
+exten => 6670454,n(dest),Set(__PICKUPMARK=)
+exten => 6670454,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670454,n,Goto(from-internal,6670454,1)
+exten => 6670454,hint,SIP/17037420726@voip&Custom:DND6670454,CustomPresence:6670454
+
+exten => 6670389,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670389/ringtimer)} > 0]?${DB(AMPUSER/6670389/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670389,n,Macro(exten-vm,novm,6670389,0,0,0)
+exten => 6670389,n(dest),Set(__PICKUPMARK=)
+exten => 6670389,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670389,n,Goto(from-internal,6670389,1)
+exten => 6670389,hint,SIP/14039686064@voip&Custom:DND6670389,CustomPresence:6670389
+
+exten => 6670388,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670388/ringtimer)} > 0]?${DB(AMPUSER/6670388/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670388,n,Macro(exten-vm,novm,6670388,0,0,0)
+exten => 6670388,n(dest),Set(__PICKUPMARK=)
+exten => 6670388,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670388,n,Goto(from-internal,6670388,1)
+exten => 6670388,hint,SIP/14039686064@voip&Custom:DND6670388,CustomPresence:6670388
+
+exten => 6670455,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670455/ringtimer)} > 0]?${DB(AMPUSER/6670455/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670455,n,Macro(exten-vm,novm,6670455,0,0,0)
+exten => 6670455,n(dest),Set(__PICKUPMARK=)
+exten => 6670455,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670455,n,Goto(from-internal,6670455,1)
+exten => 6670455,hint,SIP/12053452522@voip&Custom:DND6670455,CustomPresence:6670455
+
+exten => 6670456,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670456/ringtimer)} > 0]?${DB(AMPUSER/6670456/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670456,n,Macro(exten-vm,novm,6670456,0,0,0)
+exten => 6670456,n(dest),Set(__PICKUPMARK=)
+exten => 6670456,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670456,n,Goto(from-internal,6670456,1)
+exten => 6670456,hint,SIP/19197499019@voip&Custom:DND6670456,CustomPresence:6670456
+
+exten => 6670457,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670457/ringtimer)} > 0]?${DB(AMPUSER/6670457/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670457,n,Macro(exten-vm,novm,6670457,0,0,0)
+exten => 6670457,n(dest),Set(__PICKUPMARK=)
+exten => 6670457,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670457,n,Goto(from-internal,6670457,1)
+exten => 6670457,hint,SIP/17812721736@voip&Custom:DND6670457,CustomPresence:6670457
+
+exten => 6670458,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670458/ringtimer)} > 0]?${DB(AMPUSER/6670458/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670458,n,Macro(exten-vm,novm,6670458,0,0,0)
+exten => 6670458,n(dest),Set(__PICKUPMARK=)
+exten => 6670458,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670458,n,Goto(from-internal,6670458,1)
+exten => 6670458,hint,SIP/17037420726@voip&Custom:DND6670458,CustomPresence:6670458
+
+exten => 6670459,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670459/ringtimer)} > 0]?${DB(AMPUSER/6670459/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670459,n,Macro(exten-vm,novm,6670459,0,0,0)
+exten => 6670459,n(dest),Set(__PICKUPMARK=)
+exten => 6670459,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670459,n,Goto(from-internal,6670459,1)
+exten => 6670459,hint,SIP/61425600242@voip&Custom:DND6670459,CustomPresence:6670459
+
+exten => 6670460,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670460/ringtimer)} > 0]?${DB(AMPUSER/6670460/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670460,n,Macro(exten-vm,novm,6670460,0,0,0)
+exten => 6670460,n(dest),Set(__PICKUPMARK=)
+exten => 6670460,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670460,n,Goto(from-internal,6670460,1)
+exten => 6670460,hint,SIP/16477073194@voip&Custom:DND6670460,CustomPresence:6670460
+
+exten => 6670450,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670450/ringtimer)} > 0]?${DB(AMPUSER/6670450/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670450,n,Macro(exten-vm,novm,6670450,0,0,0)
+exten => 6670450,n(dest),Set(__PICKUPMARK=)
+exten => 6670450,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670450,n,Goto(from-internal,6670450,1)
+exten => 6670450,hint,SIP/12702341421@voip&Custom:DND6670450,CustomPresence:6670450
+
+exten => 6670381,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670381/ringtimer)} > 0]?${DB(AMPUSER/6670381/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670381,n,Macro(exten-vm,novm,6670381,0,0,0)
+exten => 6670381,n(dest),Set(__PICKUPMARK=)
+exten => 6670381,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670381,n,Goto(from-internal,6670381,1)
+exten => 6670381,hint,SIP/14106611627@voip&Custom:DND6670381,CustomPresence:6670381
+
+exten => 6670382,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670382/ringtimer)} > 0]?${DB(AMPUSER/6670382/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670382,n,Macro(exten-vm,novm,6670382,0,0,0)
+exten => 6670382,n(dest),Set(__PICKUPMARK=)
+exten => 6670382,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670382,n,Goto(from-internal,6670382,1)
+exten => 6670382,hint,SIP/61286774144@voip&Custom:DND6670382,CustomPresence:6670382
+
+exten => 6670383,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670383/ringtimer)} > 0]?${DB(AMPUSER/6670383/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670383,n,Macro(exten-vm,novm,6670383,0,0,0)
+exten => 6670383,n(dest),Set(__PICKUPMARK=)
+exten => 6670383,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670383,n,Goto(from-internal,6670383,1)
+exten => 6670383,hint,SIP/41765750020@voip&Custom:DND6670383,CustomPresence:6670383
+
+exten => 6670384,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670384/ringtimer)} > 0]?${DB(AMPUSER/6670384/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670384,n,Macro(exten-vm,novm,6670384,0,0,0)
+exten => 6670384,n(dest),Set(__PICKUPMARK=)
+exten => 6670384,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670384,n,Goto(from-internal,6670384,1)
+exten => 6670384,hint,SIP/14035548184@voip&Custom:DND6670384,CustomPresence:6670384
+
+exten => 6670386,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670386/ringtimer)} > 0]?${DB(AMPUSER/6670386/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670386,n,Macro(exten-vm,novm,6670386,0,0,0)
+exten => 6670386,n(dest),Set(__PICKUPMARK=)
+exten => 6670386,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670386,n,Goto(from-internal,6670386,1)
+exten => 6670386,hint,SIP/16478236657@voip&Custom:DND6670386,CustomPresence:6670386
+
+exten => 6670387,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670387/ringtimer)} > 0]?${DB(AMPUSER/6670387/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670387,n,Macro(exten-vm,novm,6670387,0,0,0)
+exten => 6670387,n(dest),Set(__PICKUPMARK=)
+exten => 6670387,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670387,n,Goto(from-internal,6670387,1)
+exten => 6670387,hint,SIP/442037743659@voip&Custom:DND6670387,CustomPresence:6670387
+
+exten => 6670461,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670461/ringtimer)} > 0]?${DB(AMPUSER/6670461/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670461,n,Macro(exten-vm,novm,6670461,0,0,0)
+exten => 6670461,n(dest),Set(__PICKUPMARK=)
+exten => 6670461,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670461,n,Goto(from-internal,6670461,1)
+exten => 6670461,hint,SIP/19059561296@voip&Custom:DND6670461,CustomPresence:6670461
+
+exten => 6670462,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670462/ringtimer)} > 0]?${DB(AMPUSER/6670462/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670462,n,Macro(exten-vm,novm,6670462,0,0,0)
+exten => 6670462,n(dest),Set(__PICKUPMARK=)
+exten => 6670462,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670462,n,Goto(from-internal,6670462,1)
+exten => 6670462,hint,SIP/442085441591@voip&Custom:DND6670462,CustomPresence:6670462
+
+exten => 6670463,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670463/ringtimer)} > 0]?${DB(AMPUSER/6670463/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670463,n,Macro(exten-vm,novm,6670463,0,0,0)
+exten => 6670463,n(dest),Set(__PICKUPMARK=)
+exten => 6670463,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670463,n,Goto(from-internal,6670463,1)
+exten => 6670463,hint,SIP/13069790809@voip&Custom:DND6670463,CustomPresence:6670463
+
+exten => 6670464,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670464/ringtimer)} > 0]?${DB(AMPUSER/6670464/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670464,n,Macro(exten-vm,novm,6670464,0,0,0)
+exten => 6670464,n(dest),Set(__PICKUPMARK=)
+exten => 6670464,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670464,n,Goto(from-internal,6670464,1)
+exten => 6670464,hint,SIP/16139373528@voip&Custom:DND6670464,CustomPresence:6670464
+
+exten => 6670465,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670465/ringtimer)} > 0]?${DB(AMPUSER/6670465/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670465,n,Macro(exten-vm,novm,6670465,0,0,0)
+exten => 6670465,n(dest),Set(__PICKUPMARK=)
+exten => 6670465,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670465,n,Goto(from-internal,6670465,1)
+exten => 6670465,hint,SIP/5873511341@voip&Custom:DND6670465,CustomPresence:6670465
+
+exten => 6670466,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670466/ringtimer)} > 0]?${DB(AMPUSER/6670466/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670466,n,Macro(exten-vm,novm,6670466,0,0,0)
+exten => 6670466,n(dest),Set(__PICKUPMARK=)
+exten => 6670466,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670466,n,Goto(from-internal,6670466,1)
+exten => 6670466,hint,SIP/15146839041@voip&Custom:DND6670466,CustomPresence:6670466
+
+exten => 6670467,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670467/ringtimer)} > 0]?${DB(AMPUSER/6670467/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670467,n,Macro(exten-vm,novm,6670467,0,0,0)
+exten => 6670467,n(dest),Set(__PICKUPMARK=)
+exten => 6670467,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670467,n,Goto(from-internal,6670467,1)
+exten => 6670467,hint,SIP/12702341421@voip&Custom:DND6670467,CustomPresence:6670467
+
+exten => 6670468,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670468/ringtimer)} > 0]?${DB(AMPUSER/6670468/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670468,n,Macro(exten-vm,novm,6670468,0,0,0)
+exten => 6670468,n(dest),Set(__PICKUPMARK=)
+exten => 6670468,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670468,n,Goto(from-internal,6670468,1)
+exten => 6670468,hint,SIP/14165515521@voip&Custom:DND6670468,CustomPresence:6670468
+
+exten => 6670469,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670469/ringtimer)} > 0]?${DB(AMPUSER/6670469/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670469,n,Macro(exten-vm,novm,6670469,0,0,0)
+exten => 6670469,n(dest),Set(__PICKUPMARK=)
+exten => 6670469,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670469,n,Goto(from-internal,6670469,1)
+exten => 6670469,hint,SIP/14165515521@voip&Custom:DND6670469,CustomPresence:6670469
+
+exten => 6670470,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670470/ringtimer)} > 0]?${DB(AMPUSER/6670470/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670470,n,Macro(exten-vm,novm,6670470,0,0,0)
+exten => 6670470,n(dest),Set(__PICKUPMARK=)
+exten => 6670470,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670470,n,Goto(from-internal,6670470,1)
+exten => 6670470,hint,SIP/17189750418@voip&Custom:DND6670470,CustomPresence:6670470
+
+exten => 6670471,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670471/ringtimer)} > 0]?${DB(AMPUSER/6670471/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670471,n,Macro(exten-vm,novm,6670471,0,0,0)
+exten => 6670471,n(dest),Set(__PICKUPMARK=)
+exten => 6670471,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670471,n,Goto(from-internal,6670471,1)
+exten => 6670471,hint,SIP/442089497515@voip&Custom:DND6670471,CustomPresence:6670471
+
+exten => 6670472,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670472/ringtimer)} > 0]?${DB(AMPUSER/6670472/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670472,n,Macro(exten-vm,novm,6670472,0,0,0)
+exten => 6670472,n(dest),Set(__PICKUPMARK=)
+exten => 6670472,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670472,n,Goto(from-internal,6670472,1)
+exten => 6670472,hint,SIP/444125455391@voip&Custom:DND6670472,CustomPresence:6670472
+
+exten => 6670473,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670473/ringtimer)} > 0]?${DB(AMPUSER/6670473/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670473,n,Macro(exten-vm,novm,6670473,0,0,0)
+exten => 6670473,n(dest),Set(__PICKUPMARK=)
+exten => 6670473,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670473,n,Goto(from-internal,6670473,1)
+exten => 6670473,hint,SIP/1111111111111@voip&Custom:DND6670473,CustomPresence:6670473
+
+exten => 6670474,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670474/ringtimer)} > 0]?${DB(AMPUSER/6670474/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670474,n,Macro(exten-vm,novm,6670474,0,0,0)
+exten => 6670474,n(dest),Set(__PICKUPMARK=)
+exten => 6670474,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670474,n,Goto(from-internal,6670474,1)
+exten => 6670474,hint,SIP/442089497515@voip&Custom:DND6670474,CustomPresence:6670474
+
+exten => 6670475,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670475/ringtimer)} > 0]?${DB(AMPUSER/6670475/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670475,n,Macro(exten-vm,novm,6670475,0,0,0)
+exten => 6670475,n(dest),Set(__PICKUPMARK=)
+exten => 6670475,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670475,n,Goto(from-internal,6670475,1)
+exten => 6670475,hint,SIP/19058170003@voip&Custom:DND6670475,CustomPresence:6670475
+
+exten => 6670476,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670476/ringtimer)} > 0]?${DB(AMPUSER/6670476/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670476,n,Macro(exten-vm,novm,6670476,0,0,0)
+exten => 6670476,n(dest),Set(__PICKUPMARK=)
+exten => 6670476,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670476,n,Goto(from-internal,6670476,1)
+exten => 6670476,hint,SIP/61416671908@voip&Custom:DND6670476,CustomPresence:6670476
+
+exten => 6670477,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670477/ringtimer)} > 0]?${DB(AMPUSER/6670477/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670477,n,Macro(exten-vm,novm,6670477,0,0,0)
+exten => 6670477,n(dest),Set(__PICKUPMARK=)
+exten => 6670477,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670477,n,Goto(from-internal,6670477,1)
+exten => 6670477,hint,SIP/447961812589@voip&Custom:DND6670477,CustomPresence:6670477
+
+exten => 6670478,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670478/ringtimer)} > 0]?${DB(AMPUSER/6670478/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670478,n,Macro(exten-vm,novm,6670478,0,0,0)
+exten => 6670478,n(dest),Set(__PICKUPMARK=)
+exten => 6670478,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670478,n,Goto(from-internal,6670478,1)
+exten => 6670478,hint,SIP/12895212335@voip&Custom:DND6670478,CustomPresence:6670478
+
+exten => 6670479,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670479/ringtimer)} > 0]?${DB(AMPUSER/6670479/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670479,n,Macro(exten-vm,novm,6670479,0,0,0)
+exten => 6670479,n(dest),Set(__PICKUPMARK=)
+exten => 6670479,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670479,n,Goto(from-internal,6670479,1)
+exten => 6670479,hint,SIP/13476369392@voip&Custom:DND6670479,CustomPresence:6670479
+
+exten => 6670480,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670480/ringtimer)} > 0]?${DB(AMPUSER/6670480/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670480,n,Macro(exten-vm,novm,6670480,0,0,0)
+exten => 6670480,n(dest),Set(__PICKUPMARK=)
+exten => 6670480,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670480,n,Goto(from-internal,6670480,1)
+exten => 6670480,hint,SIP/61359989461@voip&Custom:DND6670480,CustomPresence:6670480
+
+exten => 6670385,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670385/ringtimer)} > 0]?${DB(AMPUSER/6670385/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670385,n,Macro(exten-vm,novm,6670385,0,0,0)
+exten => 6670385,n(dest),Set(__PICKUPMARK=)
+exten => 6670385,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670385,n,Goto(from-internal,6670385,1)
+exten => 6670385,hint,SIP/61414644786@voip&Custom:DND6670385,CustomPresence:6670385
+
+exten => 6670481,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670481/ringtimer)} > 0]?${DB(AMPUSER/6670481/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670481,n,Macro(exten-vm,novm,6670481,0,0,0)
+exten => 6670481,n(dest),Set(__PICKUPMARK=)
+exten => 6670481,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670481,n,Goto(from-internal,6670481,1)
+exten => 6670481,hint,SIP/6494190231@voip&Custom:DND6670481,CustomPresence:6670481
+
+exten => 6670483,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670483/ringtimer)} > 0]?${DB(AMPUSER/6670483/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670483,n,Macro(exten-vm,novm,6670483,0,0,0)
+exten => 6670483,n(dest),Set(__PICKUPMARK=)
+exten => 6670483,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670483,n,Goto(from-internal,6670483,1)
+exten => 6670483,hint,SIP/61433153869@voip&Custom:DND6670483,CustomPresence:6670483
+
+exten => 6670482,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670482/ringtimer)} > 0]?${DB(AMPUSER/6670482/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670482,n,Macro(exten-vm,novm,6670482,0,0,0)
+exten => 6670482,n(dest),Set(__PICKUPMARK=)
+exten => 6670482,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670482,n,Goto(from-internal,6670482,1)
+exten => 6670482,hint,SIP/61433153869@voip&Custom:DND6670482,CustomPresence:6670482
+
+exten => 6670482,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670482/ringtimer)} > 0]?${DB(AMPUSER/6670482/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670482,n,Macro(exten-vm,novm,6670482,0,0,0)
+exten => 6670482,n(dest),Set(__PICKUPMARK=)
+exten => 6670482,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670482,n,Goto(from-internal,6670482,1)
+exten => 6670482,hint,SIP/61433153869@voip&Custom:DND6670482,CustomPresence:6670482
+
+exten => 6670484,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670484/ringtimer)} > 0]?${DB(AMPUSER/6670484/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670484,n,Macro(exten-vm,novm,6670484,0,0,0)
+exten => 6670484,n(dest),Set(__PICKUPMARK=)
+exten => 6670484,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670484,n,Goto(from-internal,6670484,1)
+exten => 6670484,hint,SIP/11323895522@voip&Custom:DND6670484,CustomPresence:6670484
+
+exten => 6670485,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670485/ringtimer)} > 0]?${DB(AMPUSER/6670485/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670485,n,Macro(exten-vm,novm,6670485,0,0,0)
+exten => 6670485,n(dest),Set(__PICKUPMARK=)
+exten => 6670485,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670485,n,Goto(from-internal,6670485,1)
+exten => 6670485,hint,SIP/16103520143@voip&Custom:DND6670485,CustomPresence:6670485
+
+exten => 6670486,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670486/ringtimer)} > 0]?${DB(AMPUSER/6670486/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670486,n,Macro(exten-vm,novm,6670486,0,0,0)
+exten => 6670486,n(dest),Set(__PICKUPMARK=)
+exten => 6670486,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670486,n,Goto(from-internal,6670486,1)
+exten => 6670486,hint,SIP/17186271921@voip&Custom:DND6670486,CustomPresence:6670486
+
+exten => 6670487,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670487/ringtimer)} > 0]?${DB(AMPUSER/6670487/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670487,n,Macro(exten-vm,novm,6670487,0,0,0)
+exten => 6670487,n(dest),Set(__PICKUPMARK=)
+exten => 6670487,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670487,n,Goto(from-internal,6670487,1)
+exten => 6670487,hint,SIP/61413185223@voip&Custom:DND6670487,CustomPresence:6670487
+
+exten => 6670488,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670488/ringtimer)} > 0]?${DB(AMPUSER/6670488/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670488,n,Macro(exten-vm,novm,6670488,0,0,0)
+exten => 6670488,n(dest),Set(__PICKUPMARK=)
+exten => 6670488,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670488,n,Goto(from-internal,6670488,1)
+exten => 6670488,hint,SIP/61413195223@voip&Custom:DND6670488,CustomPresence:6670488
+
+exten => 6670489,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670489/ringtimer)} > 0]?${DB(AMPUSER/6670489/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670489,n,Macro(exten-vm,novm,6670489,0,0,0)
+exten => 6670489,n(dest),Set(__PICKUPMARK=)
+exten => 6670489,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670489,n,Goto(from-internal,6670489,1)
+exten => 6670489,hint,SIP/16475508155@voip&Custom:DND6670489,CustomPresence:6670489
+
+exten => 6670490,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670490/ringtimer)} > 0]?${DB(AMPUSER/6670490/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670490,n,Macro(exten-vm,novm,6670490,0,0,0)
+exten => 6670490,n(dest),Set(__PICKUPMARK=)
+exten => 6670490,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670490,n,Goto(from-internal,6670490,1)
+exten => 6670490,hint,SIP/61286774144@voip&Custom:DND6670490,CustomPresence:6670490
+
+exten => 6670491,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670491/ringtimer)} > 0]?${DB(AMPUSER/6670491/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670491,n,Macro(exten-vm,novm,6670491,0,0,0)
+exten => 6670491,n(dest),Set(__PICKUPMARK=)
+exten => 6670491,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670491,n,Goto(from-internal,6670491,1)
+exten => 6670491,hint,SIP/441214744559@voip&Custom:DND6670491,CustomPresence:6670491
+
+exten => 6670492,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670492/ringtimer)} > 0]?${DB(AMPUSER/6670492/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670492,n,Macro(exten-vm,novm,6670492,0,0,0)
+exten => 6670492,n(dest),Set(__PICKUPMARK=)
+exten => 6670492,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670492,n,Goto(from-internal,6670492,1)
+exten => 6670492,hint,SIP/441214744559@voip&Custom:DND6670492,CustomPresence:6670492
+
+exten => 6670493,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670493/ringtimer)} > 0]?${DB(AMPUSER/6670493/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670493,n,Macro(exten-vm,novm,6670493,0,0,0)
+exten => 6670493,n(dest),Set(__PICKUPMARK=)
+exten => 6670493,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670493,n,Goto(from-internal,6670493,1)
+exten => 6670493,hint,SIP/441214744559@voip&Custom:DND6670493,CustomPresence:6670493
+
+exten => 6670492,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670492/ringtimer)} > 0]?${DB(AMPUSER/6670492/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670492,n,Macro(exten-vm,novm,6670492,0,0,0)
+exten => 6670492,n(dest),Set(__PICKUPMARK=)
+exten => 6670492,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670492,n,Goto(from-internal,6670492,1)
+exten => 6670492,hint,SIP/16174134730@voip&Custom:DND6670492,CustomPresence:6670492
+
+exten => 6670500,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670500/ringtimer)} > 0]?${DB(AMPUSER/6670500/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670500,n,Macro(exten-vm,novm,6670500,0,0,0)
+exten => 6670500,n(dest),Set(__PICKUPMARK=)
+exten => 6670500,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670500,n,Goto(from-internal,6670500,1)
+exten => 6670500,hint,SIP/13238955224@voip&Custom:DND6670500,CustomPresence:6670500
+
+exten => 6670494,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670494/ringtimer)} > 0]?${DB(AMPUSER/6670494/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670494,n,Macro(exten-vm,novm,6670494,0,0,0)
+exten => 6670494,n(dest),Set(__PICKUPMARK=)
+exten => 6670494,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670494,n,Goto(from-internal,6670494,1)
+exten => 6670494,hint,SIP/16466234092@voip&Custom:DND6670494,CustomPresence:6670494
+
+exten => 6670496,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670496/ringtimer)} > 0]?${DB(AMPUSER/6670496/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670496,n,Macro(exten-vm,novm,6670496,0,0,0)
+exten => 6670496,n(dest),Set(__PICKUPMARK=)
+exten => 6670496,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670496,n,Goto(from-internal,6670496,1)
+exten => 6670496,hint,SIP/17034559564@voip&Custom:DND6670496,CustomPresence:6670496
+
+exten => 6670497,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670497/ringtimer)} > 0]?${DB(AMPUSER/6670497/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670497,n,Macro(exten-vm,novm,6670497,0,0,0)
+exten => 6670497,n(dest),Set(__PICKUPMARK=)
+exten => 6670497,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670497,n,Goto(from-internal,6670497,1)
+exten => 6670497,hint,SIP/16473517635@voip&Custom:DND6670497,CustomPresence:6670497
+
+exten => 6670498,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670498/ringtimer)} > 0]?${DB(AMPUSER/6670498/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670498,n,Macro(exten-vm,novm,6670498,0,0,0)
+exten => 6670498,n(dest),Set(__PICKUPMARK=)
+exten => 6670498,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670498,n,Goto(from-internal,6670498,1)
+exten => 6670498,hint,SIP/14509743838@voip&Custom:DND6670498,CustomPresence:6670498
+
+exten => 6670499,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670499/ringtimer)} > 0]?${DB(AMPUSER/6670499/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670499,n,Macro(exten-vm,novm,6670499,0,0,0)
+exten => 6670499,n(dest),Set(__PICKUPMARK=)
+exten => 6670499,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670499,n,Goto(from-internal,6670499,1)
+exten => 6670499,hint,SIP/447800565209@voip&Custom:DND6670499,CustomPresence:6670499
+
+exten => 6670501,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670501/ringtimer)} > 0]?${DB(AMPUSER/6670501/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670501,n,Macro(exten-vm,novm,6670501,0,0,0)
+exten => 6670501,n(dest),Set(__PICKUPMARK=)
+exten => 6670501,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670501,n,Goto(from-internal,6670501,1)
+exten => 6670501,hint,SIP/18603795302@voip&Custom:DND6670501,CustomPresence:6670501
+
+exten => 6670502,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670502/ringtimer)} > 0]?${DB(AMPUSER/6670502/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670502,n,Macro(exten-vm,novm,6670502,0,0,0)
+exten => 6670502,n(dest),Set(__PICKUPMARK=)
+exten => 6670502,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670502,n,Goto(from-internal,6670502,1)
+exten => 6670502,hint,SIP/14039180825@voip&Custom:DND6670502,CustomPresence:6670502
+
+exten => 6670503,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670503/ringtimer)} > 0]?${DB(AMPUSER/6670503/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670503,n,Macro(exten-vm,novm,6670503,0,0,0)
+exten => 6670503,n(dest),Set(__PICKUPMARK=)
+exten => 6670503,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670503,n,Goto(from-internal,6670503,1)
+exten => 6670503,hint,SIP/14039180825@voip&Custom:DND6670503,CustomPresence:6670503
+
+exten => 6670504,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670504/ringtimer)} > 0]?${DB(AMPUSER/6670504/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670504,n,Macro(exten-vm,novm,6670504,0,0,0)
+exten => 6670504,n(dest),Set(__PICKUPMARK=)
+exten => 6670504,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670504,n,Goto(from-internal,6670504,1)
+exten => 6670504,hint,SIP/17804851241@voip&Custom:DND6670504,CustomPresence:6670504
+
+exten => 6670505,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670505/ringtimer)} > 0]?${DB(AMPUSER/6670505/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670505,n,Macro(exten-vm,novm,6670505,0,0,0)
+exten => 6670505,n(dest),Set(__PICKUPMARK=)
+exten => 6670505,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670505,n,Goto(from-internal,6670505,1)
+exten => 6670505,hint,SIP/15876441124@voip&Custom:DND6670505,CustomPresence:6670505
+
+exten => 6670506,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670506/ringtimer)} > 0]?${DB(AMPUSER/6670506/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670506,n,Macro(exten-vm,novm,6670506,0,0,0)
+exten => 6670506,n(dest),Set(__PICKUPMARK=)
+exten => 6670506,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670506,n,Goto(from-internal,6670506,1)
+exten => 6670506,hint,SIP/19056410519@voip&Custom:DND6670506,CustomPresence:6670506
+
+exten => 6670507,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670507/ringtimer)} > 0]?${DB(AMPUSER/6670507/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670507,n,Macro(exten-vm,novm,6670507,0,0,0)
+exten => 6670507,n(dest),Set(__PICKUPMARK=)
+exten => 6670507,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670507,n,Goto(from-internal,6670507,1)
+exten => 6670507,hint,SIP/19056410519@voip&Custom:DND6670507,CustomPresence:6670507
+
+exten => 6670508,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670508/ringtimer)} > 0]?${DB(AMPUSER/6670508/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670508,n,Macro(exten-vm,novm,6670508,0,0,0)
+exten => 6670508,n(dest),Set(__PICKUPMARK=)
+exten => 6670508,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670508,n,Goto(from-internal,6670508,1)
+exten => 6670508,hint,SIP/16477263500@voip&Custom:DND6670508,CustomPresence:6670508
+
+exten => 6670509,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670509/ringtimer)} > 0]?${DB(AMPUSER/6670509/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670509,n,Macro(exten-vm,novm,6670509,0,0,0)
+exten => 6670509,n(dest),Set(__PICKUPMARK=)
+exten => 6670509,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670509,n,Goto(from-internal,6670509,1)
+exten => 6670509,hint,SIP/16477263500@voip&Custom:DND6670509,CustomPresence:6670509
+
+exten => 6670510,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670510/ringtimer)} > 0]?${DB(AMPUSER/6670510/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670510,n,Macro(exten-vm,novm,6670510,0,0,0)
+exten => 6670510,n(dest),Set(__PICKUPMARK=)
+exten => 6670510,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670510,n,Goto(from-internal,6670510,1)
+exten => 6670510,hint,SIP/44798544366@voip&Custom:DND6670510,CustomPresence:6670510
+
+exten => 6670517,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670517/ringtimer)} > 0]?${DB(AMPUSER/6670517/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670517,n,Macro(exten-vm,novm,6670517,0,0,0)
+exten => 6670517,n(dest),Set(__PICKUPMARK=)
+exten => 6670517,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670517,n,Goto(from-internal,6670517,1)
+exten => 6670517,hint,SIP/17146803550@voip&Custom:DND6670517,CustomPresence:6670517
+
+exten => 6670511,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670511/ringtimer)} > 0]?${DB(AMPUSER/6670511/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670511,n,Macro(exten-vm,novm,6670511,0,0,0)
+exten => 6670511,n(dest),Set(__PICKUPMARK=)
+exten => 6670511,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670511,n,Goto(from-internal,6670511,1)
+exten => 6670511,hint,SIP/14259685678@voip&Custom:DND6670511,CustomPresence:6670511
+
+exten => 6670512,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670512/ringtimer)} > 0]?${DB(AMPUSER/6670512/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670512,n,Macro(exten-vm,novm,6670512,0,0,0)
+exten => 6670512,n(dest),Set(__PICKUPMARK=)
+exten => 6670512,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670512,n,Goto(from-internal,6670512,1)
+exten => 6670512,hint,SIP/441908312573@voip&Custom:DND6670512,CustomPresence:6670512
+
+exten => 6670513,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670513/ringtimer)} > 0]?${DB(AMPUSER/6670513/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670513,n,Macro(exten-vm,novm,6670513,0,0,0)
+exten => 6670513,n(dest),Set(__PICKUPMARK=)
+exten => 6670513,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670513,n,Goto(from-internal,6670513,1)
+exten => 6670513,hint,SIP/441616377887@voip&Custom:DND6670513,CustomPresence:6670513
+
+exten => 6670514,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670514/ringtimer)} > 0]?${DB(AMPUSER/6670514/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670514,n,Macro(exten-vm,novm,6670514,0,0,0)
+exten => 6670514,n(dest),Set(__PICKUPMARK=)
+exten => 6670514,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670514,n,Goto(from-internal,6670514,1)
+exten => 6670514,hint,SIP/61424366866@voip&Custom:DND6670514,CustomPresence:6670514
+
+exten => 6670518,1,Set(__RINGTIMER=${IF($[${DB(AMPUSER/6670518/ringtimer)} > 0]?${DB(AMPUSER/6670518/ringtimer)}:${RINGTIMER_DEFAULT})})
+exten => 6670518,n,Macro(exten-vm,novm,6670518,0,0,0)
+exten => 6670518,n(dest),Set(__PICKUPMARK=)
+exten => 6670518,n,Goto(${IVR_CONTEXT},return,1)
+exten => 6670518,n,Goto(from-internal,6670518,1)
+exten => 6670518,hint,SIP/19054512965@voip&Custom:DND6670518,CustomPresence:6670518
+
