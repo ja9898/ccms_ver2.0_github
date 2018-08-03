@@ -7,6 +7,8 @@
   $_LIST['bankName']=array('Select Bank','HBL','ABL','ALFALAH','UBL','MCB','Soneri','Other');
   $_LIST['currency']=array('Select Currency','GBP','USD','CAD','AUD','NZD','SGD');
   
+  $_LIST['statusPendRejAccptAry']=array('Pending','Approve','Rejected');
+  
   //LEAVE APPLICATION ARRAYS
   $_LIST['number_of_days']=array('Select No of Days','1','2','3','4','5','6');	//NOT IN USE
   $_LIST['LeaveType'] = array('','Sick','Casual','Other');
@@ -819,6 +821,15 @@
 					  echo "<div class='message error'><p><strong>Menu Error.</strong> ".$_message."</p></div><br />"; 
 					  break;
 				  }
+  case 'error_reject_payment':
+				  {
+					  if(empty($_message))
+						  {
+							  $_message="Processing NOT DONE";
+						  }
+					  echo "<div class='message error'><p><strong>Amount Rejected.</strong> ".$_message."</p></div><br />"; 
+					  break;
+				  }				  
 
   }
   
@@ -3123,7 +3134,8 @@ $sql="SELECT campus_schedule.id,campus_schedule.std_status as statussch,campus_s
 	campus_schedule.studentID,campus_schedule.courseID,campus_schedule.teacherID,campus_schedule.status,campus_schedule.status_dead,campus_schedule.dateBooked,campus_schedule.duedate,
 	campus_schedule.startTime,campus_schedule.endTime,campus_schedule.startDate,campus_schedule.endDate,campus_schedule.agentId,campus_schedule.classType,campus_schedule.paydate,campus_schedule.skypetext,
 	campus_schedule.edit_sch_TL_confirm,day(campus_schedule.paydate) AS paydayz,
-	campus_schedule.dues_original,campus_schedule.grade,campus_schedule.syllabus,campus_schedule.record_link  
+	campus_schedule.dues_original,campus_schedule.grade,campus_schedule.syllabus,campus_schedule.record_link,
+	campus_schedule.statusPendRejAccpt 
 	FROM campus_schedule 
 	WHERE campus_schedule.status=1 and campus_schedule.status_dead=0 and 
 	campus_schedule.status_freeze=0 and campus_schedule.std_status!=4 and 
