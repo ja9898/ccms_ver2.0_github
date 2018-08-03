@@ -1,0 +1,2512 @@
+13/02/15 06:32:20 ** --- MESSAGE BEGIN ---
+13/02/15 06:32:20 ** To: junaid9898@yahoo.com
+13/02/15 06:32:20 ** Subject: Testing sendmail.exe
+13/02/15 06:32:20 ** X-PHP-Originating-Script: 0:tosend.php
+13/02/15 06:32:20 ** From: junaidabbas2012@gmail.com
+13/02/15 06:32:20 ** Reply-To: junaidabbas2012@gmail.com
+13/02/15 06:32:20 ** MIME-Version: 1.0
+13/02/15 06:32:20 ** Content-type: text/html; charset=iso-8859-1
+13/02/15 06:32:20 ** X-Mailer: PHP/5.3.13
+13/02/15 06:32:20 ** 
+13/02/15 06:32:20 ** Hi, you just received an email using sendmail!
+13/02/15 06:32:20 ** --- MESSAGE END ---
+13/02/15 06:32:20 ** Connecting to smtp.gmail.com:465
+13/02/15 06:32:22 ** Connected.
+13/02/15 06:32:22 << 220 mx.google.com ESMTP eo10sm2523031wib.9 - gsmtp<EOL>
+13/02/15 06:32:22 >> EHLO localhost<EOL>
+13/02/15 06:32:22 << 250-mx.google.com at your service, [115.186.161.215]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2<EOL>250 ENHANCEDSTATUSCODES<EOL>
+13/02/15 06:32:22 ** Authenticating as junaidabbas2012@gmail.com
+13/02/15 06:32:22 >> AUTH LOGIN<EOL>
+13/02/15 06:32:22 << 334 VXNlcm5hbWU6<EOL>
+13/02/15 06:32:22 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+13/02/15 06:32:22 << 334 UGFzc3dvcmQ6<EOL>
+13/02/15 06:32:22 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+13/02/15 06:32:23 << 235 2.7.0 Accepted<EOL>
+13/02/15 06:32:23 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+13/02/15 06:32:23 << 250 2.1.0 OK eo10sm2523031wib.9 - gsmtp<EOL>
+13/02/15 06:32:23 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+13/02/15 06:32:23 << 250 2.1.5 OK eo10sm2523031wib.9 - gsmtp<EOL>
+13/02/15 06:32:23 >> DATA<EOL>
+13/02/15 06:32:24 << 354  Go ahead eo10sm2523031wib.9 - gsmtp<EOL>
+13/02/15 06:32:24 >> Date: Fri, 15 Feb 2013 06:32:24 +0500<EOL>
+13/02/15 06:32:24 >> To: junaid9898@yahoo.com<EOL>
+13/02/15 06:32:24 >> Subject: Testing sendmail.exe<EOL>
+13/02/15 06:32:24 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+13/02/15 06:32:24 >> From: junaidabbas2012@gmail.com<EOL>
+13/02/15 06:32:24 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+13/02/15 06:32:24 >> MIME-Version: 1.0<EOL>
+13/02/15 06:32:24 >> Content-type: text/html; charset=iso-8859-1<EOL>
+13/02/15 06:32:24 >> X-Mailer: PHP/5.3.13<EOL>
+13/02/15 06:32:24 >> <EOL>
+13/02/15 06:32:24 >> Hi, you just received an email using sendmail!<EOL>
+13/02/15 06:32:24 >> .<EOL>
+13/02/15 06:32:25 << 250 2.0.0 OK 1360891887 eo10sm2523031wib.9 - gsmtp<EOL>
+13/02/15 06:32:25 >> QUIT<EOL>
+13/02/15 06:32:25 << 221 2.0.0 closing connection eo10sm2523031wib.9 - gsmtp<EOL>
+13/02/15 06:32:25 ** Disconnected.
+13/02/15 06:32:25 ** Disconnected.
+13/02/15 06:32:25 ** Disconnected.
+13/02/15 07:16:12 ** --- MESSAGE BEGIN ---
+13/02/15 07:16:12 ** To: junaid@yourcloudcampus.com
+13/02/15 07:16:12 ** Subject: Testing sendmail.exe
+13/02/15 07:16:13 ** X-PHP-Originating-Script: 0:tosend.php
+13/02/15 07:16:13 ** From: junaidabbas2012@gmail.com
+13/02/15 07:16:13 ** Reply-To: junaidabbas2012@gmail.com
+13/02/15 07:16:13 ** MIME-Version: 1.0
+13/02/15 07:16:13 ** Content-type: text/html; charset=iso-8859-1
+13/02/15 07:16:13 ** X-Mailer: PHP/5.3.13
+13/02/15 07:16:13 ** 
+13/02/15 07:16:13 ** Hi, you just received an email using sendmail!
+13/02/15 07:16:13 ** --- MESSAGE END ---
+13/02/15 07:16:13 ** Connecting to smtp.gmail.com:465
+13/02/15 07:16:14 ** Connected.
+13/02/15 07:16:14 << 220 mx.google.com ESMTP n2sm2437438wiy.6 - gsmtp<EOL>
+13/02/15 07:16:14 >> EHLO localhost<EOL>
+13/02/15 07:16:14 << 250-mx.google.com at your service, [115.186.161.215]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2<EOL>250 ENHANCEDSTATUSCODES<EOL>
+13/02/15 07:16:14 ** Authenticating as junaidabbas2012@gmail.com
+13/02/15 07:16:14 >> AUTH LOGIN<EOL>
+13/02/15 07:16:14 << 334 VXNlcm5hbWU6<EOL>
+13/02/15 07:16:14 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+13/02/15 07:16:15 << 334 UGFzc3dvcmQ6<EOL>
+13/02/15 07:16:15 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+13/02/15 07:16:15 << 235 2.7.0 Accepted<EOL>
+13/02/15 07:16:15 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+13/02/15 07:16:15 << 250 2.1.0 OK n2sm2437438wiy.6 - gsmtp<EOL>
+13/02/15 07:16:15 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+13/02/15 07:16:15 << 250 2.1.5 OK n2sm2437438wiy.6 - gsmtp<EOL>
+13/02/15 07:16:15 >> DATA<EOL>
+13/02/15 07:16:16 << 354  Go ahead n2sm2437438wiy.6 - gsmtp<EOL>
+13/02/15 07:16:16 >> Date: Fri, 15 Feb 2013 07:16:16 +0500<EOL>
+13/02/15 07:16:16 >> To: junaid@yourcloudcampus.com<EOL>
+13/02/15 07:16:16 >> Subject: Testing sendmail.exe<EOL>
+13/02/15 07:16:16 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+13/02/15 07:16:16 >> From: junaidabbas2012@gmail.com<EOL>
+13/02/15 07:16:16 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+13/02/15 07:16:16 >> MIME-Version: 1.0<EOL>
+13/02/15 07:16:16 >> Content-type: text/html; charset=iso-8859-1<EOL>
+13/02/15 07:16:16 >> X-Mailer: PHP/5.3.13<EOL>
+13/02/15 07:16:16 >> <EOL>
+13/02/15 07:16:16 >> Hi, you just received an email using sendmail!<EOL>
+13/02/15 07:16:16 >> .<EOL>
+13/02/15 07:16:17 << 250 2.0.0 OK 1360894519 n2sm2437438wiy.6 - gsmtp<EOL>
+13/02/15 07:16:17 >> QUIT<EOL>
+13/02/15 07:16:17 << 221 2.0.0 closing connection n2sm2437438wiy.6 - gsmtp<EOL>
+13/02/15 07:16:17 ** Disconnecting from smtp.gmail.com:465
+13/02/15 07:16:17 ** Disconnected.
+13/02/15 07:16:17 ** Disconnected.
+13/03/26 23:24:31 ** --- MESSAGE BEGIN ---
+13/03/26 23:24:31 ** 
+13/03/26 23:24:31 ** 
+13/03/26 23:24:31 ** 
+13/03/26 23:24:31 ** 
+13/03/26 23:24:31 ** --- MESSAGE END ---
+14/03/19 04:33:41 ** --- MESSAGE BEGIN ---
+14/03/19 04:33:41 ** To: junaid@yourcloudcampus.com
+14/03/19 04:33:41 ** Subject: CCMS Recurring amount
+14/03/19 04:33:41 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 04:33:41 ** From: junaidabbas2012@gmail.com
+14/03/19 04:33:41 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 04:33:41 ** MIME-Version: 1.0
+14/03/19 04:33:41 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 04:33:41 ** X-Mailer: PHP/5.4.16
+14/03/19 04:33:41 ** 
+14/03/19 04:33:41 ** Hi, you just received an email from CCMS server!<br>CCMS teamlead summary: <br/><span style='color:blue; font-size:16px'>TeacherTL</span>
+14/03/19 04:33:41 **  <br /><b>Today status:: </b><br />Bilal mazhar---   ,   
+14/03/19 04:33:41 ** <br />Muhammad  Waqas  Iftikhar---   ,   
+14/03/19 04:33:41 ** <br />Faheem ur  Rehman---   ,   
+14/03/19 04:33:41 ** <br />teacher_teamlead01 teacher_teamlead01---   ,   
+14/03/19 04:33:41 ** <br />teacher_teamlead02 teacher_teamlead02---   ,   
+14/03/19 04:33:41 ** <br />Hafiz Ahmad---   ,   
+14/03/19 04:33:41 ** <br />Adil Kamal---   ,   
+14/03/19 04:33:41 ** <br />Ali ---   ,   
+14/03/19 04:33:41 ** <br />Zeeshan Haider---   ,   
+14/03/19 04:33:41 ** <br />Farhan Younis---   ,   
+14/03/19 04:33:41 ** <br />Umer Raja---   ,   
+14/03/19 04:33:41 ** <br />Syed  Murad Ali---   ,   
+14/03/19 04:33:41 ** <br />Raza TL---   ,   
+14/03/19 04:33:41 ** <br />DAY TEAMLEAD---   ,   
+14/03/19 04:33:41 **  <br /><b> Overall Status:: </b><br />Bilal mazhar---  
+14/03/19 04:33:41 ** <br />Muhammad  Waqas  Iftikhar---  Trial : 9 , Regular : 169 , Dead : 1409 , Freez : 9 , Make Over : 6
+14/03/19 04:33:41 ** <br />Faheem ur  Rehman---  Trial : 8 , Regular : 77 , Dead : 548 , Freez : 3 , Make Over : 5
+14/03/19 04:33:41 ** <br />teacher_teamlead01 teacher_teamlead01---  Regular : 1 , Dead : 3
+14/03/19 04:33:41 ** <br />teacher_teamlead02 teacher_teamlead02---  Trial : 3 , Regular : 1 , Dead : 10 , Freez : 2 , Test : 1
+14/03/19 04:33:41 ** <br />Hafiz Ahmad---  
+14/03/19 04:33:41 ** <br />Adil Kamal---  Trial : 26 , Regular : 214 , Dead : 682 , Freez : 1 , Make Over : 2
+14/03/19 04:33:41 ** <br />Ali ---  
+14/03/19 04:33:41 ** <br />Zeeshan Haider---  
+14/03/19 04:33:41 ** <br />Farhan Younis---  
+14/03/19 04:33:41 ** <br />Umer Raja---  
+14/03/19 04:33:41 ** <br />Syed  Murad Ali---  Regular : 5 , Dead : 381
+14/03/19 04:33:41 ** <br />Raza TL---  Trial : 10 , Regular : 81 , Dead : 466 , Freez : 5 , Make Over : 4
+14/03/19 04:33:41 ** <br />DAY TEAMLEAD---  Trial : 9 , Regular : 95 , Dead : 376 , Freez : 3 , Make Over : 1
+14/03/19 04:33:41 **  <br /><b> Filtered Status:: </b>
+14/03/19 04:33:41 **  <br/><span style='color:blue; font-size:16px'>AgentTL</span>
+14/03/19 04:33:41 **  <br /><b>Today status:: </b><br />Syed Murad Ali---   ,   
+14/03/19 04:33:41 ** <br />arslan cheema---   ,   
+14/03/19 04:33:41 ** <br />yasir ali---   ,   
+14/03/19 04:33:41 ** <br />agent_teamlead01 ---   ,   
+14/03/19 04:33:41 ** <br />Omair Waheed---   ,   
+14/03/19 04:33:41 ** <br />tabassum younis---   ,   
+14/03/19 04:33:41 ** <br />Taimur Ejaz ATL---   ,   
+14/03/19 04:33:41 ** <br />Shahrukh Yaqoob---   ,   
+14/03/19 04:33:41 **  <br /><b> Overall Status:: </b><br />Syed Murad Ali---  
+14/03/19 04:33:41 ** <br />arslan cheema---  
+14/03/19 04:33:41 ** <br />yasir ali---  Regular : 20 , Dead : 1137
+14/03/19 04:33:41 ** <br />agent_teamlead01 ---  
+14/03/19 04:33:41 ** <br />Omair Waheed---  Regular : 8 , Dead : 205
+14/03/19 04:33:41 ** <br />tabassum younis---  Dead : 1
+14/03/19 04:33:41 ** <br />Taimur Ejaz ATL---  Trial : 30 , Regular : 420 , Dead : 1261 , Freez : 19
+14/03/19 04:33:41 ** <br />Shahrukh Yaqoob---  
+14/03/19 04:33:41 **  <br /><b> Filtered Status:: </b> 
+14/03/19 04:33:41 ** --- MESSAGE END ---
+14/03/19 04:33:42 ** Connecting to smtp.gmail.com:465
+14/03/19 04:33:44 ** Connected.
+14/03/19 04:33:44 << 220 mx.google.com ESMTP e42sm38372868eev.32 - gsmtp<EOL>
+14/03/19 04:33:44 >> EHLO localhost<EOL>
+14/03/19 04:33:44 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 04:33:44 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 04:33:44 >> AUTH LOGIN<EOL>
+14/03/19 04:33:44 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 04:33:44 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 04:33:45 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 04:33:45 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 04:33:45 << 235 2.7.0 Accepted<EOL>
+14/03/19 04:33:45 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 04:33:45 << 250 2.1.0 OK e42sm38372868eev.32 - gsmtp<EOL>
+14/03/19 04:33:45 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/03/19 04:33:46 << 250 2.1.5 OK e42sm38372868eev.32 - gsmtp<EOL>
+14/03/19 04:33:46 >> DATA<EOL>
+14/03/19 04:33:46 << 354  Go ahead e42sm38372868eev.32 - gsmtp<EOL>
+14/03/19 04:33:46 >> Date: Wed, 19 Mar 2014 04:33:46 +0500<EOL>
+14/03/19 04:33:46 >> To: junaid@yourcloudcampus.com<EOL>
+14/03/19 04:33:46 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 04:33:46 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 04:33:46 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 04:33:46 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 04:33:46 >> MIME-Version: 1.0<EOL>
+14/03/19 04:33:46 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 04:33:46 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 04:33:46 >> <EOL>
+14/03/19 04:33:46 >> Hi, you just received an email from CCMS server!<br>CCMS teamlead summary: <br/><span style='color:blue; font-size:16px'>TeacherTL</span><EOL>
+14/03/19 04:33:46 >>  <br /><b>Today status:: </b><br />Bilal mazhar---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Muhammad  Waqas  Iftikhar---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Faheem ur  Rehman---   ,   <EOL>
+14/03/19 04:33:46 >> <br />teacher_teamlead01 teacher_teamlead01---   ,   <EOL>
+14/03/19 04:33:46 >> <br />teacher_teamlead02 teacher_teamlead02---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Hafiz Ahmad---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Adil Kamal---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Ali ---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Zeeshan Haider---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Farhan Younis---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Umer Raja---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Syed  Murad Ali---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Raza TL---   ,   <EOL>
+14/03/19 04:33:46 >> <br />DAY TEAMLEAD---   ,   <EOL>
+14/03/19 04:33:46 >>  <br /><b> Overall Status:: </b><br />Bilal mazhar---  <EOL>
+14/03/19 04:33:46 >> <br />Muhammad  Waqas  Iftikhar---  Trial : 9 , Regular : 169 , Dead : 1409 , Freez : 9 , Make Over : 6<EOL>
+14/03/19 04:33:46 >> <br />Faheem ur  Rehman---  Trial : 8 , Regular : 77 , Dead : 548 , Freez : 3 , Make Over : 5<EOL>
+14/03/19 04:33:46 >> <br />teacher_teamlead01 teacher_teamlead01---  Regular : 1 , Dead : 3<EOL>
+14/03/19 04:33:46 >> <br />teacher_teamlead02 teacher_teamlead02---  Trial : 3 , Regular : 1 , Dead : 10 , Freez : 2 , Test : 1<EOL>
+14/03/19 04:33:46 >> <br />Hafiz Ahmad---  <EOL>
+14/03/19 04:33:46 >> <br />Adil Kamal---  Trial : 26 , Regular : 214 , Dead : 682 , Freez : 1 , Make Over : 2<EOL>
+14/03/19 04:33:46 >> <br />Ali ---  <EOL>
+14/03/19 04:33:46 >> <br />Zeeshan Haider---  <EOL>
+14/03/19 04:33:46 >> <br />Farhan Younis---  <EOL>
+14/03/19 04:33:46 >> <br />Umer Raja---  <EOL>
+14/03/19 04:33:46 >> <br />Syed  Murad Ali---  Regular : 5 , Dead : 381<EOL>
+14/03/19 04:33:46 >> <br />Raza TL---  Trial : 10 , Regular : 81 , Dead : 466 , Freez : 5 , Make Over : 4<EOL>
+14/03/19 04:33:46 >> <br />DAY TEAMLEAD---  Trial : 9 , Regular : 95 , Dead : 376 , Freez : 3 , Make Over : 1<EOL>
+14/03/19 04:33:46 >>  <br /><b> Filtered Status:: </b><EOL>
+14/03/19 04:33:46 >>  <br/><span style='color:blue; font-size:16px'>AgentTL</span><EOL>
+14/03/19 04:33:46 >>  <br /><b>Today status:: </b><br />Syed Murad Ali---   ,   <EOL>
+14/03/19 04:33:46 >> <br />arslan cheema---   ,   <EOL>
+14/03/19 04:33:46 >> <br />yasir ali---   ,   <EOL>
+14/03/19 04:33:46 >> <br />agent_teamlead01 ---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Omair Waheed---   ,   <EOL>
+14/03/19 04:33:46 >> <br />tabassum younis---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Taimur Ejaz ATL---   ,   <EOL>
+14/03/19 04:33:46 >> <br />Shahrukh Yaqoob---   ,   <EOL>
+14/03/19 04:33:46 >>  <br /><b> Overall Status:: </b><br />Syed Murad Ali---  <EOL>
+14/03/19 04:33:46 >> <br />arslan cheema---  <EOL>
+14/03/19 04:33:46 >> <br />yasir ali---  Regular : 20 , Dead : 1137<EOL>
+14/03/19 04:33:46 >> <br />agent_teamlead01 ---  <EOL>
+14/03/19 04:33:46 >> <br />Omair Waheed---  Regular : 8 , Dead : 205<EOL>
+14/03/19 04:33:46 >> <br />tabassum younis---  Dead : 1<EOL>
+14/03/19 04:33:46 >> <br />Taimur Ejaz ATL---  Trial : 30 , Regular : 420 , Dead : 1261 , Freez : 19<EOL>
+14/03/19 04:33:46 >> <br />Shahrukh Yaqoob---  <EOL>
+14/03/19 04:33:46 >>  <br /><b> Filtered Status:: </b> <EOL>
+14/03/19 04:33:46 >> .<EOL>
+14/03/19 04:33:47 << 250 2.0.0 OK 1395185618 e42sm38372868eev.32 - gsmtp<EOL>
+14/03/19 04:33:47 >> QUIT<EOL>
+14/03/19 04:33:48 << 221 2.0.0 closing connection e42sm38372868eev.32 - gsmtp<EOL>
+14/03/19 04:33:48 ** Disconnected.
+14/03/19 04:33:48 ** Disconnected.
+14/03/19 04:33:48 ** Disconnected.
+14/03/19 05:22:38 ** --- MESSAGE BEGIN ---
+14/03/19 05:22:38 ** --- MESSAGE BEGIN ---
+14/03/19 05:22:38 ** To: junaid@yourcloudcampus.com
+14/03/19 05:22:38 ** Subject: CCMS Recurring amount
+14/03/19 05:22:38 ** To: junaid@yourcloudcampus.com
+14/03/19 05:22:38 ** Subject: CCMS Recurring amount
+14/03/19 05:22:38 ** MIME-Version: 1.0
+14/03/19 05:22:38 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 05:22:38 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 05:22:38 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 05:22:38 ** X-Mailer: PHP/5.4.16
+14/03/19 05:22:38 ** 
+14/03/19 05:22:38 ** Hi, you just received an email from CCMS server!<br>CCMS teamlead summary: <br/><span style='color:blue; font-size:16px'>TeacherTL</span>
+14/03/19 05:22:38 **  <br />LETTER FORMAT:
+14/03/19 05:22:38 **  <br/><span style='color:blue; font-size:16px'>AgentTL</span>
+14/03/19 05:22:38 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 05:22:38 ** --- MESSAGE END ---
+14/03/19 05:22:38 ** --- MESSAGE BEGIN ---
+14/03/19 05:22:38 ** To: junaid@yourcloudcampus.com
+14/03/19 05:22:38 ** Subject: CCMS Recurring amount
+14/03/19 05:22:38 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 05:22:38 ** From: junaidabbas2012@gmail.com
+14/03/19 05:22:38 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 05:22:38 ** MIME-Version: 1.0
+14/03/19 05:22:38 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 05:22:38 ** X-Mailer: PHP/5.4.16
+14/03/19 05:22:38 ** From: junaidabbas2012@gmail.com
+14/03/19 05:22:38 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 05:22:38 ** MIME-Version: 1.0
+14/03/19 05:22:38 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 05:22:38 ** X-Mailer: PHP/5.4.16
+14/03/19 05:22:38 ** 
+14/03/19 05:22:38 ** Hi, you just received an email from CCMS server!<br>CCMS teamlead summary: <br/><span style='color:blue; font-size:16px'>TeacherTL</span>
+14/03/19 05:22:38 **  <br />LETTER FORMAT:
+14/03/19 05:22:38 **  <br/><span style='color:blue; font-size:16px'>AgentTL</span>
+14/03/19 05:22:38 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 05:22:38 ** --- MESSAGE END ---
+14/03/19 05:22:38 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 05:22:38 ** MIME-Version: 1.0
+14/03/19 05:22:38 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 05:22:38 ** X-Mailer: PHP/5.4.16
+14/03/19 05:22:38 ** 
+14/03/19 05:22:38 ** Hi, you just received an email from CCMS server!<br>CCMS teamlead summary: <br/><span style='color:blue; font-size:16px'>TeacherTL</span>
+14/03/19 05:22:38 **  <br />LETTER FORMAT:
+14/03/19 05:22:38 **  <br/><span style='color:blue; font-size:16px'>AgentTL</span>
+14/03/19 05:22:38 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 05:22:38 ** --- MESSAGE END ---
+14/03/19 05:22:38 ** 
+14/03/19 05:22:38 ** Hi, you just received an email from CCMS server!<br>CCMS teamlead summary: <br/><span style='color:blue; font-size:16px'>TeacherTL</span>
+14/03/19 05:22:38 **  <br />LETTER FORMAT:
+14/03/19 05:22:38 **  <br/><span style='color:blue; font-size:16px'>AgentTL</span>
+14/03/19 05:22:38 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 05:22:38 ** --- MESSAGE END ---
+14/03/19 05:22:40 ** Connecting to smtp.gmail.com:465
+14/03/19 05:22:42 ** Connected.
+14/03/19 05:22:42 << 220 mx.google.com ESMTP 48sm38587877eei.24 - gsmtp<EOL>
+14/03/19 05:22:42 >> EHLO localhost<EOL>
+14/03/19 05:22:43 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 05:22:43 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 05:22:43 >> AUTH LOGIN<EOL>
+14/03/19 05:22:43 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 05:22:43 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 05:22:43 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 05:22:43 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 05:22:43 << 235 2.7.0 Accepted<EOL>
+14/03/19 05:22:43 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 05:22:44 << 250 2.1.0 OK 48sm38587877eei.24 - gsmtp<EOL>
+14/03/19 05:22:44 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/03/19 05:22:44 << 250 2.1.5 OK 48sm38587877eei.24 - gsmtp<EOL>
+14/03/19 05:22:44 >> DATA<EOL>
+14/03/19 05:22:44 << 354  Go ahead 48sm38587877eei.24 - gsmtp<EOL>
+14/03/19 05:22:44 >> Date: Wed, 19 Mar 2014 05:22:44 +0500<EOL>
+14/03/19 05:22:44 >> To: junaid@yourcloudcampus.com<EOL>
+14/03/19 05:22:44 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 05:22:44 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 05:22:44 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 05:22:44 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 05:22:44 >> MIME-Version: 1.0<EOL>
+14/03/19 05:22:44 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 05:22:44 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 05:22:44 >> <EOL>
+14/03/19 05:22:44 >> Hi, you just received an email from CCMS server!<br>CCMS teamlead summary: <br/><span style='color:blue; font-size:16px'>TeacherTL</span><EOL>
+14/03/19 05:22:44 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 05:22:44 >>  <br/><span style='color:blue; font-size:16px'>AgentTL</span><EOL>
+14/03/19 05:22:44 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 05:22:44 >> .<EOL>
+14/03/19 05:22:46 << 250 2.0.0 OK 1395188556 48sm38587877eei.24 - gsmtp<EOL>
+14/03/19 05:22:46 >> QUIT<EOL>
+14/03/19 05:22:46 << 221 2.0.0 closing connection 48sm38587877eei.24 - gsmtp<EOL>
+14/03/19 05:22:46 ** Disconnected.
+14/03/19 05:22:46 ** Disconnected.
+14/03/19 05:22:46 ** Disconnected.
+14/03/19 06:13:37 ** --- MESSAGE BEGIN ---
+14/03/19 06:13:37 ** To: $customer_email
+14/03/19 06:13:37 ** Subject: CCMS Recurring amount
+14/03/19 06:13:37 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:13:37 ** From: junaidabbas2012@gmail.com
+14/03/19 06:13:37 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:13:37 ** MIME-Version: 1.0
+14/03/19 06:13:37 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:13:37 ** X-Mailer: PHP/5.4.16
+14/03/19 06:13:37 ** 
+14/03/19 06:13:37 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:13:37 **  <br />LETTER FORMAT:
+14/03/19 06:13:37 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:13:37 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:13:37 ** --- MESSAGE END ---
+14/03/19 06:13:37 ** Connecting to smtp.gmail.com:465
+14/03/19 06:13:39 ** Connected.
+14/03/19 06:13:39 << 220 mx.google.com ESMTP s46sm51132464ees.3 - gsmtp<EOL>
+14/03/19 06:13:39 >> EHLO localhost<EOL>
+14/03/19 06:13:40 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:13:40 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:13:40 >> AUTH LOGIN<EOL>
+14/03/19 06:13:40 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:13:40 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:13:40 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:13:40 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:13:40 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:13:40 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:13:41 << 250 2.1.0 OK s46sm51132464ees.3 - gsmtp<EOL>
+14/03/19 06:13:41 >> RCPT TO: <$customer_email@localhost><EOL>
+14/03/19 06:13:41 << 250 2.1.5 OK s46sm51132464ees.3 - gsmtp<EOL>
+14/03/19 06:13:41 >> DATA<EOL>
+14/03/19 06:13:42 << 354  Go ahead s46sm51132464ees.3 - gsmtp<EOL>
+14/03/19 06:13:42 >> Date: Wed, 19 Mar 2014 06:13:42 +0500<EOL>
+14/03/19 06:13:42 >> To: $customer_email<EOL>
+14/03/19 06:13:42 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:13:42 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:13:42 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:13:42 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:13:42 >> MIME-Version: 1.0<EOL>
+14/03/19 06:13:42 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:13:42 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:13:42 >> <EOL>
+14/03/19 06:13:42 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:13:42 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:13:42 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:13:42 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:13:42 >> .<EOL>
+14/03/19 06:13:43 << 250 2.0.0 OK 1395191613 s46sm51132464ees.3 - gsmtp<EOL>
+14/03/19 06:13:43 >> QUIT<EOL>
+14/03/19 06:13:43 << 221 2.0.0 closing connection s46sm51132464ees.3 - gsmtp<EOL>
+14/03/19 06:13:43 ** Disconnected.
+14/03/19 06:13:43 ** Disconnected.
+14/03/19 06:13:43 ** Disconnected.
+14/03/19 06:20:59 ** --- MESSAGE BEGIN ---
+14/03/19 06:20:59 ** To: $customer_email
+14/03/19 06:20:59 ** Subject: CCMS Recurring amount
+14/03/19 06:20:59 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:20:59 ** From: junaidabbas2012@gmail.com
+14/03/19 06:20:59 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:20:59 ** MIME-Version: 1.0
+14/03/19 06:20:59 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:20:59 ** X-Mailer: PHP/5.4.16
+14/03/19 06:20:59 ** 
+14/03/19 06:20:59 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:20:59 **  <br />LETTER FORMAT:
+14/03/19 06:20:59 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:20:59 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:20:59 ** --- MESSAGE END ---
+14/03/19 06:20:59 ** Connecting to smtp.gmail.com:465
+14/03/19 06:21:01 ** Connected.
+14/03/19 06:21:01 << 220 mx.google.com ESMTP p8sm38845092eef.26 - gsmtp<EOL>
+14/03/19 06:21:01 >> EHLO localhost<EOL>
+14/03/19 06:21:01 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:21:01 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:21:01 >> AUTH LOGIN<EOL>
+14/03/19 06:21:01 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:21:01 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:21:02 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:21:02 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:21:02 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:21:02 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:21:02 << 250 2.1.0 OK p8sm38845092eef.26 - gsmtp<EOL>
+14/03/19 06:21:02 >> RCPT TO: <$customer_email@localhost><EOL>
+14/03/19 06:21:02 << 250 2.1.5 OK p8sm38845092eef.26 - gsmtp<EOL>
+14/03/19 06:21:02 >> DATA<EOL>
+14/03/19 06:21:03 << 354  Go ahead p8sm38845092eef.26 - gsmtp<EOL>
+14/03/19 06:21:03 >> Date: Wed, 19 Mar 2014 06:21:03 +0500<EOL>
+14/03/19 06:21:03 >> To: $customer_email<EOL>
+14/03/19 06:21:03 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:21:03 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:21:03 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:21:03 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:21:03 >> MIME-Version: 1.0<EOL>
+14/03/19 06:21:03 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:21:03 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:21:03 >> <EOL>
+14/03/19 06:21:03 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:21:03 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:21:03 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:21:03 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:21:03 >> .<EOL>
+14/03/19 06:21:04 << 250 2.0.0 OK 1395192054 p8sm38845092eef.26 - gsmtp<EOL>
+14/03/19 06:21:04 >> QUIT<EOL>
+14/03/19 06:21:04 << 221 2.0.0 closing connection p8sm38845092eef.26 - gsmtp<EOL>
+14/03/19 06:21:04 ** Disconnected.
+14/03/19 06:21:04 ** Disconnected.
+14/03/19 06:21:04 ** Disconnected.
+14/03/19 06:25:44 ** --- MESSAGE BEGIN ---
+14/03/19 06:25:44 ** To: $customer_email
+14/03/19 06:25:44 ** Subject: CCMS Recurring amount
+14/03/19 06:25:44 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:25:44 ** From: junaidabbas2012@gmail.com
+14/03/19 06:25:44 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:25:44 ** MIME-Version: 1.0
+14/03/19 06:25:44 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:25:44 ** X-Mailer: PHP/5.4.16
+14/03/19 06:25:44 ** 
+14/03/19 06:25:44 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:25:44 **  <br />LETTER FORMAT:
+14/03/19 06:25:44 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:25:44 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:25:44 ** --- MESSAGE END ---
+14/03/19 06:25:45 ** Connecting to smtp.gmail.com:465
+14/03/19 06:25:46 ** Connected.
+14/03/19 06:25:46 << 220 mx.google.com ESMTP cb5sm51138865eeb.18 - gsmtp<EOL>
+14/03/19 06:25:46 >> EHLO localhost<EOL>
+14/03/19 06:25:46 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:25:46 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:25:46 >> AUTH LOGIN<EOL>
+14/03/19 06:25:47 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:25:47 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:25:47 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:25:47 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:25:47 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:25:47 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:25:47 << 250 2.1.0 OK cb5sm51138865eeb.18 - gsmtp<EOL>
+14/03/19 06:25:47 >> RCPT TO: <$customer_email@localhost><EOL>
+14/03/19 06:25:48 << 250 2.1.5 OK cb5sm51138865eeb.18 - gsmtp<EOL>
+14/03/19 06:25:48 >> DATA<EOL>
+14/03/19 06:25:48 << 354  Go ahead cb5sm51138865eeb.18 - gsmtp<EOL>
+14/03/19 06:25:48 >> Date: Wed, 19 Mar 2014 06:25:48 +0500<EOL>
+14/03/19 06:25:48 >> To: $customer_email<EOL>
+14/03/19 06:25:48 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:25:48 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:25:48 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:25:48 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:25:48 >> MIME-Version: 1.0<EOL>
+14/03/19 06:25:48 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:25:48 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:25:48 >> <EOL>
+14/03/19 06:25:48 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:25:48 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:25:48 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:25:48 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:25:48 >> .<EOL>
+14/03/19 06:25:49 << 250 2.0.0 OK 1395192339 cb5sm51138865eeb.18 - gsmtp<EOL>
+14/03/19 06:25:49 >> QUIT<EOL>
+14/03/19 06:25:49 << 221 2.0.0 closing connection cb5sm51138865eeb.18 - gsmtp<EOL>
+14/03/19 06:25:49 ** Disconnected.
+14/03/19 06:25:49 ** Disconnected.
+14/03/19 06:25:49 ** Disconnected.
+14/03/19 06:26:11 ** --- MESSAGE BEGIN ---
+14/03/19 06:26:11 ** To: $customer_email
+14/03/19 06:26:11 ** Subject: CCMS Recurring amount
+14/03/19 06:26:11 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:26:11 ** From: junaidabbas2012@gmail.com
+14/03/19 06:26:11 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:26:11 ** MIME-Version: 1.0
+14/03/19 06:26:11 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:26:11 ** X-Mailer: PHP/5.4.16
+14/03/19 06:26:11 ** 
+14/03/19 06:26:11 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:26:11 **  <br />LETTER FORMAT:
+14/03/19 06:26:11 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:26:11 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:26:11 ** --- MESSAGE END ---
+14/03/19 06:26:11 ** Connecting to smtp.gmail.com:465
+14/03/19 06:26:13 ** Connected.
+14/03/19 06:26:13 << 220 mx.google.com ESMTP 44sm38869195eek.30 - gsmtp<EOL>
+14/03/19 06:26:13 >> EHLO localhost<EOL>
+14/03/19 06:26:13 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:26:13 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:26:13 >> AUTH LOGIN<EOL>
+14/03/19 06:26:13 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:26:13 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:26:13 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:26:13 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:26:14 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:26:14 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:26:14 << 250 2.1.0 OK 44sm38869195eek.30 - gsmtp<EOL>
+14/03/19 06:26:14 >> RCPT TO: <$customer_email@localhost><EOL>
+14/03/19 06:26:14 << 250 2.1.5 OK 44sm38869195eek.30 - gsmtp<EOL>
+14/03/19 06:26:14 >> DATA<EOL>
+14/03/19 06:26:15 << 354  Go ahead 44sm38869195eek.30 - gsmtp<EOL>
+14/03/19 06:26:15 >> Date: Wed, 19 Mar 2014 06:26:15 +0500<EOL>
+14/03/19 06:26:15 >> To: $customer_email<EOL>
+14/03/19 06:26:15 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:26:15 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:26:15 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:26:15 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:26:15 >> MIME-Version: 1.0<EOL>
+14/03/19 06:26:15 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:26:15 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:26:15 >> <EOL>
+14/03/19 06:26:15 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:26:15 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:26:15 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:26:15 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:26:15 >> .<EOL>
+14/03/19 06:26:16 << 250 2.0.0 OK 1395192366 44sm38869195eek.30 - gsmtp<EOL>
+14/03/19 06:26:16 >> QUIT<EOL>
+14/03/19 06:26:16 << 221 2.0.0 closing connection 44sm38869195eek.30 - gsmtp<EOL>
+14/03/19 06:26:16 ** Disconnected.
+14/03/19 06:26:16 ** Disconnected.
+14/03/19 06:26:16 ** Disconnected.
+14/03/19 06:30:49 ** --- MESSAGE BEGIN ---
+14/03/19 06:30:49 ** To: undefined
+14/03/19 06:30:49 ** Subject: CCMS Recurring amount
+14/03/19 06:30:49 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:30:49 ** From: junaidabbas2012@gmail.com
+14/03/19 06:30:49 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:30:49 ** MIME-Version: 1.0
+14/03/19 06:30:49 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:30:49 ** X-Mailer: PHP/5.4.16
+14/03/19 06:30:49 ** 
+14/03/19 06:30:49 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:30:49 **  <br />LETTER FORMAT:
+14/03/19 06:30:49 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:30:49 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:30:49 ** --- MESSAGE END ---
+14/03/19 06:30:49 ** Connecting to smtp.gmail.com:465
+14/03/19 06:30:51 ** Connected.
+14/03/19 06:30:51 << 220 mx.google.com ESMTP y51sm51215060eeu.0 - gsmtp<EOL>
+14/03/19 06:30:51 >> EHLO localhost<EOL>
+14/03/19 06:30:51 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:30:51 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:30:51 >> AUTH LOGIN<EOL>
+14/03/19 06:30:51 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:30:51 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:30:51 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:30:51 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:30:52 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:30:52 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:30:52 << 250 2.1.0 OK y51sm51215060eeu.0 - gsmtp<EOL>
+14/03/19 06:30:52 >> RCPT TO: <undefined@localhost><EOL>
+14/03/19 06:30:52 << 250 2.1.5 OK y51sm51215060eeu.0 - gsmtp<EOL>
+14/03/19 06:30:52 >> DATA<EOL>
+14/03/19 06:30:53 << 354  Go ahead y51sm51215060eeu.0 - gsmtp<EOL>
+14/03/19 06:30:53 >> Date: Wed, 19 Mar 2014 06:30:53 +0500<EOL>
+14/03/19 06:30:53 >> To: undefined<EOL>
+14/03/19 06:30:53 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:30:53 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:30:53 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:30:53 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:30:53 >> MIME-Version: 1.0<EOL>
+14/03/19 06:30:53 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:30:53 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:30:53 >> <EOL>
+14/03/19 06:30:53 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:30:53 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:30:53 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:30:53 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:30:53 >> .<EOL>
+14/03/19 06:30:54 << 250 2.0.0 OK 1395192644 y51sm51215060eeu.0 - gsmtp<EOL>
+14/03/19 06:30:54 >> QUIT<EOL>
+14/03/19 06:30:54 << 221 2.0.0 closing connection y51sm51215060eeu.0 - gsmtp<EOL>
+14/03/19 06:30:54 ** Disconnected.
+14/03/19 06:30:54 ** Disconnected.
+14/03/19 06:30:54 ** Disconnected.
+14/03/19 06:34:16 ** --- MESSAGE BEGIN ---
+14/03/19 06:34:16 ** To: undefined
+14/03/19 06:34:16 ** Subject: CCMS Recurring amount
+14/03/19 06:34:16 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:34:16 ** From: junaidabbas2012@gmail.com
+14/03/19 06:34:16 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:34:16 ** MIME-Version: 1.0
+14/03/19 06:34:16 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:34:16 ** X-Mailer: PHP/5.4.16
+14/03/19 06:34:16 ** 
+14/03/19 06:34:16 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:34:16 **  <br />LETTER FORMAT:
+14/03/19 06:34:16 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:34:16 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:34:16 ** --- MESSAGE END ---
+14/03/19 06:34:16 ** Connecting to smtp.gmail.com:465
+14/03/19 06:34:18 ** Connected.
+14/03/19 06:34:18 << 220 mx.google.com ESMTP m1sm51211234een.7 - gsmtp<EOL>
+14/03/19 06:34:18 >> EHLO localhost<EOL>
+14/03/19 06:34:18 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:34:18 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:34:18 >> AUTH LOGIN<EOL>
+14/03/19 06:34:18 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:34:18 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:34:18 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:34:18 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:34:19 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:34:19 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:34:19 << 250 2.1.0 OK m1sm51211234een.7 - gsmtp<EOL>
+14/03/19 06:34:19 >> RCPT TO: <undefined@localhost><EOL>
+14/03/19 06:34:19 << 250 2.1.5 OK m1sm51211234een.7 - gsmtp<EOL>
+14/03/19 06:34:19 >> DATA<EOL>
+14/03/19 06:34:20 << 354  Go ahead m1sm51211234een.7 - gsmtp<EOL>
+14/03/19 06:34:20 >> Date: Wed, 19 Mar 2014 06:34:20 +0500<EOL>
+14/03/19 06:34:20 >> To: undefined<EOL>
+14/03/19 06:34:20 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:34:20 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:34:20 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:34:20 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:34:20 >> MIME-Version: 1.0<EOL>
+14/03/19 06:34:20 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:34:20 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:34:20 >> <EOL>
+14/03/19 06:34:20 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:34:20 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:34:20 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:34:20 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:34:20 >> .<EOL>
+14/03/19 06:34:21 << 250 2.0.0 OK 1395192851 m1sm51211234een.7 - gsmtp<EOL>
+14/03/19 06:34:21 >> QUIT<EOL>
+14/03/19 06:34:21 << 221 2.0.0 closing connection m1sm51211234een.7 - gsmtp<EOL>
+14/03/19 06:34:21 ** Disconnected.
+14/03/19 06:34:21 ** Disconnected.
+14/03/19 06:34:21 ** Disconnected.
+14/03/19 06:36:08 ** --- MESSAGE BEGIN ---
+14/03/19 06:36:08 ** To: undefined
+14/03/19 06:36:08 ** Subject: CCMS Recurring amount
+14/03/19 06:36:08 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:36:08 ** From: junaidabbas2012@gmail.com
+14/03/19 06:36:08 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:36:08 ** MIME-Version: 1.0
+14/03/19 06:36:08 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:36:08 ** X-Mailer: PHP/5.4.16
+14/03/19 06:36:08 ** 
+14/03/19 06:36:08 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:36:08 **  <br />LETTER FORMAT:
+14/03/19 06:36:08 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:36:08 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:36:08 ** --- MESSAGE END ---
+14/03/19 06:36:08 ** Connecting to smtp.gmail.com:465
+14/03/19 06:36:10 ** Connected.
+14/03/19 06:36:10 << 220 mx.google.com ESMTP f45sm51223071eeg.5 - gsmtp<EOL>
+14/03/19 06:36:10 >> EHLO localhost<EOL>
+14/03/19 06:36:10 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:36:10 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:36:10 >> AUTH LOGIN<EOL>
+14/03/19 06:36:10 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:36:10 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:36:11 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:36:11 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:36:11 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:36:11 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:36:11 << 250 2.1.0 OK f45sm51223071eeg.5 - gsmtp<EOL>
+14/03/19 06:36:11 >> RCPT TO: <undefined@localhost><EOL>
+14/03/19 06:36:11 << 250 2.1.5 OK f45sm51223071eeg.5 - gsmtp<EOL>
+14/03/19 06:36:11 >> DATA<EOL>
+14/03/19 06:36:12 << 354  Go ahead f45sm51223071eeg.5 - gsmtp<EOL>
+14/03/19 06:36:12 >> Date: Wed, 19 Mar 2014 06:36:12 +0500<EOL>
+14/03/19 06:36:12 >> To: undefined<EOL>
+14/03/19 06:36:12 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:36:12 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:36:12 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:36:12 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:36:12 >> MIME-Version: 1.0<EOL>
+14/03/19 06:36:12 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:36:12 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:36:12 >> <EOL>
+14/03/19 06:36:12 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:36:12 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:36:12 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:36:12 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:36:12 >> .<EOL>
+14/03/19 06:36:13 << 250 2.0.0 OK 1395192963 f45sm51223071eeg.5 - gsmtp<EOL>
+14/03/19 06:36:13 >> QUIT<EOL>
+14/03/19 06:36:13 << 221 2.0.0 closing connection f45sm51223071eeg.5 - gsmtp<EOL>
+14/03/19 06:36:13 ** Disconnected.
+14/03/19 06:36:13 ** Disconnected.
+14/03/19 06:36:13 ** Disconnected.
+14/03/19 06:40:25 ** --- MESSAGE BEGIN ---
+14/03/19 06:40:25 ** To: undefined
+14/03/19 06:40:25 ** Subject: CCMS Recurring amount
+14/03/19 06:40:25 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:40:25 ** From: junaidabbas2012@gmail.com
+14/03/19 06:40:25 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:40:25 ** MIME-Version: 1.0
+14/03/19 06:40:25 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:40:25 ** X-Mailer: PHP/5.4.16
+14/03/19 06:40:25 ** 
+14/03/19 06:40:25 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:40:25 **  <br />LETTER FORMAT:
+14/03/19 06:40:25 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:40:25 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:40:25 ** --- MESSAGE END ---
+14/03/19 06:40:25 ** Connecting to smtp.gmail.com:465
+14/03/19 06:40:27 ** Connected.
+14/03/19 06:40:27 << 220 mx.google.com ESMTP n5sm681513eex.14 - gsmtp<EOL>
+14/03/19 06:40:27 >> EHLO localhost<EOL>
+14/03/19 06:40:27 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:40:27 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:40:27 >> AUTH LOGIN<EOL>
+14/03/19 06:40:27 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:40:27 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:40:27 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:40:27 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:40:28 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:40:28 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:40:28 << 250 2.1.0 OK n5sm681513eex.14 - gsmtp<EOL>
+14/03/19 06:40:28 >> RCPT TO: <undefined@localhost><EOL>
+14/03/19 06:40:28 << 250 2.1.5 OK n5sm681513eex.14 - gsmtp<EOL>
+14/03/19 06:40:28 >> DATA<EOL>
+14/03/19 06:40:29 << 354  Go ahead n5sm681513eex.14 - gsmtp<EOL>
+14/03/19 06:40:29 >> Date: Wed, 19 Mar 2014 06:40:29 +0500<EOL>
+14/03/19 06:40:29 >> To: undefined<EOL>
+14/03/19 06:40:29 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:40:29 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:40:29 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:40:29 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:40:29 >> MIME-Version: 1.0<EOL>
+14/03/19 06:40:29 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:40:29 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:40:29 >> <EOL>
+14/03/19 06:40:29 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:40:29 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:40:29 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:40:29 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:40:29 >> .<EOL>
+14/03/19 06:40:30 << 250 2.0.0 OK 1395193220 n5sm681513eex.14 - gsmtp<EOL>
+14/03/19 06:40:30 >> QUIT<EOL>
+14/03/19 06:40:30 << 221 2.0.0 closing connection n5sm681513eex.14 - gsmtp<EOL>
+14/03/19 06:40:30 ** Disconnected.
+14/03/19 06:40:30 ** Disconnected.
+14/03/19 06:40:30 ** Disconnected.
+14/03/19 06:45:03 ** --- MESSAGE BEGIN ---
+14/03/19 06:45:03 ** To: undefined
+14/03/19 06:45:03 ** Subject: CCMS Recurring amount
+14/03/19 06:45:03 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:45:03 ** From: junaidabbas2012@gmail.com
+14/03/19 06:45:03 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:45:03 ** MIME-Version: 1.0
+14/03/19 06:45:03 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:45:03 ** X-Mailer: PHP/5.4.16
+14/03/19 06:45:03 ** 
+14/03/19 06:45:03 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:45:03 **  <br />LETTER FORMAT:
+14/03/19 06:45:03 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:45:03 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:45:03 ** --- MESSAGE END ---
+14/03/19 06:45:04 ** Connecting to smtp.gmail.com:465
+14/03/19 06:45:05 ** Connected.
+14/03/19 06:45:05 << 220 mx.google.com ESMTP u46sm10468130eel.1 - gsmtp<EOL>
+14/03/19 06:45:05 >> EHLO localhost<EOL>
+14/03/19 06:45:06 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:45:06 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:45:06 >> AUTH LOGIN<EOL>
+14/03/19 06:45:06 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:45:06 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:45:06 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:45:06 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:45:06 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:45:06 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:45:07 << 250 2.1.0 OK u46sm10468130eel.1 - gsmtp<EOL>
+14/03/19 06:45:07 >> RCPT TO: <undefined@localhost><EOL>
+14/03/19 06:45:07 << 250 2.1.5 OK u46sm10468130eel.1 - gsmtp<EOL>
+14/03/19 06:45:07 >> DATA<EOL>
+14/03/19 06:45:07 << 354  Go ahead u46sm10468130eel.1 - gsmtp<EOL>
+14/03/19 06:45:07 >> Date: Wed, 19 Mar 2014 06:45:07 +0500<EOL>
+14/03/19 06:45:07 >> To: undefined<EOL>
+14/03/19 06:45:07 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:45:07 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:45:07 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:45:07 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:45:07 >> MIME-Version: 1.0<EOL>
+14/03/19 06:45:07 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:45:07 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:45:07 >> <EOL>
+14/03/19 06:45:07 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:45:07 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:45:07 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:45:07 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:45:07 >> .<EOL>
+14/03/19 06:45:09 << 250 2.0.0 OK 1395193499 u46sm10468130eel.1 - gsmtp<EOL>
+14/03/19 06:45:09 >> QUIT<EOL>
+14/03/19 06:45:09 << 221 2.0.0 closing connection u46sm10468130eel.1 - gsmtp<EOL>
+14/03/19 06:45:09 ** Disconnected.
+14/03/19 06:45:09 ** Disconnected.
+14/03/19 06:45:09 ** Disconnected.
+14/03/19 06:45:11 ** --- MESSAGE BEGIN ---
+14/03/19 06:45:11 ** To: undefined
+14/03/19 06:45:11 ** Subject: CCMS Recurring amount
+14/03/19 06:45:11 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:45:11 ** From: junaidabbas2012@gmail.com
+14/03/19 06:45:11 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:45:11 ** MIME-Version: 1.0
+14/03/19 06:45:11 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:45:11 ** X-Mailer: PHP/5.4.16
+14/03/19 06:45:11 ** 
+14/03/19 06:45:11 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:45:11 **  <br />LETTER FORMAT:
+14/03/19 06:45:11 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:45:11 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:45:11 ** --- MESSAGE END ---
+14/03/19 06:45:12 ** Connecting to smtp.gmail.com:465
+14/03/19 06:45:14 ** Connected.
+14/03/19 06:45:14 << 220 mx.google.com ESMTP o5sm51253662eeg.8 - gsmtp<EOL>
+14/03/19 06:45:14 >> EHLO localhost<EOL>
+14/03/19 06:45:14 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:45:14 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:45:14 >> AUTH LOGIN<EOL>
+14/03/19 06:45:14 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:45:14 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:45:14 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:45:14 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:45:15 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:45:15 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:45:15 << 250 2.1.0 OK o5sm51253662eeg.8 - gsmtp<EOL>
+14/03/19 06:45:15 >> RCPT TO: <undefined@localhost><EOL>
+14/03/19 06:45:15 << 250 2.1.5 OK o5sm51253662eeg.8 - gsmtp<EOL>
+14/03/19 06:45:15 >> DATA<EOL>
+14/03/19 06:45:15 << 354  Go ahead o5sm51253662eeg.8 - gsmtp<EOL>
+14/03/19 06:45:15 >> Date: Wed, 19 Mar 2014 06:45:15 +0500<EOL>
+14/03/19 06:45:15 >> To: undefined<EOL>
+14/03/19 06:45:15 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:45:15 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:45:15 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:45:15 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:45:15 >> MIME-Version: 1.0<EOL>
+14/03/19 06:45:15 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:45:15 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:45:15 >> <EOL>
+14/03/19 06:45:15 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:45:15 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:45:15 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:45:15 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:45:15 >> .<EOL>
+14/03/19 06:45:17 << 250 2.0.0 OK 1395193507 o5sm51253662eeg.8 - gsmtp<EOL>
+14/03/19 06:45:17 >> QUIT<EOL>
+14/03/19 06:45:17 << 221 2.0.0 closing connection o5sm51253662eeg.8 - gsmtp<EOL>
+14/03/19 06:45:17 ** Disconnected.
+14/03/19 06:45:17 ** Disconnected.
+14/03/19 06:45:17 ** Disconnected.
+14/03/19 06:47:17 ** --- MESSAGE BEGIN ---
+14/03/19 06:47:17 ** To: junaid9898@yahoo.com
+14/03/19 06:47:17 ** Subject: CCMS Recurring amount
+14/03/19 06:47:17 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:47:17 ** From: junaidabbas2012@gmail.com
+14/03/19 06:47:17 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:47:17 ** MIME-Version: 1.0
+14/03/19 06:47:17 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:47:17 ** X-Mailer: PHP/5.4.16
+14/03/19 06:47:17 ** 
+14/03/19 06:47:17 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:47:17 **  <br />LETTER FORMAT:
+14/03/19 06:47:17 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:47:17 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:47:17 ** --- MESSAGE END ---
+14/03/19 06:47:18 ** Connecting to smtp.gmail.com:465
+14/03/19 06:47:19 ** Connected.
+14/03/19 06:47:19 << 220 mx.google.com ESMTP 46sm51272096ees.4 - gsmtp<EOL>
+14/03/19 06:47:19 >> EHLO localhost<EOL>
+14/03/19 06:47:19 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:47:19 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:47:19 >> AUTH LOGIN<EOL>
+14/03/19 06:47:20 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:47:20 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:47:20 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:47:20 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:47:20 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:47:20 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:47:20 << 250 2.1.0 OK 46sm51272096ees.4 - gsmtp<EOL>
+14/03/19 06:47:20 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/03/19 06:47:21 << 250 2.1.5 OK 46sm51272096ees.4 - gsmtp<EOL>
+14/03/19 06:47:21 >> DATA<EOL>
+14/03/19 06:47:21 << 354  Go ahead 46sm51272096ees.4 - gsmtp<EOL>
+14/03/19 06:47:21 >> Date: Wed, 19 Mar 2014 06:47:21 +0500<EOL>
+14/03/19 06:47:21 >> To: junaid9898@yahoo.com<EOL>
+14/03/19 06:47:21 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:47:21 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:47:21 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:47:21 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:47:21 >> MIME-Version: 1.0<EOL>
+14/03/19 06:47:21 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:47:21 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:47:21 >> <EOL>
+14/03/19 06:47:21 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:47:21 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:47:21 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:47:21 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:47:21 >> .<EOL>
+14/03/19 06:47:22 << 250 2.0.0 OK 1395193632 46sm51272096ees.4 - gsmtp<EOL>
+14/03/19 06:47:22 >> QUIT<EOL>
+14/03/19 06:47:22 << 221 2.0.0 closing connection 46sm51272096ees.4 - gsmtp<EOL>
+14/03/19 06:47:22 ** Disconnected.
+14/03/19 06:47:22 ** Disconnected.
+14/03/19 06:47:22 ** Disconnected.
+14/03/19 06:47:47 ** --- MESSAGE BEGIN ---
+14/03/19 06:47:47 ** To: junaid9898@yahoo.com
+14/03/19 06:47:47 ** Subject: CCMS Recurring amount
+14/03/19 06:47:47 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:47:47 ** From: junaidabbas2012@gmail.com
+14/03/19 06:47:47 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:47:47 ** MIME-Version: 1.0
+14/03/19 06:47:47 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:47:47 ** X-Mailer: PHP/5.4.16
+14/03/19 06:47:47 ** 
+14/03/19 06:47:47 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:47:47 **  <br />LETTER FORMAT:
+14/03/19 06:47:47 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:47:47 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:47:47 ** --- MESSAGE END ---
+14/03/19 06:47:47 ** Connecting to smtp.gmail.com:465
+14/03/19 06:47:49 ** Connected.
+14/03/19 06:47:49 << 220 mx.google.com ESMTP m1sm51268803een.7 - gsmtp<EOL>
+14/03/19 06:47:49 >> EHLO localhost<EOL>
+14/03/19 06:47:49 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:47:49 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:47:49 >> AUTH LOGIN<EOL>
+14/03/19 06:47:49 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:47:49 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:47:49 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:47:49 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:47:50 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:47:50 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:47:50 << 250 2.1.0 OK m1sm51268803een.7 - gsmtp<EOL>
+14/03/19 06:47:50 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/03/19 06:47:50 << 250 2.1.5 OK m1sm51268803een.7 - gsmtp<EOL>
+14/03/19 06:47:50 >> DATA<EOL>
+14/03/19 06:47:51 << 354  Go ahead m1sm51268803een.7 - gsmtp<EOL>
+14/03/19 06:47:51 >> Date: Wed, 19 Mar 2014 06:47:51 +0500<EOL>
+14/03/19 06:47:51 >> To: junaid9898@yahoo.com<EOL>
+14/03/19 06:47:51 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:47:51 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:47:51 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:47:51 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:47:51 >> MIME-Version: 1.0<EOL>
+14/03/19 06:47:51 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:47:51 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:47:51 >> <EOL>
+14/03/19 06:47:51 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:47:51 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:47:51 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:47:51 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:47:51 >> .<EOL>
+14/03/19 06:47:52 << 250 2.0.0 OK 1395193662 m1sm51268803een.7 - gsmtp<EOL>
+14/03/19 06:47:52 >> QUIT<EOL>
+14/03/19 06:47:52 << 221 2.0.0 closing connection m1sm51268803een.7 - gsmtp<EOL>
+14/03/19 06:47:52 ** Disconnected.
+14/03/19 06:47:52 ** Disconnected.
+14/03/19 06:47:52 ** Disconnected.
+14/03/19 06:48:15 ** --- MESSAGE BEGIN ---
+14/03/19 06:48:15 ** To: junaid@yourcloudcampus.com
+14/03/19 06:48:15 ** Subject: CCMS Recurring amount
+14/03/19 06:48:15 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:48:15 ** From: junaidabbas2012@gmail.com
+14/03/19 06:48:15 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:48:15 ** MIME-Version: 1.0
+14/03/19 06:48:15 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:48:15 ** X-Mailer: PHP/5.4.16
+14/03/19 06:48:15 ** 
+14/03/19 06:48:15 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:48:15 **  <br />LETTER FORMAT:
+14/03/19 06:48:15 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:48:15 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:48:15 ** --- MESSAGE END ---
+14/03/19 06:48:16 ** Connecting to smtp.gmail.com:465
+14/03/19 06:48:17 ** Connected.
+14/03/19 06:48:17 << 220 mx.google.com ESMTP 44sm38963776eek.30 - gsmtp<EOL>
+14/03/19 06:48:17 >> EHLO localhost<EOL>
+14/03/19 06:48:17 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:48:17 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:48:17 >> AUTH LOGIN<EOL>
+14/03/19 06:48:18 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:48:18 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:48:18 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:48:18 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:48:18 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:48:18 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:48:18 << 250 2.1.0 OK 44sm38963776eek.30 - gsmtp<EOL>
+14/03/19 06:48:18 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/03/19 06:48:19 << 250 2.1.5 OK 44sm38963776eek.30 - gsmtp<EOL>
+14/03/19 06:48:19 >> DATA<EOL>
+14/03/19 06:48:19 << 354  Go ahead 44sm38963776eek.30 - gsmtp<EOL>
+14/03/19 06:48:19 >> Date: Wed, 19 Mar 2014 06:48:19 +0500<EOL>
+14/03/19 06:48:19 >> To: junaid@yourcloudcampus.com<EOL>
+14/03/19 06:48:19 >> Subject: CCMS Recurring amount<EOL>
+14/03/19 06:48:19 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:48:19 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:48:19 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:48:19 >> MIME-Version: 1.0<EOL>
+14/03/19 06:48:19 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:48:19 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:48:19 >> <EOL>
+14/03/19 06:48:19 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:48:19 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:48:19 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:48:19 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:48:19 >> .<EOL>
+14/03/19 06:48:20 << 250 2.0.0 OK 1395193690 44sm38963776eek.30 - gsmtp<EOL>
+14/03/19 06:48:20 >> QUIT<EOL>
+14/03/19 06:48:20 << 221 2.0.0 closing connection 44sm38963776eek.30 - gsmtp<EOL>
+14/03/19 06:48:20 ** Disconnected.
+14/03/19 06:48:20 ** Disconnected.
+14/03/19 06:48:20 ** Disconnected.
+14/03/19 06:52:00 ** --- MESSAGE BEGIN ---
+14/03/19 06:52:00 ** To: faheem@yourcloudcampus.com
+14/03/19 06:52:00 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/03/19 06:52:00 ** X-PHP-Originating-Script: 0:tosend.php
+14/03/19 06:52:00 ** From: junaidabbas2012@gmail.com
+14/03/19 06:52:00 ** Reply-To: junaidabbas2012@gmail.com
+14/03/19 06:52:00 ** MIME-Version: 1.0
+14/03/19 06:52:00 ** Content-type: text/html; charset=iso-8859-1
+14/03/19 06:52:00 ** X-Mailer: PHP/5.4.16
+14/03/19 06:52:00 ** 
+14/03/19 06:52:00 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:52:00 **  <br />LETTER FORMAT:
+14/03/19 06:52:00 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/03/19 06:52:00 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/03/19 06:52:00 ** --- MESSAGE END ---
+14/03/19 06:52:00 ** Connecting to smtp.gmail.com:465
+14/03/19 06:52:02 ** Connected.
+14/03/19 06:52:02 << 220 mx.google.com ESMTP 4sm38981779eeq.33 - gsmtp<EOL>
+14/03/19 06:52:02 >> EHLO localhost<EOL>
+14/03/19 06:52:02 << 250-mx.google.com at your service, [101.50.116.176]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/19 06:52:02 ** Authenticating as junaidabbas2012@gmail.com
+14/03/19 06:52:02 >> AUTH LOGIN<EOL>
+14/03/19 06:52:02 << 334 VXNlcm5hbWU6<EOL>
+14/03/19 06:52:02 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/19 06:52:02 << 334 UGFzc3dvcmQ6<EOL>
+14/03/19 06:52:02 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/19 06:52:03 << 235 2.7.0 Accepted<EOL>
+14/03/19 06:52:03 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/03/19 06:52:03 << 250 2.1.0 OK 4sm38981779eeq.33 - gsmtp<EOL>
+14/03/19 06:52:03 >> RCPT TO: <faheem@yourcloudcampus.com><EOL>
+14/03/19 06:52:03 << 250 2.1.5 OK 4sm38981779eeq.33 - gsmtp<EOL>
+14/03/19 06:52:03 >> DATA<EOL>
+14/03/19 06:52:03 << 354  Go ahead 4sm38981779eeq.33 - gsmtp<EOL>
+14/03/19 06:52:03 >> Date: Wed, 19 Mar 2014 06:52:03 +0500<EOL>
+14/03/19 06:52:03 >> To: faheem@yourcloudcampus.com<EOL>
+14/03/19 06:52:03 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/03/19 06:52:03 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/03/19 06:52:03 >> From: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:52:03 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/03/19 06:52:03 >> MIME-Version: 1.0<EOL>
+14/03/19 06:52:03 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/03/19 06:52:03 >> X-Mailer: PHP/5.4.16<EOL>
+14/03/19 06:52:03 >> <EOL>
+14/03/19 06:52:03 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:52:03 >>  <br />LETTER FORMAT:<EOL>
+14/03/19 06:52:03 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/03/19 06:52:03 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/03/19 06:52:03 >> .<EOL>
+14/03/19 06:52:04 << 250 2.0.0 OK 1395193915 4sm38981779eeq.33 - gsmtp<EOL>
+14/03/19 06:52:04 >> QUIT<EOL>
+14/03/19 06:52:05 << 221 2.0.0 closing connection 4sm38981779eeq.33 - gsmtp<EOL>
+14/03/19 06:52:05 ** Disconnected.
+14/03/19 06:52:05 ** Disconnected.
+14/03/19 06:52:05 ** Disconnected.
+14/03/22 03:21:43 ** --- MESSAGE BEGIN ---
+14/03/22 03:21:43 ** To: 
+14/03/22 03:21:43 ** Subject: test wamp
+14/03/22 03:21:43 ** X-PHP-Originating-Script: 0:mail_file.php
+14/03/22 03:21:43 ** 
+14/03/22 03:21:43 ** 
+14/03/22 03:21:43 ** test wamp
+14/03/22 03:21:43 ** --- MESSAGE END ---
+14/03/22 03:21:43 ** Message is missing sender's address
+14/03/27 05:57:58 ** --- MESSAGE BEGIN ---
+14/03/27 05:57:58 ** To: faheem@yourcloudcampus.com
+14/03/27 05:57:58 ** Subject: Call back form-assignment4you.com
+14/03/27 05:57:58 ** X-PHP-Originating-Script: 0:callback_form.php
+14/03/27 05:57:58 ** From: ASSIGNMENT4YOU
+14/03/27 05:57:58 ** 
+14/03/27 05:57:58 ** You have received a Call Back form. Name:  
+14/03/27 05:57:58 **  Email: 7897898789 
+14/03/27 05:57:58 ** --- MESSAGE END ---
+14/03/27 05:57:59 ** Connecting to smtp.gmail.com:465
+14/03/27 05:58:01 ** Connected.
+14/03/27 05:58:01 << 220 mx.google.com ESMTP g3sm706732eet.35 - gsmtp<EOL>
+14/03/27 05:58:01 >> EHLO localhost<EOL>
+14/03/27 05:58:01 << 250-mx.google.com at your service, [101.50.115.149]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/03/27 05:58:01 ** Authenticating as junaidabbas2012@gmail.com
+14/03/27 05:58:01 >> AUTH LOGIN<EOL>
+14/03/27 05:58:01 << 334 VXNlcm5hbWU6<EOL>
+14/03/27 05:58:01 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/03/27 05:58:01 << 334 UGFzc3dvcmQ6<EOL>
+14/03/27 05:58:01 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/03/27 05:58:02 << 235 2.7.0 Accepted<EOL>
+14/03/27 05:58:02 >> MAIL FROM: <ASSIGNMENT4YOU@localhost><EOL>
+14/03/27 05:58:02 << 250 2.1.0 OK g3sm706732eet.35 - gsmtp<EOL>
+14/03/27 05:58:02 >> RCPT TO: <faheem@yourcloudcampus.com><EOL>
+14/03/27 05:58:02 << 250 2.1.5 OK g3sm706732eet.35 - gsmtp<EOL>
+14/03/27 05:58:02 >> DATA<EOL>
+14/03/27 05:58:03 << 354  Go ahead g3sm706732eet.35 - gsmtp<EOL>
+14/03/27 05:58:03 >> Date: Thu, 27 Mar 2014 05:58:03 +0500<EOL>
+14/03/27 05:58:03 >> To: faheem@yourcloudcampus.com<EOL>
+14/03/27 05:58:03 >> Subject: Call back form-assignment4you.com<EOL>
+14/03/27 05:58:03 >> X-PHP-Originating-Script: 0:callback_form.php<EOL>
+14/03/27 05:58:03 >> From: ASSIGNMENT4YOU<EOL>
+14/03/27 05:58:03 >> <EOL>
+14/03/27 05:58:03 >> You have received a Call Back form. Name:  <EOL>
+14/03/27 05:58:03 >>  Email: 7897898789 <EOL>
+14/03/27 05:58:03 >> .<EOL>
+14/03/27 05:58:04 << 250 2.0.0 OK 1395881882 g3sm706732eet.35 - gsmtp<EOL>
+14/03/27 05:58:04 >> QUIT<EOL>
+14/03/27 05:58:04 << 221 2.0.0 closing connection g3sm706732eet.35 - gsmtp<EOL>
+14/03/27 05:58:04 ** Disconnecting from smtp.gmail.com:465
+14/03/27 05:58:04 ** Disconnected.
+14/03/27 05:58:04 ** Disconnected.
+14/04/11 08:48:48 ** --- MESSAGE BEGIN ---
+14/04/11 08:48:48 ** To: junaid9898@yahoo.com
+14/04/11 08:48:48 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/11 08:48:48 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/11 08:48:48 ** From: junaidabbas2012@gmail.com
+14/04/11 08:48:48 ** Reply-To: junaidabbas2012@gmail.com
+14/04/11 08:48:48 ** MIME-Version: 1.0
+14/04/11 08:48:48 ** Content-type: text/html; charset=iso-8859-1
+14/04/11 08:48:48 ** X-Mailer: PHP/5.4.16
+14/04/11 08:48:48 ** 
+14/04/11 08:48:48 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/11 08:48:48 **  <br />LETTER FORMAT:
+14/04/11 08:48:48 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/11 08:48:48 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/11 08:48:48 ** --- MESSAGE END ---
+14/04/11 08:48:49 ** Connecting to smtp.gmail.com:465
+14/04/11 08:48:51 ** Connected.
+14/04/11 08:48:51 << 220 mx.google.com ESMTP y51sm14478825eeu.0 - gsmtp<EOL>
+14/04/11 08:48:51 >> EHLO localhost<EOL>
+14/04/11 08:48:51 << 250-mx.google.com at your service, [124.109.48.193]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/11 08:48:51 ** Authenticating as junaidabbas2012@gmail.com
+14/04/11 08:48:51 >> AUTH LOGIN<EOL>
+14/04/11 08:48:51 << 334 VXNlcm5hbWU6<EOL>
+14/04/11 08:48:51 >> anVuYWlkYWJiYXMyMDEyQGdtYWlsLmNvbQ==<EOL>
+14/04/11 08:48:51 << 334 UGFzc3dvcmQ6<EOL>
+14/04/11 08:48:51 >> aGVhdnltZXRhbDEyM2FiYw==<EOL>
+14/04/11 08:48:52 << 235 2.7.0 Accepted<EOL>
+14/04/11 08:48:52 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/04/11 08:48:52 << 250 2.1.0 OK y51sm14478825eeu.0 - gsmtp<EOL>
+14/04/11 08:48:52 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/11 08:48:52 << 250 2.1.5 OK y51sm14478825eeu.0 - gsmtp<EOL>
+14/04/11 08:48:52 >> DATA<EOL>
+14/04/11 08:48:53 << 354  Go ahead y51sm14478825eeu.0 - gsmtp<EOL>
+14/04/11 08:48:53 >> Date: Fri, 11 Apr 2014 08:48:53 +0500<EOL>
+14/04/11 08:48:53 >> To: junaid9898@yahoo.com<EOL>
+14/04/11 08:48:53 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/11 08:48:53 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/11 08:48:53 >> From: junaidabbas2012@gmail.com<EOL>
+14/04/11 08:48:53 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/04/11 08:48:53 >> MIME-Version: 1.0<EOL>
+14/04/11 08:48:53 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/11 08:48:53 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/11 08:48:53 >> <EOL>
+14/04/11 08:48:53 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/11 08:48:53 >>  <br />LETTER FORMAT:<EOL>
+14/04/11 08:48:53 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/11 08:48:53 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/04/11 08:48:53 >> .<EOL>
+14/04/11 08:48:54 << 250 2.0.0 OK 1397188130 y51sm14478825eeu.0 - gsmtp<EOL>
+14/04/11 08:48:54 >> QUIT<EOL>
+14/04/11 08:48:54 << 221 2.0.0 closing connection y51sm14478825eeu.0 - gsmtp<EOL>
+14/04/11 08:48:54 ** Disconnected.
+14/04/11 08:48:54 ** Disconnected.
+14/04/11 08:48:54 ** Disconnected.
+14/04/13 01:06:10 ** --- MESSAGE BEGIN ---
+14/04/13 01:06:10 ** To: junaid9898@yahoo.com
+14/04/13 01:06:10 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/13 01:06:10 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/13 01:06:10 ** From: junaidabbas2012@gmail.com
+14/04/13 01:06:10 ** Reply-To: junaidabbas2012@gmail.com
+14/04/13 01:06:10 ** MIME-Version: 1.0
+14/04/13 01:06:10 ** Content-type: text/html; charset=iso-8859-1
+14/04/13 01:06:10 ** X-Mailer: PHP/5.4.16
+14/04/13 01:06:10 ** 
+14/04/13 01:06:10 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/13 01:06:10 **  <br />LETTER FORMAT:
+14/04/13 01:06:10 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/13 01:06:10 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/13 01:06:10 ** --- MESSAGE END ---
+14/04/13 01:06:10 ** Connecting to smtp.gmail.com:465
+14/04/13 01:06:12 ** Connected.
+14/04/13 01:06:12 << 220 mx.google.com ESMTP o5sm27718648eeg.8 - gsmtp<EOL>
+14/04/13 01:06:12 >> EHLO localhost<EOL>
+14/04/13 01:06:12 << 250-mx.google.com at your service, [101.50.113.91]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/13 01:06:12 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/13 01:06:12 >> AUTH LOGIN<EOL>
+14/04/13 01:06:12 << 334 VXNlcm5hbWU6<EOL>
+14/04/13 01:06:12 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/13 01:06:12 << 334 UGFzc3dvcmQ6<EOL>
+14/04/13 01:06:12 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/13 01:06:13 << 235 2.7.0 Accepted<EOL>
+14/04/13 01:06:13 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/04/13 01:06:13 << 250 2.1.0 OK o5sm27718648eeg.8 - gsmtp<EOL>
+14/04/13 01:06:13 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/13 01:06:13 << 250 2.1.5 OK o5sm27718648eeg.8 - gsmtp<EOL>
+14/04/13 01:06:13 >> DATA<EOL>
+14/04/13 01:06:14 << 354  Go ahead o5sm27718648eeg.8 - gsmtp<EOL>
+14/04/13 01:06:14 >> Date: Sun, 13 Apr 2014 01:06:14 +0500<EOL>
+14/04/13 01:06:14 >> To: junaid9898@yahoo.com<EOL>
+14/04/13 01:06:14 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/13 01:06:14 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/13 01:06:14 >> From: junaidabbas2012@gmail.com<EOL>
+14/04/13 01:06:14 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/04/13 01:06:14 >> MIME-Version: 1.0<EOL>
+14/04/13 01:06:14 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/13 01:06:14 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/13 01:06:14 >> <EOL>
+14/04/13 01:06:14 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/13 01:06:14 >>  <br />LETTER FORMAT:<EOL>
+14/04/13 01:06:14 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/13 01:06:14 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/04/13 01:06:14 >> .<EOL>
+14/04/13 01:06:15 << 250 2.0.0 OK 1397333175 o5sm27718648eeg.8 - gsmtp<EOL>
+14/04/13 01:06:15 >> QUIT<EOL>
+14/04/13 01:06:15 << 221 2.0.0 closing connection o5sm27718648eeg.8 - gsmtp<EOL>
+14/04/13 01:06:15 ** Disconnected.
+14/04/13 01:06:15 ** Disconnected.
+14/04/13 01:06:15 ** Disconnected.
+14/04/13 01:44:01 ** --- MESSAGE BEGIN ---
+14/04/13 01:44:01 ** To: junaid9898@yahoo.com
+14/04/13 01:44:01 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/13 01:44:01 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/13 01:44:01 ** From: junaidabbas2012@gmail.com
+14/04/13 01:44:01 ** Reply-To: junaidabbas2012@gmail.com
+14/04/13 01:44:01 ** MIME-Version: 1.0
+14/04/13 01:44:01 ** Content-type: text/html; charset=iso-8859-1
+14/04/13 01:44:01 ** X-Mailer: PHP/5.4.16
+14/04/13 01:44:01 ** 
+14/04/13 01:44:01 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/13 01:44:01 **  <br />LETTER FORMAT:
+14/04/13 01:44:01 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/13 01:44:01 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/13 01:44:01 ** --- MESSAGE END ---
+14/04/13 01:44:01 ** Connecting to smtp.gmail.com:465
+14/04/13 01:44:03 ** Connected.
+14/04/13 01:44:03 << 220 mx.google.com ESMTP 45sm27923345eeh.9 - gsmtp<EOL>
+14/04/13 01:44:03 >> EHLO localhost<EOL>
+14/04/13 01:44:03 << 250-mx.google.com at your service, [101.50.113.91]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/13 01:44:03 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/13 01:44:03 >> AUTH LOGIN<EOL>
+14/04/13 01:44:03 << 334 VXNlcm5hbWU6<EOL>
+14/04/13 01:44:03 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/13 01:44:03 << 334 UGFzc3dvcmQ6<EOL>
+14/04/13 01:44:03 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/13 01:44:04 << 235 2.7.0 Accepted<EOL>
+14/04/13 01:44:04 >> MAIL FROM: <junaidabbas2012@gmail.com><EOL>
+14/04/13 01:44:04 << 250 2.1.0 OK 45sm27923345eeh.9 - gsmtp<EOL>
+14/04/13 01:44:04 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/13 01:44:04 << 250 2.1.5 OK 45sm27923345eeh.9 - gsmtp<EOL>
+14/04/13 01:44:04 >> DATA<EOL>
+14/04/13 01:44:04 << 354  Go ahead 45sm27923345eeh.9 - gsmtp<EOL>
+14/04/13 01:44:04 >> Date: Sun, 13 Apr 2014 01:44:04 +0500<EOL>
+14/04/13 01:44:04 >> To: junaid9898@yahoo.com<EOL>
+14/04/13 01:44:04 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/13 01:44:04 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/13 01:44:04 >> From: junaidabbas2012@gmail.com<EOL>
+14/04/13 01:44:04 >> Reply-To: junaidabbas2012@gmail.com<EOL>
+14/04/13 01:44:04 >> MIME-Version: 1.0<EOL>
+14/04/13 01:44:04 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/13 01:44:04 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/13 01:44:04 >> <EOL>
+14/04/13 01:44:04 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/13 01:44:04 >>  <br />LETTER FORMAT:<EOL>
+14/04/13 01:44:04 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/13 01:44:04 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/04/13 01:44:04 >> .<EOL>
+14/04/13 01:44:06 << 250 2.0.0 OK 1397335446 45sm27923345eeh.9 - gsmtp<EOL>
+14/04/13 01:44:06 >> QUIT<EOL>
+14/04/13 01:44:06 << 221 2.0.0 closing connection 45sm27923345eeh.9 - gsmtp<EOL>
+14/04/13 01:44:06 ** Disconnected.
+14/04/13 01:44:06 ** Disconnected.
+14/04/13 01:44:06 ** Disconnected.
+14/04/15 00:56:42 ** --- MESSAGE BEGIN ---
+14/04/15 00:56:42 ** To: 
+14/04/15 00:56:42 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 00:56:42 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 00:56:42 ** From: junaidabbas2012@gmail.com
+14/04/15 00:56:42 ** Reply-To: junaidabbas2012@gmail.com
+14/04/15 00:56:42 ** MIME-Version: 1.0
+14/04/15 00:56:42 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 00:56:42 ** X-Mailer: PHP/5.4.16
+14/04/15 00:56:42 ** 
+14/04/15 00:56:42 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 00:56:42 **  <br />LETTER FORMAT:
+14/04/15 00:56:42 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 00:56:42 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 00:56:42 ** --- MESSAGE END ---
+14/04/15 00:56:42 ** Message is missing recipient's address
+14/04/15 01:57:13 ** --- MESSAGE BEGIN ---
+14/04/15 01:57:13 ** To: junaid9898@yahoo.com,faheem@yourcloudcampus.com,junaidabbas2012@gmail.com,
+14/04/15 01:57:13 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 01:57:13 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 01:57:13 ** From: yourcloudcampus.management
+14/04/15 01:57:13 ** Reply-To: reply@yourcloudcampus123.com
+14/04/15 01:57:13 ** MIME-Version: 1.0
+14/04/15 01:57:13 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 01:57:13 ** X-Mailer: PHP/5.4.16
+14/04/15 01:57:13 ** 
+14/04/15 01:57:13 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 01:57:13 **  <br />LETTER FORMAT:
+14/04/15 01:57:13 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 01:57:13 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 01:57:13 ** --- MESSAGE END ---
+14/04/15 01:57:14 ** Connecting to smtp.gmail.com:465
+14/04/15 01:57:15 ** Disconnected.
+14/04/15 01:57:15 ** Disconnected.
+14/04/15 01:57:15 ** Disconnected.
+14/04/15 01:57:15 ** Socket Error # 10060<EOL>Connection timed out.
+14/04/15 02:14:24 ** --- MESSAGE BEGIN ---
+14/04/15 02:14:24 ** To: junaid9898@yahoo.com
+14/04/15 02:14:24 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 02:14:24 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 02:14:24 ** From: yourcloudcampus.management
+14/04/15 02:14:24 ** Reply-To: reply@yourcloudcampus123.com
+14/04/15 02:14:24 ** MIME-Version: 1.0
+14/04/15 02:14:24 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 02:14:24 ** X-Mailer: PHP/5.4.16
+14/04/15 02:14:24 ** 
+14/04/15 02:14:24 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:14:24 **  <br />LETTER FORMAT:
+14/04/15 02:14:24 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:14:24 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 02:14:24 ** --- MESSAGE END ---
+14/04/15 02:14:25 ** Connecting to smtp.gmail.com:465
+14/04/15 02:14:25 ** Disconnected.
+14/04/15 02:14:25 ** Disconnected.
+14/04/15 02:14:25 ** Disconnected.
+14/04/15 02:14:25 ** Socket Error # 11001<EOL>Host not found.
+14/04/15 02:17:34 ** --- MESSAGE BEGIN ---
+14/04/15 02:17:34 ** To: junaid9898@yahoo.com,
+14/04/15 02:17:34 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 02:17:34 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 02:17:34 ** From: yourcloudcampus.management
+14/04/15 02:17:34 ** Reply-To: reply@yourcloudcampus123.com
+14/04/15 02:17:34 ** MIME-Version: 1.0
+14/04/15 02:17:34 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 02:17:34 ** X-Mailer: PHP/5.4.16
+14/04/15 02:17:34 ** 
+14/04/15 02:17:34 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:17:34 **  <br />LETTER FORMAT:
+14/04/15 02:17:34 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:17:34 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 02:17:34 ** --- MESSAGE END ---
+14/04/15 02:17:34 ** Connecting to smtp.gmail.com:465
+14/04/15 02:17:37 ** Connected.
+14/04/15 02:17:37 << 220 mx.google.com ESMTP l42sm43968162eew.19 - gsmtp<EOL>
+14/04/15 02:17:37 >> EHLO localhost<EOL>
+14/04/15 02:17:39 << 250-mx.google.com at your service, [101.50.116.232]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/15 02:17:39 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/15 02:17:39 >> AUTH LOGIN<EOL>
+14/04/15 02:17:40 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 02:17:40 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/15 02:17:40 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 02:17:40 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/15 02:17:41 << 235 2.7.0 Accepted<EOL>
+14/04/15 02:17:41 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/15 02:17:41 << 250 2.1.0 OK l42sm43968162eew.19 - gsmtp<EOL>
+14/04/15 02:17:41 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/15 02:17:41 << 250 2.1.5 OK l42sm43968162eew.19 - gsmtp<EOL>
+14/04/15 02:17:41 >> DATA<EOL>
+14/04/15 02:17:42 << 354  Go ahead l42sm43968162eew.19 - gsmtp<EOL>
+14/04/15 02:17:42 >> Date: Tue, 15 Apr 2014 02:17:42 +0500<EOL>
+14/04/15 02:17:42 >> To: junaid9898@yahoo.com,<EOL>
+14/04/15 02:17:42 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/15 02:17:42 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/15 02:17:42 >> From: yourcloudcampus.management<EOL>
+14/04/15 02:17:42 >> Reply-To: reply@yourcloudcampus123.com<EOL>
+14/04/15 02:17:42 >> MIME-Version: 1.0<EOL>
+14/04/15 02:17:42 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/15 02:17:42 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/15 02:17:42 >> <EOL>
+14/04/15 02:17:42 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 02:17:42 >>  <br />LETTER FORMAT:<EOL>
+14/04/15 02:17:42 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 02:17:42 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/04/15 02:17:42 >> .<EOL>
+14/04/15 02:17:43 << 250 2.0.0 OK 1397510261 l42sm43968162eew.19 - gsmtp<EOL>
+14/04/15 02:17:43 >> QUIT<EOL>
+14/04/15 02:17:44 << 221 2.0.0 closing connection l42sm43968162eew.19 - gsmtp<EOL>
+14/04/15 02:17:44 ** Disconnected.
+14/04/15 02:17:44 ** Disconnected.
+14/04/15 02:17:44 ** Disconnected.
+14/04/15 02:27:03 ** --- MESSAGE BEGIN ---
+14/04/15 02:27:03 ** To: junaid9898@yahoo.com,junaidabbas2012@gmail.com
+14/04/15 02:27:03 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 02:27:03 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 02:27:03 ** From: yourcloudcampus.management
+14/04/15 02:27:03 ** Reply-To: reply@yourcloudcampus123.com
+14/04/15 02:27:03 ** MIME-Version: 1.0
+14/04/15 02:27:03 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 02:27:03 ** X-Mailer: PHP/5.4.16
+14/04/15 02:27:03 ** 
+14/04/15 02:27:03 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:27:03 **  <br />LETTER FORMAT:
+14/04/15 02:27:03 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:27:03 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 02:27:03 ** --- MESSAGE END ---
+14/04/15 02:27:03 ** Connecting to smtp.gmail.com:465
+14/04/15 02:27:05 ** Connected.
+14/04/15 02:27:05 << 220 mx.google.com ESMTP x45sm44012411eeu.23 - gsmtp<EOL>
+14/04/15 02:27:05 >> EHLO localhost<EOL>
+14/04/15 02:27:05 << 250-mx.google.com at your service, [101.50.116.232]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/15 02:27:05 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/15 02:27:05 >> AUTH LOGIN<EOL>
+14/04/15 02:27:05 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 02:27:05 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/15 02:27:05 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 02:27:05 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/15 02:27:06 << 235 2.7.0 Accepted<EOL>
+14/04/15 02:27:06 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/15 02:27:06 << 250 2.1.0 OK x45sm44012411eeu.23 - gsmtp<EOL>
+14/04/15 02:27:06 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/15 02:27:06 << 250 2.1.5 OK x45sm44012411eeu.23 - gsmtp<EOL>
+14/04/15 02:27:06 >> RCPT TO: <junaidabbas2012@gmail.com><EOL>
+14/04/15 02:27:06 << 250 2.1.5 OK x45sm44012411eeu.23 - gsmtp<EOL>
+14/04/15 02:27:06 >> DATA<EOL>
+14/04/15 02:27:07 << 354  Go ahead x45sm44012411eeu.23 - gsmtp<EOL>
+14/04/15 02:27:07 >> Date: Tue, 15 Apr 2014 02:27:07 +0500<EOL>
+14/04/15 02:27:07 >> To: junaid9898@yahoo.com,junaidabbas2012@gmail.com<EOL>
+14/04/15 02:27:07 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/15 02:27:07 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/15 02:27:07 >> From: yourcloudcampus.management<EOL>
+14/04/15 02:27:07 >> Reply-To: reply@yourcloudcampus123.com<EOL>
+14/04/15 02:27:07 >> MIME-Version: 1.0<EOL>
+14/04/15 02:27:07 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/15 02:27:07 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/15 02:27:07 >> <EOL>
+14/04/15 02:27:07 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 02:27:07 >>  <br />LETTER FORMAT:<EOL>
+14/04/15 02:27:07 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 02:27:07 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/04/15 02:27:07 >> .<EOL>
+14/04/15 02:27:08 << 250 2.0.0 OK 1397510826 x45sm44012411eeu.23 - gsmtp<EOL>
+14/04/15 02:27:08 >> QUIT<EOL>
+14/04/15 02:27:08 << 221 2.0.0 closing connection x45sm44012411eeu.23 - gsmtp<EOL>
+14/04/15 02:27:08 ** Disconnecting from smtp.gmail.com:465
+14/04/15 02:27:08 ** Disconnected.
+14/04/15 02:27:08 ** Disconnected.
+14/04/15 02:29:10 ** --- MESSAGE BEGIN ---
+14/04/15 02:29:10 ** To: junaid9898@yahoo.com,faheem@yourcloudcampus.com,junaidabbas2012@gmail.com,junaid@yourcloudcampus.com
+14/04/15 02:29:10 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 02:29:10 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 02:29:10 ** From: yourcloudcampus.management
+14/04/15 02:29:10 ** Reply-To: reply@yourcloudcampus123.com
+14/04/15 02:29:10 ** MIME-Version: 1.0
+14/04/15 02:29:10 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 02:29:10 ** X-Mailer: PHP/5.4.16
+14/04/15 02:29:10 ** 
+14/04/15 02:29:10 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:29:10 **  <br />LETTER FORMAT:
+14/04/15 02:29:10 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:29:10 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 02:29:10 ** --- MESSAGE END ---
+14/04/15 02:29:10 ** Connecting to smtp.gmail.com:465
+14/04/15 02:29:11 ** Connected.
+14/04/15 02:29:11 << 220 mx.google.com ESMTP 4sm44013837eeq.33 - gsmtp<EOL>
+14/04/15 02:29:11 >> EHLO localhost<EOL>
+14/04/15 02:29:12 << 250-mx.google.com at your service, [101.50.116.232]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/15 02:29:12 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/15 02:29:12 >> AUTH LOGIN<EOL>
+14/04/15 02:29:12 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 02:29:12 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/15 02:29:12 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 02:29:12 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/15 02:29:12 << 235 2.7.0 Accepted<EOL>
+14/04/15 02:29:12 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/15 02:29:13 << 250 2.1.0 OK 4sm44013837eeq.33 - gsmtp<EOL>
+14/04/15 02:29:13 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/15 02:29:13 << 250 2.1.5 OK 4sm44013837eeq.33 - gsmtp<EOL>
+14/04/15 02:29:13 >> RCPT TO: <faheem@yourcloudcampus.com><EOL>
+14/04/15 02:29:13 << 250 2.1.5 OK 4sm44013837eeq.33 - gsmtp<EOL>
+14/04/15 02:29:13 >> RCPT TO: <junaidabbas2012@gmail.com><EOL>
+14/04/15 02:29:13 << 250 2.1.5 OK 4sm44013837eeq.33 - gsmtp<EOL>
+14/04/15 02:29:13 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/04/15 02:29:13 << 250 2.1.5 OK 4sm44013837eeq.33 - gsmtp<EOL>
+14/04/15 02:29:13 >> DATA<EOL>
+14/04/15 02:29:14 << 354  Go ahead 4sm44013837eeq.33 - gsmtp<EOL>
+14/04/15 02:29:14 >> Date: Tue, 15 Apr 2014 02:29:14 +0500<EOL>
+14/04/15 02:29:14 >> To: junaid9898@yahoo.com,faheem@yourcloudcampus.com,junaidabbas2012@gmail.com,junaid@yourcloudcampus.com<EOL>
+14/04/15 02:29:14 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/15 02:29:14 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/15 02:29:14 >> From: yourcloudcampus.management<EOL>
+14/04/15 02:29:14 >> Reply-To: reply@yourcloudcampus123.com<EOL>
+14/04/15 02:29:14 >> MIME-Version: 1.0<EOL>
+14/04/15 02:29:14 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/15 02:29:14 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/15 02:29:14 >> <EOL>
+14/04/15 02:29:14 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 02:29:14 >>  <br />LETTER FORMAT:<EOL>
+14/04/15 02:29:14 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 02:29:14 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/04/15 02:29:14 >> .<EOL>
+14/04/15 02:29:15 << 250 2.0.0 OK 1397510953 4sm44013837eeq.33 - gsmtp<EOL>
+14/04/15 02:29:15 >> QUIT<EOL>
+14/04/15 02:29:15 << 221 2.0.0 closing connection 4sm44013837eeq.33 - gsmtp<EOL>
+14/04/15 02:29:15 ** Disconnected.
+14/04/15 02:29:15 ** Disconnected.
+14/04/15 02:29:15 ** Disconnected.
+14/04/15 02:30:36 ** --- MESSAGE BEGIN ---
+14/04/15 02:30:36 ** To: junaid9898xyzxyzxyzxyzxyzxyzyxzy@yahoo.com
+14/04/15 02:30:36 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 02:30:36 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 02:30:36 ** From: yourcloudcampus.management
+14/04/15 02:30:36 ** Reply-To: reply@yourcloudcampus123.com
+14/04/15 02:30:36 ** MIME-Version: 1.0
+14/04/15 02:30:36 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 02:30:36 ** X-Mailer: PHP/5.4.16
+14/04/15 02:30:36 ** 
+14/04/15 02:30:36 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:30:36 **  <br />LETTER FORMAT:
+14/04/15 02:30:36 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:30:36 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 02:30:36 ** --- MESSAGE END ---
+14/04/15 02:30:36 ** Connecting to smtp.gmail.com:465
+14/04/15 02:30:38 ** Disconnected.
+14/04/15 02:30:38 ** Disconnected.
+14/04/15 02:30:38 ** Disconnected.
+14/04/15 02:30:38 ** Socket Error # 10060<EOL>Connection timed out.
+14/04/15 02:39:25 ** --- MESSAGE BEGIN ---
+14/04/15 02:39:25 ** To: junaid9898@yahoo.com,junaid@yourcloudcampus.com
+14/04/15 02:39:25 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 02:39:25 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 02:39:25 ** From: yourcloudcampusmanagement@123.com
+14/04/15 02:39:25 ** Reply-To: reply@yourcloudcampus123.com
+14/04/15 02:39:25 ** MIME-Version: 1.0
+14/04/15 02:39:25 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 02:39:25 ** X-Mailer: PHP/5.4.16
+14/04/15 02:39:25 ** 
+14/04/15 02:39:25 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:39:25 **  <br />LETTER FORMAT:
+14/04/15 02:39:25 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 02:39:25 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 02:39:25 ** --- MESSAGE END ---
+14/04/15 02:39:25 ** Connecting to smtp.gmail.com:465
+14/04/15 02:39:26 ** Connected.
+14/04/15 02:39:26 << 220 mx.google.com ESMTP o7sm44075607eew.25 - gsmtp<EOL>
+14/04/15 02:39:26 >> EHLO localhost<EOL>
+14/04/15 02:39:27 << 250-mx.google.com at your service, [101.50.116.232]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/15 02:39:27 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/15 02:39:27 >> AUTH LOGIN<EOL>
+14/04/15 02:39:27 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 02:39:27 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/15 02:39:27 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 02:39:27 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/15 02:39:27 << 235 2.7.0 Accepted<EOL>
+14/04/15 02:39:27 >> MAIL FROM: <yourcloudcampusmanagement@123.com><EOL>
+14/04/15 02:39:28 << 250 2.1.0 OK o7sm44075607eew.25 - gsmtp<EOL>
+14/04/15 02:39:28 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/15 02:39:28 << 250 2.1.5 OK o7sm44075607eew.25 - gsmtp<EOL>
+14/04/15 02:39:28 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/04/15 02:39:28 << 250 2.1.5 OK o7sm44075607eew.25 - gsmtp<EOL>
+14/04/15 02:39:28 >> DATA<EOL>
+14/04/15 02:39:29 << 354  Go ahead o7sm44075607eew.25 - gsmtp<EOL>
+14/04/15 02:39:29 >> Date: Tue, 15 Apr 2014 02:39:29 +0500<EOL>
+14/04/15 02:39:29 >> To: junaid9898@yahoo.com,junaid@yourcloudcampus.com<EOL>
+14/04/15 02:39:29 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/15 02:39:29 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/15 02:39:29 >> From: yourcloudcampusmanagement@123.com<EOL>
+14/04/15 02:39:29 >> Reply-To: reply@yourcloudcampus123.com<EOL>
+14/04/15 02:39:29 >> MIME-Version: 1.0<EOL>
+14/04/15 02:39:29 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/15 02:39:29 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/15 02:39:29 >> <EOL>
+14/04/15 02:39:29 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 02:39:29 >>  <br />LETTER FORMAT:<EOL>
+14/04/15 02:39:29 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 02:39:29 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/04/15 02:39:29 >> .<EOL>
+14/04/15 02:39:31 << 250 2.0.0 OK 1397511569 o7sm44075607eew.25 - gsmtp<EOL>
+14/04/15 02:39:31 >> QUIT<EOL>
+14/04/15 02:39:31 << 221 2.0.0 closing connection o7sm44075607eew.25 - gsmtp<EOL>
+14/04/15 02:39:31 ** Disconnected.
+14/04/15 02:39:31 ** Disconnected.
+14/04/15 02:39:31 ** Disconnected.
+14/04/15 03:01:51 ** --- MESSAGE BEGIN ---
+14/04/15 03:01:51 ** To: junaid9898@yahoo.com,junaid@yourcloudcampus.com
+14/04/15 03:01:51 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 03:01:51 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 03:01:51 ** From: yourcloudcampus.management
+14/04/15 03:01:51 ** Reply-To: reply@yourcloudcampus123.com
+14/04/15 03:01:51 ** MIME-Version: 1.0
+14/04/15 03:01:51 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 03:01:51 ** X-Mailer: PHP/5.4.16
+14/04/15 03:01:51 ** 
+14/04/15 03:01:51 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:01:51 **  <br />LETTER FORMAT:
+14/04/15 03:01:51 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:01:51 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 03:01:51 ** --- MESSAGE END ---
+14/04/15 03:01:53 ** Connecting to smtp.gmail.com:465
+14/04/15 03:01:54 ** Connected.
+14/04/15 03:01:54 << 220 mx.google.com ESMTP x45sm44192821eeu.23 - gsmtp<EOL>
+14/04/15 03:01:54 >> EHLO localhost<EOL>
+14/04/15 03:01:54 << 250-mx.google.com at your service, [101.50.116.232]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/15 03:01:54 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/15 03:01:54 >> AUTH LOGIN<EOL>
+14/04/15 03:01:55 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 03:01:55 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/15 03:01:55 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 03:01:55 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/15 03:01:55 << 235 2.7.0 Accepted<EOL>
+14/04/15 03:01:55 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/15 03:01:55 << 250 2.1.0 OK x45sm44192821eeu.23 - gsmtp<EOL>
+14/04/15 03:01:55 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/15 03:01:56 << 250 2.1.5 OK x45sm44192821eeu.23 - gsmtp<EOL>
+14/04/15 03:01:56 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/04/15 03:01:57 << 250 2.1.5 OK x45sm44192821eeu.23 - gsmtp<EOL>
+14/04/15 03:01:57 >> DATA<EOL>
+14/04/15 03:01:57 << 354  Go ahead x45sm44192821eeu.23 - gsmtp<EOL>
+14/04/15 03:01:57 >> Date: Tue, 15 Apr 2014 03:01:57 +0500<EOL>
+14/04/15 03:01:57 >> To: junaid9898@yahoo.com,junaid@yourcloudcampus.com<EOL>
+14/04/15 03:01:57 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/15 03:01:57 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/15 03:01:57 >> From: yourcloudcampus.management<EOL>
+14/04/15 03:01:57 >> Reply-To: reply@yourcloudcampus123.com<EOL>
+14/04/15 03:01:57 >> MIME-Version: 1.0<EOL>
+14/04/15 03:01:57 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/15 03:01:57 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/15 03:01:57 >> <EOL>
+14/04/15 03:01:57 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 03:01:57 >>  <br />LETTER FORMAT:<EOL>
+14/04/15 03:01:57 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 03:01:57 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/04/15 03:01:57 >> .<EOL>
+14/04/15 03:01:58 << 250 2.0.0 OK 1397512917 x45sm44192821eeu.23 - gsmtp<EOL>
+14/04/15 03:01:58 >> QUIT<EOL>
+14/04/15 03:01:59 << 221 2.0.0 closing connection x45sm44192821eeu.23 - gsmtp<EOL>
+14/04/15 03:01:59 ** Disconnected.
+14/04/15 03:01:59 ** Disconnected.
+14/04/15 03:01:59 ** Disconnected.
+14/04/15 03:08:22 ** --- MESSAGE BEGIN ---
+14/04/15 03:08:22 ** To: junaid9898@yahoo.com,junaid@yourcloudcampus.com,junaidabbas2012@gmail.com
+14/04/15 03:08:22 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 03:08:22 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 03:08:22 ** From: yourcloudcampus.management
+14/04/15 03:08:22 ** Reply-To: reply@yourcloudcampus.com
+14/04/15 03:08:22 ** MIME-Version: 1.0
+14/04/15 03:08:22 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 03:08:22 ** X-Mailer: PHP/5.4.16
+14/04/15 03:08:22 ** 
+14/04/15 03:08:22 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:08:22 **  <br />LETTER FORMAT:
+14/04/15 03:08:22 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:08:22 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 03:08:22 ** --- MESSAGE END ---
+14/04/15 03:08:22 ** Connecting to mail.yourcloudcampus.com:465
+14/04/15 03:08:25 ** Connected.
+14/04/15 03:08:25 << 220-h12.hostnext.net ESMTP Exim 4.82 #2 Mon, 14 Apr 2014 17:08:23 -0500 <EOL>220-We do not authorize the use of this system to transport unsolicited, <EOL>220 and/or bulk e-mail.<EOL>
+14/04/15 03:08:25 >> EHLO localhost<EOL>
+14/04/15 03:08:26 << 250-h12.hostnext.net Hello localhost [101.50.116.232]<EOL>250-SIZE 52428800<EOL>250-8BITMIME<EOL>250-PIPELINING<EOL>250-AUTH PLAIN LOGIN<EOL>250 HELP<EOL>
+14/04/15 03:08:26 ** Authenticating as reply@yourcloudcampus.com
+14/04/15 03:08:26 >> AUTH LOGIN<EOL>
+14/04/15 03:08:26 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 03:08:26 >> cmVwbHlAeW91cmNsb3VkY2FtcHVzLmNvbQ==<EOL>
+14/04/15 03:08:26 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 03:08:26 >> cmVwbHkxMjM=<EOL>
+14/04/15 03:08:27 << 235 Authentication succeeded<EOL>
+14/04/15 03:08:27 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/15 03:08:28 << 250 OK<EOL>
+14/04/15 03:08:28 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/15 03:08:29 << 550-Verification failed for <yourcloudcampus.management@localhost><EOL>
+14/04/15 03:08:29 << 550-Unrouteable address<EOL>
+14/04/15 03:08:29 << 550 Sender verify failed<EOL>
+14/04/15 03:08:29 ** Invalid recipient <junaid9898@yahoo.com>
+14/04/15 03:08:29 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/04/15 03:08:29 << 550 Sender verify failed<EOL>
+14/04/15 03:08:29 ** Invalid recipient <junaid@yourcloudcampus.com>
+14/04/15 03:08:29 >> RCPT TO: <junaidabbas2012@gmail.com><EOL>
+14/04/15 03:08:29 << 550 Sender verify failed<EOL>
+14/04/15 03:08:29 ** Invalid recipient <junaidabbas2012@gmail.com>
+14/04/15 03:08:29 ** Disconnecting from mail.yourcloudcampus.com:465
+14/04/15 03:08:29 ** Disconnected.
+14/04/15 03:08:29 ** Disconnected.
+14/04/15 03:08:29 ** No valid recipients were found
+14/04/15 03:22:27 ** --- MESSAGE BEGIN ---
+14/04/15 03:22:27 ** To: junaid9898@yahoo.com,junaid@yourcloudcampus.com,junaidabbas2012@gmail.com
+14/04/15 03:22:27 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 03:22:27 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 03:22:27 ** From: yourcloudcampus.management
+14/04/15 03:22:27 ** Reply-To: reply@yourcloudcampus.com
+14/04/15 03:22:27 ** MIME-Version: 1.0
+14/04/15 03:22:27 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 03:22:27 ** X-Mailer: PHP/5.4.16
+14/04/15 03:22:27 ** 
+14/04/15 03:22:27 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:22:27 **  <br />LETTER FORMAT:
+14/04/15 03:22:27 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:22:27 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 03:22:27 ** --- MESSAGE END ---
+14/04/15 03:22:28 ** Connecting to smtp.gmail.com:465
+14/04/15 03:22:29 ** Connected.
+14/04/15 03:22:29 << 220 mx.google.com ESMTP y51sm44324256eeu.0 - gsmtp<EOL>
+14/04/15 03:22:29 >> EHLO localhost<EOL>
+14/04/15 03:22:29 << 250-mx.google.com at your service, [101.50.116.232]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/15 03:22:29 ** Authenticating as reply@yourcloudcampus.com
+14/04/15 03:22:29 >> AUTH LOGIN<EOL>
+14/04/15 03:22:29 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 03:22:29 >> cmVwbHlAeW91cmNsb3VkY2FtcHVzLmNvbQ==<EOL>
+14/04/15 03:22:29 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 03:22:29 >> cmVwbHkxMjM=<EOL>
+14/04/15 03:22:30 << 535-5.7.8 Username and Password not accepted. Learn more at<EOL>535 5.7.8 http://support.google.com/mail/bin/answer.py?answer=14257 y51sm44324256eeu.0 - gsmtp<EOL>
+14/04/15 03:22:30 ** Disconnecting from smtp.gmail.com:465
+14/04/15 03:22:30 ** Disconnected.
+14/04/15 03:22:30 ** Disconnected.
+14/04/15 03:22:30 ** Username and Password not accepted. Learn more at<EOL>http://support.google.com/mail/bin/answer.py?answer=14257 y51sm44324256eeu.0 - gsmtp<EOL>
+14/04/15 03:25:18 ** --- MESSAGE BEGIN ---
+14/04/15 03:25:18 ** To: junaid9898@yahoo.com,junaid@yourcloudcampus.com,junaidabbas2012@gmail.com
+14/04/15 03:25:18 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 03:25:18 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 03:25:18 ** From: yourcloudcampus.management
+14/04/15 03:25:18 ** Reply-To: reply@yourcloudcampus.com
+14/04/15 03:25:18 ** MIME-Version: 1.0
+14/04/15 03:25:18 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 03:25:18 ** X-Mailer: PHP/5.4.16
+14/04/15 03:25:18 ** 
+14/04/15 03:25:18 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:25:18 **  <br />LETTER FORMAT:
+14/04/15 03:25:18 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:25:18 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 03:25:18 ** --- MESSAGE END ---
+14/04/15 03:25:18 ** Connecting to smtp.gmail.com:465
+14/04/15 03:25:20 ** Connected.
+14/04/15 03:25:20 << 220 mx.google.com ESMTP 45sm44327745eeh.9 - gsmtp<EOL>
+14/04/15 03:25:20 >> EHLO localhost<EOL>
+14/04/15 03:25:20 << 250-mx.google.com at your service, [101.50.116.232]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/15 03:25:20 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/15 03:25:20 >> AUTH LOGIN<EOL>
+14/04/15 03:25:20 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 03:25:20 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/15 03:25:20 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 03:25:20 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/15 03:25:21 << 235 2.7.0 Accepted<EOL>
+14/04/15 03:25:21 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/15 03:25:21 << 250 2.1.0 OK 45sm44327745eeh.9 - gsmtp<EOL>
+14/04/15 03:25:21 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/15 03:25:21 << 250 2.1.5 OK 45sm44327745eeh.9 - gsmtp<EOL>
+14/04/15 03:25:21 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/04/15 03:25:21 << 250 2.1.5 OK 45sm44327745eeh.9 - gsmtp<EOL>
+14/04/15 03:25:21 >> RCPT TO: <junaidabbas2012@gmail.com><EOL>
+14/04/15 03:25:21 << 250 2.1.5 OK 45sm44327745eeh.9 - gsmtp<EOL>
+14/04/15 03:25:21 >> DATA<EOL>
+14/04/15 03:25:22 << 354  Go ahead 45sm44327745eeh.9 - gsmtp<EOL>
+14/04/15 03:25:22 >> Date: Tue, 15 Apr 2014 03:25:22 +0500<EOL>
+14/04/15 03:25:22 >> To: junaid9898@yahoo.com,junaid@yourcloudcampus.com,junaidabbas2012@gmail.com<EOL>
+14/04/15 03:25:22 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/15 03:25:22 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/15 03:25:22 >> From: yourcloudcampus.management<EOL>
+14/04/15 03:25:22 >> Reply-To: reply@yourcloudcampus.com<EOL>
+14/04/15 03:25:22 >> MIME-Version: 1.0<EOL>
+14/04/15 03:25:22 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/15 03:25:22 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/15 03:25:22 >> <EOL>
+14/04/15 03:25:22 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 03:25:22 >>  <br />LETTER FORMAT:<EOL>
+14/04/15 03:25:22 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 03:25:22 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/04/15 03:25:22 >> .<EOL>
+14/04/15 03:25:23 << 250 2.0.0 OK 1397514321 45sm44327745eeh.9 - gsmtp<EOL>
+14/04/15 03:25:23 >> QUIT<EOL>
+14/04/15 03:25:23 << 221 2.0.0 closing connection 45sm44327745eeh.9 - gsmtp<EOL>
+14/04/15 03:25:23 ** Disconnected.
+14/04/15 03:25:23 ** Disconnected.
+14/04/15 03:25:23 ** Disconnected.
+14/04/15 03:26:56 ** --- MESSAGE BEGIN ---
+14/04/15 03:26:56 ** To: junaid9898@yahoo.com,junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,faheem@yourcloudcampus.com
+14/04/15 03:26:56 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 03:26:56 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 03:26:56 ** From: yourcloudcampus.management
+14/04/15 03:26:56 ** Reply-To: reply@yourcloudcampus.com
+14/04/15 03:26:56 ** MIME-Version: 1.0
+14/04/15 03:26:56 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 03:26:56 ** X-Mailer: PHP/5.4.16
+14/04/15 03:26:56 ** 
+14/04/15 03:26:56 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:26:56 **  <br />LETTER FORMAT:
+14/04/15 03:26:56 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:26:56 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 03:26:56 ** --- MESSAGE END ---
+14/04/15 03:26:57 ** Connecting to smtp.gmail.com:465
+14/04/15 03:26:58 ** Connected.
+14/04/15 03:26:58 << 220 mx.google.com ESMTP x45sm44318043eeu.23 - gsmtp<EOL>
+14/04/15 03:26:58 >> EHLO localhost<EOL>
+14/04/15 03:26:58 << 250-mx.google.com at your service, [101.50.116.232]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/15 03:26:58 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/15 03:26:58 >> AUTH LOGIN<EOL>
+14/04/15 03:26:58 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 03:26:58 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/15 03:26:58 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 03:26:58 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/15 03:26:59 << 235 2.7.0 Accepted<EOL>
+14/04/15 03:26:59 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/15 03:26:59 << 250 2.1.0 OK x45sm44318043eeu.23 - gsmtp<EOL>
+14/04/15 03:26:59 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/15 03:26:59 << 250 2.1.5 OK x45sm44318043eeu.23 - gsmtp<EOL>
+14/04/15 03:26:59 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/04/15 03:26:59 << 250 2.1.5 OK x45sm44318043eeu.23 - gsmtp<EOL>
+14/04/15 03:26:59 >> RCPT TO: <junaidabbas2012@gmail.com><EOL>
+14/04/15 03:27:00 << 250 2.1.5 OK x45sm44318043eeu.23 - gsmtp<EOL>
+14/04/15 03:27:00 >> RCPT TO: <faheem@yourcloudcampus.com><EOL>
+14/04/15 03:27:00 << 250 2.1.5 OK x45sm44318043eeu.23 - gsmtp<EOL>
+14/04/15 03:27:00 >> DATA<EOL>
+14/04/15 03:27:00 << 354  Go ahead x45sm44318043eeu.23 - gsmtp<EOL>
+14/04/15 03:27:00 >> Date: Tue, 15 Apr 2014 03:27:00 +0500<EOL>
+14/04/15 03:27:00 >> To: junaid9898@yahoo.com,junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,faheem@yourcloudcampus.com<EOL>
+14/04/15 03:27:00 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/15 03:27:00 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/15 03:27:00 >> From: yourcloudcampus.management<EOL>
+14/04/15 03:27:00 >> Reply-To: reply@yourcloudcampus.com<EOL>
+14/04/15 03:27:00 >> MIME-Version: 1.0<EOL>
+14/04/15 03:27:00 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/15 03:27:00 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/15 03:27:00 >> <EOL>
+14/04/15 03:27:00 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 03:27:00 >>  <br />LETTER FORMAT:<EOL>
+14/04/15 03:27:00 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 03:27:00 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/04/15 03:27:00 >> .<EOL>
+14/04/15 03:27:01 << 250 2.0.0 OK 1397514419 x45sm44318043eeu.23 - gsmtp<EOL>
+14/04/15 03:27:01 >> QUIT<EOL>
+14/04/15 03:27:01 << 221 2.0.0 closing connection x45sm44318043eeu.23 - gsmtp<EOL>
+14/04/15 03:27:01 ** Disconnected.
+14/04/15 03:27:01 ** Disconnected.
+14/04/15 03:27:01 ** Disconnected.
+14/04/15 03:37:07 ** --- MESSAGE BEGIN ---
+14/04/15 03:37:07 ** To: junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,faheem@yourcloudcampus.com,faheem.sunny1@gmail.com,faheem.sunny@yahoo.com
+14/04/15 03:37:07 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 03:37:07 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 03:37:07 ** From: yourcloudcampus.management
+14/04/15 03:37:07 ** Reply-To: reply@yourcloudcampus.com
+14/04/15 03:37:07 ** MIME-Version: 1.0
+14/04/15 03:37:07 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 03:37:07 ** X-Mailer: PHP/5.4.16
+14/04/15 03:37:07 ** 
+14/04/15 03:37:07 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:37:07 **  <br />LETTER FORMAT:
+14/04/15 03:37:07 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:37:07 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 03:37:07 ** --- MESSAGE END ---
+14/04/15 03:37:07 ** Connecting to smtp.gmail.com:465
+14/04/15 03:37:11 ** Disconnected.
+14/04/15 03:37:11 ** Disconnected.
+14/04/15 03:37:11 ** Disconnected.
+14/04/15 03:37:11 ** Socket Error # 10060<EOL>Connection timed out.
+14/04/15 03:43:50 ** --- MESSAGE BEGIN ---
+14/04/15 03:43:50 ** To: junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,faheem@yourcloudcampus.com,faheem.sunny1@gmail.com,faheem.sunny@yahoo.com
+14/04/15 03:43:50 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 03:43:50 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 03:43:50 ** From: yourcloudcampus.management
+14/04/15 03:43:50 ** Reply-To: reply@yourcloudcampus.com
+14/04/15 03:43:50 ** MIME-Version: 1.0
+14/04/15 03:43:50 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 03:43:50 ** X-Mailer: PHP/5.4.16
+14/04/15 03:43:50 ** 
+14/04/15 03:43:50 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:43:50 **  <br />LETTER FORMAT:
+14/04/15 03:43:50 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:43:50 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 03:43:50 ** --- MESSAGE END ---
+14/04/15 03:43:50 ** Connecting to smtp.gmail.com:465
+14/04/15 03:43:52 ** Disconnected.
+14/04/15 03:43:52 ** Disconnected.
+14/04/15 03:43:52 ** Disconnected.
+14/04/15 03:43:52 ** Socket Error # 10060<EOL>Connection timed out.
+14/04/15 03:49:36 ** --- MESSAGE BEGIN ---
+14/04/15 03:49:36 ** To: junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,faheem@yourcloudcampus.com,faheem.sunny1@gmail.com
+14/04/15 03:49:36 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 03:49:36 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 03:49:36 ** From: yourcloudcampus.management
+14/04/15 03:49:36 ** Reply-To: reply@yourcloudcampus.com
+14/04/15 03:49:36 ** MIME-Version: 1.0
+14/04/15 03:49:36 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 03:49:36 ** X-Mailer: PHP/5.4.16
+14/04/15 03:49:36 ** 
+14/04/15 03:49:36 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:49:36 **  <br />LETTER FORMAT:
+14/04/15 03:49:36 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 03:49:36 **  <br />LETTER FORMAT PARAGRAPH as a test 
+14/04/15 03:49:36 ** --- MESSAGE END ---
+14/04/15 03:49:37 ** Connecting to smtp.gmail.com:465
+14/04/15 03:49:38 ** Connected.
+14/04/15 03:49:38 << 220 mx.google.com ESMTP x45sm44437561eef.15 - gsmtp<EOL>
+14/04/15 03:49:38 >> EHLO localhost<EOL>
+14/04/15 03:49:39 << 250-mx.google.com at your service, [101.50.116.232]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/15 03:49:39 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/15 03:49:39 >> AUTH LOGIN<EOL>
+14/04/15 03:49:39 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 03:49:39 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/15 03:49:40 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 03:49:40 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/15 03:49:41 << 235 2.7.0 Accepted<EOL>
+14/04/15 03:49:41 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/15 03:49:41 << 250 2.1.0 OK x45sm44437561eef.15 - gsmtp<EOL>
+14/04/15 03:49:41 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/04/15 03:49:41 << 250 2.1.5 OK x45sm44437561eef.15 - gsmtp<EOL>
+14/04/15 03:49:41 >> RCPT TO: <junaidabbas2012@gmail.com><EOL>
+14/04/15 03:49:42 << 250 2.1.5 OK x45sm44437561eef.15 - gsmtp<EOL>
+14/04/15 03:49:42 >> RCPT TO: <faheem@yourcloudcampus.com><EOL>
+14/04/15 03:49:42 << 250 2.1.5 OK x45sm44437561eef.15 - gsmtp<EOL>
+14/04/15 03:49:42 >> RCPT TO: <faheem.sunny1@gmail.com><EOL>
+14/04/15 03:49:42 << 250 2.1.5 OK x45sm44437561eef.15 - gsmtp<EOL>
+14/04/15 03:49:42 >> DATA<EOL>
+14/04/15 03:49:43 << 354  Go ahead x45sm44437561eef.15 - gsmtp<EOL>
+14/04/15 03:49:43 >> Date: Tue, 15 Apr 2014 03:49:43 +0500<EOL>
+14/04/15 03:49:43 >> To: junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,faheem@yourcloudcampus.com,faheem.sunny1@gmail.com<EOL>
+14/04/15 03:49:43 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/15 03:49:43 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/15 03:49:43 >> From: yourcloudcampus.management<EOL>
+14/04/15 03:49:43 >> Reply-To: reply@yourcloudcampus.com<EOL>
+14/04/15 03:49:43 >> MIME-Version: 1.0<EOL>
+14/04/15 03:49:43 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/15 03:49:43 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/15 03:49:43 >> <EOL>
+14/04/15 03:49:43 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 03:49:43 >>  <br />LETTER FORMAT:<EOL>
+14/04/15 03:49:43 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 03:49:43 >>  <br />LETTER FORMAT PARAGRAPH as a test <EOL>
+14/04/15 03:49:43 >> .<EOL>
+14/04/15 03:49:44 << 250 2.0.0 OK 1397515782 x45sm44437561eef.15 - gsmtp<EOL>
+14/04/15 03:49:44 >> QUIT<EOL>
+14/04/15 03:49:44 << 221 2.0.0 closing connection x45sm44437561eef.15 - gsmtp<EOL>
+14/04/15 03:49:44 ** Disconnected.
+14/04/15 03:49:44 ** Disconnected.
+14/04/15 03:49:44 ** Disconnected.
+14/04/15 04:17:21 ** --- MESSAGE BEGIN ---
+14/04/15 04:17:21 ** To: reply@yourcloudcampus.com
+14/04/15 04:17:21 ** Subject: CCMS MAIL SERVER LETHAL VIRUS
+14/04/15 04:17:21 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 04:17:21 ** From: yourcloudcampus.management
+14/04/15 04:17:21 ** Reply-To: reply@yourcloudcampus.com
+14/04/15 04:17:21 ** Bcc:junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,faheem.sunny1@gmail.com
+14/04/15 04:17:21 ** MIME-Version: 1.0
+14/04/15 04:17:21 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 04:17:21 ** X-Mailer: PHP/5.4.16
+14/04/15 04:17:21 ** 
+14/04/15 04:17:21 ** Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 04:17:21 **  <br />LETTER FORMAT:
+14/04/15 04:17:21 **  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span>
+14/04/15 04:17:21 **  <br />LETTER FORMAT PARAGRAPH as a test and the TEACHER NAME IS:Faisal Mehmood</td> 
+14/04/15 04:17:21 ** --- MESSAGE END ---
+14/04/15 04:17:22 ** Connecting to smtp.gmail.com:465
+14/04/15 04:17:23 ** Connected.
+14/04/15 04:17:23 << 220 mx.google.com ESMTP l42sm44562465eew.19 - gsmtp<EOL>
+14/04/15 04:17:23 >> EHLO localhost<EOL>
+14/04/15 04:17:23 << 250-mx.google.com at your service, [101.50.116.232]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/15 04:17:23 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/15 04:17:23 >> AUTH LOGIN<EOL>
+14/04/15 04:17:23 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 04:17:23 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/15 04:17:23 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 04:17:23 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/15 04:17:24 << 235 2.7.0 Accepted<EOL>
+14/04/15 04:17:24 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/15 04:17:24 << 250 2.1.0 OK l42sm44562465eew.19 - gsmtp<EOL>
+14/04/15 04:17:24 >> RCPT TO: <reply@yourcloudcampus.com><EOL>
+14/04/15 04:17:24 << 250 2.1.5 OK l42sm44562465eew.19 - gsmtp<EOL>
+14/04/15 04:17:24 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/04/15 04:17:24 << 250 2.1.5 OK l42sm44562465eew.19 - gsmtp<EOL>
+14/04/15 04:17:24 >> RCPT TO: <junaidabbas2012@gmail.com><EOL>
+14/04/15 04:17:25 << 250 2.1.5 OK l42sm44562465eew.19 - gsmtp<EOL>
+14/04/15 04:17:25 >> RCPT TO: <faheem.sunny1@gmail.com><EOL>
+14/04/15 04:17:25 << 250 2.1.5 OK l42sm44562465eew.19 - gsmtp<EOL>
+14/04/15 04:17:25 >> DATA<EOL>
+14/04/15 04:17:25 << 354  Go ahead l42sm44562465eew.19 - gsmtp<EOL>
+14/04/15 04:17:25 >> Date: Tue, 15 Apr 2014 04:17:25 +0500<EOL>
+14/04/15 04:17:25 >> To: reply@yourcloudcampus.com<EOL>
+14/04/15 04:17:25 >> Subject: CCMS MAIL SERVER LETHAL VIRUS<EOL>
+14/04/15 04:17:25 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/15 04:17:25 >> From: yourcloudcampus.management<EOL>
+14/04/15 04:17:25 >> Reply-To: reply@yourcloudcampus.com<EOL>
+14/04/15 04:17:25 >> Bcc:junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,faheem.sunny1@gmail.com<EOL>
+14/04/15 04:17:25 >> MIME-Version: 1.0<EOL>
+14/04/15 04:17:25 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/15 04:17:25 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/15 04:17:25 >> <EOL>
+14/04/15 04:17:25 >> Hi, you just received an email from CCMS server!<br>CCMS EMAIL TESTING: <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 04:17:25 >>  <br />LETTER FORMAT:<EOL>
+14/04/15 04:17:25 >>  <br/><span style='color:blue; font-size:16px'>EMAIL TEST IN PROGRESS</span><EOL>
+14/04/15 04:17:25 >>  <br />LETTER FORMAT PARAGRAPH as a test and the TEACHER NAME IS:Faisal Mehmood</td> <EOL>
+14/04/15 04:17:25 >> .<EOL>
+14/04/15 04:17:26 << 250 2.0.0 OK 1397517444 l42sm44562465eew.19 - gsmtp<EOL>
+14/04/15 04:17:26 >> QUIT<EOL>
+14/04/15 04:17:26 << 221 2.0.0 closing connection l42sm44562465eew.19 - gsmtp<EOL>
+14/04/15 04:17:26 ** Disconnected.
+14/04/15 04:17:26 ** Disconnected.
+14/04/15 04:17:26 ** Disconnected.
+14/04/15 06:38:38 ** --- MESSAGE BEGIN ---
+14/04/15 06:38:38 ** To: reply@yourcloudcampus.com
+14/04/15 06:38:38 ** Subject: YCC-Teacher absent Email
+14/04/15 06:38:38 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/15 06:38:38 ** From: yourcloudcampus.management
+14/04/15 06:38:38 ** Reply-To: reply@yourcloudcampus.com
+14/04/15 06:38:38 ** Bcc:junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,faheem.sunny1@gmail.com,faheem@yourcloudcampus.com
+14/04/15 06:38:38 ** MIME-Version: 1.0
+14/04/15 06:38:38 ** Content-type: text/html; charset=iso-8859-1
+14/04/15 06:38:38 ** X-Mailer: PHP/5.4.16
+14/04/15 06:38:38 ** 
+14/04/15 06:38:38 ** <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span>
+14/04/15 06:38:38 ** 
+14/04/15 06:38:38 **  <br /><br /><b>Dear student/ Parent</b>
+14/04/15 06:38:38 ** 
+14/04/15 06:38:38 **  <br/><br/>It is regrettably informed that unfortunately your teacher Nadeem  Anjum</td> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.
+14/04/15 06:38:38 **  <br />Regards, 
+14/04/15 06:38:38 **  <br />YCC(YourCloudCampus Management)
+14/04/15 06:38:38 ** --- MESSAGE END ---
+14/04/15 06:38:39 ** Connecting to smtp.gmail.com:465
+14/04/15 06:38:40 ** Connected.
+14/04/15 06:38:40 << 220 mx.google.com ESMTP w1sm45206315eel.16 - gsmtp<EOL>
+14/04/15 06:38:40 >> EHLO localhost<EOL>
+14/04/15 06:38:40 << 250-mx.google.com at your service, [101.50.116.232]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/15 06:38:40 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/15 06:38:40 >> AUTH LOGIN<EOL>
+14/04/15 06:38:40 << 334 VXNlcm5hbWU6<EOL>
+14/04/15 06:38:40 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/15 06:38:41 << 334 UGFzc3dvcmQ6<EOL>
+14/04/15 06:38:41 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/15 06:38:41 << 235 2.7.0 Accepted<EOL>
+14/04/15 06:38:41 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/15 06:38:41 << 250 2.1.0 OK w1sm45206315eel.16 - gsmtp<EOL>
+14/04/15 06:38:41 >> RCPT TO: <reply@yourcloudcampus.com><EOL>
+14/04/15 06:38:41 << 250 2.1.5 OK w1sm45206315eel.16 - gsmtp<EOL>
+14/04/15 06:38:41 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/04/15 06:38:42 << 250 2.1.5 OK w1sm45206315eel.16 - gsmtp<EOL>
+14/04/15 06:38:42 >> RCPT TO: <junaidabbas2012@gmail.com><EOL>
+14/04/15 06:38:42 << 250 2.1.5 OK w1sm45206315eel.16 - gsmtp<EOL>
+14/04/15 06:38:42 >> RCPT TO: <faheem.sunny1@gmail.com><EOL>
+14/04/15 06:38:42 << 250 2.1.5 OK w1sm45206315eel.16 - gsmtp<EOL>
+14/04/15 06:38:42 >> RCPT TO: <faheem@yourcloudcampus.com><EOL>
+14/04/15 06:38:42 << 250 2.1.5 OK w1sm45206315eel.16 - gsmtp<EOL>
+14/04/15 06:38:42 >> DATA<EOL>
+14/04/15 06:38:43 << 354  Go ahead w1sm45206315eel.16 - gsmtp<EOL>
+14/04/15 06:38:43 >> Date: Tue, 15 Apr 2014 06:38:43 +0500<EOL>
+14/04/15 06:38:43 >> To: reply@yourcloudcampus.com<EOL>
+14/04/15 06:38:43 >> Subject: YCC-Teacher absent Email<EOL>
+14/04/15 06:38:43 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/15 06:38:43 >> From: yourcloudcampus.management<EOL>
+14/04/15 06:38:43 >> Reply-To: reply@yourcloudcampus.com<EOL>
+14/04/15 06:38:43 >> Bcc:junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,faheem.sunny1@gmail.com,faheem@yourcloudcampus.com<EOL>
+14/04/15 06:38:43 >> MIME-Version: 1.0<EOL>
+14/04/15 06:38:43 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/15 06:38:43 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/15 06:38:43 >> <EOL>
+14/04/15 06:38:43 >> <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span><EOL>
+14/04/15 06:38:43 >> <EOL>
+14/04/15 06:38:43 >>  <br /><br /><b>Dear student/ Parent</b><EOL>
+14/04/15 06:38:43 >> <EOL>
+14/04/15 06:38:43 >>  <br/><br/>It is regrettably informed that unfortunately your teacher Nadeem  Anjum</td> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.<EOL>
+14/04/15 06:38:43 >>  <br />Regards, <EOL>
+14/04/15 06:38:43 >>  <br />YCC(YourCloudCampus Management)<EOL>
+14/04/15 06:38:43 >> .<EOL>
+14/04/15 06:38:44 << 250 2.0.0 OK 1397525923 w1sm45206315eel.16 - gsmtp<EOL>
+14/04/15 06:38:44 >> QUIT<EOL>
+14/04/15 06:38:45 << 221 2.0.0 closing connection w1sm45206315eel.16 - gsmtp<EOL>
+14/04/15 06:38:45 ** Disconnected.
+14/04/15 06:38:45 ** Disconnected.
+14/04/15 06:38:45 ** Disconnected.
+14/04/16 01:04:32 ** --- MESSAGE BEGIN ---
+14/04/16 01:04:32 ** To: reply@yourcloudcampus.com
+14/04/16 01:04:32 ** Subject: YCC-Teacher absent Email
+14/04/16 01:04:32 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/16 01:04:32 ** From: yourcloudcampus.management
+14/04/16 01:04:32 ** Reply-To: reply@yourcloudcampus.com
+14/04/16 01:04:32 ** Bcc:junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,junaid9898@yahoo.com
+14/04/16 01:04:32 ** MIME-Version: 1.0
+14/04/16 01:04:32 ** Content-type: text/html; charset=iso-8859-1
+14/04/16 01:04:32 ** X-Mailer: PHP/5.4.16
+14/04/16 01:04:32 ** 
+14/04/16 01:04:32 ** <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span>
+14/04/16 01:04:32 ** 
+14/04/16 01:04:32 **  <br /><br /><b>Dear student/ Parent</b>
+14/04/16 01:04:32 ** 
+14/04/16 01:04:32 **  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Nadeem  Anjum</td></b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.
+14/04/16 01:04:32 ** 
+14/04/16 01:04:32 **  <br /><br />Regards, 
+14/04/16 01:04:32 **  <br /><b>YCC(YourCloudCampus Management)</b> 
+14/04/16 01:04:32 **  <br><b>USA: 215-764-6162</b>
+14/04/16 01:04:32 **  <br><b>UK : 121-288-3093</b>
+14/04/16 01:04:32 ** --- MESSAGE END ---
+14/04/16 01:04:32 ** Connecting to smtp.gmail.com:465
+14/04/16 01:04:34 ** Connected.
+14/04/16 01:04:34 << 220 mx.google.com ESMTP l42sm51582288eew.19 - gsmtp<EOL>
+14/04/16 01:04:34 >> EHLO localhost<EOL>
+14/04/16 01:04:34 << 250-mx.google.com at your service, [124.109.48.193]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/16 01:04:34 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/16 01:04:34 >> AUTH LOGIN<EOL>
+14/04/16 01:04:34 << 334 VXNlcm5hbWU6<EOL>
+14/04/16 01:04:34 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/16 01:04:34 << 334 UGFzc3dvcmQ6<EOL>
+14/04/16 01:04:34 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/16 01:04:35 << 235 2.7.0 Accepted<EOL>
+14/04/16 01:04:35 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/16 01:04:35 << 250 2.1.0 OK l42sm51582288eew.19 - gsmtp<EOL>
+14/04/16 01:04:35 >> RCPT TO: <reply@yourcloudcampus.com><EOL>
+14/04/16 01:04:35 << 250 2.1.5 OK l42sm51582288eew.19 - gsmtp<EOL>
+14/04/16 01:04:35 >> RCPT TO: <junaid@yourcloudcampus.com><EOL>
+14/04/16 01:04:35 << 250 2.1.5 OK l42sm51582288eew.19 - gsmtp<EOL>
+14/04/16 01:04:35 >> RCPT TO: <junaidabbas2012@gmail.com><EOL>
+14/04/16 01:04:36 << 250 2.1.5 OK l42sm51582288eew.19 - gsmtp<EOL>
+14/04/16 01:04:36 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/16 01:04:36 << 250 2.1.5 OK l42sm51582288eew.19 - gsmtp<EOL>
+14/04/16 01:04:36 >> DATA<EOL>
+14/04/16 01:04:37 << 354  Go ahead l42sm51582288eew.19 - gsmtp<EOL>
+14/04/16 01:04:37 >> Date: Wed, 16 Apr 2014 01:04:37 +0500<EOL>
+14/04/16 01:04:37 >> To: reply@yourcloudcampus.com<EOL>
+14/04/16 01:04:37 >> Subject: YCC-Teacher absent Email<EOL>
+14/04/16 01:04:37 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/16 01:04:37 >> From: yourcloudcampus.management<EOL>
+14/04/16 01:04:37 >> Reply-To: reply@yourcloudcampus.com<EOL>
+14/04/16 01:04:37 >> Bcc:junaid@yourcloudcampus.com,junaidabbas2012@gmail.com,junaid9898@yahoo.com<EOL>
+14/04/16 01:04:37 >> MIME-Version: 1.0<EOL>
+14/04/16 01:04:37 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/16 01:04:37 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/16 01:04:37 >> <EOL>
+14/04/16 01:04:37 >> <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span><EOL>
+14/04/16 01:04:37 >> <EOL>
+14/04/16 01:04:37 >>  <br /><br /><b>Dear student/ Parent</b><EOL>
+14/04/16 01:04:37 >> <EOL>
+14/04/16 01:04:37 >>  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Nadeem  Anjum</td></b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.<EOL>
+14/04/16 01:04:37 >> <EOL>
+14/04/16 01:04:37 >>  <br /><br />Regards, <EOL>
+14/04/16 01:04:37 >>  <br /><b>YCC(YourCloudCampus Management)</b> <EOL>
+14/04/16 01:04:37 >>  <br><b>USA: 215-764-6162</b><EOL>
+14/04/16 01:04:37 >>  <br><b>UK : 121-288-3093</b><EOL>
+14/04/16 01:04:37 >> .<EOL>
+14/04/16 01:04:38 << 250 2.0.0 OK 1397592275 l42sm51582288eew.19 - gsmtp<EOL>
+14/04/16 01:04:38 >> QUIT<EOL>
+14/04/16 01:04:38 << 221 2.0.0 closing connection l42sm51582288eew.19 - gsmtp<EOL>
+14/04/16 01:04:38 ** Disconnected.
+14/04/16 01:04:38 ** Disconnected.
+14/04/16 01:04:38 ** Disconnected.
+14/04/16 19:37:05 ** --- MESSAGE BEGIN ---
+14/04/16 19:37:05 ** To: reply@yourcloudcampus.com
+14/04/16 19:37:05 ** Subject: YCC-Teacher absent Email
+14/04/16 19:37:05 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/16 19:37:05 ** From: yourcloudcampus.management
+14/04/16 19:37:05 ** Reply-To: reply@yourcloudcampus.com
+14/04/16 19:37:05 ** Bcc:junaid9898@yahoo.com
+14/04/16 19:37:05 ** MIME-Version: 1.0
+14/04/16 19:37:05 ** Content-type: text/html; charset=iso-8859-1
+14/04/16 19:37:05 ** X-Mailer: PHP/5.4.16
+14/04/16 19:37:05 ** 
+14/04/16 19:37:05 ** <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span>
+14/04/16 19:37:05 ** 
+14/04/16 19:37:05 **  <br /><br /><b>Dear student/ Parent</b>
+14/04/16 19:37:05 ** 
+14/04/16 19:37:05 **  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Faisal Mehmood</b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.
+14/04/16 19:37:05 ** 
+14/04/16 19:37:05 **  <br /><br />Regards, 
+14/04/16 19:37:05 **  <br /><b>YCC(YourCloudCampus Management)</b> 
+14/04/16 19:37:05 **  <br><b>USA: 215-764-6162</b>
+14/04/16 19:37:05 **  <br><b>UK : 121-288-3093</b>
+14/04/16 19:37:05 ** --- MESSAGE END ---
+14/04/16 19:37:05 ** Connecting to smtp.gmail.com:465
+14/04/16 19:37:06 ** Connected.
+14/04/16 19:37:06 << 220 mx.google.com ESMTP gc2sm4004183wic.3 - gsmtp<EOL>
+14/04/16 19:37:06 >> EHLO localhost<EOL>
+14/04/16 19:37:06 << 250-mx.google.com at your service, [101.50.116.94]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/16 19:37:06 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/16 19:37:06 >> AUTH LOGIN<EOL>
+14/04/16 19:37:07 << 334 VXNlcm5hbWU6<EOL>
+14/04/16 19:37:07 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/16 19:37:07 << 334 UGFzc3dvcmQ6<EOL>
+14/04/16 19:37:07 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/16 19:37:08 << 235 2.7.0 Accepted<EOL>
+14/04/16 19:37:08 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/16 19:37:08 << 250 2.1.0 OK gc2sm4004183wic.3 - gsmtp<EOL>
+14/04/16 19:37:08 >> RCPT TO: <reply@yourcloudcampus.com><EOL>
+14/04/16 19:37:08 << 250 2.1.5 OK gc2sm4004183wic.3 - gsmtp<EOL>
+14/04/16 19:37:08 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/16 19:37:08 << 250 2.1.5 OK gc2sm4004183wic.3 - gsmtp<EOL>
+14/04/16 19:37:08 >> DATA<EOL>
+14/04/16 19:37:09 << 354  Go ahead gc2sm4004183wic.3 - gsmtp<EOL>
+14/04/16 19:37:09 >> Date: Wed, 16 Apr 2014 19:37:09 +0500<EOL>
+14/04/16 19:37:09 >> To: reply@yourcloudcampus.com<EOL>
+14/04/16 19:37:09 >> Subject: YCC-Teacher absent Email<EOL>
+14/04/16 19:37:09 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/16 19:37:09 >> From: yourcloudcampus.management<EOL>
+14/04/16 19:37:09 >> Reply-To: reply@yourcloudcampus.com<EOL>
+14/04/16 19:37:09 >> Bcc:junaid9898@yahoo.com<EOL>
+14/04/16 19:37:09 >> MIME-Version: 1.0<EOL>
+14/04/16 19:37:09 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/16 19:37:09 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/16 19:37:09 >> <EOL>
+14/04/16 19:37:09 >> <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span><EOL>
+14/04/16 19:37:09 >> <EOL>
+14/04/16 19:37:09 >>  <br /><br /><b>Dear student/ Parent</b><EOL>
+14/04/16 19:37:09 >> <EOL>
+14/04/16 19:37:09 >>  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Faisal Mehmood</b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.<EOL>
+14/04/16 19:37:09 >> <EOL>
+14/04/16 19:37:09 >>  <br /><br />Regards, <EOL>
+14/04/16 19:37:09 >>  <br /><b>YCC(YourCloudCampus Management)</b> <EOL>
+14/04/16 19:37:09 >>  <br><b>USA: 215-764-6162</b><EOL>
+14/04/16 19:37:09 >>  <br><b>UK : 121-288-3093</b><EOL>
+14/04/16 19:37:09 >> .<EOL>
+14/04/16 19:37:10 << 250 2.0.0 OK 1397659027 gc2sm4004183wic.3 - gsmtp<EOL>
+14/04/16 19:37:10 >> QUIT<EOL>
+14/04/16 19:37:10 << 221 2.0.0 closing connection gc2sm4004183wic.3 - gsmtp<EOL>
+14/04/16 19:37:10 ** Disconnected.
+14/04/16 19:37:10 ** Disconnected.
+14/04/16 19:37:10 ** Disconnected.
+14/04/16 19:38:25 ** --- MESSAGE BEGIN ---
+14/04/16 19:38:25 ** To: reply@yourcloudcampus.com
+14/04/16 19:38:25 ** Subject: YCC-Teacher absent Email
+14/04/16 19:38:25 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/16 19:38:25 ** From: yourcloudcampus.management
+14/04/16 19:38:25 ** Reply-To: reply@yourcloudcampus.com
+14/04/16 19:38:25 ** Bcc:junaid9898@yahoo.com
+14/04/16 19:38:25 ** MIME-Version: 1.0
+14/04/16 19:38:25 ** Content-type: text/html; charset=iso-8859-1
+14/04/16 19:38:25 ** X-Mailer: PHP/5.4.16
+14/04/16 19:38:25 ** 
+14/04/16 19:38:25 ** <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span>
+14/04/16 19:38:25 ** 
+14/04/16 19:38:25 **  <br /><br /><b>Dear student/ Parent</b>
+14/04/16 19:38:25 ** 
+14/04/16 19:38:25 **  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Faisal Mehmood</b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.
+14/04/16 19:38:25 ** 
+14/04/16 19:38:25 **  <br /><br />Regards, 
+14/04/16 19:38:25 **  <br /><b>YCC(YourCloudCampus Management)</b> 
+14/04/16 19:38:25 **  <br><b>USA: 215-764-6162</b>
+14/04/16 19:38:25 **  <br><b>UK : 121-288-3093</b>
+14/04/16 19:38:25 ** --- MESSAGE END ---
+14/04/16 19:38:25 ** Connecting to smtp.gmail.com:465
+14/04/16 19:38:26 ** Connected.
+14/04/16 19:38:26 << 220 mx.google.com ESMTP u6sm36332801wif.6 - gsmtp<EOL>
+14/04/16 19:38:26 >> EHLO localhost<EOL>
+14/04/16 19:38:26 << 250-mx.google.com at your service, [101.50.116.94]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/16 19:38:26 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/16 19:38:26 >> AUTH LOGIN<EOL>
+14/04/16 19:38:27 << 334 VXNlcm5hbWU6<EOL>
+14/04/16 19:38:27 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/16 19:38:27 << 334 UGFzc3dvcmQ6<EOL>
+14/04/16 19:38:27 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/16 19:38:27 << 235 2.7.0 Accepted<EOL>
+14/04/16 19:38:27 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/16 19:38:27 << 250 2.1.0 OK u6sm36332801wif.6 - gsmtp<EOL>
+14/04/16 19:38:27 >> RCPT TO: <reply@yourcloudcampus.com><EOL>
+14/04/16 19:38:27 << 250 2.1.5 OK u6sm36332801wif.6 - gsmtp<EOL>
+14/04/16 19:38:27 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/16 19:38:28 << 250 2.1.5 OK u6sm36332801wif.6 - gsmtp<EOL>
+14/04/16 19:38:28 >> DATA<EOL>
+14/04/16 19:38:28 << 354  Go ahead u6sm36332801wif.6 - gsmtp<EOL>
+14/04/16 19:38:28 >> Date: Wed, 16 Apr 2014 19:38:28 +0500<EOL>
+14/04/16 19:38:28 >> To: reply@yourcloudcampus.com<EOL>
+14/04/16 19:38:28 >> Subject: YCC-Teacher absent Email<EOL>
+14/04/16 19:38:28 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/16 19:38:28 >> From: yourcloudcampus.management<EOL>
+14/04/16 19:38:28 >> Reply-To: reply@yourcloudcampus.com<EOL>
+14/04/16 19:38:28 >> Bcc:junaid9898@yahoo.com<EOL>
+14/04/16 19:38:28 >> MIME-Version: 1.0<EOL>
+14/04/16 19:38:28 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/16 19:38:28 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/16 19:38:28 >> <EOL>
+14/04/16 19:38:28 >> <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span><EOL>
+14/04/16 19:38:28 >> <EOL>
+14/04/16 19:38:28 >>  <br /><br /><b>Dear student/ Parent</b><EOL>
+14/04/16 19:38:28 >> <EOL>
+14/04/16 19:38:28 >>  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Faisal Mehmood</b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.<EOL>
+14/04/16 19:38:28 >> <EOL>
+14/04/16 19:38:28 >>  <br /><br />Regards, <EOL>
+14/04/16 19:38:28 >>  <br /><b>YCC(YourCloudCampus Management)</b> <EOL>
+14/04/16 19:38:28 >>  <br><b>USA: 215-764-6162</b><EOL>
+14/04/16 19:38:28 >>  <br><b>UK : 121-288-3093</b><EOL>
+14/04/16 19:38:28 >> .<EOL>
+14/04/16 19:38:29 << 250 2.0.0 OK 1397659106 u6sm36332801wif.6 - gsmtp<EOL>
+14/04/16 19:38:29 >> QUIT<EOL>
+14/04/16 19:38:29 << 221 2.0.0 closing connection u6sm36332801wif.6 - gsmtp<EOL>
+14/04/16 19:38:29 ** Disconnected.
+14/04/16 19:38:29 ** Disconnected.
+14/04/16 19:38:29 ** Disconnected.
+14/04/16 19:39:44 ** --- MESSAGE BEGIN ---
+14/04/16 19:39:44 ** To: reply@yourcloudcampus.com
+14/04/16 19:39:44 ** Subject: YCC-Teacher absent Email
+14/04/16 19:39:44 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/16 19:39:44 ** From: yourcloudcampus.management
+14/04/16 19:39:44 ** Reply-To: reply@yourcloudcampus.com
+14/04/16 19:39:44 ** Bcc:junaid9898@yahoo.com
+14/04/16 19:39:44 ** MIME-Version: 1.0
+14/04/16 19:39:44 ** Content-type: text/html; charset=iso-8859-1
+14/04/16 19:39:44 ** X-Mailer: PHP/5.4.16
+14/04/16 19:39:44 ** 
+14/04/16 19:39:44 ** <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span>
+14/04/16 19:39:44 ** 
+14/04/16 19:39:44 **  <br /><br /><b>Dear student/ Parent</b>
+14/04/16 19:39:44 ** 
+14/04/16 19:39:44 **  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Faisal Mehmood</b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.
+14/04/16 19:39:44 ** 
+14/04/16 19:39:44 **  <br /><br />Regards, 
+14/04/16 19:39:44 **  <br /><b>YCC(YourCloudCampus Management)</b> 
+14/04/16 19:39:44 **  <br><b>USA: 215-764-6162</b>
+14/04/16 19:39:44 **  <br><b>UK : 121-288-3093</b>
+14/04/16 19:39:44 ** --- MESSAGE END ---
+14/04/16 19:39:44 ** Connecting to smtp.gmail.com:465
+14/04/16 19:39:46 ** Connected.
+14/04/16 19:39:46 << 220 mx.google.com ESMTP u6sm36339264wif.6 - gsmtp<EOL>
+14/04/16 19:39:46 >> EHLO localhost<EOL>
+14/04/16 19:39:46 << 250-mx.google.com at your service, [101.50.116.94]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/16 19:39:46 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/16 19:39:46 >> AUTH LOGIN<EOL>
+14/04/16 19:39:46 << 334 VXNlcm5hbWU6<EOL>
+14/04/16 19:39:46 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/16 19:39:46 << 334 UGFzc3dvcmQ6<EOL>
+14/04/16 19:39:46 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/16 19:39:47 << 235 2.7.0 Accepted<EOL>
+14/04/16 19:39:47 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/16 19:39:47 << 250 2.1.0 OK u6sm36339264wif.6 - gsmtp<EOL>
+14/04/16 19:39:47 >> RCPT TO: <reply@yourcloudcampus.com><EOL>
+14/04/16 19:39:47 << 250 2.1.5 OK u6sm36339264wif.6 - gsmtp<EOL>
+14/04/16 19:39:47 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/16 19:39:47 << 250 2.1.5 OK u6sm36339264wif.6 - gsmtp<EOL>
+14/04/16 19:39:47 >> DATA<EOL>
+14/04/16 19:39:48 << 354  Go ahead u6sm36339264wif.6 - gsmtp<EOL>
+14/04/16 19:39:48 >> Date: Wed, 16 Apr 2014 19:39:48 +0500<EOL>
+14/04/16 19:39:48 >> To: reply@yourcloudcampus.com<EOL>
+14/04/16 19:39:48 >> Subject: YCC-Teacher absent Email<EOL>
+14/04/16 19:39:48 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/16 19:39:48 >> From: yourcloudcampus.management<EOL>
+14/04/16 19:39:48 >> Reply-To: reply@yourcloudcampus.com<EOL>
+14/04/16 19:39:48 >> Bcc:junaid9898@yahoo.com<EOL>
+14/04/16 19:39:48 >> MIME-Version: 1.0<EOL>
+14/04/16 19:39:48 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/16 19:39:48 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/16 19:39:48 >> <EOL>
+14/04/16 19:39:48 >> <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span><EOL>
+14/04/16 19:39:48 >> <EOL>
+14/04/16 19:39:48 >>  <br /><br /><b>Dear student/ Parent</b><EOL>
+14/04/16 19:39:48 >> <EOL>
+14/04/16 19:39:48 >>  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Faisal Mehmood</b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.<EOL>
+14/04/16 19:39:48 >> <EOL>
+14/04/16 19:39:48 >>  <br /><br />Regards, <EOL>
+14/04/16 19:39:48 >>  <br /><b>YCC(YourCloudCampus Management)</b> <EOL>
+14/04/16 19:39:48 >>  <br><b>USA: 215-764-6162</b><EOL>
+14/04/16 19:39:48 >>  <br><b>UK : 121-288-3093</b><EOL>
+14/04/16 19:39:48 >> .<EOL>
+14/04/16 19:39:49 << 250 2.0.0 OK 1397659186 u6sm36339264wif.6 - gsmtp<EOL>
+14/04/16 19:39:49 >> QUIT<EOL>
+14/04/16 19:39:49 << 221 2.0.0 closing connection u6sm36339264wif.6 - gsmtp<EOL>
+14/04/16 19:39:49 ** Disconnected.
+14/04/16 19:39:49 ** Disconnected.
+14/04/16 19:39:49 ** Disconnected.
+14/04/16 19:41:31 ** --- MESSAGE BEGIN ---
+14/04/16 19:41:31 ** To: reply@yourcloudcampus.com
+14/04/16 19:41:31 ** Subject: YCC-Teacher absent Email
+14/04/16 19:41:31 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/16 19:41:31 ** From: yourcloudcampus.management
+14/04/16 19:41:31 ** Reply-To: reply@yourcloudcampus.com
+14/04/16 19:41:31 ** Bcc:junaid9898@yahoo.com
+14/04/16 19:41:31 ** MIME-Version: 1.0
+14/04/16 19:41:31 ** Content-type: text/html; charset=iso-8859-1
+14/04/16 19:41:31 ** X-Mailer: PHP/5.4.16
+14/04/16 19:41:31 ** 
+14/04/16 19:41:31 ** <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span>
+14/04/16 19:41:31 ** 
+14/04/16 19:41:31 **  <br /><br /><b>Dear student/ Parent</b>
+14/04/16 19:41:31 ** 
+14/04/16 19:41:31 **  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Faisal Mehmood</b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.
+14/04/16 19:41:31 ** 
+14/04/16 19:41:31 **  <br /><br />Regards, 
+14/04/16 19:41:31 **  <br /><b>YCC(YourCloudCampus Management)</b> 
+14/04/16 19:41:31 **  <br><b>USA: 215-764-6162</b>
+14/04/16 19:41:31 **  <br><b>UK : 121-288-3093</b>
+14/04/16 19:41:31 ** --- MESSAGE END ---
+14/04/16 19:41:31 ** Connecting to smtp.gmail.com:465
+14/04/16 19:41:32 ** Connected.
+14/04/16 19:41:32 << 220 mx.google.com ESMTP u1sm34632979wjx.16 - gsmtp<EOL>
+14/04/16 19:41:32 >> EHLO localhost<EOL>
+14/04/16 19:41:33 << 250-mx.google.com at your service, [101.50.116.94]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/16 19:41:33 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/16 19:41:33 >> AUTH LOGIN<EOL>
+14/04/16 19:41:33 << 334 VXNlcm5hbWU6<EOL>
+14/04/16 19:41:33 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/16 19:41:33 << 334 UGFzc3dvcmQ6<EOL>
+14/04/16 19:41:33 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/16 19:41:33 << 235 2.7.0 Accepted<EOL>
+14/04/16 19:41:33 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/16 19:41:34 << 250 2.1.0 OK u1sm34632979wjx.16 - gsmtp<EOL>
+14/04/16 19:41:34 >> RCPT TO: <reply@yourcloudcampus.com><EOL>
+14/04/16 19:41:34 << 250 2.1.5 OK u1sm34632979wjx.16 - gsmtp<EOL>
+14/04/16 19:41:34 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/16 19:41:34 << 250 2.1.5 OK u1sm34632979wjx.16 - gsmtp<EOL>
+14/04/16 19:41:34 >> DATA<EOL>
+14/04/16 19:41:34 << 354  Go ahead u1sm34632979wjx.16 - gsmtp<EOL>
+14/04/16 19:41:34 >> Date: Wed, 16 Apr 2014 19:41:34 +0500<EOL>
+14/04/16 19:41:34 >> To: reply@yourcloudcampus.com<EOL>
+14/04/16 19:41:34 >> Subject: YCC-Teacher absent Email<EOL>
+14/04/16 19:41:34 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/16 19:41:34 >> From: yourcloudcampus.management<EOL>
+14/04/16 19:41:34 >> Reply-To: reply@yourcloudcampus.com<EOL>
+14/04/16 19:41:34 >> Bcc:junaid9898@yahoo.com<EOL>
+14/04/16 19:41:34 >> MIME-Version: 1.0<EOL>
+14/04/16 19:41:34 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/16 19:41:34 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/16 19:41:34 >> <EOL>
+14/04/16 19:41:34 >> <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span><EOL>
+14/04/16 19:41:34 >> <EOL>
+14/04/16 19:41:34 >>  <br /><br /><b>Dear student/ Parent</b><EOL>
+14/04/16 19:41:34 >> <EOL>
+14/04/16 19:41:34 >>  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Faisal Mehmood</b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.<EOL>
+14/04/16 19:41:34 >> <EOL>
+14/04/16 19:41:34 >>  <br /><br />Regards, <EOL>
+14/04/16 19:41:34 >>  <br /><b>YCC(YourCloudCampus Management)</b> <EOL>
+14/04/16 19:41:34 >>  <br><b>USA: 215-764-6162</b><EOL>
+14/04/16 19:41:34 >>  <br><b>UK : 121-288-3093</b><EOL>
+14/04/16 19:41:34 >> .<EOL>
+14/04/16 19:41:35 << 250 2.0.0 OK 1397659292 u1sm34632979wjx.16 - gsmtp<EOL>
+14/04/16 19:41:35 >> QUIT<EOL>
+14/04/16 19:41:35 << 221 2.0.0 closing connection u1sm34632979wjx.16 - gsmtp<EOL>
+14/04/16 19:41:35 ** Disconnected.
+14/04/16 19:41:35 ** Disconnected.
+14/04/16 19:41:35 ** Disconnected.
+14/04/16 19:44:20 ** --- MESSAGE BEGIN ---
+14/04/16 19:44:20 ** To: reply@yourcloudcampus.com
+14/04/16 19:44:20 ** Subject: YCC-Teacher absent Email
+14/04/16 19:44:20 ** X-PHP-Originating-Script: 0:tosend.php
+14/04/16 19:44:20 ** From: yourcloudcampus.management
+14/04/16 19:44:20 ** Reply-To: reply@yourcloudcampus.com
+14/04/16 19:44:20 ** Bcc:junaid9898@yahoo.com
+14/04/16 19:44:20 ** MIME-Version: 1.0
+14/04/16 19:44:20 ** Content-type: text/html; charset=iso-8859-1
+14/04/16 19:44:20 ** X-Mailer: PHP/5.4.16
+14/04/16 19:44:20 ** 
+14/04/16 19:44:20 ** <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span>
+14/04/16 19:44:20 ** 
+14/04/16 19:44:20 **  <br /><br /><b>Dear student/ Parent</b>
+14/04/16 19:44:20 ** 
+14/04/16 19:44:20 **  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Faisal Mehmood</b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.
+14/04/16 19:44:20 ** 
+14/04/16 19:44:20 **  <br /><br />Regards, 
+14/04/16 19:44:20 **  <br /><b>YCC(YourCloudCampus Management)</b> 
+14/04/16 19:44:20 **  <br><b>USA: 215-764-6162</b>
+14/04/16 19:44:20 **  <br><b>UK : 121-288-3093</b>
+14/04/16 19:44:20 ** --- MESSAGE END ---
+14/04/16 19:44:20 ** Connecting to smtp.gmail.com:465
+14/04/16 19:44:21 ** Connected.
+14/04/16 19:44:21 << 220 mx.google.com ESMTP bj5sm36374199wib.3 - gsmtp<EOL>
+14/04/16 19:44:21 >> EHLO localhost<EOL>
+14/04/16 19:44:22 << 250-mx.google.com at your service, [101.50.116.94]<EOL>250-SIZE 35882577<EOL>250-8BITMIME<EOL>250-AUTH LOGIN PLAIN XOAUTH XOAUTH2 PLAIN-CLIENTTOKEN<EOL>250-ENHANCEDSTATUSCODES<EOL>250 CHUNKING<EOL>
+14/04/16 19:44:22 ** Authenticating as yourcloudcampus.management@gmail.com
+14/04/16 19:44:22 >> AUTH LOGIN<EOL>
+14/04/16 19:44:22 << 334 VXNlcm5hbWU6<EOL>
+14/04/16 19:44:22 >> eW91cmNsb3VkY2FtcHVzLm1hbmFnZW1lbnRAZ21haWwuY29t<EOL>
+14/04/16 19:44:22 << 334 UGFzc3dvcmQ6<EOL>
+14/04/16 19:44:22 >> eWNjbWFuYWdlbWVudDEyMw==<EOL>
+14/04/16 19:44:23 << 235 2.7.0 Accepted<EOL>
+14/04/16 19:44:23 >> MAIL FROM: <yourcloudcampus.management@localhost><EOL>
+14/04/16 19:44:23 << 250 2.1.0 OK bj5sm36374199wib.3 - gsmtp<EOL>
+14/04/16 19:44:23 >> RCPT TO: <reply@yourcloudcampus.com><EOL>
+14/04/16 19:44:23 << 250 2.1.5 OK bj5sm36374199wib.3 - gsmtp<EOL>
+14/04/16 19:44:23 >> RCPT TO: <junaid9898@yahoo.com><EOL>
+14/04/16 19:44:23 << 250 2.1.5 OK bj5sm36374199wib.3 - gsmtp<EOL>
+14/04/16 19:44:23 >> DATA<EOL>
+14/04/16 19:44:24 << 354  Go ahead bj5sm36374199wib.3 - gsmtp<EOL>
+14/04/16 19:44:24 >> Date: Wed, 16 Apr 2014 19:44:24 +0500<EOL>
+14/04/16 19:44:24 >> To: reply@yourcloudcampus.com<EOL>
+14/04/16 19:44:24 >> Subject: YCC-Teacher absent Email<EOL>
+14/04/16 19:44:24 >> X-PHP-Originating-Script: 0:tosend.php<EOL>
+14/04/16 19:44:24 >> From: yourcloudcampus.management<EOL>
+14/04/16 19:44:24 >> Reply-To: reply@yourcloudcampus.com<EOL>
+14/04/16 19:44:24 >> Bcc:junaid9898@yahoo.com<EOL>
+14/04/16 19:44:24 >> MIME-Version: 1.0<EOL>
+14/04/16 19:44:24 >> Content-type: text/html; charset=iso-8859-1<EOL>
+14/04/16 19:44:24 >> X-Mailer: PHP/5.4.16<EOL>
+14/04/16 19:44:24 >> <EOL>
+14/04/16 19:44:24 >> <br/><span style='color:Orange; font-size:16px'>Email From YOURCLOUDCAMPUS</span><EOL>
+14/04/16 19:44:24 >> <EOL>
+14/04/16 19:44:24 >>  <br /><br /><b>Dear student/ Parent</b><EOL>
+14/04/16 19:44:24 >> <EOL>
+14/04/16 19:44:24 >>  <br/><br/>It is regrettably informed that unfortunately your teacher <b>Faisal Mehmood</b> will not be available for today due to certain unavoidable circumstances. We typically place a very high priority on teaching in our Campus and desire teachers to be there to foster high level of engagement of students. It is recognized how very important Students and their Time are to us. We ensure you that your missed classes will be compensated in due course of time. Efforts are underway to arrange an alternate teacher to deliver the makeover classes. We will let you know as soon as possible today.<EOL>
+14/04/16 19:44:24 >> <EOL>
+14/04/16 19:44:24 >>  <br /><br />Regards, <EOL>
+14/04/16 19:44:24 >>  <br /><b>YCC(YourCloudCampus Management)</b> <EOL>
+14/04/16 19:44:24 >>  <br><b>USA: 215-764-6162</b><EOL>
+14/04/16 19:44:24 >>  <br><b>UK : 121-288-3093</b><EOL>
+14/04/16 19:44:24 >> .<EOL>
+14/04/16 19:44:25 << 250 2.0.0 OK 1397659462 bj5sm36374199wib.3 - gsmtp<EOL>
+14/04/16 19:44:25 >> QUIT<EOL>
+14/04/16 19:44:25 << 221 2.0.0 closing connection bj5sm36374199wib.3 - gsmtp<EOL>
+14/04/16 19:44:25 ** Disconnected.
+14/04/16 19:44:25 ** Disconnected.
+14/04/16 19:44:25 ** Disconnected.

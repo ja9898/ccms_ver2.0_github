@@ -1,0 +1,85 @@
+date/time         : 2014-04-15, 03:43:52, 627ms
+computer name     : JUNAIDABBAS-PC
+user name         : SYSTEM <admin>
+registered owner  : Junaid Abbas
+operating system  : Windows 7 build 7600
+system language   : English
+system up time    : 4 hours 6 minutes
+program up time   : 2 seconds
+processors        : 2x Intel(R) Core(TM)2 Duo CPU T7100 @ 1.80GHz
+physical memory   : 54/1014 MB (free/total)
+free disk space   : (C:) 8.87 GB
+display mode      : 1024x768, 32 bit
+process id        : $8ac
+allocated memory  : 6.90 MB
+command line      : C:\wamp\www\New_folder\sendmail\sendmail.exe -t -i
+executable        : sendmail.exe
+exec. date/time   : 2011-06-18 01:10
+compiled with     : Delphi 2006/07
+madExcept version : 3.0l
+callstack crc     : $1d5da2f6, $426ead6b, $426ead6b
+exception number  : 1
+exception class   : EIdSocketError
+exception message : Socket Error # 10060 Connection timed out.
+
+main thread ($123c):
+00435e23 +0073 sendmail.exe IdStack                         706  +42 TIdStack.RaiseSocketError
+00435daa +0016 sendmail.exe IdStack                         660   +1 TIdStack.RaiseLastSocketError
+0045f2e8 +0100 sendmail.exe IdSSLOpenSSLHeaders           16464  +22 EIdOpenSSLAPISSLError.RaiseExceptionCode
+0045f1d9 +0021 sendmail.exe IdSSLOpenSSLHeaders           16433   +1 EIdOpenSSLAPISSLError.RaiseException
+00466686 +012a sendmail.exe IdSSLOpenSSL                   2668  +17 TIdSSLSocket.Connect
+00465a1c +00dc sendmail.exe IdSSLOpenSSL                   2262  +21 TIdSSLIOHandlerSocketOpenSSL.OpenEncodedConnection
+004655f6 +0062 sendmail.exe IdSSLOpenSSL                   2106   +9 TIdSSLIOHandlerSocketOpenSSL.StartSSL
+00465587 +006b sendmail.exe IdSSLOpenSSL                   2093  +15 TIdSSLIOHandlerSocketOpenSSL.ConnectClient
+00444a9f +0063 sendmail.exe IdIOHandlerSocket               335  +13 TIdIOHandlerSocket.Open
+00465637 +0007 sendmail.exe IdSSLOpenSSL                   2122   +1 TIdSSLIOHandlerSocketOpenSSL.Open
+0044157d +0235 sendmail.exe IdTCPClient                     318  +53 TIdTCPClientCustom.Connect
+00445cc8 +00a4 sendmail.exe IdExplicitTLSClientServerBase   257  +23 TIdExplicitTLSClient.Connect
+0045ab7b +0017 sendmail.exe IdSMTP                          373   +2 TIdSMTP.Connect
+004b5f14 +1060 sendmail.exe sendmail                        808 +326 initialization
+762c1172 +0010 kernel32.dll                                          BaseThreadInitThunk
+
+thread $c0:
+77765e7a +0a ntdll.dll     NtWaitForWorkViaWorkerFactory
+762c1172 +10 kernel32.dll  BaseThreadInitThunk
+
+thread $dcc:
+77765e4a +0a ntdll.dll     NtWaitForMultipleObjects
+762c1172 +10 kernel32.dll  BaseThreadInitThunk
+
+stack dump:
+0012fba8  28 5e 43 00 de fa ed 0e - 01 00 00 00 07 00 00 00  (^C.............
+0012fbb8  bc fb 12 00 28 5e 43 00 - c8 cc 81 00 ec 28 43 00  ....(^C......(C.
+0012fbc8  c0 3f 46 00 f0 1d 83 00 - f8 fb 12 00 d8 fb 12 00  .?F.............
+0012fbd8  0c fc 12 00 c8 4b 40 00 - f8 fb 12 00 05 00 00 00  .....K@.........
+0012fbe8  00 00 00 00 00 00 00 00 - 4c 27 00 00 30 50 81 00  ........L'..0P..
+0012fbf8  04 fc 12 00 ad 5d 43 00 - 30 50 81 00 ec fc 12 00  .....]C.0P......
+0012fc08  ed f2 45 00 10 fd 12 00 - c8 4b 40 00 ec fc 12 00  ..E......K@.....
+0012fc18  28 bc 12 02 ff ff ff ff - c0 3f 46 00 00 00 00 00  (........?F.....
+0012fc28  00 00 00 00 00 00 00 00 - 00 00 00 00 00 00 00 00  ................
+0012fc38  98 8a f8 01 a0 9a 8b 00 - 00 00 00 00 98 8a f8 01  ................
+0012fc48  c2 13 04 11 e8 8f f7 01 - 8b 2a 43 09 6f e6 00 12  .........*C.o...
+0012fc58  08 94 f7 01 e0 11 00 00 - 28 bc 12 02 f7 ec 00 12  ........(.......
+0012fc68  00 00 00 00 00 00 00 00 - 08 94 f7 01 0b 00 00 00  ................
+0012fc78  3a 01 00 00 c0 ff 12 02 - 9d 27 04 11 00 f3 03 12  :........'......
+0012fc88  1f 2d 43 09 38 fa 00 12 - 28 bc 12 02 16 00 00 00  .-C.8...(.......
+0012fc98  08 94 f7 01 04 00 00 00 - 00 00 00 00 28 bc 12 02  ............(...
+0012fca8  28 bc 12 02 00 00 00 00 - e0 11 00 00 24 90 00 12  (...........$...
+0012fcb8  28 bc 12 02 e0 11 00 00 - e1 11 00 00 ff ff ff ff  (...............
+0012fcc8  00 40 00 00 d8 fc 12 00 - ad d5 01 12 30 ff 12 02  .@..........0...
+0012fcd8  04 00 00 00 00 00 00 00 - ff ff ff ff 00 00 00 00  ................
+
+disassembling:
+[...]
+00435e13       push    eax
+00435e14       mov     ecx, [ebp-8]
+00435e17       mov     dl, 1
+00435e19       mov     eax, [$4352ac]
+00435e1e       call    -$717 ($43570c)        ; IdStack.EIdSocketError.CreateError
+00435e23     > call    -$3113c ($404cec)      ; System.@RaiseExcept
+00435e28 707   xor     eax, eax
+00435e2a       pop     edx
+00435e2b       pop     ecx
+00435e2c       pop     ecx
+00435e2d       mov     fs:[eax], edx
+[...]

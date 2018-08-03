@@ -1,0 +1,10 @@
+<?php
+include('config.php');
+unset($_SESSION["loggedIn"]);
+unset($_SESSION["userType"]);
+unset($_SESSION['userName']);
+unset($_SESSION['userId']);
+unset($_SESSION['userip']);
+unset($_SESSION['voice_id']);
+header("location:index.php");
+?>
