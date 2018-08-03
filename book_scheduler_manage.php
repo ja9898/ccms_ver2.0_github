@@ -63,7 +63,10 @@ echo "<th class='specalt'><b>Parent</b></th>";
 echo "<th class='specalt'><b>Grade</b></th>"; 
 echo "<th class='specalt'><b>Syllabus</b></th>";
 echo "<th class='specalt'><b>Recording link</b></th>"; 
-echo "<th class='specalt' colspan=9><b>Actions</b></th>";  
+echo "<th class='specalt' colspan=9><b>Actions</b></th>"; 
+echo "<th class='specalt'><b>Status</b></th>";
+echo "<th class='specalt'><b>Accept</b></th>";
+echo "<th class='specalt'><b>Reject</b></th>"; 
 echo "</tr>"; 
 if($_SESSION['userType']==5 && ($_POST['search-student-id']!=0  || $_POST['search-teacher-id']!=0 || $_POST['search-agent-id']!=0 || $_POST['classType']!=0 || $_POST['stdStatus']!=0 || $_POST['startTime']!=0 || $_POST['shift']!=0 || $_POST['course']!=0 ) )
 {
@@ -281,7 +284,7 @@ if($_SESSION['userType']==8 || $_SESSION['userType']==15 || $_SESSION['userType'
 		}
 		if($row['statussch']=='1')
 		{
-		echo "<td><a  class=button href=make_regular.php?id={$row['studentID']}&schedule={$row['sch_id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&agentId={$row['agentId']}&startTime={$row['startTime']}>Make Regular</a></td> ";
+		echo "<td><a  class=button href=make_regular_ver2.php?id={$row['studentID']}&schedule={$row['sch_id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&agentId={$row['agentId']}&startTime={$row['startTime']}>Make Regular</a></td> ";
 		}
 		echo "<td valign='top'><a class=button target='_blank' href=book_scheduler_edit_grade_syllabus.php?id={$row['sch_id']}>Edit GR-SY</a></td>";
 }
@@ -293,7 +296,7 @@ else if($_SESSION['userType']==10 || $_SESSION['userType']==9 || $_SESSION['user
 		<td><a onclick=\"return confirm('Are you sure you want to mark this record Dead?')\" class=button href=book_scheduler_dead_message.php?id={$row['id']}>Dead</a></td>";
 		if($row['statussch']=='1')
 		{
-		echo "<td><a  class=button href=make_regular.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&agentId={$row['agentId']}&startTime={$row['startTime']}>Make Regular</a></td> ";
+		echo "<td><a  class=button href=make_regular_ver2.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&agentId={$row['agentId']}&startTime={$row['startTime']}>Make Regular</a></td> ";
 		}
 }
 
@@ -347,9 +350,13 @@ else
 	}
 	if($row['statussch']=='1')
 	{
-		echo "<td><a  class=button href=make_regular.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&agentId={$row['agentId']}&startTime={$row['startTime']}>Make Regular</a></td> ";
+		echo "<td><a  class=button href=make_regular_ver2.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&agentId={$row['agentId']}&startTime={$row['startTime']}>Make Regular</a></td> ";
 	} 
-	
+	if($row['statussch']=='2'){
+	echo "<td valign='top'>" . getData(nl2br( $row['statusPendRejAccpt']),'statusPendRejAccptAry'). "</td>";
+	echo "<td ><a class=button href=transaction_new_ver2_approve.php?id={$row['id']} target='_blank'>Accept</a></td> ";
+	echo "<td ><a class=button href=transaction_new_ver2_reject.php?id={$row['id']} target='_blank'>Reject</a></td>";
+	}
 }
 echo "</tr>"; 
 }

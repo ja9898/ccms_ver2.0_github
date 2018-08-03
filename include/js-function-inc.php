@@ -730,9 +730,11 @@ function availableTeamUnder_main(usertype_teamlead_main,usertype_teamlead_id_mai
 			}
     }
 	
-	function calculate_currency_conversion()
+	function calculate_currency_conversion() //FOR MAKE REGULAR
 	{
             var value_of_currency = document.getElementsByName("value_of_currency")[0].value;
+			document.getElementById("amount_original").value = document.getElementById("amountOriginalNew").value;
+
             var amount_original = document.getElementById("amount_original").value;
 			var cad_amount = document.getElementById("value_of_cad").value;
 			var GBP = amount_original*value_of_currency;
@@ -742,17 +744,59 @@ function availableTeamUnder_main(usertype_teamlead_main,usertype_teamlead_id_mai
 			var simple_convert = document.getElementById("simple_convert").value;
 			var amount_usd_simple = simple_convert*amount_original;
 			amount_usd_simple = amount_usd_simple.toFixed(2);
+			
+			
+			//************************************** NEW PART		START
+			//NEW
+			//Getting all values
+			var amount_default = document.getElementById("amountDefaultNew").value;
+			var amount_original = document.getElementById("amountOriginalNew").value;
+			var simple_convert = document.getElementById("simple_convert").value;
+			//var fee_deduct = document.getElementById("feeDeductNew").value;
+			var received_amt = document.getElementById("totalReceivedNew").value;
+			
+			//Calculate received 
+			var fee_deduct = amount_original - received_amt;
+			document.getElementById("feeDeductNew").value=fee_deduct;
+			//Calculate discount
+			var discountNew = amount_default - amount_original;
+			//USD Conversions
+			//Converting Total received Amount to USD
+			var amountUsdSimpleNew = simple_convert*received_amt;
+			amountUsdSimpleNew = amountUsdSimpleNew.toFixed(2);
+			//Converting all calculated values[amount_default,amount_original,simple_convert,fee_deduct] to USD 
+			
+			amountDefaultNew_Usd = amount_default * simple_convert;
+			amountOriginalNew_Usd = amount_original * simple_convert;
+			feeDeductNew_Usd = fee_deduct * simple_convert;
+			//amountUsdSimpleNew Done above
+			discountNew_Usd = discountNew * simple_convert;
+			
+			//************************************** NEW PART		END		
 
-			if(value_of_currency!=0 || amount_original!=0)
+			if(amount_original!=0)
 			{
-				alert("Successful");
+				//alert("Successful");
 				document.getElementById("amount_gbp").value = GBP.toFixed(2);
 				document.getElementById("amount").value = converted_amount;
 				//Newly added //23-11-16
-				document.getElementById("amount_usd_simple").value = amount_usd_simple;
+				//document.getElementById("amount_usd_simple").value = amount_usd_simple;
+				document.getElementById("amount_usd_simple").value = amountUsdSimpleNew;
+
+				//NEW
+				//alert("Successful");
+				document.getElementById("totalReceivedNew").value = received_amt;
+				document.getElementById("discountNew").value = discountNew.toFixed(2);
+				//Assigning values to the id of USD elements
+				document.getElementById("amountDefaultNew_Usd").value = amountDefaultNew_Usd.toFixed(2);
+				document.getElementById("amountOriginalNew_Usd").value = amountOriginalNew_Usd.toFixed(2);
+				document.getElementById("feeDeductNew_Usd").value = feeDeductNew_Usd.toFixed(2);
+				document.getElementById("discountNew_Usd").value = discountNew_Usd.toFixed(2);
+				document.getElementById("amountUsdSimpleNew").value = amountUsdSimpleNew;
+				
 				return true;
 			}
-			if(value_of_currency==0)
+			if(amount_original==0)
 			{
 				alert("Un - Successful ");
 				return false;
@@ -792,6 +836,102 @@ function availableTeamUnder_main(usertype_teamlead_main,usertype_teamlead_id_mai
 			}
     }
 	
+	function calculate_received_discount_amount()//FOR TRANSACTION NEW VER 2
+	{
+			//OLD
+            var value_of_currency = document.getElementsByName("value_of_currency")[0].value;
+			document.getElementById("amount_original").value = document.getElementById("amountOriginalNew").value;
+            var amount_original = document.getElementById("amount_original").value;
+			var cad_amount = document.getElementById("value_of_cad").value;
+			var GBP = amount_original*value_of_currency;
+			var converted_amount=GBP/cad_amount;
+			converted_amount = converted_amount.toFixed(2);
+			//Newly added //23-11-16
+			var simple_convert = document.getElementById("simple_convert").value;
+			var amount_usd_simple = simple_convert*amount_original;
+			amount_usd_simple = amount_usd_simple.toFixed(2);
+			
+			//************************************** NEW PART		START
+			//NEW
+			//Getting all values
+			var amount_default = document.getElementById("amountDefaultNew").value;
+			var amount_original = document.getElementById("amountOriginalNew").value;
+			var simple_convert = document.getElementById("simple_convert").value;
+			var received_amt = document.getElementById("totalReceivedNew").value;
+			//Calculate received 
+			var fee_deduct = amount_original - received_amt;
+			document.getElementById("feeDeductNew").value=fee_deduct;
+			//Calculate discount
+			var discountNew = amount_default - amount_original;
+						
+			
+			
+			
+			//USD Conversions
+			//Converting Total received Amount to USD
+			var amountUsdSimpleNew = simple_convert * received_amt;
+			amountUsdSimpleNew = amountUsdSimpleNew.toFixed(2);
+			//Converting all calculated values[amount_default,amount_original,simple_convert,fee_deduct] to USD 
+			
+			amountDefaultNew_Usd = amount_default * simple_convert;
+			amountOriginalNew_Usd = amount_original * simple_convert;
+			feeDeductNew_Usd = fee_deduct * simple_convert;
+			//amountUsdSimpleNew Done above
+			discountNew_Usd = discountNew * simple_convert;
+			
+			//************************************** NEW PART		END			
+			
+			if(amount_original!=0)
+			{
+				//OLD
+				document.getElementById("amount_gbp").value = GBP.toFixed(2);
+				document.getElementById("amount").value = converted_amount;
+				var discount = document.getElementById("amount_default").value - document.getElementById("amount").value; 
+				document.getElementById("discount").value = discount.toFixed(2);
+				//Newly added //23-11-16
+				//document.getElementById("amount_usd_simple").value = amount_usd_simple;
+				document.getElementById("amount_usd_simple").value = amountUsdSimpleNew;				
+				//NEW
+				if(amount_default!=amount_original){
+					document.getElementById("comments").required = true;
+				}
+				else{
+					document.getElementById("comments").required = false;
+				}
+				
+				//alert("Successful");
+				document.getElementById("totalReceivedNew").value = received_amt;
+				document.getElementById("discountNew").value = discountNew.toFixed(2);
+				//Assigning values to the id of USD elements
+				document.getElementById("amountDefaultNew_Usd").value = amountDefaultNew_Usd.toFixed(2);
+				document.getElementById("amountOriginalNew_Usd").value = amountOriginalNew_Usd.toFixed(2);
+				document.getElementById("feeDeductNew_Usd").value = feeDeductNew_Usd.toFixed(2);
+				document.getElementById("discountNew_Usd").value = discountNew_Usd.toFixed(2);
+				document.getElementById("amountUsdSimpleNew").value = amountUsdSimpleNew;
+				
+				return true;
+			}
+			if(amount_original==0)
+			{
+				alert("Un - Successful ");
+				return false;
+			}
+    }
+	
+	
+	function reset_values()
+	{
+		document.getElementById("totalReceivedNew").value = '';
+		document.getElementById("discountNew").value = '';
+		document.getElementById("feeDeductNew").value = '';
+		
+		document.getElementById("amountDefaultNew_Usd").value = '';
+		document.getElementById("amountOriginalNew_Usd").value = '';
+		document.getElementById("feeDeductNew_Usd").value = '';
+		document.getElementById("discountNew_Usd").value = '';
+		document.getElementById("amountUsdSimpleNew").value = '';
+		
+    }
 	
 	//This function works when agent is changed from agent dropdownlist and enables/disables the
 	//Management dropdownlist under book_scheduler_edit.php
@@ -2201,7 +2341,7 @@ function delaylogin()
 		//window.location.href="user.php";
 	}
 	
-	function email_to_send_on_MONTH_START_REPORT()
+	function email_to_send_on_MONTH_START_REPORT(id)
 	{
 		//Making variable for ajax object
 		var ajaxhttp_obj;
@@ -2238,11 +2378,13 @@ function delaylogin()
 			}
 		
 		}
-		var letter_format = document.getElementById('email_to_send_on_MONTH_START_REPORT').value;
-		var student_email = document.getElementById('student_email').value;
-		var ttl_email = document.getElementById('ttl_email').value;
-		var mttl_email = document.getElementById('mttl_email').value;
-		
+		var index = id;
+		//alert(index);
+		var letter_format = document.getElementById('email_to_send_on_MONTH_START_REPORT'+index).value;
+		var student_email = document.getElementById('email_id'+index).value;
+		var ttl_email = document.getElementById('ttl_email'+index).value;
+		var mttl_email = document.getElementById('mttl_email'+index).value;
+		//alert(index+student_email+ttl_email+mttl_email);
 		var queryString = "letter_format=" + letter_format +"&student_email=" + student_email +"&ttl_email=" + ttl_email +"&mttl_email=" + mttl_email ;
 		//initiating ajax POST request
 		//alert(queryString);
@@ -2301,6 +2443,119 @@ function delaylogin()
 		ajaxhttp_obj.send(queryString);
 		//window.location.href="user.php";
 	}
+	
+	function email_to_send_on_FREEZE()
+	{
+		//Making variable for ajax object
+		var ajaxhttp_obj;
+		if(window.XMLHttpRequest)
+		{
+			//Making new ajax object for chrome, firefox, safari, opera using window
+			ajaxhttp_obj=new XMLHttpRequest();
+		}
+		else if(window.ActiveXObject)
+		{
+			//OR Making new ajax object for IE 6, 7 using window
+			ajaxhttp_obj=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		else
+		{
+			alert("Your Browser Broke");
+			return false;
+		}
+		//Function for onreadystatechange and displaying the data after being processed by the php file
+		ajaxhttp_obj.onreadystatechange = function()
+		{
+			if(ajaxhttp_obj.readyState == 4)
+			{
+				if(ajaxhttp_obj.responseText==0)
+				{
+					document.getElementById("ajaxdiv_summary_freeze").innerHTML='Email Not Sent';
+				}
+				else
+				{
+					document.getElementById("ajaxdiv_summary_freeze").innerHTML='Email sent';
+					//alert('Email sending Successful');
+					//setTimeout("delaylogin();",1000);
+				}
+			}
+		
+		}
+		var letter_format = document.getElementById('email_to_send_on_FREEZE').value;
+		var queryString = "letter_format=" + letter_format ;
+		//initiating ajax POST request
+		ajaxhttp_obj.open("POST","PHPMailer-master/send-mail_email_to_send_on_FREEZE.php",true);
+		//alert("Sending POST request");
+		//This function indicate what type of content we are including, it sends a header to tell the server to recognize the sent data as if they were sent with POST (like data from Forms).
+		ajaxhttp_obj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		ajaxhttp_obj.send(queryString);
+		//window.location.href="user.php";
+	}
+	
+	
+
+	function email_to_send_test_REPORT(id)
+	{
+		//Making variable for ajax object
+		var ajaxhttp_obj;
+		if(window.XMLHttpRequest)
+		{
+			//Making new ajax object for chrome, firefox, safari, opera using window
+			ajaxhttp_obj=new XMLHttpRequest();
+		}
+		else if(window.ActiveXObject)
+		{
+			//OR Making new ajax object for IE 6, 7 using window
+			ajaxhttp_obj=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		else
+		{
+			alert("Your Browser Broke");
+			return false;
+		}
+		//Function for onreadystatechange and displaying the data after being processed by the php file
+		ajaxhttp_obj.onreadystatechange = function()
+		{
+			if(ajaxhttp_obj.readyState == 4)
+			{
+				if(ajaxhttp_obj.responseText==0)
+				{
+					//document.getElementById("ajaxdiv_summary_StudentParent").innerHTML='Email Not Sent';
+				}
+				else
+				{
+					//document.getElementById("ajaxdiv_summary_StudentParent").innerHTML='Email sent';
+					//alert('Email sending Successful');
+					//setTimeout("delaylogin();",1000);
+				}
+			}
+		
+		}
+		var index = id;
+		//alert(index);
+		var letter_format = document.getElementById('email_to_send_on_MONTH_START_REPORT'+index).value;
+		var student_email = document.getElementById('email_id'+index).value;
+		var ttl_email = document.getElementById('ttl_email'+index).value;
+		var mttl_email = document.getElementById('mttl_email'+index).value;
+		//alert(index+student_email+ttl_email+mttl_email);
+		if(student_email==''){
+			alert('Email field is empty');
+		}
+		else{
+		var queryString = "letter_format=" + letter_format +"&student_email=" + student_email +"&ttl_email=" + ttl_email +"&mttl_email=" + mttl_email ;
+		//initiating ajax POST request
+		//alert(queryString);
+		ajaxhttp_obj.open("POST","PHPMailer-master/send-mail_email_to_send_on_MONTH_START_REPORT.php",true);
+		alert("Email Sent");
+		//This function indicate what type of content we are including, it sends a header to tell the server to recognize the sent data as if they were sent with POST (like data from Forms).
+		ajaxhttp_obj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		ajaxhttp_obj.send(queryString);
+		//window.location.href="user.php";
+		}
+	}
+	
+
+	
 	
 	
 	/*

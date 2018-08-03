@@ -32,13 +32,13 @@ if($id!=0 && !empty($id))
 
 		$freeze_days_15_cond = round($datediff / (60 * 60 * 24));
 	
-/* 		if($freeze_days_15_cond>15)
+		if($freeze_days_15_cond>15)
 		{
 			getMessages('error_check_freeze_15_days');
 		}
 	
 		else
-		{ */
+		{
 			//Get previous values for log
 			/////////////////////////////////////////////////////// FOR USER LOG
 			$row_pre = mysql_fetch_array ( mysql_query("SELECT * FROM `campus_schedule` WHERE `id` = '$id' "));
@@ -78,9 +78,52 @@ if($id!=0 && !empty($id))
 				$sql = "UPDATE `campus_schedule` SET freeze_date='".$systemdate."' , `comments_freeze` =concat(comments_freeze ,'\r\nOperator:{$operator_name} - Comments : {$_POST['comments_freeze']}\r\n') , `record_link_freeze` =  '".$_POST['record_link_freeze']."'  WHERE `id` = '$id' "; 
 				mysql_query($sql) or die(mysql_error()); 
 				}
+//////////////////////////////////// To SEND EMAIL on every FREEZE	//START
+$query="select `campus_students`.email,`campus_students`.mobile,`campus_students`.phone,`campus_students`.landline,`campus_students`.countryID from `campus_students` where campus_students.id=".$student_id;
+$results=mysql_query($query);
+$rows=mysql_fetch_array($results);
+$sql_row_values=mysql_fetch_array ( mysql_query("SELECT * FROM `campus_schedule` WHERE `id` = '$id' "));
+$email_to_send_on_FREEZE = "<table border=1 id='table_liquid' cellspacing='2px' >
+<tr bgcolor=#eceff5>
+<th class='specalt' style='font-size:8px'><b>Id</b></th>
+<th class='specalt' style='font-size:8px'><b>Status Old</b></th>
+<th class='specalt' style='font-size:8px'><b>Status</b></th>
+<th class='specalt' style='font-size:8px'><b>Comments/Reason</b></th> 
+<th class='specalt' style='font-size:8px'><b>Email</b></th> 
+<th class='specalt' style='font-size:8px'><b>Start time</b></th> 
+<th class='specalt' style='font-size:8px'><b>Start Date</b></th> 
+<th class='specalt' style='font-size:8px'><b>Student</b></th> 
+<th class='specalt' style='font-size:8px'><b>Teacher</b></th>
+<th class='specalt' style='font-size:8px'><b>Amount LOCAL CURRENCY</b></th> 
+<th class='specalt' style='font-size:8px'><b>Country</b></th> 
+<th class='specalt' style='font-size:8px'><b>Class Days</b></th> 
+<th class='specalt' style='font-size:8px'><b>Freeze Date</b></th> 
+<th class='specalt' style='font-size:8px'><b>Record link</b></th> 
+</tr>";
+$email_to_send_on_FREEZE.="<tr bgcolor=#eceff5>
+	<td valign='top' style='font-size:8px'>". nl2br( $sql_row_values['id']) ."</td>
+	<td valign='top' style='font-size:8px'>". getData(nl2br( $sql_row_values['std_status_old']),'stdStatusmo-list') ."</td>
+	<td valign='top' style='font-size:8px'>". getData(nl2br( $sql_row_values['std_status']),'stdStatusmo-list') ."</td>
+	<td valign='top' style='font-size:8px'>". nl2br( $sql_row_values['comments_freeze']) ."</td>
+	<td valign='top' style='font-size:8px'>". nl2br( $rows['email']) ."</td>
+	<td valign='top' style='font-size:8px'>". nl2br( $sql_row_values['startTime']) ."</td>
+	<td valign='top' style='font-size:8px'>". nl2br( $sql_row_values['startDate']) ."</td>
+	<td valign='top' style='font-size:8px'>". showStudents(nl2br( $sql_row_values['studentID'])) ."</td>
+	<td valign='top' style='font-size:8px'>". showUser( nl2br( $sql_row_values['teacherID'])) ."</td>
+	<td valign='top' style='font-size:8px'>$". nl2br( $sql_row_values['dues_original']) ."</td>
+	<td valign='top' style='font-size:8px'>". getData(nl2br( $rows['countryID']),'country') ."</td>
+	<td valign='top' style='font-size:8px'>". getData(nl2br( $sql_row_values['classType']),'plan') ."</td>
+	<td valign='top' style='font-size:8px'>". nl2br( $sql_row_values['freeze_date']) ."</td>
+	<td valign='top' style='font-size:8px'>". nl2br( $sql_row_values['record_link_freeze']) ."</td></tr></table>";
+?>
+<input rows="10" cols="90" id='email_to_send_on_FREEZE' name='email_to_send_on_FREEZE' readonly="readonly" type='hidden' value="<?php echo $email_to_send_on_FREEZE; ?>"/>
+<?
+echo '<script> email_to_send_on_FREEZE(); </script>';
+//////////////////////////////////// To SEND EMAIL on every FREEZE	//START
+
 			
 				getMessages('freeze_schedule','book_scheduler_manage.php');
-/* 		} */
+		}
 	}
 	else
 	{

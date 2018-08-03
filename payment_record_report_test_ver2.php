@@ -78,13 +78,12 @@ if(isset($_POST['submit']))
 	$fromMonth=date('n',$_POST['fromDate']);
 	$toDate=date('d',strtotime($_POST['toDate']));
 	if(!empty($_POST['toDate'])){
-		$toDate=date('d',strtotime($_POST['toDate']));	
 		$toDate=date('d',strtotime($_POST['toDate']));		
  //NO CONDITION ON REGULAR STUDENTS TRANSACTION, all include, regular, dead, freeze
  	$sql=" SELECT campus_schedule.id,campus_schedule.duedate as due_date,
 	day(campus_schedule.duedate) AS dayz,month(campus_schedule.duedate) AS month,
 	campus_schedule.dues as amount,campus_schedule.studentID,campus_schedule.courseID,campus_schedule.classType,campus_schedule.`status`,
-	campus_schedule.std_status,campus_schedule.std_status_old,campus_schedule.startTime,campus_schedule.dues_original,campus_schedule.courseID,
+	campus_schedule.std_status,campus_schedule.std_status_old,campus_schedule.startTime,campus_schedule.dues_original,
 	campus_transaction.id as tran_id,campus_transaction.transactionID,campus_transaction.date as date_rec_cam_tran,campus_transaction.studentID,
 	campus_transaction.amount as amounttran,campus_transaction.operator as tran_op,campus_transaction.courseID as tran_cid,campus_transaction.classType as tran_ctid,
 	campus_transaction.dateRecieved as maxdate_rec,campus_transaction.startTime,campus_transaction.schedule_id,campus_transaction.comments,campus_transaction.teacherID,
@@ -98,7 +97,12 @@ if(isset($_POST['submit']))
 	campus_transaction.amount_usd_simple,
 	campus_transaction.datetime_now_accounts,campus_transaction.bank_payment_image_filepath,
 	campus_transaction.discount_tran,campus_transaction.amount_original_deducted,
-	campus_transaction.bankNameId 
+	campus_transaction.bankNameId, 
+	campus_transaction.amountDefaultNew,campus_transaction.amountOriginalNew,campus_transaction.feeDeductNew,
+	campus_transaction.totalReceivedNew,campus_transaction.discountNew,
+	campus_transaction.amountDefaultNew_Usd,campus_transaction.amountOriginalNew_Usd,campus_transaction.feeDeductNew_Usd,
+	campus_transaction.totalReceivedNew_Usd,campus_transaction.discountNew_Usd,
+	campus_transaction.statusPendRejAccpt 
 	FROM campus_schedule 
 	INNER JOIN campus_transaction 
 	ON campus_schedule.studentID=campus_transaction.studentID and campus_schedule.id=campus_transaction.schedule_id 
@@ -189,7 +193,6 @@ echo "<th class='specalt'>Amount Sch-CAD</th>";
 echo "<th class='specalt'>Amount Sch-USD converted</th>";
 echo "<th class='specalt'>Amount Sch-Original</th>";
 echo "<th class='specalt'>Currency</th>";
-echo "<th class='specalt'>Course</th>";
 echo "<th class='specalt'>Transaction ID</th>";
 echo "<th class='specalt'>Method</th>";
 echo "<th class='specalt'>Operator</th>"; 
@@ -213,9 +216,23 @@ if($_SESSION['userId']==159 || $_SESSION['userId']==298 || $_SESSION['userId']==
 echo "<th class='specalt'>Accounts date</th>";
 echo "<th class='specalt'>Deducted amount</th>";
 }
-
 echo "<th class='specalt' colspan='5'>Actions</th>";
 echo "<th class='specalt'><b>Bank Name</b></th>";
+
+echo "<th class='specalt'><b>Actual / SignUp Amount</b></th>";
+echo "<th class='specalt'><b>Invoice / Original Amount</b></th>";
+echo "<th class='specalt'><b>Total Received</b></th>";
+echo "<th class='specalt'><b>Fee</b></th>";
+echo "<th class='specalt'><b>Discount</b></th>";
+echo "<th class='specalt'><b>Actual / SignUp Amount USD</b></th>";
+echo "<th class='specalt'><b>Invoice / Original Amount USD</b></th>";
+echo "<th class='specalt'><b>Total Received USD</b></th>";
+echo "<th class='specalt'><b>Fee USD</b></th>";
+echo "<th class='specalt'><b>Discount USD</b></th>";
+//echo "<th class='specalt'><b>Status</b></th>";
+//echo "<th class='specalt'><b>Accept</b></th>";
+//echo "<th class='specalt'><b>Reject</b></th>";
+
 echo "</tr>";
 $amount=array();
 $recieved=array();
@@ -440,8 +457,8 @@ if(isset($_POST['submit']))
 	echo "<td valign='top'>$" . nl2br( $row['amount'] ) . "</td>";
 	echo "<td valign='top'>$" . round( $row['amount'] * $row_USD_to_CAD['1_cad_to_usd'],2) . "</td>";
 	echo "<td valign='top'>$" . $row['dues_original'] . "</td>";
+	
 	echo "<td valign='top'>" .  getData(nl2br( $row['currency_array']),'currency') . "</td>";
-	echo "<td valign='top'>" .  getData( nl2br( $row['courseID']),'course') . "</td>";
 	echo "<td valign='top'>" .  nl2br( $row['transactionID']) . "</td>";
 	echo "<td valign='top'>" .  getData(nl2br( $row['method_array']),'paymentMode') . "</td>";
 	echo "<td valign='top'>" . 	showUser(nl2br( $row['tran_op'])). "</td>"; 
@@ -499,11 +516,33 @@ if(isset($_POST['submit']))
 	<input type='hidden' value=<?php echo $row['campus']; ?> id='campus' name='campus' />
 	</div> <? "</td>";
 	}
+	else{
+		echo "<td valign='top'></td>";
+		echo "<td valign='top'></td>";
+		echo "<td valign='top'></td>";
+		echo "<td valign='top'></td>";
+		echo "<td valign='top'></td>";
+	}
 	?>
 	</form>
 	<?
 	echo "<td valign='top'>" . getData(nl2br( $row['bankNameId']),'bankName') . "</td>";
-	echo "</tr>"; 
+	
+	echo "<td valign='top'>" . $row['amountDefaultNew'] . "</td>";
+	echo "<td valign='top'>" . $row['amountOriginalNew'] . "</td>";
+	echo "<td valign='top'>" . $row['totalReceivedNew'] . "</td>";
+	echo "<td valign='top'>" . $row['feeDeductNew'] . "</td>";
+	echo "<td valign='top'>" . $row['discountNew'] . "</td>";
+	
+	echo "<td valign='top'>" . $row['amountDefaultNew_Usd'] . "</td>";
+	echo "<td valign='top'>" . $row['amountOriginalNew_Usd'] . "</td>";
+	echo "<td valign='top'>" . $row['totalReceivedNew_Usd'] . "</td>";
+	echo "<td valign='top'>" . $row['feeDeductNew_Usd'] . "</td>";
+	echo "<td valign='top'>" . $row['discountNew_Usd'] . "</td>";	
+	//echo "<td valign='top'>" . getData(nl2br( $row['statusPendRejAccpt']),'statusPendRejAccptAry'). "</td>";
+	//echo "<td ><a class=button href=transaction_new_ver2_approve.php?id={$row['tran_id']} target='_blank'>Accept</a></td> ";
+	//echo "<td ><a class=button href=transaction_new_ver2_reject.php?id={$row['tran_id']} target='_blank'>Reject</a></td>";
+	echo "</tr>";
 }
 
 

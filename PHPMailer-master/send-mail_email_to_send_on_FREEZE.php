@@ -12,33 +12,24 @@ $mail->SMTPSecure = 'ssl';
 // $mail->Port = 587;
 // $mail->SMTPSecure = 'tls';
 echo $letter_format=$_POST['letter_format'];
-echo $student_email = $_POST['student_email'];
-echo $ttl_email = $_POST['ttl_email'];
-echo $mttl_email = $_POST['mttl_email']; 
+echo $customer_email = $_POST['customer_email'];
  
-$mail->Username = "yourcloudcampus7070@gmail.com";
-$mail->Password = "ycc@7890";
+$mail->Username = "yccbizsheet@gmail.com";
+$mail->Password = "getheavy123";
  
 $mail->IsHTML(true); // if you are going to send HTML formatted emails
 $mail->SingleTo = true; // if you want to send a same email to multiple users. multiple emails will be sent one-by-one.
  
-$mail->From = "<info@yourcloudcampus.com>";
-$mail->setFrom('info@yourcloudcampus.com', 'Mailer');
-$mail->addCustomHeader('From: <info@yourcloudcampus.com>', 'From: <info@yourcloudcampus.com>');
-$mail->FromName = "Monthly Report - CCMS YourCloudCampus";
-//Management email to whom to send the lecture
-$mail->addCC($ttl_email,"TTL");
-$mail->addCC($mttl_email,"MTTL");
-
-//$mail->addBCC("faheem@yourcloudcampus.com","Faheem Email");
-//$mail->addBCC("junaid@yourcloudcampus.com","Junaid Email");
-//$mail->addBCC("junaid9898@yahoo.com","Junaid Email");
-
-//Student email to whom to send the lecture
-$mail->addAddress($student_email,"User 2");
+$mail->From = "yccbizsheet@gmail.com";
+$mail->FromName = "CCMS-FREEZE";
  
-$mail->Subject = "Course Topics - YourCloudCampus";
-$mail->Body = " <br>".$letter_format;
+$mail->addAddress("junaid9898@yahoo.com","User 1");
+$mail->addAddress("faheem@yourcloudcampus.com","User 4");
+$mail->addAddress("waqas@yourcloudcampus.com","User 4");
+$mail->addAddress("hashmi@yourcloudcampus.com","User 4");
+ 
+$mail->Subject = "FREEZE - Email";
+$mail->Body = $letter_format;
  
 if(!$mail->Send())
     echo "Message was not sent <br />PHPMailer Error: " . $mail->ErrorInfo;

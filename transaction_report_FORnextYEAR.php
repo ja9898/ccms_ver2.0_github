@@ -512,7 +512,7 @@ echo "<td valign='top'>"?>
 <? "</td>";
 
 echo "<td ><a class=button href=transaction_paymentdue_month_new.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&due_date={$row['due_date']}&pay_date={$row['pay_date']}&startTime={$row['startTime']}>Pay Old Due</a>&nbsp;&nbsp;</td> ";
-echo "<td ><a class=button href=transaction_new.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&due_date={$row['due_date']}&pay_date={$row['pay_date']}&startTime={$row['startTime']}>Pay</a></td>";
+echo "<td ><a class=button href=transaction_new_ver2.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&due_date={$row['due_date']}&pay_date={$row['pay_date']}&startTime={$row['startTime']}>Pay</a></td>";
 echo "<td valign='top'>" . nl2br( $row['id'])  . "</td>";
 
 
@@ -556,7 +556,7 @@ echo "<td valign='top'>" . nl2br( $maxdate_rec_result['date_rec_cam_tran']). "</
 echo "<td valign='top'>" . nl2br( $maxdate_rec_result['maxdate_rec']). "</td>"; 
 
 
-echo "<td ><a class=button href=class_details.php?id={$row['studentID']}>Class Details</a>&nbsp;&nbsp;<a class=button href=transaction_new.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&due_date={$row['due_date']}&pay_date={$row['pay_date']}&startTime={$row['startTime']}>Pay</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class=button href=transaction_new_next_month.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&due_date={$row['due_date']}&pay_date={$row['pay_date']}&startTime={$row['startTime']}>Pay Next Month</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class=button href=transaction_new_next_next_month.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&due_date={$row['due_date']}&pay_date={$row['pay_date']}&startTime={$row['startTime']}>Pay Next Next Month</a></td> "; 
+echo "<td ><a class=button href=class_details.php?id={$row['studentID']}>Class Details</a>&nbsp;&nbsp;<a class=button href=transaction_new_ver2.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&due_date={$row['due_date']}&pay_date={$row['pay_date']}&startTime={$row['startTime']}>Pay</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class=button href=transaction_new_next_month.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&due_date={$row['due_date']}&pay_date={$row['pay_date']}&startTime={$row['startTime']}>Pay Next Month</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class=button href=transaction_new_next_next_month.php?id={$row['studentID']}&schedule={$row['id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&due_date={$row['due_date']}&pay_date={$row['pay_date']}&startTime={$row['startTime']}>Pay Next Next Month</a></td> "; 
  
 echo "</tr>"; 
 }
@@ -590,7 +590,7 @@ echo "</tr>";
 
 echo "</table>";
  
-echo "<a href=transaction_new.php class=button>New Row</a>"; 
+echo "<a href=transaction_new_ver2.php class=button>New Row</a>"; 
 ?>
 <!-- The Modal - Remember modal will be called only once and the Reminder/Open Modal button will be
 in the loop  -->
