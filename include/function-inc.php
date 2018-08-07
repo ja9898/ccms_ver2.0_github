@@ -3135,6 +3135,10 @@ $sql="SELECT campus_schedule.id,campus_schedule.std_status as statussch,campus_s
 	campus_schedule.startTime,campus_schedule.endTime,campus_schedule.startDate,campus_schedule.endDate,campus_schedule.agentId,campus_schedule.classType,campus_schedule.paydate,campus_schedule.skypetext,
 	campus_schedule.edit_sch_TL_confirm,day(campus_schedule.paydate) AS paydayz,
 	campus_schedule.dues_original,campus_schedule.grade,campus_schedule.syllabus,campus_schedule.record_link,
+	campus_schedule.dues_amountDefaultNew,campus_schedule.dues_amountOriginalNew,campus_schedule.dues_feeDeductNew,
+	campus_schedule.dues_totalReceivedNew,campus_schedule.dues_discountNew,
+	campus_schedule.dues_amountDefaultNew_Usd,campus_schedule.dues_amountOriginalNew_Usd,campus_schedule.dues_feeDeductNew_Usd,
+	campus_schedule.dues_totalReceivedNew_Usd,campus_schedule.dues_discountNew_Usd,
 	campus_schedule.statusPendRejAccpt 
 	FROM campus_schedule 
 	WHERE campus_schedule.status=1 and campus_schedule.status_dead=0 and 
