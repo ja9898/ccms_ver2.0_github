@@ -26,7 +26,8 @@ if($_POST['email']!='' && ($_POST['extId']!='' || $_POST['extId']!=0) /*&& $_POS
 		
 		$FNAME  = preg_replace('/\s+/', '', $_POST['firstName']);
 		$LNAME  = preg_replace('/\s+/', '', $_POST['lastName']);
-		$sql = "INSERT INTO `campus_students` ( `firstName` ,  `middleName` ,  `lastName` ,  `email` ,  `phone` ,  `landline` ,  `mobile` ,`gender` ,  `dues` ,  `std_status` ,   `skypeid` ,    `countryID` ,agent_id , `reference` , `extId` , `username` , `password` , `user_type` ) VALUES(  '".ucfirst($_POST['firstName'])."' ,  '".ucfirst($_POST['middleName'])."' ,  '".ucfirst($_POST['lastName'])."' ,  '{$_POST['email']}' ,  '{$_POST['phone']}' ,  '{$_POST['landline']}' ,  '{$_POST['mobile']}' ,  '{$_POST['gender']}' ,  '{$_POST['dues']}' ,  '{$_POST['std_status']}' ,  0 ,  '{$_POST['countryID']}' ,  '{$agent_id}', '{$_POST['search-reference-id']}' , '{$_POST['extId']}' , '".$FNAME."_".$LNAME."', '".$FNAME.$row_get_extid_number['extId']."' , 4) "; 
+		$randomRefId = rand(100000,999999);
+		$sql = "INSERT INTO `campus_students` ( `firstName` ,  `middleName` ,  `lastName` ,  `email` ,  `phone` ,  `landline` ,  `mobile` ,`gender` ,  `dues` ,  `std_status` ,   `skypeid` ,    `countryID` ,agent_id , `reference` , `extId` , `username` , `password` , `user_type` , `refId` ) VALUES(  '".ucfirst($_POST['firstName'])."' ,  '".ucfirst($_POST['middleName'])."' ,  '".ucfirst($_POST['lastName'])."' ,  '{$_POST['email']}' ,  '{$_POST['phone']}' ,  '{$_POST['landline']}' ,  '{$_POST['mobile']}' ,  '{$_POST['gender']}' ,  '{$_POST['dues']}' ,  '{$_POST['std_status']}' ,  0 ,  '{$_POST['countryID']}' ,  '{$agent_id}', '{$_POST['search-reference-id']}' , '{$_POST['extId']}' , '".$FNAME."_".$LNAME."', '".$FNAME.$row_get_extid_number['extId']."' , 4 , '".$randomRefId."') "; 
 		mysql_query($sql) or die(mysql_error()); 
 //Commenting following as SKYPEID is not required during NEW STUDENTS 28-01-2014
 //skypeStatus($_POST['skypeid'],'1');

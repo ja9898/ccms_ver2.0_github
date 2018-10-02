@@ -1,12 +1,6 @@
 <?
 include('config.php');
 include('include/header.php'); 
-$teacherID=$_GET['teacherID'];
-if($teacherID){
-	$teacherID = $_GET['teacherID'];
-	$_POST['fromDate'] = $_GET['fromDate'];
-	$_POST['toDate'] = $_GET['toDate'];
-}
 if($_SESSION['userType']==1)
 {
 	echo "<label style='color:RED; font-weight:bold; font-size:9px; margin-bottom:5px;'>NOTE: Add the following relevant BIOMETRIC ID under LIST EMPLOYEES to make the Attendance visible for specific teachers</label>";
@@ -32,8 +26,293 @@ $_SESSION['userType']==17){ getTeacherFilter(); getTeacherFilterLead(); }?>
 </form>
 </div>
 <?
-if(isset($_POST['submit']) || isset($teacherID))		//if $_POST['submit'] start
+if(isset($_POST['submit']))		//if $_POST['submit'] start
 {
+
+
+/**********No of Days in a month**********/ //START
+$fromMonth=date('n',strtotime($_POST['fromDate']));
+$toMonth=date('n',strtotime($_POST['toDate']));
+	if($fromMonth==$toMonth){
+		$NO_OF_DAYS_in_a_month = date('t');
+		$NO_OF_DAYS_in_a_month=cal_days_in_month(CAL_GREGORIAN,$fromMonth,date('Y'));
+	}
+/**********No of Days in a month**********/ //END
+
+/****************** SUNDAYS HOLIDAYS COUNT ********************/	//START
+$fromDate_ccms = prepareDate($_POST['fromDate']);
+$toDate_ccms = prepareDate($_POST['toDate']);
+//$toDate = date('Y-m-d', strtotime($toDate . ' + 1 days'));echo "<br>";
+
+$date1 = $fromDate_ccms; 
+$date2 = $toDate_ccms; 
+//$date2 = date('t-m-Y'); 
+
+# Do some checks here for valid dates and to make sure date1 is less than date2 
+
+# Time strings 
+$time1 = strtotime($date1); 
+$time2 = strtotime($date2); 
+
+$sunday_count = 0; 
+$sunday_array = array();
+while($time1 <= $time2) { 
+   ////<><><> echo "DAY:".
+   $chk = date('D', $time1); # Actual date conversion 
+   $chk2 = date('d', $time1);
+   if($chk == 'Sun') {
+	$daysofsun_text = $chk;
+	$daysofsun_number = $chk2;
+	$sunday_array[] = $daysofsun_number;
+	$sunday_count++;
+   }
+   $time1 += 86400; # Add a day 
+} 
+
+$sunday_count;
+/****************** SUNDAYS HOLIDAYS COUNT ********************/	//END
+
+echo "<table  border=0 id='table_liquid' cellspacing=0 >"; 
+echo "<tr>";
+echo "<th class='specalt'>Name</th>"; 
+$days_1_to_30 = array();
+for($i=1; $i<=$NO_OF_DAYS_in_a_month; $i++){
+echo "<th class='specalt'><b>".$i."</b></th>";
+$days_1_to_30[$i] = $i;
+}
+echo "</tr>";
+//TEACHERS
+if($_SESSION['userType']==3 && ($_SESSION['emp_shift']==1 || $_SESSION['emp_shift']==2) && $_SESSION['designationID']!=17)
+{
+	$sql="SELECT campus_attendance_employee.id as emp_att_id,
+	campus_attendance_employee.biometricId,
+	campus_attendance_employee.date,
+	day(campus_attendance_employee.date) as dateDays,
+	campus_attendance_employee.onDuty,
+	campus_attendance_employee.offDuty,
+	campus_attendance_employee.clockIn,
+	campus_attendance_employee.clockOut,
+	campus_attendance_employee.late,
+	campus_attendance_employee.early,
+	campus_attendance_employee.absent,
+	campus_attendance_employee.exception,
+	campus_attendance_employee.department,
+	capmus_users.id as user_id,
+	capmus_users.biometricId as user_biometricId,
+	capmus_users.firstName,
+	capmus_users.lastName,
+	capmus_users.LeadId  
+	FROM campus_attendance_employee 
+	INNER JOIN capmus_users 
+	ON capmus_users.biometricId=campus_attendance_employee.biometricId 
+	AND capmus_users.id='".$_SESSION['userId']."'";
+	if($_POST['search-teacher-id']!=0)
+	{
+		$sql.=" and capmus_users.id='".$_POST['search-teacher-id']."' ";
+	}
+	if($_POST['search-teacher-id2']!=0)
+	{
+		$sql.=" and capmus_users.LeadId='".$_POST['search-teacher-id2']."' ";
+	}
+	if($_POST['fromDate']!="" && $_POST['toDate']!="")
+	{
+		$sql.=" and campus_attendance_employee.date>= '".prepareDate($_POST['fromDate'])."' and campus_attendance_employee.date<= '".prepareDate($_POST['toDate'])."'";
+	}
+	$sql.="GROUP BY capmus_users.id ORDER BY user_id DESC ";//ORDER BY user_id DESC  GROUP BY capmus_users.id
+	$result=mysql_query($sql) or die(mysql_error());
+}
+//SUPERAMDIN
+if($_SESSION['userType']==1 || $_SESSION['userType']==11 || $_SESSION['userType']==18 || $_SESSION['userType']==17 || ($_SESSION['userType']==3 && $_SESSION['designationID']==17) ){
+
+	$sql="SELECT campus_attendance_employee.id as emp_att_id,
+	campus_attendance_employee.biometricId,
+	campus_attendance_employee.date,
+	day(campus_attendance_employee.date) as dateDays,
+	campus_attendance_employee.onDuty,
+	campus_attendance_employee.offDuty,
+	campus_attendance_employee.clockIn,
+	campus_attendance_employee.clockOut,
+	campus_attendance_employee.late,
+	campus_attendance_employee.early,
+	campus_attendance_employee.absent,
+	campus_attendance_employee.exception,
+	campus_attendance_employee.department,
+	capmus_users.id as user_id,
+	capmus_users.biometricId as user_biometricId,
+	capmus_users.firstName,
+	capmus_users.lastName,
+	capmus_users.LeadId  
+	FROM campus_attendance_employee 
+	INNER JOIN capmus_users 
+	ON capmus_users.biometricId=campus_attendance_employee.biometricId";
+	if($_POST['search-teacher-id']!=0)
+	{
+		$sql.=" and capmus_users.id='".$_POST['search-teacher-id']."' ";
+	}
+	if($_POST['search-teacher-id2']!=0)
+	{
+		$sql.=" and capmus_users.LeadId='".$_POST['search-teacher-id2']."' ";
+	}
+	if($_POST['fromDate']!="" && $_POST['toDate']!="")
+	{
+		$sql.=" and campus_attendance_employee.date>= '".prepareDate($_POST['fromDate'])."' and campus_attendance_employee.date<= '".prepareDate($_POST['toDate'])."'";
+	}
+	$sql.="GROUP BY capmus_users.id ORDER BY user_id DESC ";//ORDER BY user_id DESC  GROUP BY capmus_users.id
+	$result=mysql_query($sql) or die(mysql_error());
+}
+	$row_count = mysql_num_rows($result);echo "<br>";echo "<br>";echo "<br>";echo "<br>";
+	
+while($row = mysql_fetch_array($result)){ 
+	//Query code for SHORT LEAVE APP checking		//START
+	//echo "SELECT * FROM campus_empshort_leave WHERE empId = '".$row['user_id']."' and leaveApplied = '".$row['date']."' ";
+	$short_leave_app_result = mysql_query("SELECT * FROM campus_empshort_leave WHERE empId = '".$row['user_id']."' and leaveApplied = '".$row['date']."' ") or trigger_error(mysql_error());
+	//ROW COUNT
+	$rowcount_short_leave_app = mysql_num_rows($short_leave_app_result);
+	//Query code for SHORT LEAVE APP checking		//END	
+echo "<tr>";  
+
+//echo "<td valign='top'>" .nl2br($row['emp_att_id']). "</td>";
+//echo "<td valign='top'>" . nl2br( $row['biometricId']) . "</td>";  
+//echo "<td valign='top'>" . showUser(nl2br( $row['LeadId'])) . "</td>"; 
+//echo "<td valign='top'>" . showUser(nl2br( $row['user_id'])) . "</td>"; 
+echo "<td valign='top'>" . "<a href=biometric_list.php?teacherID={$row['user_id']}&fromDate={$fromDate_ccms}&toDate={$toDate_ccms} target='_blank'>".showUser(nl2br( $row['user_id']))."</a></td>";
+				
+$row['dateDays'];
+
+		$sql_get_biometric_id="SELECT campus_attendance_employee.id as emp_att_id,
+		campus_attendance_employee.biometricId,
+		campus_attendance_employee.date,
+		day(campus_attendance_employee.date) as dateDays,
+		campus_attendance_employee.onDuty,
+		campus_attendance_employee.offDuty,
+		campus_attendance_employee.clockIn,
+		campus_attendance_employee.clockOut,
+		campus_attendance_employee.late,
+		campus_attendance_employee.early,
+		campus_attendance_employee.absent,
+		campus_attendance_employee.exception,
+		campus_attendance_employee.department 
+	  
+		FROM campus_attendance_employee 
+		WHERE campus_attendance_employee.biometricId = '".$row['biometricId']."' ";
+		if($_POST['fromDate']!="" && $_POST['toDate']!="")
+		{
+			$sql_get_biometric_id.=" and campus_attendance_employee.date>= '".prepareDate($_POST['fromDate'])."' and campus_attendance_employee.date<= '".prepareDate($_POST['toDate'])."'";
+		}
+		$result_biometric_id=mysql_query($sql_get_biometric_id) or die(mysql_error());
+		$att_dates = array(); 
+		$j=1;
+		while($row_bio_id = mysql_fetch_array($result_biometric_id)){
+			$row_bio_id['dateDays'];
+			$att_dates[$j] = $row_bio_id['dateDays']; // modified
+			$j=$j+1;
+			
+		}//inner query 		END for dates display	
+
+		
+		
+//Query code for LEAVE APP checking		//START
+$leaves_array = array();
+$casual_array = array();
+
+
+	$sql_leave_app = "SELECT campus_empleave.*, day(LeaveStartDate) as Leave_StartDays,
+	day(LeaveEndDate) as Leave_EndDays, LeaveType 
+	FROM campus_empleave ";
+	
+	if($_SESSION['userType']==3)
+	{
+		$sql_leave_app.= "WHERE EmpId = '".$_SESSION['userId']."' "; 
+	}
+	else
+	{
+		$sql_leave_app.= "WHERE EmpId = '".$_POST['search-teacher-id']."' "; 
+	}
+	
+	if($_POST['fromDate']!="" && $_POST['toDate']!="")
+	{
+		$sql_leave_app.=" and (LeaveStartDate >= '".prepareDate($_POST['fromDate'])."' AND LeaveEndDate <= '".prepareDate($_POST['toDate'])."' )";
+	}
+//Query code for LEAVE APP checking		//END
+	$leave_app_result = mysql_query($sql_leave_app);
+	//ROW COUNT
+	$rowcount_leave_app = mysql_num_rows($leave_app_result);
+	while($row_leave_app_result =  mysql_fetch_array($leave_app_result)){
+		
+		$row_leave_app_result['Leave_StartDays'];
+		$row_leave_app_result['Leave_EndDays'];
+		$leaves_array[] = $row_leave_app_result['Leave_StartDays'];
+		$casual_array[] = $row_leave_app_result['LeaveType'];
+	}		
+		//print_r($leaves_array);
+		//print_r($casual_array);
+		
+		$CL = 0;
+			foreach($days_1_to_30 as $key=>$value){
+				if(in_array($value,$att_dates)){
+					echo "<td valign='top' style='background-color:green;'>P</td>"; 
+				}
+				else if(in_array($value,$sunday_array)){
+					echo "<td valign='top' style='color:blue;'>SUN</td>";
+				}
+				else if(in_array($value,$leaves_array)){
+					if(in_array("2",$casual_array,TRUE) && $CL==0){
+					echo "<td valign='top' style='background-color:orange;'>CL</td>";
+					$CL=1;
+					}
+					else{
+						echo "<td valign='top' style='background-color:red;'>A</td>"; 
+					}
+				}
+				else{
+					echo "<td valign='top' style='background-color:red;'>A</td>"; 
+				}
+			}
+		
+
+
+echo "</tr>"; 
+}//1st query 		END GROUP BY ONE
+echo "</table>";
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
 echo "<table  border=0 id='table_liquid' cellspacing=0 >"; 
 echo "<tr>";
 echo "<th class='specalt'>Actions</th>";
@@ -63,7 +342,6 @@ echo "</tr>";
 //mysql_query("SELECT * FROM `campus_schedule` where status=1") or trigger_error(mysql_error());
 if($_SESSION['userType']==3 && ($_SESSION['emp_shift']==1 || $_SESSION['emp_shift']==2) && $_SESSION['designationID']!=17)
 {
-	$_SESSION['userId'] = $teacherID ;
 	$sql="SELECT campus_attendance_employee.id as emp_att_id,
 	campus_attendance_employee.biometricId,
 	campus_attendance_employee.date,
@@ -181,7 +459,6 @@ else if($_SESSION['userType']==2)
 
 //SHOWING ALL THE TRIALS< REGULARS AND MAKEOVERS IN MANAGE SCHEDULE
 if($_SESSION['userType']==1 || $_SESSION['userType']==11 || $_SESSION['userType']==18 || $_SESSION['userType']==17 || ($_SESSION['userType']==3 && $_SESSION['designationID']==17) ){
-	$_POST['search-teacher-id'] = $teacherID;
 	$sql="SELECT campus_attendance_employee.id as emp_att_id,
 	campus_attendance_employee.biometricId,
 	campus_attendance_employee.date,

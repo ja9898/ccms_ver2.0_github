@@ -157,9 +157,9 @@ else{
 
 
 //Get 1 cad to usd rate from db
-$sql_1cad_to_dollar_rate_USDval="SELECT * FROM campus_currency WHERE id = 433";
+/* $sql_1cad_to_dollar_rate_USDval="SELECT * FROM campus_currency WHERE id = 433";
 $row_1cad_to_dollar_rate_USDval = mysql_fetch_array(mysql_query($sql_1cad_to_dollar_rate_USDval));
-$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
+$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']; */
 
 ///////////////////////////////////		MON,TUE,WED		/////////////////////////////////////
 echo "<table  border=0 id='table_liquid' cellspacing=0 >"; 
@@ -170,7 +170,6 @@ echo "<th class='specalt'><b>TeamLead</b></th>";
 echo "<th class='specalt'><b>Teacher</b></th>"; 
 echo "<th colspan=1 class='specalt'><b>status</b></th>";  
 echo "<th colspan=1 class='specalt'><b>Business</b></th>"; 
-echo "<th colspan=1 class='specalt'><b>Business-USD</b></th>"; 
 echo "</tr>"; 
 
 echo "<tr>";
@@ -185,7 +184,7 @@ echo "</tr>";
 $total_regular_sum_array_mon_tue_wed=array();
 $total_amount_sum_array_mon_tue_wed=array();
 //FOR USD-USD Array
-$total_amount_sum_array_mon_tue_wed_usd=array();
+//$total_amount_sum_array_mon_tue_wed_usd=array();
 
 $x_xbar_square_array=array();
 
@@ -195,16 +194,12 @@ $cnt_rows_teamlead_wise_mon_tue_wed = mysql_num_rows($result_regular_mon_tue_wed
 $serial=0;
 while(($row_regular_mon_tue_wed = mysql_fetch_array($result_regular_mon_tue_wed)))
 { 
-//FOR CAD
+//FOR USD
 $total_regular_sum_array_mon_tue_wed[$row_regular_mon_tue_wed['sch_id']] = $row_regular_mon_tue_wed['cnt_regular'];
-$total_amount_sum_array_mon_tue_wed[$row_regular_mon_tue_wed['sch_id']] = $row_regular_mon_tue_wed['dues'];
-//FOR USD
-$total_amount_sum_array_mon_tue_wed_usd[$row_regular_mon_tue_wed['sch_id']] = round($row_regular_mon_tue_wed['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']);
+$total_amount_sum_array_mon_tue_wed[$row_regular_mon_tue_wed['sch_id']] = round($row_regular_mon_tue_wed['dues'],2);
 
-//FOR CAD
-$total_amount_per_teacher_mon_tue_wed = $row_regular_mon_tue_wed['dues'];
 //FOR USD
-$total_amount_per_teacher_mon_tue_wed_usd = round($row_regular_mon_tue_wed['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']);
+$total_amount_per_teacher_mon_tue_wed = $row_regular_mon_tue_wed['dues'];
 //FOR Serial = serial + 1
 $serial=$serial+1;
 
@@ -214,8 +209,7 @@ echo "<td valign='top'>" . showUser( nl2br( $row_regular_mon_tue_wed['main_LeadI
 echo "<td valign='top'>" . showUser( nl2br( $row_regular_mon_tue_wed['LeadId'])) . "</td>";
 echo "<td valign='top'>" . nl2br( $row_regular_mon_tue_wed['firstName']) . " " . nl2br( $row_regular_mon_tue_wed['lastName']) . "</td>";
 echo "<td valign='top'>" . $row_regular_mon_tue_wed['cnt_regular'] . "</td>";
-echo "<td valign='top'>$ " . $row_regular_mon_tue_wed['dues'] . "</td>";
-echo "<td valign='top'>$ " . round($row_regular_mon_tue_wed['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
+echo "<td valign='top'>$ " . round($row_regular_mon_tue_wed['dues'],2) . "</td>";
 echo "</tr>"; 
 }
 echo "<tr>";
@@ -227,12 +221,12 @@ echo "<td valign='top' style='color:blue;'><b>" . nl2br( array_sum($total_regula
 //echo "<td valign='top'> </td>"; 
 //echo "<td valign='top'> </td>";
 echo "<td valign='top' style='color:blue;'><b>$" . nl2br( array_sum($total_amount_sum_array_mon_tue_wed)) . "</td>";   
-echo "<td valign='top' style='color:blue;'><b>$" . nl2br( array_sum($total_amount_sum_array_mon_tue_wed_usd)) . "</td>";
+//echo "<td valign='top' style='color:blue;'><b>$" . nl2br( array_sum($total_amount_sum_array_mon_tue_wed_usd)) . "</td>";
 //FOR CAD
 $total_reg_classes_mon_tue_wed = nl2br( array_sum($total_regular_sum_array_mon_tue_wed));
 $total_dollar_amount_of_reg_classes_mon_tue_wed = nl2br( array_sum($total_amount_sum_array_mon_tue_wed));
 //FOR USD
-$total_dollar_amount_of_reg_classes_mon_tue_wed_usd = nl2br( array_sum($total_amount_sum_array_mon_tue_wed_usd));
+//$total_dollar_amount_of_reg_classes_mon_tue_wed_usd = nl2br( array_sum($total_amount_sum_array_mon_tue_wed_usd));
 echo "</tr>";
 echo "</table>"; 
 
@@ -247,7 +241,7 @@ echo "<th class='specalt'><b>TeamLead</b></th>";
 echo "<th class='specalt'><b>Teacher</b></th>"; 
 echo "<th colspan=1 class='specalt'><b>status</b></th>";  
 echo "<th colspan=1 class='specalt'><b>Business</b></th>"; 
-echo "<th colspan=1 class='specalt'><b>Business-USD</b></th>";
+//echo "<th colspan=1 class='specalt'><b>Business-USD</b></th>";
 echo "</tr>"; 
 
 echo "<tr>";
@@ -272,16 +266,15 @@ $cnt_rows_teamlead_wise_thur_fri_sat = mysql_num_rows($result_regular_thur_fri_s
 $serial=0;
 while(($row_regular_thur_fri_sat = mysql_fetch_array($result_regular_thur_fri_sat)))
 { 
-//FOR CAD
+//FOR USD
 $total_regular_sum_array_thur_fri_sat[$row_regular_thur_fri_sat['sch_id']] = $row_regular_thur_fri_sat['cnt_regular'];
 $total_amount_sum_array_thur_fri_sat[$row_regular_thur_fri_sat['sch_id']] = $row_regular_thur_fri_sat['dues'];
-//FOR USD
-$total_amount_sum_array_thur_fri_sat_usd[$row_regular_thur_fri_sat['sch_id']] = round($row_regular_thur_fri_sat['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']);
 
-//FOR CAD
-$total_amount_per_teacher_thur_fri_sat = $row_regular_thur_fri_sat['dues'];
+//$total_amount_sum_array_thur_fri_sat_usd[$row_regular_thur_fri_sat['sch_id']] = round($row_regular_thur_fri_sat['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']);
+
 //FOR USD
-$total_amount_per_teacher_thur_fri_sat_usd = round($row_regular_thur_fri_sat['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']);
+$total_amount_per_teacher_thur_fri_sat = $row_regular_thur_fri_sat['dues'];
+//$total_amount_per_teacher_thur_fri_sat_usd = round($row_regular_thur_fri_sat['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']);
 //FOR Serial = serial + 1
 $serial=$serial+1;
 
@@ -291,8 +284,8 @@ echo "<td valign='top'>" . showUser( nl2br( $row_regular_thur_fri_sat['main_Lead
 echo "<td valign='top'>" . showUser( nl2br( $row_regular_thur_fri_sat['LeadId'])) . "</td>";
 echo "<td valign='top'>" . nl2br( $row_regular_thur_fri_sat['firstName']) . " " . nl2br( $row_regular_thur_fri_sat['lastName']) . "</td>";
 echo "<td valign='top'>" . $row_regular_thur_fri_sat['cnt_regular'] . "</td>";
-echo "<td valign='top'>$ " . $row_regular_thur_fri_sat['dues'] . "</td>";
-echo "<td valign='top'>$ " . round($row_regular_thur_fri_sat['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
+echo "<td valign='top'>$ " . round($row_regular_thur_fri_sat['dues'],2) . "</td>";
+//echo "<td valign='top'>$ " . round($row_regular_thur_fri_sat['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
 echo "</tr>"; 
 }
 echo "<tr>";
@@ -304,7 +297,7 @@ echo "<td valign='top' style='color:blue;'><b>" . nl2br( array_sum($total_regula
 //echo "<td valign='top'> </td>"; 
 //echo "<td valign='top'> </td>";
 echo "<td valign='top' style='color:blue;'><b>$" . nl2br( array_sum($total_amount_sum_array_thur_fri_sat)) . "</td>";
-echo "<td valign='top' style='color:blue;'><b>$" . nl2br( array_sum($total_amount_sum_array_thur_fri_sat_usd)) . "</td>";   
+//echo "<td valign='top' style='color:blue;'><b>$" . nl2br( array_sum($total_amount_sum_array_thur_fri_sat_usd)) . "</td>";   
 //FOR CAD
 $total_reg_classes_thur_fri_sat = nl2br( array_sum($total_regular_sum_array_thur_fri_sat));
 $total_dollar_amount_of_reg_classes_thur_fri_sat = nl2br( array_sum($total_amount_sum_array_thur_fri_sat));
@@ -318,7 +311,7 @@ $total_regular_classes = $total_reg_classes_mon_tue_wed + $total_reg_classes_thu
 //FOR CAD
 $total_dollars = $total_dollar_amount_of_reg_classes_mon_tue_wed + $total_dollar_amount_of_reg_classes_thur_fri_sat;
 //FOR USD
-$total_dollars_usd = $total_dollar_amount_of_reg_classes_mon_tue_wed_usd + $total_dollar_amount_of_reg_classes_thur_fri_sat_usd;
+//$total_dollars_usd = $total_dollar_amount_of_reg_classes_mon_tue_wed_usd + $total_dollar_amount_of_reg_classes_thur_fri_sat_usd;
 //Table for Mean business per teacher
 echo "<table  border=0 id='table_liquid' cellspacing=0 >"; 
 	echo "<tr>";
@@ -328,7 +321,7 @@ echo "<table  border=0 id='table_liquid' cellspacing=0 >";
 		echo "<td valign='top'> </td>";
 		echo "<td valign='top' style='color:blue;'><b>".$total_regular_classes."</b></td>";
 		echo "<td valign='top' style='color:blue;'><b>$".$total_dollars."</b></td>";
-		echo "<td valign='top' style='color:blue;'><b>$".$total_dollars_usd."</b></td>";
+		//echo "<td valign='top' style='color:blue;'><b>$".$total_dollars_usd."</b></td>";
 	echo "</tr>";
 echo "</table>"; 
 
@@ -345,7 +338,7 @@ echo "<th class='specalt'><b>ID</b></th>";
 echo "<th class='specalt'><b>Teacher</b></th>"; 
 echo "<th colspan=1 class='specalt'><b>status</b></th>";  
 echo "<th colspan=1 class='specalt'><b>Business</b></th>"; 
-echo "<th colspan=1 class='specalt'><b>Business-USD</b></th>"; 
+//echo "<th colspan=1 class='specalt'><b>Business-USD</b></th>"; 
 echo "</tr>"; 
 
 echo "<tr>";
@@ -355,17 +348,18 @@ echo "<tr>";
 	echo "<th class='specalt' style='color:red;'><b>Regular(OVERALL)</b></th>";
 	echo "<td valign='top'> </td>";
 	echo "<td valign='top'> </td>";
+	echo "<td valign='top'> </td>";
 echo "</tr>"; 
 //FOR CAD
 $total_regular_sum_array=array();
 $total_amount_sum_array=array();
 //FOR USD
-$total_amount_sum_array_usd=array();
+//$total_amount_sum_array_usd=array();
 
 //FOR CAD
 $x_xbar_square_array=array();
 //FOR USD
-$x_xbar_square_array_usd=array();
+//$x_xbar_square_array_usd=array();
 
 
 //Counting number of rows teamlead wise to get teacher count
@@ -379,7 +373,7 @@ while(($row_regular = mysql_fetch_array($result_regular)))
 $total_regular_sum_array[$row_regular['sch_id']] = $row_regular['cnt_regular'];
 $total_amount_sum_array[$row_regular['sch_id']] = $row_regular['dues'];
 //FOR USD
-$total_amount_sum_array_usd[$row_regular['sch_id']] = round($row_regular['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']);
+//$total_amount_sum_array_usd[$row_regular['sch_id']] = round($row_regular['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']);
 
 //FOR CAD
 $total_amount_per_teacher = $row_regular['dues'];
@@ -395,8 +389,8 @@ echo "<td valign='top'>" . showUser( nl2br( $row_regular['LeadId'])) . "</td>";
 echo "<td valign='top'>" . nl2br( $row_regular['id']) . "</td>";
 echo "<td valign='top'>" . nl2br( $row_regular['firstName']) . " " . nl2br( $row_regular['lastName']) . "</td>";
 echo "<td valign='top'>" . $row_regular['cnt_regular'] . "</td>";
-echo "<td valign='top'>$ " . $row_regular['dues'] . "</td>";
-echo "<td valign='top'>$ " . round($row_regular['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
+echo "<td valign='top'>$ " . round($row_regular['dues'],2) . "</td>";
+//echo "<td valign='top'>$ " . round($row_regular['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
 echo "</tr>"; 
 }
 echo "<tr>";
@@ -409,7 +403,7 @@ echo "<td valign='top' style='color:red;'><b>" . nl2br( array_sum($total_regular
 //FOR CAD
 echo "<td valign='top' style='color:red;'><b>$" . nl2br( array_sum($total_amount_sum_array)) . "</td>";   
 //FOR USD
-echo "<td valign='top' style='color:red;'><b>$" . nl2br( array_sum($total_amount_sum_array_usd)) . "</td>";   
+//echo "<td valign='top' style='color:red;'><b>$" . nl2br( array_sum($total_amount_sum_array_usd)) . "</td>";   
 
 $total_reg_classes= nl2br( array_sum($total_regular_sum_array));
 $total_dollar_amount_of_reg_classes = nl2br( array_sum($total_amount_sum_array));
@@ -430,9 +424,9 @@ $row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
 echo "<table  border=0 id='' cellspacing=0 >"; 
 	echo "<tr>";
 		echo "<td valign='top'><b>Mean business per teacher</b></td>";
-		echo "<td valign='top' style='color:red;'>$". $mean_teacher = round($total_dollar_amount_of_reg_classes/$cnt_rows_teamlead_wise,2) ."</td>";
+		echo "<td valign='top' style='color:green;'>$". $mean_teacher = round($total_dollar_amount_of_reg_classes/$cnt_rows_teamlead_wise,2) ."</td>";
 		//USD
-		echo "<td valign='top' style='color:GREEN;'>$ USD : ". $mean_teachers_USD = round($mean_teacher*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'],2) ."</td>";
+		//echo "<td valign='top' style='color:GREEN;'>$ USD : ". $mean_teachers_USD = round($mean_teacher*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'],2) ."</td>";
 	echo "</tr>";
 echo "</table>"; 
 
@@ -440,9 +434,9 @@ echo "</table>";
 echo "<table  border=0 id='' cellspacing=0 >"; 
 	echo "<tr>";
 		echo "<td valign='top'><b>Mean business per slot</b></td>";
-		echo "<td valign='top' style='color:red;'>$". $mean_slot = round($total_dollar_amount_of_reg_classes/$total_reg_classes,2) ."</td>";
+		echo "<td valign='top' style='color:green;'>$". $mean_slot = round($total_dollar_amount_of_reg_classes/$total_reg_classes,2) ."</td>";
 		//USD
-		echo "<td valign='top' style='color:GREEN;'>$ USD : ". $mean_slot_USD = round($mean_slot*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'],2) ."</td>";
+		//echo "<td valign='top' style='color:GREEN;'>$ USD : ". $mean_slot_USD = round($mean_slot*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'],2) ."</td>";
 	echo "</tr>";
 echo "</table>"; 
 
@@ -454,7 +448,7 @@ while(($row_regular_SD = mysql_fetch_array($result_regular_SD)))
 //CAD
 $total_amount_sum_array[$row_regular_SD['sch_id']] = $row_regular_SD['dues'];
 //USD
-$total_amount_sum_array_usd[$row_regular_SD['sch_id']] = $row_regular_SD['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
+//$total_amount_sum_array_usd[$row_regular_SD['sch_id']] = $row_regular_SD['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
 
 //CAD
 $total_amount_per_teacher = $total_amount_sum_array[$row_regular_SD['sch_id']];
@@ -463,7 +457,7 @@ $x_xbar_square_array[$row_regular_SD['sch_id']] = $x_xbar_square;
 //USD
 $total_amount_per_teacher_usd = $total_amount_sum_array_usd[$row_regular_SD['sch_id']];
 $x_xbar_square_usd=pow(($total_amount_per_teacher_usd-$mean_teacher_USD),2);
-$x_xbar_square_array_usd[$row_regular_SD['sch_id']] = $x_xbar_square_usd;
+//$x_xbar_square_array_usd[$row_regular_SD['sch_id']] = $x_xbar_square_usd;
 
 
 }
@@ -479,7 +473,7 @@ echo "<table  border=0 id='' cellspacing=0 >";
 	echo "<tr>";
 		echo "<td valign='top'><b>Standard Deviation</b></td>";
 		echo "<td valign='top' style='color:red;'>". round($square_root/$cnt_rows_teamlead_wise,2) ."</td>";
-		echo "<td valign='top' style='color:GREEN;'>". round($square_root_usd/$cnt_rows_teamlead_wise,2) ."</td>";
+		//echo "<td valign='top' style='color:GREEN;'>". round($square_root_usd/$cnt_rows_teamlead_wise,2) ."</td>";
 	echo "</tr>";
 echo "</table>"; 
 include('include/footer.php');

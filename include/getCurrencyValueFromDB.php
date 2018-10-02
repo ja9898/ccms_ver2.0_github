@@ -77,6 +77,17 @@ if($currency_id==6)
 	<br><div style='visibility:hidden' id="label">1 sgd to usd:</div><input type='hidden' id="simple_convert" name="simple_convert" readonly="readonly" value=<? echo $row['1_sgd_to_usd']; ?> />
 <?
 }
+if($currency_id==7)
+{
+	$getCurrencyValue_query=("SELECT * FROM campus_currency WHERE id = (
+      SELECT MAX(id)
+      FROM campus_currency)");
+	$row=mysql_fetch_array(mysql_query($getCurrencyValue_query));?>
+	<input type='hidden' id="value_of_currency" name="value_of_currency" readonly="readonly" value=<? echo $row['1_pkr_to_usd']; ?> />
+	<br><div style='visibility:hidden' id="label">CAD - Auto:</div><input type='hidden' id="value_of_cad" name="value_of_cad" readonly="readonly" value=<? echo $row['cad']; ?> />
+	<br><div style='visibility:hidden' id="label">1 pkr to usd:</div><input type='hidden' id="simple_convert" name="simple_convert" readonly="readonly" value=<? echo $row['1_pkr_to_usd']; ?> />
+<?
+}
 
 
 ?>

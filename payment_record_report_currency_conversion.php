@@ -83,6 +83,7 @@ echo "<th class='specalt' style=''>1 AUD to USD</th>";
 echo "<th class='specalt' style=''>1 CAD to USD NEW</th>";
 echo "<th class='specalt' style=''>1 NZD to USD</th>";
 echo "<th class='specalt' style=''>1 SGD to USD</th>";
+echo "<th class='specalt' style=''>1 PKR to USD</th>";
 //***********************************<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 echo "<th class='specalt' style=''>Date</th>";
 echo "</tr>";
@@ -109,6 +110,7 @@ echo "</tr>";
 	echo "<td valign='top'>" . 	nl2br( $row['1_cad_to_usd_new']). "</td>";
 	echo "<td valign='top'>" . 	nl2br( $row['1_nzd_to_usd']). "</td>";
 	echo "<td valign='top'>" . 	nl2br( $row['1_sgd_to_usd']). "</td>";
+	echo "<td valign='top'>" . 	nl2br( $row['1_pkr_to_usd']). "</td>";
 	//***********************************<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 	echo "<td valign='top'>" . 	nl2br( $row['date']). "</td>";
 	echo "</tr>"; 

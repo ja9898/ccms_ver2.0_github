@@ -446,6 +446,18 @@ function availableTeamUnder_main(usertype_teamlead_main,usertype_teamlead_id_mai
 		var currency_id=document.getElementById('currency_id').value;
 		var strURL="include/getCurrencyValueFromDB.php?currency_id="+currency_id;
 		
+/* 		document.getElementById("amountDefaultNew").value='';
+		document.getElementById("amountOriginalNew").value='';
+		document.getElementById("totalReceivedNew").value='';
+		document.getElementById("feeDeductNew").value='';
+		document.getElementById("discountNew").value='';
+		
+		document.getElementById("amountDefaultNew_Usd").value='';
+		document.getElementById("amountOriginalNew_Usd").value='';
+		document.getElementById("amountUsdSimpleNew").value='';
+		document.getElementById("feeDeductNew_Usd").value='';
+		document.getElementById("discountNew_Usd").value=''; */
+		
 		
 		if (req) {
 			

@@ -2,9 +2,9 @@
 include('config.php'); 
 include('include/header.php');
 
-if($_SESSION['userId']==159 || $_SESSION['userId']==48 || $_SESSION['userId']==506 || $_SESSION['userId']==206 || $_SESSION['userId']==227 || $_SESSION['userId']==95 || $_SESSION['userId']==395 || $_SESSION['userId']==126 || $_SESSION['userId']==411 || $_SESSION['userId']==195 || $_SESSION['userId']==703 || $_SESSION['userId']==2015 || $_SESSION['userId']==2055 || $_SESSION['userId']==1805)
+/* if($_SESSION['userId']==159 || $_SESSION['userId']==48 || $_SESSION['userId']==506 || $_SESSION['userId']==206 || $_SESSION['userId']==227 || $_SESSION['userId']==95 || $_SESSION['userId']==395 || $_SESSION['userId']==126 || $_SESSION['userId']==411 || $_SESSION['userId']==195 || $_SESSION['userId']==703 || $_SESSION['userId']==2015 || $_SESSION['userId']==2055 || $_SESSION['userId']==1805)
 {
-
+ */
 $schedule=$_GET['schedule'];
 $crs=$_GET['crs']; 
 $classType=$_GET['classType'];
@@ -86,8 +86,8 @@ if(($_FILES["bank_payment_image"]["size"]<=200000) && (in_array($extension, $all
 		`totalReceivedNew_Usd` , `discountNew_Usd` , `statusPendRejAccpt` ) 
 		 VALUES(  '{$_POST['transactionID']}' ,  '".prepareDate($_POST['date'])."' ,  '{$_POST['studentID']}' , 
 		 '".$teacherID."' , '".$schedule."'  , '".$crs."' ,  '{$_POST['method']}' ,  '{$_POST['method_new']}' , 
-		 '{$_POST['currency_id']}' , '{$_POST['amount_original']}' , '{$_POST['amount_gbp']}' , '{$_POST['amount']}' , 
-		 '{$_POST['discount']}' ,'{$_POST['comments']}' , '".$_SESSION['userId']."', '".$classType."' , 
+		 '{$_POST['currency_id']}' , '{$_POST['amountDefaultNew']}' , '{$_POST['amount_gbp']}' , '{$_POST['amountDefaultNew_Usd']}' , 
+		 '{$_POST['discountNew_Usd']}' ,'{$_POST['comments']}' , '".$_SESSION['userId']."', '".$classType."' , 
 		 '".$startTime."' ,'".prepareDate($_POST['paydate'])."' , '".$LeadId."' , '".$main_LeadId."' , 
 		 '{$_POST['sender_name']}' , '{$_POST['email']}' , '".$agentId."' , '".$agentLeadId."' , 
 		 '".$main_agentLeadId."' , '{$_POST['campus']}' , '{$_POST['agent_id']}' , '{$_POST['teacher_id']}' , 
@@ -108,7 +108,7 @@ if(($_FILES["bank_payment_image"]["size"]<=200000) && (in_array($extension, $all
 		if($_POST['std_status']!='2'){
 			mysql_query($sql) or die(mysql_error()); 
 			
-			$sql = "UPDATE `campus_schedule` SET  dues= '{$_POST['amount']}' , dues_original= '{$_POST['amount_original']}' , dues_gbp= '{$_POST['amount_gbp']}' , currency_array= '{$_POST['currency_id']}' , discount= '{$_POST['discount']}' ,duedate=   '".prepareDate($_POST['signInDate'])."',  paydate=   '".prepareDate($_POST['paydate'])."',  std_status_old='".$row_std_status_old['std_status']."' , std_status='2', `startDate` =  '".prepareDate($_POST['courseStart'])."', endDate=   '".prepareDate($_POST['courseEnd'])."' , `grade` =  '{$_POST['grade']}' ,  `syllabus` =  '{$_POST['syllabus']}' , `record_link` =  '".$_POST['record_link']."'  , 
+			$sql = "UPDATE `campus_schedule` SET  dues= '{$_POST['amountDefaultNew_Usd']}' , dues_original= '{$_POST['amountDefaultNew']}' , dues_gbp= '{$_POST['amount_gbp']}' , currency_array= '{$_POST['currency_id']}' , discount= '{$_POST['discountNew_Usd']}' ,duedate=   '".prepareDate($_POST['signInDate'])."',  paydate=   '".prepareDate($_POST['paydate'])."',  std_status_old='".$row_std_status_old['std_status']."' , std_status='2', `startDate` =  '".prepareDate($_POST['courseStart'])."', endDate=   '".prepareDate($_POST['courseEnd'])."' , `grade` =  '{$_POST['grade']}' ,  `syllabus` =  '{$_POST['syllabus']}' , `record_link` =  '".$_POST['record_link']."'  , 
 			`dues_amountDefaultNew` = '{$_POST['amountDefaultNew']}' , `dues_amountOriginalNew`='{$_POST['amountOriginalNew']}' , 
 			`dues_feeDeductNew`='{$_POST['feeDeductNew']}' , `dues_totalReceivedNew`='{$_POST['totalReceivedNew']}' , 
 			`dues_discountNew`='{$_POST['discountNew']}' ,
@@ -160,8 +160,8 @@ else{
 		`totalReceivedNew_Usd` , `discountNew_Usd` , `statusPendRejAccpt`  ) 
 		 VALUES(  '{$_POST['transactionID']}' ,  '".prepareDate($_POST['date'])."' ,  '{$_POST['studentID']}' , 
 		 '".$teacherID."' , '".$schedule."'  , '".$crs."' ,  '{$_POST['method']}' ,  '{$_POST['method_new']}' , 
-		 '{$_POST['currency_id']}' , '{$_POST['amount_original']}' , '{$_POST['amount_gbp']}' , '{$_POST['amount']}' , 
-		 '{$_POST['discount']}' ,'{$_POST['comments']}' , '".$_SESSION['userId']."', '".$classType."' , 
+		 '{$_POST['currency_id']}' , '{$_POST['amountDefaultNew']}' , '{$_POST['amount_gbp']}' , '{$_POST['amountDefaultNew_Usd']}' , 
+		 '{$_POST['discountNew_Usd']}' ,'{$_POST['comments']}' , '".$_SESSION['userId']."', '".$classType."' , 
 		 '".$startTime."' ,'".prepareDate($_POST['paydate'])."' , '".$LeadId."' , '".$main_LeadId."' , 
 		 '{$_POST['sender_name']}' , '{$_POST['email']}' , '".$agentId."' , '".$agentLeadId."' , 
 		 '".$main_agentLeadId."' , '{$_POST['campus']}' , '{$_POST['agent_id']}' , '{$_POST['teacher_id']}' , 
@@ -181,7 +181,7 @@ else{
 		if($_POST['std_status']!='2'){
 			mysql_query($sql) or die(mysql_error()); 
 			
-			$sql = "UPDATE `campus_schedule` SET  dues= '{$_POST['amount']}' , dues_original= '{$_POST['amount_original']}' , dues_gbp= '{$_POST['amount_gbp']}' , currency_array= '{$_POST['currency_id']}' , discount= '{$_POST['discount']}' ,duedate=   '".prepareDate($_POST['signInDate'])."',  paydate=   '".prepareDate($_POST['paydate'])."',  std_status_old='".$row_std_status_old['std_status']."' , std_status='2', `startDate` =  '".prepareDate($_POST['courseStart'])."', endDate=   '".prepareDate($_POST['courseEnd'])."' , `grade` =  '{$_POST['grade']}' ,  `syllabus` =  '{$_POST['syllabus']}' , `record_link` =  '".$_POST['record_link']."'  , 
+			$sql = "UPDATE `campus_schedule` SET  dues= '{$_POST['amountDefaultNew_Usd']}' , dues_original= '{$_POST['amountDefaultNew']}' , dues_gbp= '{$_POST['amount_gbp']}' , currency_array= '{$_POST['currency_id']}' , discount= '{$_POST['discountNew_Usd']}' ,duedate=   '".prepareDate($_POST['signInDate'])."',  paydate=   '".prepareDate($_POST['paydate'])."',  std_status_old='".$row_std_status_old['std_status']."' , std_status='2', `startDate` =  '".prepareDate($_POST['courseStart'])."', endDate=   '".prepareDate($_POST['courseEnd'])."' , `grade` =  '{$_POST['grade']}' ,  `syllabus` =  '{$_POST['syllabus']}' , `record_link` =  '".$_POST['record_link']."'  , 
 			`dues_amountDefaultNew` = '{$_POST['amountDefaultNew']}' , `dues_amountOriginalNew`='{$_POST['amountOriginalNew']}' , 
 `dues_feeDeductNew`='{$_POST['feeDeductNew']}' , `dues_totalReceivedNew`='{$_POST['totalReceivedNew']}' , 
 `dues_discountNew`='{$_POST['discountNew']}' ,
@@ -265,6 +265,7 @@ else if (isset($_POST['submitted']) && empty($_POST['signInDate']) && empty($_PO
 				<option value="4">AUD</option>
 				<option value="5">NZD</option>
 				<option value="6">SGD</option>
+				<option value="7">PKR</option>
 	</select></div>
 
 
@@ -277,8 +278,8 @@ else if (isset($_POST['submitted']) && empty($_POST['signInDate']) && empty($_PO
 <div id="label" style='background-color:lime; color-black'>Net Converted Amount -USD :</div><div id="field"><input style='background-color:lime' type='text' id='amountUsdSimpleNew' name='amountUsdSimpleNew' readonly='readonly' required/> </div>
 
 <!-- ****************************************************************************************************** -->
-<div id="label">Sender Name:</div><div id="field"><input type='text' id='sender_name' name='sender_name' required/> </div>
-<div id="label">Email:</div><div id="field"><input type='email' id='email' name='email' required/> </div>
+<div id="label">Sender Name:</div><div id="field"><input type='text' id='sender_name' name='sender_name' autocomplete="off" required/> </div>
+<div id="label">Email:</div><div id="field"><input type='email' id='email' name='email' autocomplete="off" required/> </div>
 
 <div id="label">Course Start Date:</div><div id="field"><input required type='text' name='courseStart' class="flexy_datepicker_input"/> </div>
 <div id="label">Course End Date:</div><div id="field"><input type='text' name='courseEnd' readonly="readonly" value="<?php echo $end_date_readonly; ?>" class=""/> </div>
@@ -300,9 +301,9 @@ else if (isset($_POST['submitted']) && empty($_POST['signInDate']) && empty($_PO
 <div id="label" style='visibility:hidden'>Converted Amount-GBP:</div><div id="field"><input type='hidden' id='amount_gbp' name='amount_gbp'/> </div>
 <div id="label" style='visibility:hidden'>Converted Amount-CAD:</div><div id="field"><input type='hidden' id='amount' name='amount'/> </div>
 <!-- Old CAD values calculations-->
-<div id="label">Original Amount:</div><div id="field"><input type='text' id='amount_original' name='amount_original' onchange="javascript : calculate_currency_conversion();" /> </div>
-<div id="label" style='background-color:lime; color-black'>Converted Amount Simple-USD :</div><div id="field"><input style='background-color:lime' type='text' id='amount_usd_simple' name='amount_usd_simple' readonly='readonly' required/> </div>
-<div id="label">Discount:</div><div id="field"><input type='text' name='discount'/> </div>
+<div id="label" style='visibility:hidden'>Original Amount:</div><div id="field"><input type='hidden' id='amount_original' name='amount_original' onchange="javascript : calculate_currency_conversion();" /> </div>
+<div id="label" style='background-color:lime; visibility:hidden;'>Converted Amount Simple-USD :</div><div id="field"><input style='background-color:lime' type='hidden' id='amount_usd_simple' name='amount_usd_simple' readonly='readonly' required/> </div>
+<div id="label" style='visibility:hidden'>Discount:</div><div id="field"><input type='hidden' name='discount'/> </div>
 
 <!-- NEW VALUES -->
 <div id="label" style='visibility:hidden'>Actual Slot USD:</div><div id="field"><input type='hidden' id='amountDefaultNew_Usd' name='amountDefaultNew_Usd' value='' readonly='readonly'/> </div>
@@ -315,10 +316,10 @@ else if (isset($_POST['submitted']) && empty($_POST['signInDate']) && empty($_PO
 
 </form> 
 <? 
-}
+/* }
 else
 {
 	echo "<label style='color:red; font-weight:bold'>NOTE: Contact CCMS Administrator</u></label>";
-}
+} */
 
 include('include/footer.php');?>

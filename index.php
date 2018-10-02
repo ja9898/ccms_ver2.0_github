@@ -192,7 +192,7 @@ if($_SESSION['userType']!='3' && $_SESSION['userType']!='5' && $_SESSION['userTy
 												INNER JOIN campus_schedule 
 												ON capmus_users.LeadId='".$_SESSION['userId']."' and capmus_users.id=campus_schedule.teacherID and campus_schedule.`status` =1 and std_status!=4 and std_status!=3 and std_status!=1 and day(campus_schedule.paydate)=".date('d', strtotime( nl2br($systemdate)))." ";
 												
-												//$result_query_cam_sch = mysql_query($query_cam_sch) or trigger_error(mysql_error()); //or trigger_error(mysql_error()); 
+												$result_query_cam_sch = mysql_query($query_cam_sch) or trigger_error(mysql_error()); //or trigger_error(mysql_error()); 
 												if(mysql_num_rows($result_query_cam_sch))
 												{
 													while($rows1 = mysql_fetch_array($result_query_cam_sch))
@@ -602,6 +602,13 @@ if($_SESSION['userType']!='3' && $_SESSION['userType']!='5' && $_SESSION['userTy
                                         <span>Teacher Attendance details</span>
                                     </a><!--end dashboard_button-->
 									
+									<!--notice documents -->
+                                    <!--MISSING DOCUMENTS, 20-01-2015 -->
+                                    <a id="" class="dashboard_button_green button13" href="#">
+                                        <span class="dashboard_button_heading_green">NOTICE</span>
+                                        <span style="color:red"><b>Missing documents</b>  - (20-01-2015)</span>
+                                    </a><!--end dashboard_button-->
+									
 									<? } ?>
 									
 
@@ -657,6 +664,33 @@ if($_SESSION['userType']!='3' && $_SESSION['userType']!='5' && $_SESSION['userTy
 										<!--YOUR SCROLL CONTENT HERE-->
 									</div>
 									</div>
+									<!--Prayer times 	START -->
+									
+									<?
+									
+/* echo "<table  border=0 id='table_liquid' cellspacing=0 >"; 
+echo "<tr>";
+echo "<th class='specalt'><b>Fajr</b></th>"; 
+echo "<th class='specalt'><b>Zohar</b></th>"; 
+echo "<th class='specalt'><b>Asar</b></th>";
+echo "<th class='specalt'><b>Magrib</b></th>"; 
+echo "<th class='specalt'><b>Isha</b></th>";
+echo "</tr>"; 
+$result_prayer_times = mysql_query("SELECT * FROM `campus_prayer_times` ORDER BY  id DESC LIMIT 1 ") or trigger_error(mysql_error()); 
+while($row = mysql_fetch_array($result_prayer_times))
+{
+echo "<tr>";
+echo "<td valign='top' style='color:green; font-weight:bold;'>4:55</td>";
+echo "<td valign='top' style='color:green; font-weight:bold;'>1:55</td>";
+echo "<td valign='top' style='color:green; font-weight:bold;'>4:55</td>";
+echo "<td valign='top' style='color:green; font-weight:bold;'>Sunset(06:40)</td>";
+echo "<td valign='top' style='color:green; font-weight:bold;'>08:55</td>";
+echo "</tr>";
+}
+echo "</table>"; */
+									?>
+							
+									<!--Prayer times 	END -->
 									<!--HR MESSAGES END -->
                                
                                 <!--end jquery tab-->

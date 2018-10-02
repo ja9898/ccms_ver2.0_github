@@ -2,8 +2,8 @@
 include('config.php');
 include('include/header.php'); 
 
-if($_SESSION['userId']==159 || $_SESSION['userId']==227 || $_SESSION['userId']==411 || $_SESSION['userId']==195 || $_SESSION['userId']==347 || $_SESSION['userId']==625 || $_SESSION['userId']==221)
-{
+/* if($_SESSION['userId']==159 || $_SESSION['userId']==227 || $_SESSION['userId']==411 || $_SESSION['userId']==195 || $_SESSION['userId']==347 || $_SESSION['userId']==625 || $_SESSION['userId']==221)
+{ */
 //Following code is checking whether the -confirm_TL_submitted- variable is been sent to the SELF PAGE(SELF POST)
 // and then it checks whether the ID of the SCHEDULE has been sent properly to the SELF PAGE
 $confirm_TL_submitted =  $_GET['confirm_TL_submitted'];
@@ -195,10 +195,10 @@ else
 echo "</tr>"; 
 } 
 echo "</table>"; 
-}
+/* }
 else
 {
 	echo "<label style='color:red; font-weight:bold'>NOTE: Contact CCMS Administrator</u></label>";
-}
+} */
 include('include/footer.php');
 ?>

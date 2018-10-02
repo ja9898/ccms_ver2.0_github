@@ -52,7 +52,7 @@ echo "<th class='specalt'><b>Class Days</b></th>";
 echo "<th class='specalt'><b>Priority</b></th>";
 echo "<th class='specalt'><b>Agent</b></th>"; 
 echo "<th class='specalt'><b>Dues</b></th>"; 
-echo "<th class='specalt'><b>Dues - USD</b></th>"; 
+//echo "<th class='specalt'><b>Dues - USD</b></th>"; 
 echo "<th class='specalt'><b>Dues - Original</b></th>"; 
 //echo "<th class='specalt'><b>Currency</b></th>"; 
 //echo "<th class='specalt'><b>Currency Value</b></th>"; 
@@ -60,6 +60,7 @@ echo "<th class='specalt'><b>Skype ID</b></th>";
 echo "<th class='specalt'><b>USERNAME</b></th>"; 
 echo "<th class='specalt'><b>PASSWORD</b></th>"; 
 echo "<th class='specalt'><b>Parent</b></th>"; 
+echo "<th class='specalt'><b>Zero Reference</b></th>"; 
 echo "<th class='specalt'><b>Grade</b></th>"; 
 echo "<th class='specalt'><b>Syllabus</b></th>";
 echo "<th class='specalt'><b>Recording link</b></th>"; 
@@ -77,9 +78,9 @@ echo "<th class='specalt'><b>Fee USD</b></th>";
 echo "<th class='specalt'><b>Discount USD</b></th>";
 //
 echo "<th class='specalt'><b>Status</b></th>";
-echo "<th class='specalt'><b>Accept</b></th>";
-echo "<th class='specalt'><b>Reject</b></th>"; 
-
+//echo "<th class='specalt'><b>Accept</b></th>";
+//echo "<th class='specalt'><b>Reject</b></th>"; 
+echo "<th class='specalt'><b>Accept/Reject ACTION BY</b></th>"; 
 echo "</tr>"; 
 if($_SESSION['userType']==5 && ($_POST['search-student-id']!=0  || $_POST['search-teacher-id']!=0 || $_POST['search-agent-id']!=0 || $_POST['classType']!=0 || $_POST['stdStatus']!=0 || $_POST['startTime']!=0 || $_POST['shift']!=0 || $_POST['course']!=0 ) )
 {
@@ -145,10 +146,6 @@ $curr_systemdate = mysql_real_escape_string($_LIST['systemdate']);
 $sub_date = mysql_real_escape_string(date('Y-m-d', strtotime(nl2br( $curr_systemdate). ' - 30 days')));	
 //Adding this for PRIORITY
 $systemdate = systemDate();
-//Get 1 cad to usd rate from db
-$sql_1cad_to_dollar_rate_USDval="SELECT * FROM campus_currency WHERE id = 433";
-$row_1cad_to_dollar_rate_USDval = mysql_fetch_array(mysql_query($sql_1cad_to_dollar_rate_USDval));
-$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
 //Get 1 USA/CAD/AUS/GBP/NZD/SGD to usd rate from db
 $sql_original_currency="SELECT * FROM campus_currency WHERE id = 473";
 $row_original_currency = mysql_fetch_array(mysql_query($sql_original_currency));
@@ -187,14 +184,14 @@ echo "<tr>";
 if($_SESSION['userType']==8 || $_SESSION['userType']==15 || $_SESSION['userType']==18)
 {
 	echo "<td valign='top'>" .nl2br($row['sch_id']). "</td>";
-	$cad_amt[$row['sch_id']] = $row['dues'];
-	$usd_amt[$row['sch_id']] = $row['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
+	$usd_amt[$row['sch_id']] = $row['dues'];
+	//$usd_amt[$row['sch_id']] = $row['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
 }
 else
 {
 	echo "<td valign='top'>" .nl2br($row['id']). "</td>";
-	$cad_amt[$row['id']] = $row['dues'];
-	$usd_amt[$row['id']] = $row['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
+	$usd_amt[$row['id']] = $row['dues'];
+	//$usd_amt[$row['id']] = $row['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
 }
 
 if($_SESSION['userType']!=12 && $_SESSION['userType']!=13)
@@ -265,9 +262,6 @@ else
 }  
 echo "<td valign='top'>" . showUser( nl2br( $row['agentId'])) . "</td>";
 echo "<td valign='top'>" . nl2br( $row['dues']) . "</td>"; 
-//1 cad to usd
-$dues_usd = round($row['dues']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']);
-echo "<td valign='top'>" . $dues_usd . "</td>";
 echo "<td valign='top'>" . $row['dues_original'] . "</td>";
 if($_SESSION['userType']==2)
 {
@@ -282,6 +276,11 @@ else
 	echo "<td valign='top'>" . nl2br( $rows['username']) . "</td>";
 	echo "<td valign='top'>" . nl2br( $rows['password']) . "</td>";
 	echo "<td valign='top'>" . getparentname(nl2br( $rows['parentId'])) . "</td>";
+	if($row['zeroPaidReferenceId']!=0){
+	echo "<td valign='top' style='color:blue'><b>" . showUser(nl2br( $row['zeroPaidReferenceId'])) . "</b></td>"; 
+	}else{
+	echo "<td valign='top'></td>";
+	} 	
 	echo "<td valign='top'>" . nl2br( $row['grade']) . "</td>"; 
 	echo "<td valign='top'>" . nl2br( $row['syllabus']) . "</td>";
 	echo "<td valign='top'>" . nl2br( $row['record_link']) . "</td>";	
@@ -292,9 +291,9 @@ if($_SESSION['userType']==8 || $_SESSION['userType']==15 || $_SESSION['userType'
 		echo "<td valign='top'><a class=button target='_blank' href=book_scheduler_comments_general.php?id={$row['sch_id']}>Comments</a></td>";
 		echo "<td valign='top'><a class=button href=book_scheduler_edit.php?id={$row['sch_id']}>Edit</a></td>
 		<td><a onclick=\"return confirm('Are you sure you want to mark this record Dead?')\" class=button href=book_scheduler_dead_message.php?id={$row['sch_id']}>Dead</a></td>";
-		if($_SESSION['userId']==625 || $_SESSION['userId']==221){
+		//if($_SESSION['userId']==625 || $_SESSION['userId']==221){
 			echo "<td valign='top'><a class=button href=book_scheduler_freeze.php?id={$row['sch_id']}&student_id={$row['studentID']}>Freeze</a></td>";
-		}
+		//}
 		if($row['statussch']=='1')
 		{
 		echo "<td><a  class=button href=make_regular_ver2.php?id={$row['studentID']}&schedule={$row['sch_id']}&crs={$row['courseID']}&classType={$row['classType']}&teacherID={$row['teacherID']}&agentId={$row['agentId']}&startTime={$row['startTime']}>Make Regular</a></td> ";
@@ -378,10 +377,18 @@ else
 	echo "<td valign='top'>" . $row['dues_totalReceivedNew_Usd'] . "</td>";
 	echo "<td valign='top'>" . $row['dues_feeDeductNew_Usd'] . "</td>";
 	echo "<td valign='top'>" . $row['dues_discountNew_Usd'] . "</td>";
-		
-	echo "<td valign='top'>" . getData(nl2br( $row['statusPendRejAccpt']),'statusPendRejAccptAry'). "</td>";
-	echo "<td ><a class=button href=transaction_new_ver2_approve.php?id={$row['id']} target='_blank'>Accept</a></td> ";
-	echo "<td ><a class=button href=transaction_new_ver2_reject.php?id={$row['id']} target='_blank'>Reject</a></td>";
+	if($row['statusPendRejAccpt']==1){
+	echo "<td valign='top' style='color:green; font-weight:bold'>" . getData(nl2br( $row['statusPendRejAccpt']),'statusPendRejAccptAry'). "</td>";
+	}
+	else if($row['statusPendRejAccpt']==2){
+	echo "<td valign='top' style='color:red; font-weight:bold'>" . getData(nl2br( $row['statusPendRejAccpt']),'statusPendRejAccptAry'). "</td>";	
+	}
+	else{
+	echo "<td valign='top'>" . getData(nl2br( $row['statusPendRejAccpt']),'statusPendRejAccptAry'). "</td>";	
+	}
+	//echo "<td ><a class=button href=transaction_new_ver2_approve.php?id={$row['id']} target='_blank'>Accept</a></td> ";
+	//echo "<td ><a class=button href=transaction_new_ver2_reject.php?id={$row['id']} target='_blank'>Reject</a></td>";
+	echo "<td valign='top'>" . 	showUser( nl2br( $row['statusPendRejAccpt_User'])). "</td>";
 	}
 }
 echo "</tr>"; 
@@ -402,8 +409,7 @@ echo "<tr>";
 	echo "<td valign='top'> </td>";
 	echo "<td valign='top'> </td>";
 	echo "<td valign='top'>Sum </td>";  
-	echo "<td valign='top'><b>$" . nl2br( array_sum($cad_amt)) . "</td>"; 
-	echo "<td valign='top' style='color:green; font-weight:bold'><b>$" .  round(array_sum($usd_amt)) . "</td>"; 
+	echo "<td valign='top'><b>$" . nl2br( array_sum($usd_amt)) . "</td>"; 
 echo "</tr>"; 
 echo "</table>"; 
 echo "<a href=book_scheduler_new.php class=button>New Row</a>"; 

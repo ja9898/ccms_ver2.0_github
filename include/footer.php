@@ -46,8 +46,8 @@
 									if(in_array("List Logging",$_permission[$_SESSION['userType']])) { ?>
                                     <li <?php if($_current=="List Logging"){ echo "class='current'"; }?>><a href="logging_list.php" >List Logging</a></li>
                                     <? }
-									if(in_array("Dead Confirmation List",$_permission[$_SESSION['userType']])) { ?>
-                                    <li <?php if($_current=="Dead Confirmation List"){ echo "class='current'"; }?>><a href="book_scheduler_dead_confirmation.php" >Dead Confirmation List</a></li>
+									if(in_array("DC Confirmation List",$_permission[$_SESSION['userType']])) { ?>
+                                    <li <?php if($_current=="DC Confirmation List"){ echo "class='current'"; }?>><a href="book_scheduler_dead_confirmation.php" >DC Confirmation List</a></li>
                                     <? }
 									if(in_array("TL Confirm List",$_permission[$_SESSION['userType']])) { ?>
                                     <li <?php if($_current=="TL Confirm List"){ echo "class='current'"; }?>><a href="book_scheduler_edit_TL_confirmation.php" >TL Confirm List</a></li>
@@ -186,7 +186,10 @@
                                 </li>
                                  <li><a class="headitem item2" href="#">Reports</a>
                                     <ul>
-                                    <?php if(in_array("Pend Rpt Ver4-overall",$_permission[$_SESSION['userType']])) { ?>
+                                    <?php if(in_array("Pending with Balance",$_permission[$_SESSION['userType']])) { ?>
+                                    <li <?php if($_current=="Pending with Balance"){ echo "class='current'"; }?>><a href="pending_report_new_with_balance.php" >Pending with Balance</a></li>
+                                    <? }
+									if(in_array("Pend Rpt Ver4-overall",$_permission[$_SESSION['userType']])) { ?>
                                     <li <?php if($_current=="Pend Rpt Ver4-overall"){ echo "class='current'"; }?>><a href="pending_amount_report_pre_curr_next_FORnextYEAR_2_ver4.php" >Pend Rpt Ver4-overall</a></li>
                                     <? }
 										if(in_array("Main Reports",$_permission[$_SESSION['userType']])) { ?>
@@ -382,8 +385,8 @@
 								
 								<li><a class="headitem item1" href="#">Attendance</a>
                                     <ul>
-                                     <?php if(in_array('Biometric List',$_permission[$_SESSION['userType']])) {?>
-                                    <li <?php if($_current=='Biometric List'){ echo "class='current'"; }?>><a href="biometric_list.php">Attendance List</a></li>
+                                     <?php if(in_array('Biometric List HR',$_permission[$_SESSION['userType']])) {?>
+                                    <li <?php if($_current=='Biometric List HR'){ echo "class='current'"; }?>><a href="biometric_list_HR_view.php">Attendance List</a></li>
                                     <?php } ?>
 									
 									 <?php if(in_array('Biometric Upload',$_permission[$_SESSION['userType']])) {?>

@@ -2,8 +2,8 @@
 include('config.php');
 include('include/header.php');  
 
-if($_SESSION['userId']==159 || $_SESSION['userId']==48 || $_SESSION['userId']==195 || $_SESSION['userId']==227 || $_SESSION['userId']==411 || $_SESSION['userId']==60 || $_SESSION['userId']==550 || $_SESSION['userId']==856)
-{
+/* if($_SESSION['userId']==159 || $_SESSION['userId']==48 || $_SESSION['userId']==195 || $_SESSION['userId']==227 || $_SESSION['userId']==411 || $_SESSION['userId']==60 || $_SESSION['userId']==550 || $_SESSION['userId']==856)
+{ */
 $id = (int) $_GET['id'];
 $studentID = $_GET['studentID'];
 $std_status = $_GET['std_status'];
@@ -32,6 +32,8 @@ echo "<br>";
 <div id="ajaxdiv_summary_confirm_dead"></div>
 </form>
 
-<?php } else {echo "<label style='color:red; font-weight:bold'>NOTE: Contact CCMS Administrator</u></label>";}?>
+<?php 
+/* } else {echo "<label style='color:red; font-weight:bold'>NOTE: Contact CCMS Administrator</u></label>";} */
+?>
 
 <?include('include/footer.php');?> 

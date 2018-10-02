@@ -431,6 +431,7 @@ if($_SESSION['userType']==1 || $_SESSION['userType']==11 || $_SESSION['userType'
 		{
 			$sql.=" and campus_attendance_employee.date>= '".prepareDate($_POST['fromDate'])."' and campus_attendance_employee.date<= '".prepareDate($_POST['toDate'])."'";
 		}
+		$sql.="ORDER by date ASC";
 		$result=mysql_query($sql) or die(mysql_error());	
 		}
 	}
@@ -752,11 +753,11 @@ echo "</tr>";
 echo "</table>";
 
 /**********No of Days in a month**********/ //START
-echo $fromMonth=date('n',strtotime($_POST['fromDate']));
-echo $toMonth=date('n',strtotime($_POST['toDate']));
+$fromMonth=date('n',strtotime($_POST['fromDate']));
+$toMonth=date('n',strtotime($_POST['toDate']));
 	if($fromMonth==$toMonth){
 		$NO_OF_DAYS_in_a_month = date('t');
-		$NO_OF_DAYS_in_a_month=cal_days_in_month(CAL_GREGORIAN,$fromMonth,date('Y'));
+		echo $NO_OF_DAYS_in_a_month=cal_days_in_month(CAL_GREGORIAN,$fromMonth,date('Y'));
 	}
 /**********No of Days in a month**********/ //END
 
@@ -1243,9 +1244,9 @@ echo "<th class='specalt'>Teacher Name</th>";
 echo "<th class='specalt'>TL Name</th>";
 echo "<th class='specalt'>Country</th>";
 echo "<th class='specalt'>Cousre</th>"; 
-echo "<th class='specalt'>Pending Amount-CAD</th>"; 
-echo "<th class='specalt'>Pending Amount-USD</th>"; 
-echo "<th class='specalt' style='color:blue; font-weight:bold'>Original Amount</th>"; 
+echo "<th class='specalt'>Pending Amount-USD</th>";
+//echo "<th class='specalt'>Pending Amount-USD</th>"; 
+//echo "<th class='specalt' style='color:blue; font-weight:bold'>Original Amount</th>"; 
 echo "</tr>";
 
 $amount_pre=array();
@@ -1285,8 +1286,8 @@ if(isset($_POST['submit']))
 				echo "<td valign='top' style='color:green; font-weight:bold'>" . showCourse(nl2br( $row_pre['courseID'])). "</td>"; 
 				echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $pending_pre[$row_pre['id']]) . "</td>";  
 				//from CAD to USD Conversion/////////////////////////////////////////////////////////////
-				echo "<td valign='top' style='color:green; font-weight:bold'>$" . $pending_usd_convert_pre[$row_pre['id']] =  $pending_pre_2nd_array[$row_pre['id']] . "</td>";
-				echo "<td valign='top' style='color:blue; font-weight:bold'>" . $sql_amt_ori_result_pre['amount_original']  . "</td>";
+				//echo "<td valign='top' style='color:green; font-weight:bold'>$" . $pending_usd_convert_pre[$row_pre['id']] =  $pending_pre_2nd_array[$row_pre['id']] . "</td>";
+				//echo "<td valign='top' style='color:blue; font-weight:bold'>" . $sql_amt_ori_result_pre['amount_original']  . "</td>";
 				echo "</tr>";
 	}
 	
@@ -1302,7 +1303,7 @@ echo "<tr>";
  echo "<td valign='top'> </td>";
  echo "<td valign='top'>Sum </td>";   
 echo "<td valign='top'><b>$" . $pending_pre_2nd_array_TOTAL_SUM = nl2br( array_sum($pending_pre)) . "</td>"; 
-echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($pending_usd_convert_pre)) . "</td>";
+//echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($pending_usd_convert_pre)) . "</td>";
 echo "</tr>";
 echo "</table>";
 }
@@ -1405,9 +1406,9 @@ echo "<th class='specalt'>Country</th>";
 echo "<th class='specalt'>Cousre</th>";
 //echo "<th class='specalt'>Total Amount</th>"; 
 //echo "<th class='specalt'>Recieved Amount</th>"; 
-echo "<th class='specalt'>Pending Amount-CAD</th>"; 
-echo "<th class='specalt'>Pending Amount-USD</th>";  
-echo "<th class='specalt' style='color:blue; font-weight:bold'>Original Amount</th>"; 
+echo "<th class='specalt'>Pending Amount-USD</th>"; 
+//echo "<th class='specalt'>Pending Amount-USD</th>";  
+//echo "<th class='specalt' style='color:blue; font-weight:bold'>Original Amount</th>"; 
 //echo "<th class='specalt'>Signup Amount</th>";
 //echo "<th class='specalt'>Discount</th>";
 //echo "<th class='specalt'>SignUp Date</th>";
@@ -1524,8 +1525,8 @@ if(isset($_POST['submit']))
 				echo "<td valign='top' style='color:green; font-weight:bold'>" . showCourse(nl2br( $row['courseID'])). "</td>"; 
 				echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $pending[$unique_array_id]) . "</td>";  
 				 //from CAD to USD Conversion/////////////////////////////////////////////////////////////
-				 echo "<td valign='top' style='color:green; font-weight:bold'>$" . $pending_usd_convert[$unique_array_id] =  round($pending[$unique_array_id]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
-				echo "<td valign='top' style='color:blue; font-weight:bold'>" . $sql_amt_ori_result['amount_original']  . "</td>";
+				//echo "<td valign='top' style='color:green; font-weight:bold'>$" . $pending_usd_convert[$unique_array_id] =  round($pending[$unique_array_id]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
+				//echo "<td valign='top' style='color:blue; font-weight:bold'>" . $sql_amt_ori_result['amount_original']  . "</td>";
 				echo "</tr>"; 
 			}
 			else
@@ -1554,8 +1555,8 @@ if(isset($_POST['submit']))
 				echo "<td valign='top'>" . showCourse(nl2br( $row['courseID'])). "</td>"; 
 				echo "<td valign='top'>$" . nl2br( $pending[$unique_array_id]) . "</td>";  
 				//from CAD to USD Conversion/////////////////////////////////////////////////////////////
-				echo "<td valign='top'>$" . $pending_usd_convert[$unique_array_id] =  round($pending[$unique_array_id]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
-				echo "<td valign='top' style='color:blue; font-weight:bold'>" . $sql_amt_ori_result['amount_original']  . "</td>";
+				//echo "<td valign='top'>$" . $pending_usd_convert[$unique_array_id] =  round($pending[$unique_array_id]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
+				//echo "<td valign='top' style='color:blue; font-weight:bold'>" . $sql_amt_ori_result['amount_original']  . "</td>";
 				echo "</tr>"; 
 			}		
 		}
@@ -1577,7 +1578,7 @@ echo "<tr>";
 //echo "<td valign='top'><b>$" . nl2br( array_sum($amount))  . "</td>";
 //echo "<td valign='top'><b>$" . nl2br( array_sum($recieved)) . "</td>";  
 echo "<td valign='top'><b>$" . $pending_curr_TOTAL_SUM = nl2br( array_sum($pending)) . "</td>"; 
-echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($pending_usd_convert)) . "</td>"; 
+//echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($pending_usd_convert)) . "</td>"; 
 //echo "<td valign='top'><b>$" . nl2br( array_sum($signups)) . "</td>";
 //echo "<td valign='top'><b>$" . nl2br( array_sum($discount)) . "</td>";   
 echo "</tr>";
@@ -1606,12 +1607,12 @@ $row_count_DEAD;
 if($toMonth == $fromMonth && $toMonth==$curr_mon_sub_one && $fromMonth==$curr_mon_sub_one)
 {
 //echo "PEND:".$ALL_pending = $pending_pre_2nd_array_TOTAL_SUM;echo "<br>";
-echo "PEND:".$ALL_pending_previous = $previous_pending;echo "<br>";
+$ALL_pending_previous = $previous_pending;echo "<br>";
 }
 //curr month + curr month
 if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon && !empty($_POST['toDate']))
 {
-echo "PEND:".$ALL_pending = $pending_curr_TOTAL_SUM;echo "<br>";
+$ALL_pending = $pending_curr_TOTAL_SUM;echo "<br>";
 }
 
 while($row_TRIAL_COMM = mysql_fetch_array($result_TRIAL_COMM)){
@@ -1725,12 +1726,12 @@ $check_the_array_of_quran=in_array($row_TRIAL_COMM['courseID'],$quran_subjects);
 		if($toMonth == $fromMonth && $toMonth==$curr_mon_sub_one && $fromMonth==$curr_mon_sub_one)
 		{
 		//echo "PEND:".$ALL_pending = $pending_pre_2nd_array_TOTAL_SUM;echo "<br>";
-		echo "PEND:".$OVERALL_pending = $previous_pending;echo "<br>";
+		$OVERALL_pending = $previous_pending;echo "<br>";
 		}
 		//curr month + curr month
 		if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon && !empty($_POST['toDate']))
 		{
-		echo "PEND:".$OVERALL_pending = $pending_curr_TOTAL_SUM;echo "<br>";
+		$OVERALL_pending = $pending_curr_TOTAL_SUM;echo "<br>";
 		}
 	if ($row_count_DEAD==0 && $OVERALL_pending==0 && $ALL_leaves==0 && $TOTAL_PRESENT_DAYS==30)
 	{

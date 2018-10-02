@@ -69,10 +69,6 @@ if(isset($_POST['submit']))
 
 <? 
 
-	//Get 1 cad to usd rate from db
-	$sql_1cad_to_dollar_rate_USDval="SELECT * FROM campus_currency WHERE id = 433";
-	$row_1cad_to_dollar_rate_USDval = mysql_fetch_array(mysql_query($sql_1cad_to_dollar_rate_USDval));
-	$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
 
 	date("F", strtotime("-3 months"));echo "<br>";
 	date("F", strtotime("-2 months"));echo "<br>";
@@ -169,7 +165,6 @@ if(isset($_POST['submit']))
 	
 	$sql_business_result_first = mysql_query($sql_business_first);
 	
-	$total_business_amount_sum_array_first_cad=array();
 	$total_business_amount_sum_array_first_usd=array();
 	$total_business_amount_sum_array_first_usd_simple=array();		//NEWLY ADDED 18-01-17	
 	
@@ -179,14 +174,13 @@ $month_name_to = date("F", strtotime(prepareDate($_POST['toDate'])));
 echo "<table border=0 id='table_liquid' cellspacing=0 >"; 
 echo "<tr>"; 
 if($month_name_from==$month_name_to)
-echo "<th class='specalt' colspan=5 align='center'>Month:<b>".$month_name_from."</b></th>"; 
+echo "<th class='specalt' colspan=4 align='center'>Month:<b>".$month_name_from."</b></th>"; 
 else
-echo "<th class='specalt' colspan=5 style='color:red'><b>Select proper month filter</b></th>"; 
+echo "<th class='specalt' colspan=4 style='color:red'><b>Select proper month filter</b></th>"; 
 echo "</tr>";
 echo "<tr>"; 
 echo "<th class='specalt'>Teamlead</th>"; 
 echo "<th class='specalt'>Teacher</th>";
-echo "<th class='specalt'>Recieved Amount(CAD)</th>"; 
 echo "<th class='specalt'>Recieved Amount(USD)</th>"; 
 echo "<th class='specalt' style='color:red;'>Recieved Amount SIMPLE(USD)</th>"; 
 echo "</tr>";
@@ -196,17 +190,13 @@ while($row_sql_business_first = mysql_fetch_array($sql_business_result_first))
 echo "<tr>";
 echo "<td valign='top'>" . showUser( nl2br( $row_sql_business_first['LeadId'])) . "</td>";
 echo "<td valign='top'>" . showUser( nl2br( $row_sql_business_first['teacherID'])) . "</td>";
-//CAD amounts
-echo "<td valign='top'>$ " . $cad_values = round($row_sql_business_first['amounttran_business'],2) . "</td>";
 //USD amounts
-echo "<td valign='top'>$ " . $usd_convert = round($row_sql_business_first['amounttran_business']*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'],2) . "</td>";
+echo "<td valign='top'>$ " . $usd_values = round($row_sql_business_first['amounttran_business'],2) . "</td>";
 //USD amounts SIMPLE		//NEWLY ADDED 18-01-17
 echo "<td valign='top'>$ " . $usd_convert_simple = round($row_sql_business_first['amounttran_usd_simple'],2) . "</td>";
 
-//CAD amounts - SUM
-$total_business_amount_sum_array_first_cad[$row_sql_business_first['tran_id']] = $cad_values;
 //USD amounts - SUM
-$total_business_amount_sum_array_first_usd[$row_sql_business_first['tran_id']] = $usd_convert;
+$total_business_amount_sum_array_first_usd[$row_sql_business_first['tran_id']] = $usd_values;
 //USD amounts SIMPLE - SUM
 $total_business_amount_sum_array_first_usd_simple[$row_sql_business_first['tran_id']] = $usd_convert_simple;
 echo "</tr>"; 
@@ -216,7 +206,6 @@ echo "<tr>";
 	echo "<td valign='top'> </td>";
 	echo "<td valign='top'> </td>";
 	//echo "<td valign='top'>Sum Actual</td>";  
-	echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($total_business_amount_sum_array_first_cad)) . "</td>";  
 	echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($total_business_amount_sum_array_first_usd)) . "</td>";  
 	echo "<td valign='top' style='color:red; font-weight:bold'><b>$" . nl2br( array_sum($total_business_amount_sum_array_first_usd_simple)) . "</td>";  
 	echo "</tr>";

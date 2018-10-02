@@ -236,10 +236,6 @@ include('include/header.php');
 	$row_last_dollar_rate_USDval = mysql_fetch_array(mysql_query($sql_last_dollar_rate_USDval));
 	$row_last_dollar_rate_USDval['1_cad_to_usd_new']; */
 	
-	//Get 1 cad to usd rate from db
-	$sql_1cad_to_dollar_rate_USDval="SELECT * FROM campus_currency WHERE id = 433";
-	$row_1cad_to_dollar_rate_USDval = mysql_fetch_array(mysql_query($sql_1cad_to_dollar_rate_USDval));
-	$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
 	
 	//1st table for the BUSINESS SHEET start - 
 	//a) Paying amount b) Dead Regular c) Total recurr received d) Signup amount
@@ -248,7 +244,7 @@ include('include/header.php');
 	echo "<tr bgcolor=#FF0000>";
 	echo "<th class='specalt'><b>Expected Recurring</b></th>";
 		//CAD to USD conversion***
-		$paying_amount_variable_usd = $paying_amount*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
+		$paying_amount_variable_usd = $paying_amount;
 		//************************
 		
 		//Subtracting NEW SIGNUPS from PAYING AMOUNT to have total RECEIVABLE
@@ -262,7 +258,7 @@ include('include/header.php');
 	///////////////////////////////////// Dead Regular student, result - start
 	echo "<tr bgcolor=#FF0000>";
 	echo "<th class='specalt'><b>Total DEAD=REGULAR Amount</b></th>";
-	echo "<td valign='top'>$ ". $DEAD_Reg_variable =  round($DEAD_Reg*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'],2) . "</td>";
+	echo "<td valign='top'>$ ". $DEAD_Reg_variable =  round($DEAD_Reg,2) . "</td>";
 	echo "</tr>";
 	///////////////////////////////////// Dead Regular student, result - end
 	

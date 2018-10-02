@@ -110,8 +110,8 @@ if(($_FILES["bank_payment_image"]["size"]<=200000) && (in_array($extension, $all
 		`totalReceivedNew_Usd` , `discountNew_Usd` , `statusPendRejAccpt` ) 
 		VALUES(  '{$_POST['transactionID']}' ,  '".prepareDate($_POST['date'])."' , '{$_POST['studentID']}' , 
 		'".$teacherID."' , '".$schedule."'  , '{$sql_amount['courseID']}' ,  '{$_POST['method']}' , 
-		'{$_POST['method_new']}' , '{$_POST['currency_id']}' , '{$_POST['amount_original']}' , 
-		'{$_POST['amount_gbp']}' , '{$_POST['amount']}' , '{$_POST['discount']}' ,
+		'{$_POST['method_new']}' , '{$_POST['currency_id']}' , '{$_POST['amountDefaultNew']}' , 
+		'{$_POST['amount_gbp']}' , '{$_POST['amountDefaultNew_Usd']}' , '{$_POST['discountNew_Usd']}' ,
 		'{$_POST['comments']}' , '".$_SESSION['userId']."', '".$classType."' , '".$startTime."' ,
 		'".prepareDate($_POST['dateRecieved'])."' , '".$LeadId."' , '".$main_LeadId."' , 
 		'{$_POST['sender_name']}' , '{$_POST['email']}' , '{$_POST['cardSave_ccv_code']}' , 
@@ -140,7 +140,7 @@ if(($_FILES["bank_payment_image"]["size"]<=200000) && (in_array($extension, $all
 				 */
 				//$sql_discount.=" and id='{$_GET['schedule']}'";
 /* 				} */
-		mysql_query($sql_discount) or die(mysql_error());
+		//mysql_query($sql_discount) or die(mysql_error());
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -196,8 +196,8 @@ $sql = "INSERT INTO `campus_transaction` ( `transactionID` ,  `date` ,  `student
 `totalReceivedNew_Usd` , `discountNew_Usd` , `statusPendRejAccpt`  ) 
 VALUES(  '{$_POST['transactionID']}' ,  '".prepareDate($_POST['date'])."' , '{$_POST['studentID']}' , 
 '".$teacherID."' , '".$schedule."'  , '{$sql_amount['courseID']}' ,  '{$_POST['method']}' , 
-'{$_POST['method_new']}' , '{$_POST['currency_id']}' , '{$_POST['amount_original']}' , 
-'{$_POST['amount_gbp']}' , '{$_POST['amount']}' , '{$_POST['discount']}' ,
+'{$_POST['method_new']}' , '{$_POST['currency_id']}' , '{$_POST['amountDefaultNew']}' , 
+'{$_POST['amount_gbp']}' , '{$_POST['amountDefaultNew_Usd']}' , '{$_POST['discountNew_Usd']}' ,
 '{$_POST['comments']}' , '".$_SESSION['userId']."', '".$classType."' , '".$startTime."' ,
 '".prepareDate($_POST['dateRecieved'])."' , '".$LeadId."' , '".$main_LeadId."' , 
 '{$_POST['sender_name']}' , '{$_POST['email']}' , '{$_POST['cardSave_ccv_code']}' , 
@@ -225,7 +225,7 @@ WHERE id='{$_GET['schedule']}'  ";
  */		
 		//$sql_discount.=" and id='{$_GET['schedule']}'";
 /* 		} */
-mysql_query($sql_discount) or die(mysql_error());
+//mysql_query($sql_discount) or die(mysql_error());
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -312,11 +312,12 @@ getMessages('add');
 				<option value="4">AUD</option>
 				<option value="5">NZD</option>
 				<option value="6">SGD</option>
+				<option value="7">PKR</option>
 	</select></div>
 <!-- ****************************************************************************************************** -->
 <!--<div id="label">LOCAL CURRENCY AMOUNT</div><div id="field"><input type='text' id='amountLocal' name='amountLocal' value='<?//= stripslashes($sql_amount['dues_original']) ?>' readonly='readonly'/> </div>-->
 
-<div id="label">Actual Slot rate: (Editable)</div><div id="field"><input type='text' id='amountDefaultNew' name='amountDefaultNew' value='<?= stripslashes($sql_amount['dues_original']) ?>'/> </div>
+<div id="label">Actual Slot rate: (Editable)</div><div id="field"><input type='text' id='amountDefaultNew' name='amountDefaultNew' value='<?= stripslashes($sql_amount['dues_original']) ?>' readonly='readonly'/> </div>
 <div id="label">Invoiced Amount:</div><div id="field"><input type='text' id='amountOriginalNew' name='amountOriginalNew' onchange="javascript : reset_values();"  required/> </div>
 <div id="label">Net Received:</div><div id="field"><input type='text' id='totalReceivedNew' name='totalReceivedNew' onchange="javascript : calculate_received_discount_amount();" required/> </div>
 <div id="label">Paypal Fee:</div><div id="field"><input type='text' id='feeDeductNew' name='feeDeductNew' readonly='readonly'  required/> </div>

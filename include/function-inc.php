@@ -5,7 +5,7 @@
   $_LIST['systemdatetime']=systemDateTime();
   $_LIST['paymentMode']=array('Payment Mode','Paypal','Western Union','Bank','Physical payment','Cash','Card Save','Others','Virtual Terminal');
   $_LIST['bankName']=array('Select Bank','HBL','ABL','ALFALAH','UBL','MCB','Soneri','Other');
-  $_LIST['currency']=array('Select Currency','GBP','USD','CAD','AUD','NZD','SGD');
+  $_LIST['currency']=array('Select Currency','GBP','USD','CAD','AUD','NZD','SGD','PKR');
   
   $_LIST['statusPendRejAccptAry']=array('Pending','Approve','Rejected');
   
@@ -20,11 +20,32 @@
   
   $_LIST['relative']=array('Select Relative','Father','Mother','Brother','Sister','Uncle','Aunt');
   $_LIST['status']=array('Select Status','Active','Deactive');
-  $_LIST['stdStatus']=array('Student Status','Trial','Regular','Dead','Freez');
-  $_LIST['stdStatusmo-list']=array('Student Status','Trial','Regular','Dead','Freez','Make Over','Test','Transfer to YCC LHR');//FOR book_scheduler_manage.php and class_details.php
-  $_LIST['stdStatus_BPS']=array('Student Status','Booking','Regular','Dead','Freez');
+  $_LIST['stdStatus']=array('Student Status','Trial','Regular','Discontinue','Freez');
+  $_LIST['stdStatusmo-list']=array('Student Status','Trial','Regular','Discontinue','Freez','Make Over','Test','Transfer to YCC LHR');//FOR book_scheduler_manage.php and class_details.php
+  $_LIST['stdStatus_BPS']=array('Student Status','Booking','Regular','Discontinue','Freez');
   $_LIST['dead_reason']=array('Select Reason','Busy schedule','Course complete','Exam preparation','Freeze','Going to vacation','No show no call','Not comfortable in online teaching','Not improving in results','Not interested','Not following proper syllabus','Not satisfied with services','Payment issue','Teacher Changed','Others');
-  $_LIST['menuAry']=array('Select Menu','Meal1','Meal2','Meal3','Meal4','Meal5');
+  $_LIST['menuAry']=array('Select Menu','Aalo Qeema - 140 Rs',
+  'Beef seekh kebab - 700 Rs','Beef tikka boti - 700 Rs','Biryani Tikka - 270 Rs','Chicken tikka - 0 Rs',
+  'Chicken Namkeen tikka - 140 Rs','Chicken  boti - 870 Rs','Chicken Malai boti - 960',
+  'Chicken seekh kebab - 700 Rs','Chicken reshmi kebab - 900 Rs','Chicken Qorma  - 150 Rs',
+  'Chicken Karahi simple - 900-450 Rs','Chicken Karahi Makhni 950-500 Rs',
+  'Chicken White Karahi 950-500 Rs','Chicken Namkeen Karahi 800-400 Rs','Chicken boneless handi 1200-600 Rs',
+  'Dal mash handi -  200 Rs',
+  'Fry ghost - 220 Rs',
+  'Mutton karahi simple 1400-750 Rs','Mutton white karahi 1500-750 Rs',
+  'Mutton namkeen karahi 1400-750 Rs','Mix Vegetable - 100 Rs',
+  'Pota kaleji - 120 Rs',
+  'Special Raita - 40 Rs','Russian Salad - 180 Rs','Green Salad - 40 Rs','Green Mint Chatni - 40 Rs',
+  '1.5 ltr bottle  - 100 Rs','1/2 lt bottle 50 Rs','1 lt bottle - 70 Rs','Regular bottle - 35 Rs',
+  'Mineral Water - 60 Rs',
+  'Tikka Kebab Fry - 780 Rs',
+  'Shake Peach - 100 Rs',
+  'Shake Strawberry - 100 Rs',
+  'Shake Mango - 100 Rs',
+  'Shake Pomegranate - 180 Rs',
+  'Shake Apple - 100 Rs',
+  'Shake Banana - 100 Rs',
+  'Shake Citrus limetta - 100 Rs');
   
   $_LISTTEAM_A[]=array();
   $_LISTTEAM_NA[]=array();
@@ -291,9 +312,36 @@
   ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   ////////\\\\\\\\
   
-  
+  //ONLY TL
   //////////////////////////////////////////getDataList for daily_scheduler_ver2.php - (TEAM LEAD)/////////////////////////////////	NEWLY ADDED 
   function getDataList_teamlead_dailyschedule($value='',$id='',$_type='',$_user=''){
+  global $_LIST;
+  if(!empty($_type) && $_type==4){
+   $sql="Select * from campus_students where (std_status=1 or std_status=2)";
+   if(!empty($_user) && ($_SESSION['userType']==3 || $_SESSION['userType']==5)){
+   $sql.=" and agent_id=$_user";
+   }
+  }else{
+   $sql="Select * from capmus_users where user_type=$_type and status=1";
+   
+   
+   }
+  $result=mysql_query($sql);
+  $return="<select name='$id'>";
+  $return.="<option value=''>". $_LIST['userType'][$_type]."</option>";
+  if(mysql_num_rows($result)>0)
+  while($rows=mysql_fetch_assoc($result)){
+  $return.="<option value='".$rows['id']."'";if($value==$rows['id']){ $return.= "selected='selected'"; }$return.=">".$rows['firstName'].'  '.$rows['lastName']."</option>";
+  }
+  $return.="</select>";
+  return $return;
+  
+  }
+  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  
+  //MAIN TL
+  //////////////////////////////////////////getDataList for daily_scheduler_ver2.php - (TEAM LEAD)/////////////////////////////////	NEWLY ADDED 
+  function getDataList_mainTeamlead_dailyschedule($value='',$id='',$_type='',$_user=''){
   global $_LIST;
   if(!empty($_type) && $_type==4){
    $sql="Select * from campus_students where (std_status=1 or std_status=2)";
@@ -381,7 +429,7 @@
    $sql.=" and agent_id=$_user";
    }
   }else{
-   echo $sql="Select * from capmus_users where user_type=$_type and status=1";
+   $sql="Select * from capmus_users where user_type=$_type and status=1";
    
    
    }
@@ -3139,7 +3187,7 @@ $sql="SELECT campus_schedule.id,campus_schedule.std_status as statussch,campus_s
 	campus_schedule.dues_totalReceivedNew,campus_schedule.dues_discountNew,
 	campus_schedule.dues_amountDefaultNew_Usd,campus_schedule.dues_amountOriginalNew_Usd,campus_schedule.dues_feeDeductNew_Usd,
 	campus_schedule.dues_totalReceivedNew_Usd,campus_schedule.dues_discountNew_Usd,
-	campus_schedule.statusPendRejAccpt 
+	campus_schedule.statusPendRejAccpt,campus_schedule.statusPendRejAccpt_User,zeroPaidReferenceId  
 	FROM campus_schedule 
 	WHERE campus_schedule.status=1 and campus_schedule.status_dead=0 and 
 	campus_schedule.status_freeze=0 and campus_schedule.std_status!=4 and 
@@ -3879,7 +3927,7 @@ return $_return;
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// NEWLY ADDED  
   function getParentFilter(){
   
-  $data='<div id="parent" style="position:relative"><input name="search-parent" id="search-parent" type="text" value="Select Parent" onkeyup="javascript:autoParent()" onfocus="javascript:clearAll(this)" onblur="javascript:resetParent(this)"/>
+  $data='<div id="parent" style="position:relative"><input name="search-parent" id="search-parent" autocomplete="off" type="text" value="Select Parent" onkeyup="javascript:autoParent()" onfocus="javascript:clearAll(this)" onblur="javascript:resetParent(this)"/>
   <input name="search-parent-id" id="search-parent-id" type="hidden" />
   <div id="parentResults"></div>
   </div>';

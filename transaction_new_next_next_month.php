@@ -111,7 +111,15 @@ if(($_FILES["bank_payment_image"]["size"]<=200000) && (in_array($extension, $all
 		move_uploaded_file($_FILES["bank_payment_image"]["tmp_name"], $dir."/".$_FILES["bank_payment_image"]["name"]);
 		//Making proper string with folder name to the file path
 		$filepath=$dir."/".$_FILES["bank_payment_image"]["name"];
-		$sql = "INSERT INTO `campus_transaction` ( `transactionID` ,  `date` ,  `studentID` , `teacherID` , `schedule_id` ,  `courseID` ,  `method` , `method_array` ,  `currency_array` , `amount_original` , `amount_gbp` , `amount` , `discount_tran` ,`comments` ,`operator`, `classType` , `startTime` , `dateRecieved` , `LeadId` , `main_LeadId` , `sender_name` , `email` , `cardSave_ccv_code` , `amount_usd_simple` , `VirtualTerminal_name` , `VirtualTerminal_number` , `VirtualTerminal_date` , `datetime_now_accounts` , `bank_payment_image_filepath` , `bankNameId` ) VALUES(  '{$_POST['transactionID']}' ,  '".prepareDate($_POST['date'])."' , '{$_POST['studentID']}' , '".$teacherID."' , '".$schedule."'  , '{$sql_amount['courseID']}' ,  '{$_POST['method']}' , '{$_POST['method_new']}' ,  '{$_POST['currency_id']}' , '{$_POST['amount_original']}' , '{$_POST['amount_gbp']}' , '{$_POST['amount']}' , '{$_POST['discount']}' ,'{$_POST['comments']}' , '".$_SESSION['userId']."', '".$classType."' , '".$startTime."' ,'".prepareDate($_POST['dateRecieved'])."' , '".$LeadId."' , '".$main_LeadId."' , '{$_POST['sender_name']}' , '{$_POST['email']}' , '{$_POST['cardSave_ccv_code']}' , '{$_POST['amount_usd_simple']}' , '{$_POST['VirtualTerminal_name']}' , '{$_POST['VirtualTerminal_number']}' , '{$_POST['VirtualTerminal_date']}' , NOW() , '".$filepath."' , '{$_POST['bankName']}' ) "; 
+		$sql = "INSERT INTO `campus_transaction` ( `transactionID` ,  `date` ,  `studentID` , `teacherID` , `schedule_id` ,  `courseID` ,  `method` , `method_array` , `currency_array` , `amount_original` , `amount_gbp` , `amount` , `discount_tran` ,`comments` ,`operator`, `classType` , `startTime` , `dateRecieved` , `LeadId` , `main_LeadId` , `sender_name` , `email` , `cardSave_ccv_code` , `amount_usd_simple` , `VirtualTerminal_name` , `VirtualTerminal_number` , `VirtualTerminal_date` , `datetime_now_accounts` , `bank_payment_image_filepath` , `bankNameId` , 
+		`amountDefaultNew` , `amountOriginalNew` , `feeDeductNew` , `totalReceivedNew` , `discountNew` ,
+		`amountDefaultNew_Usd` , `amountOriginalNew_Usd` , `feeDeductNew_Usd` , 
+		`totalReceivedNew_Usd` , `discountNew_Usd` , `statusPendRejAccpt` ) 
+		VALUES(  '{$_POST['transactionID']}' ,  '".prepareDate($_POST['date'])."' , '{$_POST['studentID']}' , '".$teacherID."' , '".$schedule."'  , '{$sql_amount['courseID']}' ,  '{$_POST['method']}' , '{$_POST['method_new']}'  , '{$_POST['currency_id']}' , '{$_POST['amountDefaultNew']}' , '{$_POST['amount_gbp']}' , '{$_POST['amountDefaultNew_Usd']}' , '{$_POST['discountNew_Usd']}' , '{$_POST['comments']}' , '".$_SESSION['userId']."', '".$classType."' , '".$startTime."' ,'".prepareDate($_POST['dateRecieved'])."' , '".$LeadId."' , '".$main_LeadId."' , '{$_POST['sender_name']}' , '{$_POST['email']}' , '{$_POST['cardSave_ccv_code']}' , '{$_POST['amount_usd_simple']}' , '{$_POST['VirtualTerminal_name']}' , '{$_POST['VirtualTerminal_number']}' , '{$_POST['VirtualTerminal_date']}' , NOW() , '".$filepath."' , '{$_POST['bankName']}' , 
+		'{$_POST['amountDefaultNew']}' , '{$_POST['amountOriginalNew']}' , '{$_POST['feeDeductNew']}' , 
+		'{$_POST['totalReceivedNew']}' , '{$_POST['discountNew']}' , 
+		'{$_POST['amountDefaultNew_Usd']}' , '{$_POST['amountOriginalNew_Usd']}' , '{$_POST['feeDeductNew_Usd']}' , 
+		'{$_POST['amountUsdSimpleNew']}' , '{$_POST['discountNew_Usd']}' , '".$statusPendRejAccpt."' ) ";
 		mysql_query($sql) or die(mysql_error());
 		$sql = "UPDATE `campus_students` SET    `std_status` =  '2'    WHERE `id` = '{$_POST['studentID']}' "; 
 
@@ -158,7 +166,15 @@ else if($_FILES["bank_payment_image"]["size"]>200000 && ($_POST['method_new']==2
 }
 else {
 foreach($_POST AS $key => $value) { $_POST[$key] = mysql_real_escape_string($value); } 
-$sql = "INSERT INTO `campus_transaction` ( `transactionID` ,  `date` ,  `studentID` , `teacherID` , `schedule_id` ,  `courseID` ,  `method` , `method_array` ,  `currency_array` , `amount_original` , `amount_gbp` , `amount` , `discount_tran` ,`comments` ,`operator`, `classType` , `startTime` , `dateRecieved` , `LeadId` , `main_LeadId` , `sender_name` , `email` , `cardSave_ccv_code` , `amount_usd_simple` , `VirtualTerminal_name` , `VirtualTerminal_number` , `VirtualTerminal_date` , `datetime_now_accounts` , `bankNameId`) VALUES(  '{$_POST['transactionID']}' ,  '".prepareDate($_POST['date'])."' , '{$_POST['studentID']}' , '".$teacherID."' , '".$schedule."'  , '{$sql_amount['courseID']}' ,  '{$_POST['method']}' , '{$_POST['method_new']}' ,  '{$_POST['currency_id']}' , '{$_POST['amount_original']}' , '{$_POST['amount_gbp']}' , '{$_POST['amount']}' , '{$_POST['discount']}' ,'{$_POST['comments']}' , '".$_SESSION['userId']."', '".$classType."' , '".$startTime."' ,'".prepareDate($_POST['dateRecieved'])."' , '".$LeadId."' , '".$main_LeadId."' , '{$_POST['sender_name']}' , '{$_POST['email']}' , '{$_POST['cardSave_ccv_code']}' , '{$_POST['amount_usd_simple']}' , '{$_POST['VirtualTerminal_name']}' , '{$_POST['VirtualTerminal_number']}' , '{$_POST['VirtualTerminal_date']}' , NOW() , '{$_POST['bankName']}' ) "; 
+$sql = "INSERT INTO `campus_transaction` ( `transactionID` ,  `date` ,  `studentID` , `teacherID` , `schedule_id` ,  `courseID` ,  `method` , `method_array` , `currency_array` , `amount_original` , `amount_gbp` , `amount` , `discount_tran` ,`comments` ,`operator`, `classType` , `startTime` , `dateRecieved` , `LeadId` , `main_LeadId` , `sender_name` , `email` , `cardSave_ccv_code` , `amount_usd_simple` , `VirtualTerminal_name` , `VirtualTerminal_number` , `VirtualTerminal_date` , `datetime_now_accounts` , `bankNameId` , 
+`amountDefaultNew` , `amountOriginalNew` , `feeDeductNew` , `totalReceivedNew` , `discountNew` ,
+`amountDefaultNew_Usd` , `amountOriginalNew_Usd` , `feeDeductNew_Usd` , 
+`totalReceivedNew_Usd` , `discountNew_Usd` , `statusPendRejAccpt` ) 
+VALUES(  '{$_POST['transactionID']}' ,  '".prepareDate($_POST['date'])."' , '{$_POST['studentID']}' , '".$teacherID."' , '".$schedule."'  , '{$sql_amount['courseID']}' ,  '{$_POST['method']}' , '{$_POST['method_new']}'  , '{$_POST['currency_id']}' , '{$_POST['amountDefaultNew']}' , '{$_POST['amount_gbp']}' , '{$_POST['amountDefaultNew_Usd']}' , '{$_POST['discountNew_Usd']}' , '{$_POST['comments']}' , '".$_SESSION['userId']."', '".$classType."' , '".$startTime."' ,'".prepareDate($_POST['dateRecieved'])."' , '".$LeadId."' , '".$main_LeadId."' , '{$_POST['sender_name']}' , '{$_POST['email']}' , '{$_POST['cardSave_ccv_code']}' , '{$_POST['amount_usd_simple']}' , '{$_POST['VirtualTerminal_name']}' , '{$_POST['VirtualTerminal_number']}' , '{$_POST['VirtualTerminal_date']}' , NOW() , '{$_POST['bankName']}' , 
+'{$_POST['amountDefaultNew']}' , '{$_POST['amountOriginalNew']}' , '{$_POST['feeDeductNew']}' , 
+'{$_POST['totalReceivedNew']}' , '{$_POST['discountNew']}' , 
+'{$_POST['amountDefaultNew_Usd']}' , '{$_POST['amountOriginalNew_Usd']}' , '{$_POST['feeDeductNew_Usd']}' , 
+'{$_POST['amountUsdSimpleNew']}' , '{$_POST['discountNew_Usd']}' , '".$statusPendRejAccpt."' ) "; 
 mysql_query($sql) or die(mysql_error());
 $sql = "UPDATE `campus_students` SET    `std_status` =  '2'    WHERE `id` = '{$_POST['studentID']}' "; 
 
@@ -253,17 +269,22 @@ getMessages('add');
 				<option value="4">AUD</option>
 				<option value="5">NZD</option>
 				<option value="6">SGD</option>
+				<option value="7">PKR</option>				
 	</select></div>
-<div id="label">Original Amount:</div><div id="field"><input type='text' id='amount_original' name='amount_original' onchange="javascript : calculate_currency_conversion_with_discount();" required/> </div>
-<div id="label">SignUp Amount:</div><div id="field"><input type='text' id='amount_default' name='amount_default' value='<?= stripslashes($sql_amount['dues']) ?>' readonly='readonly'/> </div>
-<div id="label">Discount:</div><div id="field"><input type='text' id='discount' name='discount' readonly='readonly' required/> </div>
-<div id="label" style='background-color:lime; color-black'>Converted Amount Simple-USD :</div><div id="field"><input style='background-color:lime' type='text' id='amount_usd_simple' name='amount_usd_simple' readonly='readonly' required/> </div>
+<div id="label">Actual Slot rate: (Editable)</div><div id="field"><input type='text' id='amountDefaultNew' name='amountDefaultNew' value='<?= stripslashes($sql_amount['dues_original']) ?>' readonly='readonly'/> </div>
+<div id="label">Invoiced Amount:</div><div id="field"><input type='text' id='amountOriginalNew' name='amountOriginalNew' onchange="javascript : reset_values();"  required/> </div>
+<div id="label">Net Received:</div><div id="field"><input type='text' id='totalReceivedNew' name='totalReceivedNew' onchange="javascript : calculate_received_discount_amount();" required/> </div>
+<div id="label">Paypal Fee:</div><div id="field"><input type='text' id='feeDeductNew' name='feeDeductNew' readonly='readonly'  required/> </div>
+<div id="label">Discount Given:</div><div id="field"><input type='text' id='discountNew' name='discountNew' readonly='readonly' required/> </div>
+<div id="label" style='background-color:lime; color-black'>Net Converted Amount -USD :</div><div id="field"><input style='background-color:lime' type='text' id='amountUsdSimpleNew' name='amountUsdSimpleNew' readonly='readonly' required/> </div>
 <!-- ****************************************************************************************************** -->
-
 <div id="label">Sender Name:</div><div id="field"><input type='text' id='sender_name' name='sender_name' required/> </div>
 <div id="label">Email:</div><div id="field"><input type='email' id='email' name='email' required/> </div>
-<div id="label">Comments:</div><div id="field"><textarea name='comments' required><?php echo stripslashes($row['comments']);?></textarea></div> 
+<div id="label">Comments:</div><div id="field"><textarea name='comments' id='comments' ><?php echo stripslashes($row['comments']);?></textarea></div> 
 <div id="label"></div><div id="field"><input type='submit' value='Add Fee' /><input type='hidden' value='1' name='submitted' /></div> 
+
+
+
 <!--FOLLOWING FIELDS ARE HIDDEN to shorten the form for PAY		//NEWLY ADDED 16-01-17-->
 <div id="label" style='visibility:hidden'>Updated Currency value - AUTO:</div><div id="field"><div id="value_of_currency"><input type='hidden'  name='value_of_currency' /></div></div>
 <div id="label"></div><div id="field"><input type='hidden' id='value_of_cad' name='value_of_cad' /></div>
@@ -271,6 +292,19 @@ getMessages('add');
 <div id="label" style='visibility:hidden'>Converted Amount-GBP:</div><div id="field"><input type='hidden' id='amount_gbp' name='amount_gbp' readonly='readonly' required/> </div>
 <!--<div id="label">Converted Amount-CAD:</div><div id="field"><input type='text' id='amount' name='amount' onchange="javascript : calculate_discount();" required/> </div>-->
 <div id="label" style='visibility:hidden'>Converted Amount-CAD:</div><div id="field"><input type='hidden' id='amount' name='amount' readonly='readonly' required/> </div>
+<!-- Old CAD values calculations-->
+<div id="label" style='visibility:hidden'>Original Amount:</div><div id="field"><input type='hidden' id='amount_original' name='amount_original' onchange="javascript : calculate_currency_conversion_with_discount();" required/> </div>
+<div id="label" style='visibility:hidden'>SignUp Amount:</div><div id="field"><input type='hidden' id='amount_default' name='amount_default' value='<?= stripslashes($sql_amount['dues']) ?>' readonly='readonly'/> </div>
+<div id="label" style='visibility:hidden'>Discount:</div><div id="field"><input type='hidden' id='discount' name='discount' readonly='readonly' required/> </div>
+<div id="label" style='visibility:hidden; background-color:lime; color-black'>Converted Amount Simple-USD :</div><div id="field"><input style='background-color:lime' type='hidden' id='amount_usd_simple' name='amount_usd_simple' readonly='readonly' required/> </div>
 
+<!-- NEW VALUES -->
+<div id="label" style='visibility:hidden'>Actual Slot USD:</div><div id="field"><input type='hidden' id='amountDefaultNew_Usd' name='amountDefaultNew_Usd' value='' readonly='readonly'/> </div>
+<div id="label" style='visibility:hidden'>Invoiced Amount USD:</div><div id="field"><input type='hidden' id='amountOriginalNew_Usd' name='amountOriginalNew_Usd'  required/> </div>
+<div id="label" style='visibility:hidden'>Paypal Fee  USD:</div><div id="field"><input type='hidden' id='feeDeductNew_Usd' name='feeDeductNew_Usd'  required/> </div>
+<div id="label" style='visibility:hidden'>Discount USD :</div><div id="field"><input type='hidden' id='discountNew_Usd' name='discountNew_Usd' readonly='readonly' required/> </div>
+<!-- USD value is now amountUsdSimpleNew-->
+<!--<div id="label">Total Received USD :</div><div id="field"><input type='text' id='totalReceivedNew_Usd' name='totalReceivedNew_Usd' readonly='readonly' required/> </div>-->
+<!-- NEW VALUES -->
 </form> 
 <? include('include/footer.php');?>

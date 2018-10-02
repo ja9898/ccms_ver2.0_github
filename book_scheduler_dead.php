@@ -2,10 +2,10 @@
 include('config.php');
 include('include/header.php');  
 
-if($_SESSION['userId']==159 || $_SESSION['userId']==48 || $_SESSION['userId']==195 || $_SESSION['userId']==227 || $_SESSION['userId']==411 || $_SESSION['userId']==60 || $_SESSION['userId']==625 || $_SESSION['userId']==221)
+/* if($_SESSION['userId']==159 || $_SESSION['userId']==48 || $_SESSION['userId']==195 || $_SESSION['userId']==227 || $_SESSION['userId']==411 || $_SESSION['userId']==60 || $_SESSION['userId']==625 || $_SESSION['userId']==221)
 
 {
-
+ */
 
 
 $id = (int) $_GET['id'];
@@ -62,7 +62,7 @@ $email_to_send_on_CONFIRM_DEAD.="<tr bgcolor=#eceff5>
 	<td valign='top' style='font-size:8px'>". nl2br( $sql_row_values['id']) ."</td>
 	<td valign='top' style='font-size:8px'>". getData(nl2br( $sql_row_values['std_status_old']),'stdStatusmo-list') ."</td>
 	<td valign='top' style='font-size:8px'>". getData(nl2br( $sql_row_values['std_status']),'stdStatusmo-list') ."</td>
-	<td valign='top' style='font-size:8px'>". nl2br( $sql_row_values['comments_dead']) ."</td>
+	<td valign='top' style='font-size:8px'>". nl2br( mysql_real_escape_string($sql_row_values['comments_dead'])) ."</td>
 	<td valign='top' style='font-size:8px'>". nl2br( $rows['email']) ."</td>
 	<td valign='top' style='font-size:8px'>". nl2br( $sql_row_values['startTime']) ."</td>
 	<td valign='top' style='font-size:8px'>". nl2br( $sql_row_values['startDate']) ."</td>
@@ -103,6 +103,8 @@ echo "<br>";
 
 
 
-<?php } else {echo "<label style='color:red; font-weight:bold'>NOTE: Contact CCMS Administrator</u></label>";}?>
+<?php 
+/* } else {echo "<label style='color:red; font-weight:bold'>NOTE: Contact CCMS Administrator</u></label>";} */
+?>
 
 <?include('include/footer.php');?> 

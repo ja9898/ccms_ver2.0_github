@@ -99,7 +99,7 @@ if(!empty($_POST['teacherID']) && !empty($_POST['studentID']) && !empty($_POST['
 		$paydate=prepareDate($_POST['paydate']);
 	}
 //Adding OPERATOR NAME for comments_reschedule DURING EDITING	
-$sql = "UPDATE `campus_schedule` SET  `courseID` =  '{$_POST['courseID']}',`startTime` =  '".$paktime."' , `agentId` =  '{$_POST['agentId']}', `endTime` =  '{$_POST['endTime']}' ,  `startDate` =  '".prepareDate($_POST['startDate'])."' , `endDate` =  '".prepareDate($_POST['endDate'])."' ,`duedate` =  '".prepareDate($_POST['duedate'])."' ,`paydate` =  '".$paydate."' ,`dues` =  '".$_POST['dues']."'  ,  `teacherID` =  '{$_POST['teacherID']}' ,  `studentID` =  '{$_POST['studentID']}' ,   `classType` =  '{$_POST['classType']}' ,`comments`='{$_POST['comments']}' , `comments_reschedule` = '\r\nOperator:{$operator_name} - Comments : {$_POST['comments_reschedule']}' ,`teacherID_old` = '".$old_new_teacher."' , `reference` = '{$_POST['reference']}' , `management_comm_Id` = '{$_POST['management_comm_Id']}' , `edit_sch_TL_confirm` = '1' , `skypeid` = '{$_POST['skypeid']}', `skypetext` = '{$_POST['skypetext']}'  WHERE `id` = '$id' "; 
+$sql = "UPDATE `campus_schedule` SET  `courseID` =  '{$_POST['courseID']}',`startTime` =  '".$paktime."' , `agentId` =  '{$_POST['agentId']}', `endTime` =  '{$_POST['endTime']}' ,  `startDate` =  '".prepareDate($_POST['startDate'])."' , `endDate` =  '".prepareDate($_POST['endDate'])."' ,`duedate` =  '".prepareDate($_POST['duedate'])."' ,`paydate` =  '".$paydate."' ,`dues` =  '".$_POST['dues']."'  ,  `teacherID` =  '{$_POST['teacherID']}' ,  `studentID` =  '{$_POST['studentID']}' ,   `classType` =  '{$_POST['classType']}' ,`comments`='{$_POST['comments']}' , `comments_reschedule` = '\r\nOperator:{$operator_name} - Comments : {$_POST['comments_reschedule']}' ,`teacherID_old` = '".$old_new_teacher."' , `reference` = '{$_POST['reference']}' , `zeroPaidReferenceId` = '{$_POST['zeroPaidReferenceId']}' , `management_comm_Id` = '{$_POST['management_comm_Id']}' , `edit_sch_TL_confirm` = '1' , `skypeid` = '{$_POST['skypeid']}', `skypetext` = '{$_POST['skypetext']}'  WHERE `id` = '$id' "; 
 mysql_query($sql) or die(mysql_error()); 
 
 /*if( $row_status_pre['skypeid']==$_POST['skypeid'] && ($_POST['skypeid']!='' || $_POST['skypeid']!='0'))
@@ -194,6 +194,7 @@ echo getDataList(stripslashes($row['agentId']),'agentId',5);}
 <div id="label">Total Dues:</div><div id="field"><input type="text"  name="dues" id="dues" readonly="readonly" value="<?php echo stripslashes($row['dues']); ?>" /></div>
 
 <div id="label">Reference:</div><div id="field" name=""><?php echo getDataList_reference(stripslashes($row['reference']),'reference','',''); ?> </div>
+<div id="label">Zero Paid Reference:</div><div id="field" name=""><?php echo getDataList_reference(stripslashes($row['zeroPaidReferenceId']),'zeroPaidReferenceId','',''); ?> </div>
 <!-- SKYPE ID list - Commenting for NOW-->
 <!--<div id="label">Skypeid:</div><div id="field"><?php //echo getTableList_skype(stripslashes($row['skypeid']),'skypeid','campus_skype','Skyp ID\'s')?> </div>-->
 <div id="label">Skype_TEXT</div><div id="field"><input type="text" name="skypetext" id="skypetext"  value="<?php echo stripslashes($row['skypetext']); ?>" /></div>

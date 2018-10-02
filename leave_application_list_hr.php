@@ -14,6 +14,7 @@ include('include/header.php'); ?>
 &nbsp;&nbsp;
 <?php// echo getInput(stripslashes($_POST['toDate-day']),'toDate-day','class=flexy_datepicker_input');?>
 <?php
+getTeacherFilterLead_main();
 getTeacherFilterLead();
 //getSuperAdminFilter();
 getTeacherFilter();
@@ -84,8 +85,12 @@ else
 $sql=("SELECT capmus_users.id,capmus_users.firstName,capmus_users.lastName,capmus_users.LeadId,capmus_users.main_LeadId,capmus_users.empShift,campus_empleave.id as empleave_id,campus_empleave.EmpID,campus_empleave.LeaveType,campus_empleave.LeaveReason,campus_empleave.LeaveStartDate,campus_empleave.LeaveEndDate,campus_empleave.NoOfDays,campus_empleave.LeaveApplied,campus_empleave.TLRecommend,campus_empleave.TLComments,campus_empleave.TLID,campus_empleave.GMApprove,campus_empleave.GMComments,campus_empleave.GMID,campus_empleave.HRReceive,campus_empleave.HRComments,campus_empleave.HRID,campus_empleave.current_datetime,campus_empleave.HRDate,campus_empleave.TLDate,campus_empleave.GMDate   
 	FROM capmus_users 
 	INNER JOIN campus_empleave 
-	ON capmus_users.id=campus_empleave.EmpID ");
+	ON capmus_users.id=campus_empleave.EmpID");
 	
+	if($_SESSION['userType']==8)
+	{
+		$sql.= "AND capmus_users.LeadId='".$_SESSION['userId']."'";
+	}
 	if($_SESSION['userType']==15)
 	{
 		$sql.= "AND capmus_users.main_LeadId='".$_SESSION['userId']."'";
@@ -93,12 +98,12 @@ $sql=("SELECT capmus_users.id,capmus_users.firstName,capmus_users.lastName,capmu
 	//MAIN TEACHER TEAMLEAD
 	if(isset($_POST['search-teacher-main']) && !empty($_POST['search-teacher-main']))
 	{
-		$sql.= " and capmus_users.main_LeadId=".$_POST['search-teacher-main'];
+		$sql.= "and campus_empleave.EmpID=".$_POST['search-teacher-main'];
 	}
 	//TEACHER TEAMLEAD(NOT MAIN)
 	if($_POST['search-teacher-id2']!=0 && !empty($_POST['search-teacher-id2']))
 	{
-		$sql.= " and capmus_users.LeadId=".$_POST['search-teacher-id2'];
+		$sql.= " and campus_empleave.EmpID=".$_POST['search-teacher-id2']." ";
 	}
 	//TEACHER
 	if($_POST['search-teacher-id']!=0 && !empty($_POST['search-teacher-id']))

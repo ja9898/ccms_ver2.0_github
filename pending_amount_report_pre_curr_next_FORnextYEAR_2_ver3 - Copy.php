@@ -2462,9 +2462,7 @@ else if($toMonth == $fromMonth && $toMonth==$curr_mon_sub_one && $fromMonth==$cu
 				campus_schedule.classType,
 				campus_schedule.startTime,
 				campus_schedule.teacherID,
-				campus_schedule.currency_array,			
-				campus_schedule.dues_original,
-				campus_schedule.dues_totalReceivedNew_Usd,
+
 
 				campus_schedule.`status` 
 				FROM capmus_users 
@@ -2495,9 +2493,6 @@ else if($toMonth == $fromMonth && $toMonth==$curr_mon_sub_one && $fromMonth==$cu
 				campus_schedule.classType,
 				campus_schedule.startTime,
 				campus_schedule.teacherID,
-				campus_schedule.currency_array,			
-				campus_schedule.dues_original,
-				campus_schedule.dues_totalReceivedNew_Usd,				
 
 
 				campus_schedule.`status` 
@@ -2533,9 +2528,6 @@ else if($toMonth == $fromMonth && $toMonth==$curr_mon_sub_one && $fromMonth==$cu
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,				
 
 
 					campus_schedule.`status` 
@@ -2570,9 +2562,6 @@ else if($toMonth == $fromMonth && $toMonth==$curr_mon_sub_one && $fromMonth==$cu
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,		
 
 
 					campus_schedule.`status` 
@@ -2605,9 +2594,6 @@ else if($toMonth == $fromMonth && $toMonth==$curr_mon_sub_one && $fromMonth==$cu
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,		
 
 
 					campus_schedule.`status` 
@@ -2660,9 +2646,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 			campus_schedule.teacherID,
 			campus_schedule.comments_reminder,
 			campus_schedule.date_reminder,
-			campus_schedule.currency_array,
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
 			campus_schedule.`status` 
 
 			FROM capmus_users 
@@ -2689,9 +2672,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 				campus_schedule.classType,
 				campus_schedule.startTime,
 				campus_schedule.teacherID,
-			campus_schedule.currency_array,				
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
 
 
 				campus_schedule.`status` 
@@ -2723,9 +2703,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 			campus_schedule.teacherID,
 			campus_schedule.comments_reminder,
 			campus_schedule.date_reminder,
-			campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,			
 			campus_schedule.`status` 
 
 			FROM capmus_users 
@@ -2763,9 +2740,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
 
 
 					campus_schedule.`status` 
@@ -2791,9 +2765,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.teacherID,
 					campus_schedule.comments_reminder,
 					campus_schedule.date_reminder,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,					
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -2816,9 +2787,7 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
+
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -2848,9 +2817,7 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
+
 
 					campus_schedule.`status` 
 					FROM capmus_users 
@@ -2876,11 +2843,8 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
 					campus_schedule.comments_reminder,
-					campus_schedule.date_reminder,	
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
-					
+					campus_schedule.date_reminder,					
+
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -2905,10 +2869,7 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
-					
+
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -2942,10 +2903,8 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
-					
+
+
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -2971,10 +2930,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.teacherID,
 					campus_schedule.comments_reminder,
 					campus_schedule.date_reminder,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
-					
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -2999,9 +2954,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,					
 
 					campus_schedule.`status` 
 					FROM capmus_users 
@@ -3032,9 +2984,7 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
+
 
 					campus_schedule.`status` 
 					FROM capmus_users 
@@ -3061,10 +3011,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.teacherID,
 					campus_schedule.comments_reminder,
 					campus_schedule.date_reminder,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
-					
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -3089,10 +3035,7 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
-					
+
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -3158,9 +3101,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.teacherID,
 					campus_schedule.comments_reminder,
 					campus_schedule.date_reminder,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,					
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -3185,9 +3125,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,					
 
 					campus_schedule.`status` 
 					FROM capmus_users 
@@ -3218,9 +3155,7 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
+
 
 					campus_schedule.`status` 
 					FROM capmus_users 
@@ -3247,10 +3182,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.teacherID,
 					campus_schedule.comments_reminder,
 					campus_schedule.date_reminder,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,
-					
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -3275,9 +3206,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon && $toMonth==$curr_mon &
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-					campus_schedule.dues_original,
-					campus_schedule.dues_totalReceivedNew_Usd,					
 
 					campus_schedule.`status` 
 					FROM capmus_users 
@@ -3326,9 +3254,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon_add_one && $toMonth==$cu
 			campus_schedule.classType,
 			campus_schedule.startTime,
 			campus_schedule.teacherID,
-			campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
 			campus_schedule.`status` 
 
 			FROM capmus_users 
@@ -3354,9 +3279,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon_add_one && $toMonth==$cu
 			campus_schedule.classType,
 			campus_schedule.startTime,
 			campus_schedule.teacherID,
-			campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
 			campus_schedule.`status` 
 
 			FROM capmus_users 
@@ -3386,9 +3308,7 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon_add_one && $toMonth==$cu
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -3416,9 +3336,6 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon_add_one && $toMonth==$cu
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
 
 					campus_schedule.`status` 
 					FROM capmus_users 
@@ -3451,9 +3368,7 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon_add_one && $toMonth==$cu
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -3481,9 +3396,7 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon_add_one && $toMonth==$cu
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -3513,9 +3426,7 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon_add_one && $toMonth==$cu
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -3543,9 +3454,7 @@ else if($toMonth == $fromMonth && $fromMonth==$curr_mon_add_one && $toMonth==$cu
 					campus_schedule.classType,
 					campus_schedule.startTime,
 					campus_schedule.teacherID,
-					campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 					campus_schedule.`status` 
 					FROM capmus_users 
 					INNER JOIN campus_schedule 
@@ -3579,9 +3488,6 @@ else
 		campus_schedule.classType,
 		campus_schedule.startTime,
 		campus_schedule.teacherID,
-		campus_schedule.currency_array,			
-		campus_schedule.dues_original,
-		campus_schedule.dues_totalReceivedNew_Usd,
 		campus_schedule.`status` 
 
 		FROM capmus_users 
@@ -3604,9 +3510,7 @@ else
 		campus_schedule.classType,
 		campus_schedule.startTime,
 		campus_schedule.teacherID,
-			campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 
 		campus_schedule.`status` 
 		FROM capmus_users 
@@ -3632,9 +3536,6 @@ else
 		campus_schedule.classType,
 		campus_schedule.startTime,
 		campus_schedule.teacherID,
-		campus_schedule.currency_array,			
-		campus_schedule.dues_original,
-		campus_schedule.dues_totalReceivedNew_Usd,		
 		campus_schedule.`status` 
 
 		FROM capmus_users 
@@ -3657,9 +3558,7 @@ else
 		campus_schedule.classType,
 		campus_schedule.startTime,
 		campus_schedule.teacherID,
-			campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 
 		campus_schedule.`status` 
 		FROM capmus_users 
@@ -3688,9 +3587,7 @@ else
 			campus_schedule.classType,
 			campus_schedule.startTime,
 			campus_schedule.teacherID,
-			campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 
 			campus_schedule.`status` 
 			FROM capmus_users 
@@ -3715,9 +3612,7 @@ else
 			campus_schedule.classType,
 			campus_schedule.startTime,
 			campus_schedule.teacherID,
-			campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 
 			campus_schedule.`status` 
 			FROM capmus_users 
@@ -3745,9 +3640,7 @@ else
 			campus_schedule.classType,
 			campus_schedule.startTime,
 			campus_schedule.teacherID,
-			campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 
 			campus_schedule.`status` 
 			FROM capmus_users 
@@ -3772,9 +3665,7 @@ else
 			campus_schedule.classType,
 			campus_schedule.startTime,
 			campus_schedule.teacherID,
-			campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 
 			campus_schedule.`status` 
 			FROM capmus_users 
@@ -3800,9 +3691,7 @@ else
 			campus_schedule.classType,
 			campus_schedule.startTime,
 			campus_schedule.teacherID,
-			campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 
 			campus_schedule.`status` 
 			FROM capmus_users 
@@ -3826,9 +3715,7 @@ else
 			campus_schedule.classType,
 			campus_schedule.startTime,
 			campus_schedule.teacherID,
-			campus_schedule.currency_array,			
-			campus_schedule.dues_original,
-			campus_schedule.dues_totalReceivedNew_Usd,
+
 
 			campus_schedule.`status` 
 			FROM capmus_users 
@@ -4011,9 +3898,8 @@ echo "<th class='specalt'>Country</th>";
 echo "<th class='specalt'>Cousre</th>";
 //echo "<th class='specalt'>Total Amount</th>"; 
 //echo "<th class='specalt'>Recieved Amount</th>"; 
+echo "<th class='specalt'>Pending Amount-CAD</th>"; 
 echo "<th class='specalt'>Pending Amount-USD</th>"; 
-echo "<th class='specalt'>Original Dues</th>"; 
-echo "<th class='specalt'>Converted Fee Deduct Dues-USD</th>";
 echo "<th class='specalt' style='color:blue; font-weight:bold'>Original Amount</th>"; 
 //echo "<th class='specalt'>Signup Amount</th>";
 //echo "<th class='specalt'>Discount</th>";
@@ -4033,12 +3919,6 @@ $signups_pre =array();
 $discount_pre =array();
 
 $pending_usd_convert_pre=array();
-
-$original_amt_pre=array();
-$usd_fee_deduct_pre=array();
-
-$usd_fee_deduct_pre_sum_ary=array();
-
 
 if(isset($_POST['submit']))
 {
@@ -4088,12 +3968,8 @@ if(isset($_POST['submit']))
 	$amount_pre[$row_pre['id']]=$countresult_pre;
 	$recieved_pre[$row_pre['id']]=$countmonthesult_pre['amounttran'];
 	$pending_pre[$row_pre['id']]=$countresult_pre-$countmonthesult_pre['amounttran']-$countmonthesult_pre['discount_tran'];
-	
-	$original_amt_pre[$row_pre['id']]=$row_pre['dues_original'];
-	$usd_fee_deduct_pre[$row_pre['id']]=$row_pre['dues_totalReceivedNew_Usd'];
-	
 	//echo "<br>";
-	if(($pending_pre[$row_pre['id']]<0) || ($pending_pre[$row_pre['id']]>0 && $pending_pre[$row_pre['id']]<=7))
+	if(($pending_pre[$row_pre['id']]<0) || ($pending_pre[$row_pre['id']]>0 && $pending_pre[$row_pre['id']]<=9))
 	{
 		$pending_pre[$row_pre['id']]=0;
 	}
@@ -4130,7 +4006,7 @@ if(isset($_POST['submit']))
 		{
 		$signups_pre[$row_pre['id']]=$countresult_pre;
 		}
-		if(($pending_pre[$row_pre['id']] >= 7) && ($signups_pre[$row_pre['id']]==''))
+		if(($pending_pre[$row_pre['id']] >= 10) && ($signups_pre[$row_pre['id']]==''))
 		{
 			//Previous month signup between 25 to 30/31st, And now its paying date is next month's 1 to 10th,THEN
 			//It must not be shown in current month pending				//ADDED ON 01-03-2016
@@ -4162,27 +4038,7 @@ if(isset($_POST['submit']))
 				//echo "<td valign='top'>$" . nl2br( $recieved_pre[$row_pre['id']]) . "</td>";  
 				echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $pending_pre[$row_pre['id']]) . "</td>";  
 				//from CAD to USD Conversion/////////////////////////////////////////////////////////////
-				
-//ORG CURR /////////////////////////////////////////////////////////////
-if($row_pre['currency_array']==2){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-if($row_pre['currency_array']==1){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-if($row_pre['currency_array']==4){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-if($row_pre['currency_array']==3){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-if($row_pre['currency_array']==5){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-if($row_pre['currency_array']==6){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-echo "<td valign='top'>$" . $original_curr_pre_ary[$row_pre['id']] = $original_curr_pre . "-<b>" . getData(nl2br( $row_pre['currency_array']),'currency') . "</b></td>";						
-
-
-if($usd_fee_deduct_pre[$row_pre['id']]==0){					
-echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $pending_pre[$row_pre['id']]) . "</td>";
-$usd_fee_deduct_pre_sum_ary[$row_pre['id']] = $pending_pre[$row_pre['id']];
-}
-else{
-echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $usd_fee_deduct_pre[$row_pre['id']]) . "</td>";
-$usd_fee_deduct_pre_sum_ary[$row_pre['id']] = $usd_fee_deduct_pre[$row_pre['id']];
-}								
-				
-				//echo "<td valign='top' style='color:green; font-weight:bold'>$" . $pending_usd_convert_pre[$row_pre['id']] =  round($pending_pre_2nd_array[$row_pre['id']]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
+				echo "<td valign='top' style='color:green; font-weight:bold'>$" . $pending_usd_convert_pre[$row_pre['id']] =  round($pending_pre_2nd_array[$row_pre['id']]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
 				echo "<td valign='top' style='color:blue; font-weight:bold'>" . $sql_amt_ori_result_pre['amount_original']  . "</td>";
 				//echo "<td valign='top'>$" . nl2br( $signups_pre[$row_pre['id']]) . "</td>";
 				//echo "<td valign='top'>$" . nl2br( $discount_pre[$row_pre['id']]) . "</td>";
@@ -4218,26 +4074,7 @@ $usd_fee_deduct_pre_sum_ary[$row_pre['id']] = $usd_fee_deduct_pre[$row_pre['id']
 				//echo "<td valign='top'>$" . nl2br( $recieved_pre[$row_pre['id']]) . "</td>";  
 				echo "<td valign='top'>$" . nl2br( $pending_pre[$row_pre['id']]) . "</td>";  
 				//from CAD to USD Conversion/////////////////////////////////////////////////////////////
-
-//ORG CURR /////////////////////////////////////////////////////////////
-if($row_pre['currency_array']==2){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-if($row_pre['currency_array']==1){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-if($row_pre['currency_array']==4){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-if($row_pre['currency_array']==3){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-if($row_pre['currency_array']==5){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-if($row_pre['currency_array']==6){ $original_curr_pre =  $original_amt_pre[$row_pre['id']]; }
-echo "<td valign='top'>$" . $original_curr_pre_ary[$row_pre['id']] = $original_curr_pre . "-<b>" . getData(nl2br( $row_pre['currency_array']),'currency') . "</b></td>";						
-
-if($usd_fee_deduct_pre[$row_pre['id']]==0){					
-echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $pending_pre[$row_pre['id']]) . "</td>";
-$usd_fee_deduct_pre_sum_ary[$row_pre['id']] = $pending_pre[$row_pre['id']];
-}
-else{
-echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $usd_fee_deduct_pre[$row_pre['id']]) . "</td>";
-$usd_fee_deduct_pre_sum_ary[$row_pre['id']] = $usd_fee_deduct_pre[$row_pre['id']];
-}		
-				
-				//echo "<td valign='top'>$" . $pending_usd_convert_pre[$row_pre['id']] =  round($pending_pre_2nd_array[$row_pre['id']]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
+				echo "<td valign='top'>$" . $pending_usd_convert_pre[$row_pre['id']] =  round($pending_pre_2nd_array[$row_pre['id']]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
 				echo "<td valign='top' style='color:blue; font-weight:bold'>" . $sql_amt_ori_result_pre['amount_original']  . "</td>";
 				//echo "<td valign='top'>$" . nl2br( $signups_pre[$row_pre['id']]) . "</td>";
 				//echo "<td valign='top'>$" . nl2br( $discount_pre[$row_pre['id']]) . "</td>";
@@ -4267,7 +4104,6 @@ echo "<tr>";
 //echo "<td valign='top'><b>$" . nl2br( array_sum($recieved_pre)) . "</td>";  
 echo "<td valign='top'><b>$" . nl2br( array_sum($pending_pre_2nd_array)) . "</td>"; 
 echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($pending_usd_convert_pre)) . "</td>"; 
-echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($usd_fee_deduct_pre_sum_ary)) . "</td>"; 
 //echo "<td valign='top'><b>$" . nl2br( array_sum($signups_pre)) . "</td>";   
 //echo "<td valign='top'><b>$" . nl2br( array_sum($discount_pre)) . "</td>";  
 echo "</tr>";
@@ -4297,9 +4133,8 @@ echo "<th class='specalt'>Country</th>";
 echo "<th class='specalt'>Cousre</th>";
 //echo "<th class='specalt'>Total Amount</th>"; 
 //echo "<th class='specalt'>Recieved Amount</th>"; 
-echo "<th class='specalt'>Pending Amount-USD</th>"; 
-echo "<th class='specalt'>Original Dues</th>"; 
-echo "<th class='specalt'>Converted Fee Deduct Dues-USD</th>";
+echo "<th class='specalt'>Pending Amount-CAD</th>"; 
+echo "<th class='specalt'>Pending Amount-USD</th>";  
 echo "<th class='specalt' style='color:blue; font-weight:bold'>Original Amount</th>"; 
 echo "<th class='specalt'>Reminder</th>"; 
 echo "<th class='specalt'>Reminder Comments</th>"; 
@@ -4318,14 +4153,6 @@ $signups =array();
 $discount =array();
 $pending_usd_convert=array();
 
-$original_amt=array();
-$usd_fee_deduct=array();
-$usd_fee_deduct_sum_ary=array();
-
-$pending_original =array();
-$original_curr_ary=array();
-
-
 if(isset($_POST['submit']))
 {
 	$unique_array_id=1;
@@ -4335,7 +4162,6 @@ if(isset($_POST['submit']))
 
 
 	$countresult=$row['amount'];
-	$countresult_original=$row['dues_original'];
 	//echo "<br>";
 	$amount[$row['id']]=$countresult;
 
@@ -4347,28 +4173,10 @@ if(isset($_POST['submit']))
 		$countmonthesult=mysql_query($countmonthsql) or die(mysql_error());
 		$countmonthesult=mysql_fetch_assoc($countmonthesult);
 
-		$row['id'];
 		$amount[$row['id']]=$countresult;
 		$recieved[$row['id']]=$countmonthesult['amounttran'];
-		$countmonthesult['discount_tran'];
 		$pending[$unique_array_id]=$countresult-$countmonthesult['amounttran']-$countmonthesult['discount_tran'];
-
-		
-/* 		echo "sch:".$row['id'];echo "<br>";
-		echo "AMT sch:".$amount[$row['id']]=$countresult;echo "<br>";
-		echo "AMT tran:".$recieved[$row['id']]=$countmonthesult['amounttran'];echo "<br>";
-		echo "dis tran:".$countmonthesult['discount_tran'];echo "<br>";
-		echo "AMT pending:".$pending[$unique_array_id]=$countresult-$countmonthesult['amounttran']-$countmonthesult['discount_tran'];
-		echo "<br>";
-		echo "<br>"; */
-		
-		
-		$original_amt[$unique_array_id]=$row['dues_original'];
-		$usd_fee_deduct[$unique_array_id]=$row['dues_totalReceivedNew_Usd'];
-		
-		$pending_original[$unique_array_id]=$countresult_original;
-		
-		if($pending[$unique_array_id]<0 || $pending[$unique_array_id]<7)
+		if($pending[$unique_array_id]<0 || $pending[$unique_array_id]<10)
 		{
 		$pending[$unique_array_id]=0;
 		}
@@ -4421,7 +4229,7 @@ if(isset($_POST['submit']))
 		}
 		
 		
-		if($pending[$unique_array_id] >=7 && ($signups[$row['id']]==''))
+		if($pending[$unique_array_id] >=10 && ($signups[$row['id']]==''))
 		{
 			//Previous month signup between 25 to 30/31st, And now its paying date is next month's 1 to 10th,THEN
 			//It must not be shown in current month pending
@@ -4448,28 +4256,8 @@ if(isset($_POST['submit']))
 				echo "<td valign='top' style='color:green; font-weight:bold'>" . getData(nl2br( $query_country_result['countryID']),'country'). "</td>"; 
 				echo "<td valign='top' style='color:green; font-weight:bold'>" . showCourse(nl2br( $row['courseID'])). "</td>"; 
 				echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $pending[$unique_array_id]) . "</td>";  
-	
-
-//ORG CURR /////////////////////////////////////////////////////////////
-if($row['currency_array']==2){ $original_curr =  $pending_original[$unique_array_id]; }
-if($row['currency_array']==1){ $original_curr =  $pending_original[$unique_array_id]; }
-if($row['currency_array']==4){ $original_curr =  $pending_original[$unique_array_id]; }
-if($row['currency_array']==3){ $original_curr =  $pending_original[$unique_array_id]; }
-if($row['currency_array']==5){ $original_curr =  $pending_original[$unique_array_id]; }
-if($row['currency_array']==6){ $original_curr =  $pending_original[$unique_array_id]; }
-echo "<td valign='top'>$" . $original_curr_ary[$unique_array_id] = $original_curr . "-<b>" . getData(nl2br( $row['currency_array']),'currency') . "</b></td>";
-
-if($usd_fee_deduct[$unique_array_id]==0){					
-echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $pending[$unique_array_id]) . "</td>";
-$usd_fee_deduct_sum_ary[$unique_array_id] = $pending[$unique_array_id];
-}
-else{
-echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $usd_fee_deduct[$unique_array_id]) . "</td>";
-$usd_fee_deduct_sum_ary[$unique_array_id] = $usd_fee_deduct[$unique_array_id];
-}
-								
 				 //from CAD to USD Conversion/////////////////////////////////////////////////////////////
-				//echo "<td valign='top' style='color:green; font-weight:bold'>$" . $pending_usd_convert[$unique_array_id] =  round($pending[$unique_array_id]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
+				 echo "<td valign='top' style='color:green; font-weight:bold'>$" . $pending_usd_convert[$unique_array_id] =  round($pending[$unique_array_id]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
 				echo "<td valign='top' style='color:blue; font-weight:bold'>" . $sql_amt_ori_result['amount_original']  . "</td>";
 				//td for the modal
 				echo "<td valign='top'>"?> 
@@ -4509,27 +4297,8 @@ $usd_fee_deduct_sum_ary[$unique_array_id] = $usd_fee_deduct[$unique_array_id];
 				echo "<td valign='top'>" . getData(nl2br( $query_country_result['countryID']),'country'). "</td>"; 
 				echo "<td valign='top'>" . showCourse(nl2br( $row['courseID'])). "</td>"; 
 				echo "<td valign='top'>$" . nl2br( $pending[$unique_array_id]) . "</td>";  
-
-//ORG CURR /////////////////////////////////////////////////////////////
-if($row['currency_array']==2){ $original_curr =  $pending_original[$unique_array_id]; }
-if($row['currency_array']==1){ $original_curr =  $pending_original[$unique_array_id]; }
-if($row['currency_array']==4){ $original_curr =  $pending_original[$unique_array_id]; }
-if($row['currency_array']==3){ $original_curr =  $pending_original[$unique_array_id]; }
-if($row['currency_array']==5){ $original_curr =  $pending_original[$unique_array_id]; }
-if($row['currency_array']==6){ $original_curr =  $pending_original[$unique_array_id]; }
-echo "<td valign='top'>$" . $original_curr_ary[$unique_array_id] = $original_curr . "-<b>" . getData(nl2br( $row['currency_array']),'currency') . "</b></td>";
-					
-if($usd_fee_deduct[$unique_array_id]==0){					
-echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $pending[$unique_array_id]) . "</td>";
-$usd_fee_deduct_sum_ary[$unique_array_id] = $pending[$unique_array_id];
-}
-else{
-echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $usd_fee_deduct[$unique_array_id]) . "</td>";
-$usd_fee_deduct_sum_ary[$unique_array_id] = $usd_fee_deduct[$unique_array_id];
-}
-				
 				//from CAD to USD Conversion/////////////////////////////////////////////////////////////
-				//echo "<td valign='top'>$" . $pending_usd_convert[$unique_array_id] =  round($pending[$unique_array_id]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
+				echo "<td valign='top'>$" . $pending_usd_convert[$unique_array_id] =  round($pending[$unique_array_id]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
 				echo "<td valign='top' style='color:blue; font-weight:bold'>" . $sql_amt_ori_result['amount_original']  . "</td>";
 				//td for the modal
 				echo "<td valign='top'>"?> 
@@ -4666,7 +4435,6 @@ echo "<tr>";
 //echo "<td valign='top'><b>$" . nl2br( array_sum($recieved)) . "</td>";  
 echo "<td valign='top'><b>$" . nl2br( array_sum($pending)) . "</td>"; 
 echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($pending_usd_convert)) . "</td>"; 
-echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($usd_fee_deduct_sum_ary)) . "</td>"; 
 //echo "<td valign='top'><b>$" . nl2br( array_sum($signups)) . "</td>";
 //echo "<td valign='top'><b>$" . nl2br( array_sum($discount)) . "</td>";   
 echo "</tr>";
@@ -4828,9 +4596,8 @@ echo "2nd-one";
 	echo "<th class='specalt'>Cousre</th>";
 	//echo "<th class='specalt'>Total Amount</th>"; 
 	//echo "<th class='specalt'>Recieved Amount</th>"; 
-echo "<th class='specalt'>Pending Amount-USD</th>"; 
-echo "<th class='specalt'>Original Dues</th>"; 
-echo "<th class='specalt'>Converted Fee Deduct Dues-USD</th>";
+	echo "<th class='specalt'>Pending Amount-CAD</th>"; 
+	echo "<th class='specalt'>Pending Amount-USD</th>"; 
 	//echo "<th class='specalt'>Signup Amount</th>";
 	//echo "<th class='specalt'>Discount</th>";
 	//echo "<th class='specalt'>SignUp Date</th>";
@@ -4845,13 +4612,6 @@ echo "<th class='specalt'>Converted Fee Deduct Dues-USD</th>";
 		$signups2 =array();
 		$discount2 =array();
 		$pending_usd_convert2 =array();
-		
-		$original_amt2=array();
-		$usd_fee_deduct2=array();
-		$usd_fee_deduct_sum_ary2=array();
-
-		$pending_original2 =array();
-		$original_curr_ary2=array();
 
 	if(isset($_POST['submit']))
 	{
@@ -4862,7 +4622,6 @@ echo "<th class='specalt'>Converted Fee Deduct Dues-USD</th>";
 
 
 		$countresult2=$row2['amount'];
-		$countresult_original=$row2['dues_original'];
 		//echo "<br>";
 		$amount2[$row2['id']]=$countresult2;
 		//http://stackoverflow.com/questions/5268369/multiple-mysql-where-between-clauses
@@ -4890,15 +4649,6 @@ echo "<th class='specalt'>Converted Fee Deduct Dues-USD</th>";
 			$recieved2[$row2['id']]=$countmonthesult2['amounttran'];
 			$pending2[$unique_array_id]=$countresult2-$countmonthesult2['amounttran']-$countmonthesult2['discount_tran'];
 
-			
-		$original_amt2[$unique_array_id]=$row2['dues_original'];
-		$usd_fee_deduct2[$unique_array_id]=$row2['dues_totalReceivedNew_Usd'];
-		
-		$pending_original2[$unique_array_id]=$countresult_original;
-			
-			
-			
-			
 			if($pending2[$unique_array_id]<0)
 			{
 			$pending2[$unique_array_id]=0;
@@ -4940,33 +4690,8 @@ echo "<th class='specalt'>Converted Fee Deduct Dues-USD</th>";
 		//echo "<td valign='top'>$" . nl2br( $amount2[$row2['id']])  . "</td>";  
 		//echo "<td valign='top'>$" . nl2br( $recieved2[$row2['id']]) . "</td>";  
 		echo "<td valign='top'>$" . nl2br( $pending2[$unique_array_id]) . "</td>";  
-		
-
-
-//ORG CURR /////////////////////////////////////////////////////////////
-if($row2['currency_array']==2){ $original_curr2 =  $pending_original2[$unique_array_id]; }
-if($row2['currency_array']==1){ $original_curr2 =  $pending_original2[$unique_array_id]; }
-if($row2['currency_array']==4){ $original_curr2 =  $pending_original2[$unique_array_id]; }
-if($row2['currency_array']==3){ $original_curr2 =  $pending_original2[$unique_array_id]; }
-if($row2['currency_array']==5){ $original_curr2 =  $pending_original2[$unique_array_id]; }
-if($row2['currency_array']==6){ $original_curr2 =  $pending_original2[$unique_array_id]; }
-echo "<td valign='top'>$" . $original_curr_ary2[$unique_array_id] = $original_curr2 . "-<b>" . getData(nl2br( $row2['currency_array']),'currency') . "</b></td>";
-
-if($usd_fee_deduct2[$unique_array_id]==0){					
-echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $pending2[$unique_array_id]) . "</td>";
-$usd_fee_deduct_sum_ary2[$unique_array_id] = $pending2[$unique_array_id];
-}
-else{
-echo "<td valign='top' style='color:green; font-weight:bold'>$" . nl2br( $usd_fee_deduct2[$unique_array_id]) . "</td>";
-$usd_fee_deduct_sum_ary2[$unique_array_id] = $usd_fee_deduct2[$unique_array_id];
-}
-
-		
-		
-		
-		
 		//from CAD to USD Conversion/////////////////////////////////////////////////////////////
-		//echo "<td valign='top'>$" . $pending_usd_convert2[$unique_array_id] =  round($pending2[$unique_array_id]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
+		echo "<td valign='top'>$" . $pending_usd_convert2[$unique_array_id] =  round($pending2[$unique_array_id]*$row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
 		//echo "<td valign='top'>$" . nl2br( $signups2[$row2['id']]) . "</td>";
 		//echo "<td valign='top'>$" . nl2br( $discount2[$row2['id']]) . "</td>";
 		//echo "<td valign='top' style='color:red; font-weight:bold'>" .  nl2br( $row2['due_date']) . "</td>";
@@ -4987,13 +4712,11 @@ $usd_fee_deduct_sum_ary2[$unique_array_id] = $usd_fee_deduct2[$unique_array_id];
 		 echo "<td valign='top'> </td>";
 		 echo "<td valign='top'> </td>";
 		 echo "<td valign='top'> </td>";
-		 echo "<td valign='top'> </td>";
 		 echo "<td valign='top'>Sum </td>";  
 		//echo "<td valign='top'><b>$" . nl2br( array_sum($amount2))  . "</td>";
 		//echo "<td valign='top'><b>$" . nl2br( array_sum($recieved2)) . "</td>";  
 		echo "<td valign='top'><b>$" . nl2br( array_sum($pending2)) . "</td>"; 
 		echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($pending_usd_convert2)) . "</td>"; 
-		echo "<td valign='top' style='color:green; font-weight:bold'><b>$" . nl2br( array_sum($usd_fee_deduct_sum_ary2)) . "</td>"; 
 		//echo "<td valign='top'><b>$" . nl2br( array_sum($signups2)) . "</td>";
 		//echo "<td valign='top'><b>$" . nl2br( array_sum($discount2)) . "</td>";   
 

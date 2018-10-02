@@ -81,7 +81,6 @@ echo "<th class='specalt'><b>Pay Date</b></th>";
 echo "<th class='specalt'><b>Dead Date</b></th>";  
 echo "<th class='specalt'><b>Confirm DeadDate</b></th>"; 
 echo "<th class='specalt'><b>Unfreeze Date</b></th>"; 
-echo "<th class='specalt'><b>Dues CAD</b></th>";
 echo "<th class='specalt'><b>Dues USD</b></th>"; 
 echo "<th class='specalt'><b>Comments</b></th>"; 
 echo "<th class='specalt'><b>Freeze Date</b></th>";
@@ -323,10 +322,6 @@ else	//	-	FOR SuperAdmin
 $rows_count = mysql_num_rows($result);
 echo "<br><br><br><br><b><div style='float:left'>Total : ".$rows_count." &nbsp;&nbsp;&nbsp;</div><br></b>";
 
-//Get 1 cad to usd rate from db
-$sql_1cad_to_dollar_rate_USDval="SELECT * FROM campus_currency WHERE id = 433";
-$row_1cad_to_dollar_rate_USDval = mysql_fetch_array(mysql_query($sql_1cad_to_dollar_rate_USDval));
-$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
 
 while($row = mysql_fetch_array($result)){ 
 //Getting student number
@@ -387,25 +382,6 @@ echo "<td valign='top'>" . nl2br( $row['dead_date']) . "</td>";
 echo "<td valign='top'>" . nl2br( $row['confirm_dead_date']) . "</td>"; 
 echo "<td valign='top'>" . nl2br( $row['unfreeze_date']) . "</td>";
 echo "<td valign='top'>" . nl2br( $row['dues']) . "</td>";
-	//Get 1 cad to usd rate from db
-	$sql_1cad_to_dollar_rate_USDval="SELECT * FROM campus_currency  ";
-	if($_POST['stdStatus']==2) { $sql_1cad_to_dollar_rate_USDval.=" WHERE date ='".$row['paydate']."' "; }
-	else if($_POST['stdStatus']==3) { $sql_1cad_to_dollar_rate_USDval.=" WHERE date ='".$row['dead_date']."' "; }
-	else { $sql_1cad_to_dollar_rate_USDval.=" WHERE id = 433 "; }
-	$row_1cad_to_dollar_rate_USDval = mysql_fetch_array(mysql_query($sql_1cad_to_dollar_rate_USDval));
-	$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
-	if($row_1cad_to_dollar_rate_USDval['1_cad_to_usd']=='')
-	{
-		//Get 1 cad to usd rate from db
-		$sql_1cad_to_dollar_rate_USDval="SELECT * FROM campus_currency WHERE id = 433";
-		$row_1cad_to_dollar_rate_USDval = mysql_fetch_array(mysql_query($sql_1cad_to_dollar_rate_USDval));
-		$row_1cad_to_dollar_rate_USDval['1_cad_to_usd'];
-	} 
-	//DUES USD
-	echo "<td valign='top'>" . $sum_usd_result = round($row['dues'] * $row_1cad_to_dollar_rate_USDval['1_cad_to_usd']) . "</td>";
-	$sum_usd=$sum_usd_result ;
-	$sum_dues_usd[$row['sch_id']]=$sum_usd;
-
 //FOR COMMENTS-Removing rn
 $comments = $row['comments'];
 $comments = stripslashes($comments);
@@ -439,8 +415,7 @@ echo "<td valign='top'> </td>";
 echo "<td valign='top'> </td>";
 echo "<td valign='top'> </td>";
 echo "<td valign='top'>Sum </td>";  
-echo "<td valign='top'><b>$" . array_sum($sum_dues)  . "</td>";
-echo "<td valign='top'><b>$" . array_sum($sum_dues_usd)  . "</td>";    
+echo "<td valign='top'><b>$" . array_sum($sum_dues)  . "</td>";  
 echo "<td valign='top'></td>";
 echo "</tr>";
 
@@ -462,8 +437,7 @@ echo "<td valign='top'> </td>";
 echo "<td valign='top'> </td>";
 echo "<td valign='top'> </td>";
 echo "<td valign='top'>Sum/90 </td>";  
-echo "<td valign='top'><b>$" . array_sum($sum_dues)/90  . "</td>"; 
-echo "<td valign='top'><b>$" . array_sum($sum_dues_usd)/90  . "</td>";  
+echo "<td valign='top'><b>$" . array_sum($sum_dues)/90  . "</td>";  
 echo "<td valign='top'></td>";
 echo "</tr>"; 
 echo "</table>"; 

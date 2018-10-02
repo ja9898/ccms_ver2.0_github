@@ -47,14 +47,21 @@ if(isset($_POST['sender']))
 		{
 			//posting schedule ID
 			$schedule_id = $_POST['schedule_id'];
+			//Get dues from SCHEDULE
+			$row_get_sch_usd_val = mysql_fetch_array ( mysql_query("SELECT * FROM `campus_schedule` WHERE `id` = '".$schedule_id."' "));
+			$accounts_new_discount = $row_get_sch_usd_val['dues']-$accounts_amount;
 			//Updating both SCH and TRAN table in case of signup
 			$update_schedule_dates=mysql_query("UPDATE campus_schedule SET duedate='".$systemdate."' , paydate='".$systemdate."' WHERE id='".$schedule_id."'  ") or trigger_error(mysql_error());
-			$update_accounts_amount = mysql_query("UPDATE campus_transaction SET accounts_chk = '1' , date='".$systemdate."' , dateRecieved='".$systemdate."' , amount_usd_simple='".$accounts_amount."' , accounts_comment = '".$accounts_comment."' , amount='".$accounts_amount_CAD."' WHERE id='".$accounts_chk_box_id."' ") or trigger_error(mysql_error());
+			$update_accounts_amount = mysql_query("UPDATE campus_transaction SET accounts_chk = '1' , date='".$systemdate."' , dateRecieved='".$systemdate."' , amount_usd_simple='".$accounts_amount."' , accounts_comment = '".$accounts_comment."' , discount_tran = '".$accounts_new_discount."'  WHERE id='".$accounts_chk_box_id."' ") or trigger_error(mysql_error());
 			getMessages('edit','payment_record_report_test.php');
 		}
 		else
 		{
-			$update_accounts_amount = mysql_query("UPDATE campus_transaction SET accounts_chk = '1' , date='".prepareDate($received_date_manual)."' , amount_usd_simple='".$accounts_amount."' , accounts_comment = '".$accounts_comment."' , amount='".$accounts_amount_CAD."' WHERE id='".$accounts_chk_box_id."' ") or trigger_error(mysql_error());
+			$schedule_id = $_POST['schedule_id'];
+			//Get dues from SCHEDULE
+			$row_get_sch_usd_val = mysql_fetch_assoc ( mysql_query("SELECT * FROM `campus_schedule` WHERE `id` = '".$schedule_id."' "));
+			$accounts_new_discount = $row_get_sch_usd_val['dues']-$accounts_amount;
+			$update_accounts_amount = mysql_query("UPDATE campus_transaction SET accounts_chk = '1' , date='".prepareDate($received_date_manual)."' , amount_usd_simple='".$accounts_amount."' , accounts_comment = '".$accounts_comment."' , discount_tran = '".$accounts_new_discount."'  WHERE id='".$accounts_chk_box_id."' ") or trigger_error(mysql_error());
 			getMessages('edit','payment_record_report_test.php');
 			//echo "<script>window.location.href = 'payment_record_report_test.php'</script>";
 		}
@@ -98,7 +105,12 @@ if(isset($_POST['submit']))
 	campus_transaction.amount_usd_simple,
 	campus_transaction.datetime_now_accounts,campus_transaction.bank_payment_image_filepath,
 	campus_transaction.discount_tran,campus_transaction.amount_original_deducted,
-	campus_transaction.bankNameId 
+	campus_transaction.bankNameId, 
+	campus_transaction.amountDefaultNew,campus_transaction.amountOriginalNew,campus_transaction.feeDeductNew,
+	campus_transaction.totalReceivedNew,campus_transaction.discountNew,
+	campus_transaction.amountDefaultNew_Usd,campus_transaction.amountOriginalNew_Usd,campus_transaction.feeDeductNew_Usd,
+	campus_transaction.totalReceivedNew_Usd,campus_transaction.discountNew_Usd,
+	campus_transaction.statusPendRejAccpt,campus_transaction.statusPendRejAccpt_User 
 	FROM campus_schedule 
 	INNER JOIN campus_transaction 
 	ON campus_schedule.studentID=campus_transaction.studentID and campus_schedule.id=campus_transaction.schedule_id 
@@ -180,15 +192,16 @@ echo "<th class='specalt' style='color:green'>Signup Amount(USD-Convert)</th>"; 
 //echo "<th class='specalt'>Recieved Amount(CAD)</th>"; 
 //echo "<th class='specalt'>Signup Amount(CAD)</th>";
 //echo "<th class='specalt'>GBP Amount</th>";
-echo "<th class='specalt'>Original Amount</th>";
+echo "<th class='specalt'>Amount Original</th>";
+echo "<th class='specalt'>Amount Enetered - USD</th>";
 if($_SESSION['userId']==159 || $_SESSION['userId']==227 || $_SESSION['userType']==6)
 {
 echo "<th class='specalt'>DISCOUNT</th>";
 }
-echo "<th class='specalt'>Amount Sch-CAD</th>";
-echo "<th class='specalt'>Amount Sch-USD converted</th>";
+echo "<th class='specalt'>Amount Sch-USD</th>";
 echo "<th class='specalt'>Amount Sch-Original</th>";
 echo "<th class='specalt'>Currency</th>";
+echo "<th class='specalt'>Amount Enetered - ORG</th>";
 echo "<th class='specalt'>Course</th>";
 echo "<th class='specalt'>Transaction ID</th>";
 echo "<th class='specalt'>Method</th>";
@@ -216,6 +229,23 @@ echo "<th class='specalt'>Deducted amount</th>";
 
 echo "<th class='specalt' colspan='5'>Actions</th>";
 echo "<th class='specalt'><b>Bank Name</b></th>";
+
+echo "<th class='specalt'><b>Actual / SignUp Amount</b></th>";
+echo "<th class='specalt'><b>Invoice / Original Amount</b></th>";
+echo "<th class='specalt'><b>Total Received</b></th>";
+echo "<th class='specalt'><b>Fee</b></th>";
+echo "<th class='specalt'><b>Discount</b></th>";
+echo "<th class='specalt'><b>Actual / SignUp Amount USD</b></th>";
+echo "<th class='specalt'><b>Invoice / Original Amount USD</b></th>";
+echo "<th class='specalt'><b>Total Received USD</b></th>";
+echo "<th class='specalt'><b>Fee USD</b></th>";
+echo "<th class='specalt'><b>Discount USD</b></th>";
+//
+echo "<th class='specalt'><b>Status</b></th>";
+echo "<th class='specalt'><b>Accept</b></th>";
+echo "<th class='specalt'><b>Reject</b></th>"; 
+echo "<th class='specalt'><b>Accept/Reject ACTION BY</b></th>"; 
+
 echo "</tr>";
 $amount=array();
 $recieved=array();
@@ -283,7 +313,7 @@ if(isset($_POST['submit']))
 	$countmonthesult=mysql_fetch_assoc($countmonthesult);
 	$amount[$row['id']]=$countresult;
 	
-	$discount[$row['id']] = $row['discount_tran'];
+	$discount[$row['tran_id']] = $row['discount_tran'];
 
 	//DUE DATE(Signup DATE) - Month and Year
 	$duedate_month = date('m', strtotime(nl2br($row['due_date'])));
@@ -433,23 +463,24 @@ if(isset($_POST['submit']))
 	$signups[$row['id']];
 	$row['amounttran_gbp'];
 	echo "<td valign='top'>$" . nl2br( $row['amounttran_original']) . "</td>";
+	echo "<td valign='top'>" . $row['totalReceivedNew_Usd'] . "</td>";
 	if($_SESSION['userId']==159 || $_SESSION['userId']==227 || $_SESSION['userType']==6)
 	{
-	echo "<td valign='top'>$" . nl2br( $discount[$row['id']]) . "</td>";
-	}
-	echo "<td valign='top'>$" . nl2br( $row['amount'] ) . "</td>";
-	echo "<td valign='top'>$" . round( $row['amount'] * $row_USD_to_CAD['1_cad_to_usd'],2) . "</td>";
-	echo "<td valign='top'>$" . $row['dues_original'] . "</td>";
-	echo "<td valign='top'>" .  getData(nl2br( $row['currency_array']),'currency') . "</td>";
-	echo "<td valign='top'>" .  getData( nl2br( $row['courseID']),'course') . "</td>";
-	echo "<td valign='top'>" .  nl2br( $row['transactionID']) . "</td>";
-	echo "<td valign='top'>" .  getData(nl2br( $row['method_array']),'paymentMode') . "</td>";
-	echo "<td valign='top'>" . 	showUser(nl2br( $row['tran_op'])). "</td>"; 
-	echo "<td valign='top'>" . 	nl2br( $row['comments']). "</td>"; 
-	echo "<td valign='top'>" . 	showUser(nl2br( $row['teacherID'])). "</td>"; 
-	echo "<td valign='top'>" . 	showUser(nl2br( $row['LeadId'])). "</td>";
-	echo "<td valign='top'>" . 	showUser(nl2br( $row['main_LeadId'])). "</td>";
-	echo "<td valign='top'>" . 	nl2br( $row['sender_name']). "</td>";
+	echo "<td valign='top'>$" . nl2br( $discount[$row['tran_id']]) . "</td>";
+	}	
+	echo "<td valign='top'>$" .nl2br( $row['amount'] ) . "</td>";
+	echo "<td valign='top'>$" .$row['dues_original'] . "</td>";
+	echo "<td valign='top'>" . getData(nl2br( $row['currency_array']),'currency') . "</td>";
+	echo "<td valign='top'>" . $row['totalReceivedNew'] . "</td>";
+	echo "<td valign='top'>" . getData( nl2br( $row['courseID']),'course') . "</td>";
+	echo "<td valign='top'>" . nl2br( $row['transactionID']) . "</td>";
+	echo "<td valign='top'>" . getData(nl2br( $row['method_array']),'paymentMode') . "</td>";
+	echo "<td valign='top'>" . showUser(nl2br( $row['tran_op'])). "</td>"; 
+	echo "<td valign='top'>" . nl2br( $row['comments']). "</td>"; 
+	echo "<td valign='top'>" . showUser(nl2br( $row['teacherID'])). "</td>"; 
+	echo "<td valign='top'>" . showUser(nl2br( $row['LeadId'])). "</td>";
+	echo "<td valign='top'>" . showUser(nl2br( $row['main_LeadId'])). "</td>";
+	echo "<td valign='top'>" . nl2br( $row['sender_name']). "</td>";
 	if($_SESSION['userType']==2){
 	echo "<td valign='top'>NA</td>";
 	}else{
@@ -484,13 +515,16 @@ if(isset($_POST['submit']))
 	<?
 	if(($_SESSION['userId']==159 || $_SESSION['userId']==298  || $_SESSION['userId']==86 || $_SESSION['userId']==2074) && ($row['method_array']==2 || $row['method_array']==3 || $row['method_array']==4 || $row['method_array']==5))
 	{
-	echo "<td valign='top'>"?> <input name="accounts_amount" id="accounts_amount" type="number" placeholder='Enter Amount' required /> <?"</td>"; 
+	echo "<td valign='top'>"?> <input name="accounts_amount" id="accounts_amount" type="text" placeholder='Enter Amount' required /> <?"</td>"; 
 	echo "<td valign='top'>"?> <input name="accounts_comment" id="accounts_comment" type="text" placeholder='Enter Comments' /> <?"</td>"; 
 	echo "<td valign='top'>" . getCheckbox_id( $_POST['accounts_chk_box_id'],$row['tran_id'],'accounts_chk_box_id') . "</td>"; 
 	//Added for ACCOUNTS to select the RECEIVED DATE(date) manually		//Newly added 04-08-16
 	if($row['campus']!=1)
 	{
 		echo "<td valign='top'>" . getInput(stripslashes($_POST['received_date_manual']),'received_date_manual','class=flexy_datepicker_input') . "</td>";
+	}
+	else{
+		echo "<td valign='top'></td>";
 	}
 	echo "<td valign='top'>"?> <input type='submit' value='Submit' name='sender' class="button" />
 	<input type='hidden' value='1' name='submitted'/>
@@ -499,10 +533,43 @@ if(isset($_POST['submit']))
 	<input type='hidden' value=<?php echo $row['campus']; ?> id='campus' name='campus' />
 	</div> <? "</td>";
 	}
+	else{
+		echo "<td valign='top'></td>";
+		echo "<td valign='top'></td>";
+		echo "<td valign='top'></td>";
+		echo "<td valign='top'></td>";
+		echo "<td valign='top'></td>";
+	}
 	?>
 	</form>
 	<?
 	echo "<td valign='top'>" . getData(nl2br( $row['bankNameId']),'bankName') . "</td>";
+	if($_SESSION['userType']==1 || $_SESSION['userType']==6){
+	echo "<td valign='top'>" . $row['amountDefaultNew'] . "</td>";
+	echo "<td valign='top'>" . $row['amountOriginalNew'] . "</td>";
+	echo "<td valign='top'>" . $row['totalReceivedNew'] . "</td>";
+	echo "<td valign='top'>" . $row['feeDeductNew'] . "</td>";
+	echo "<td valign='top'>" . $row['discountNew'] . "</td>";
+	
+	echo "<td valign='top'>" . $row['amountDefaultNew_Usd'] . "</td>";
+	echo "<td valign='top'>" . $row['amountOriginalNew_Usd'] . "</td>";
+	echo "<td valign='top'>" . $row['totalReceivedNew_Usd'] . "</td>";
+	echo "<td valign='top'>" . $row['feeDeductNew_Usd'] . "</td>";
+	echo "<td valign='top'>" . $row['discountNew_Usd'] . "</td>";
+	
+	if($row['statusPendRejAccpt']==1){
+	echo "<td valign='top' style='color:green; font-weight:bold'>" . getData(nl2br( $row['statusPendRejAccpt']),'statusPendRejAccptAry'). "</td>";
+	}
+	else if($row['statusPendRejAccpt']==2){
+	echo "<td valign='top' style='color:red; font-weight:bold'>" . getData(nl2br( $row['statusPendRejAccpt']),'statusPendRejAccptAry'). "</td>";	
+	}
+	else{
+	echo "<td valign='top'>" . getData(nl2br( $row['statusPendRejAccpt']),'statusPendRejAccptAry'). "</td>";	
+	}
+	echo "<td ><a class=button href=transaction_new_ver2_approve.php?id={$row['tran_id']}&sch_id={$row['schedule_id']} target='_blank'>Accept</a></td> ";
+	echo "<td ><a class=button href=transaction_new_ver2_reject.php?id={$row['tran_id']}&sch_id={$row['schedule_id']} target='_blank'>Reject</a></td>";
+	echo "<td valign='top'>" . 	showUser( nl2br( $row['statusPendRejAccpt_User'])). "</td>";
+	}
 	echo "</tr>"; 
 }
 
@@ -562,6 +629,7 @@ if($_SESSION['userId']==159 || $_SESSION['userId']==227 || $_SESSION['userId']==
 echo "<td valign='top'>Sum </td>";  
 echo "<td valign='top'><b>$" . nl2br( round(array_sum($recieved_usd),2)) . "</td>";
 echo "<td valign='top'><b>$" . nl2br( round(array_sum($signups_usd),2)) . "</td>";
+echo "<td valign='top'> </td>";
 echo "<td valign='top'> </td>";
 if($_SESSION['userId']==159 || $_SESSION['userId']==227){
 echo "<td valign='top'><b>$" . nl2br( array_sum($discount)) . "</td>";

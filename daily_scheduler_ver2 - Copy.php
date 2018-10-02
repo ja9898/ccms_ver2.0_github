@@ -20,7 +20,7 @@ if($_SESSION['userType']!=3) { ?>
 <option <?php if(isset($_POST['days']) && in_array("Friday",$_POST['days'])){ echo "selected='selected'";}?>>Friday</option>
 <option <?php if(isset($_POST['days']) && in_array("Saturday",$_POST['days'])){ echo "selected='selected'";}?>>Saturday</option>
 <option <?php if(isset($_POST['days']) && in_array("Sunday",$_POST['days'])){ echo "selected='selected'";}?>>Sunday</option>
-</select>&nbsp;&nbsp;<?php echo getInput(stripslashes($_POST['classDate']),'classDate','class=flexy_datepicker_input'); echo "ALL TEAMLEADS(Check the box):";echo getCheckbox($_POST['getTL_ALL'],'getTL_ALL');echo "<br>";?>&nbsp;&nbsp;<input type="submit" class="button" value="Show Classes"></form><br /><br /><br />
+</select>&nbsp;&nbsp;<?php echo getInput(stripslashes($_POST['classDate']),'classDate','class=flexy_datepicker_input'); echo getCheckbox($_POST['getTL_ALL'],'getTL_ALL');?>&nbsp;&nbsp;<input type="submit" class="button" value="Show Classes"></form><br /><br /><br />
 
 <? 
 echo "<table  border=0 id='table_liquid' cellspacing=0 >"; 
@@ -74,7 +74,7 @@ else{
 
 if($_POST['getTL_ALL']==1)
 {
-	$sql_getTL="SELECT * FROM capmus_users WHERE user_type=8 and status=1 ";
+	//echo $sql_getTL="SELECT * FROM capmus_users WHERE user_type=8 and status=1 ";
 	$result_getTL=mysql_query($sql_getTL);
 	$id_getTL=array();
 	while($row_getTL=mysql_fetch_array($result_getTL))
@@ -87,7 +87,6 @@ if($_POST['getTL_ALL']==1)
 	echo "<br>";echo "<br>";
 	$sql_getTeachers="SELECT * FROM capmus_users WHERE LeadId IN ('$all_getTL') ";
 	$result_getTeachers=mysql_query($sql_getTeachers);
-	//echo "CNT:".$row_count  = mysql_num_rows($result_getTeachers);
 	$id_getTeachers=array();
 	while($row_getTeachers=mysql_fetch_array($result_getTeachers))
 	{

@@ -18,8 +18,8 @@ if (isset($_POST['submitted'])) {
 
 		//FOLLOWING QUERY IS IN confirming_dead_schedule
 		//$row_deaddate = mysql_fetch_array ( mysql_query("UPDATE campus_schedule SET dead_date=NOW() WHERE `id` = '$id' ") or trigger_error(mysql_error()));
-
-		confirming_dead_schedule($id,'1',$_POST['comments_dead'],$_POST['record_link_dead']);
+		$dead_comments = mysql_real_escape_string($_POST['comments_dead']);
+		confirming_dead_schedule($id,'1',$dead_comments,$_POST['record_link_dead']);
 		getMessages('confirming_dead','book_scheduler_manage.php');
 	}
 	else

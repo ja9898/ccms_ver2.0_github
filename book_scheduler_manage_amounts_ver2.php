@@ -30,7 +30,7 @@ echo "<table  border=0 id='table_liquid' cellspacing=0 >";
 echo "<tr>"; 
 
  
-
+echo "<th class='specalt'><b>id</b></th>";
 echo "<th class='specalt'><b>Student</b></th>"; 
 echo "<th class='specalt'><b>Teacher</b></th>"; 
 echo "<th class='specalt'><b>StartTime</b></th>"; 
@@ -91,6 +91,7 @@ echo "<br>[".nl2br( $rows['landline'] ) . "]";
 }
 echo "</td>";  */
 
+echo "<td valign='top'>" .  $row['id'] . "</td>";  
 echo "<td valign='top'>" . showStudents(nl2br( $row['studentID'])) . "</td>";  
 echo "<td valign='top'>" . showUser( nl2br( $row['teacherID'])) . "</td>";
 echo "<td valign='top'>" . nl2br( $row['startTime']) . "</td>";  

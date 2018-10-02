@@ -2,8 +2,8 @@
 include('config.php');
 include('include/header.php'); 
 
-if($_SESSION['userId']==159 || $_SESSION['userId']==48 || $_SESSION['userId']==227 || $_SESSION['userId']==506 || $_SESSION['userId']==126 || $_SESSION['userId']==411 || $_SESSION['userId']==195 || $_SESSION['userId']==60 || $_SESSION['userId']==550 || $_SESSION['userId']==856 || $_SESSION['userId']==1668 || $_SESSION['userId']==625 || $_SESSION['userId']==221)
-{
+/* if($_SESSION['userId']==159 || $_SESSION['userId']==48 || $_SESSION['userId']==227 || $_SESSION['userId']==506 || $_SESSION['userId']==126 || $_SESSION['userId']==411 || $_SESSION['userId']==195 || $_SESSION['userId']==60 || $_SESSION['userId']==550 || $_SESSION['userId']==856 || $_SESSION['userId']==1668 || $_SESSION['userId']==625 || $_SESSION['userId']==221)
+{ */
 ?>
 <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
 <div style="float:left">
@@ -34,8 +34,8 @@ echo "<th class='specalt'><b>Teacher</b></th>";
 echo "<th class='specalt'><b>Amount</b></th>"; 
 echo "<th class='specalt'><b>Class Days</b></th>"; 
 echo "<th class='specalt'><b>Reason</b></th>"; 
-echo "<th class='specalt'><b>Dead Date</b></th>"; 
-echo "<th class='specalt'><b>PENDING/CONFIRM Dead Date</b></th>"; 
+echo "<th class='specalt'><b>DC Date</b></th>"; 
+echo "<th class='specalt'><b>PENDING/CONFIRM DC Date</b></th>"; 
 echo "<th class='specalt'><b>Pending/Confirmed</b></th>"; 
 //echo "<th class='specalt'><b>Comments Dead</b></th>"; 
 echo "<th class='specalt' colspan=3><b>Actions</b></th>";  
@@ -110,20 +110,21 @@ while($row = mysql_fetch_array($result)){
 					//Following FORM TAGS were required to POST the CHECKBOX VALUE?>
 	<!--<form action='' method='POST'> -->
 	<?php 	
-		if($_SESSION['userId']==159 || $_SESSION['userId']==48 || $_SESSION['userId']==126 || $_SESSION['userId']==227 || $_SESSION['userId']==411 || $_SESSION['userId']==195 || $_SESSION['userId']==60 || $_SESSION['userId']==550 || $_SESSION['userId']==856 || $_SESSION['userId']==625 || $_SESSION['userId']==221)
+/* 		if($_SESSION['userId']==159 || $_SESSION['userId']==48 || $_SESSION['userId']==126 || $_SESSION['userId']==227 || $_SESSION['userId']==411 || $_SESSION['userId']==195 || $_SESSION['userId']==60 || $_SESSION['userId']==550 || $_SESSION['userId']==856 || $_SESSION['userId']==625 || $_SESSION['userId']==221)
 		{
 			//>>>Commenting following to shift the DEAD TEXTBOX under SEND DEAD CONFIRMATION from CONFIRM DEAD <<<
 			//echo "<td valign='top'>" . getCheckbox_2nd_last_dead_confirmation( $_POST['second_last_dead_confirmation'],$row['id'],'second_last_dead_confirmation') . "</td>"; 
 			//echo "<td valign='top'>"?><!--<input type='submit' value='Send Dead Confirmation' class="button" /><input type='hidden' value='1' name='submitted'/> </div>--> <? //"</td>";
+			 */
 			if($row['status_dead_second_last']==NULL)
-			echo "<td valign='top'><a class=button href=book_scheduler_second_last_dead_confirmation.php?id={$row['id']}&studentID={$row['studentID']}&std_status={$row['std_status']}>Send Dead Confirmation</a></td>";
+			echo "<td valign='top'><a class=button href=book_scheduler_second_last_dead_confirmation.php?id={$row['id']}&studentID={$row['studentID']}&std_status={$row['std_status']}>Send DC Confirmation</a></td>";
 			if($row['status_dead_second_last']==1)
 			echo "<td valign='top'><a class=button href=#>Confirmation sent</a></td>";
-		}
+		/* }
 		else
 		{
 			echo "<td valign='top'><td><a class=button href=#>N/A</a></td>";
-		}
+		} */
 		?>
 	<!--</form>-->
 	<?
@@ -165,14 +166,14 @@ while($row = mysql_fetch_array($result)){
 	if($row['status_dead_second_last']==1)
 		echo "<td valign='top' style='color:green; font-weight:bold'>CONFIRMED</td>";
 	/////////////////////////////////////////////////////////////////////////////////
-	if($_SESSION['userId']==159 || $_SESSION['userId']==227 || $_SESSION['userId']==60 || $_SESSION['userId']==411 || $_SESSION['userId']==195 || $_SESSION['userId']==625 || $_SESSION['userId']==221)  
-	{
-		echo "<td valign='top'><td><a class=button href=book_scheduler_dead.php?id={$row['id']}&studentID={$row['studentID']}&std_status={$row['std_status']}>Confirm dead</a></td>	"; 
-	}
+	/* if($_SESSION['userId']==159 || $_SESSION['userId']==227 || $_SESSION['userId']==60 || $_SESSION['userId']==411 || $_SESSION['userId']==195 || $_SESSION['userId']==625 || $_SESSION['userId']==221)  
+	{ */
+		echo "<td valign='top'><td><a class=button href=book_scheduler_dead.php?id={$row['id']}&studentID={$row['studentID']}&std_status={$row['std_status']}>Confirm DC</a></td>	"; 
+	/* }
 	else
 	{
 		echo "<td valign='top'><td><a class=button href=#>N/A</a></td>";
-	}
+	} */
 	if($_SESSION['userId']==159)
 	{
 		echo "<td valign='top'><a class=button href=book_scheduler_edit_amounts_ver2.php?id={$row['id']}>Edit</a></td>";
@@ -200,10 +201,10 @@ echo "</tr>";
 echo "</table>"; ?>
 <div id="update_dead_confirmation_Div"></div>
 <?
-}
+/* }
 else
 {
 	echo "<label style='color:red; font-weight:bold'>NOTE: Contact CCMS Administrator</u></label>";
-}
+} */
 include('include/footer.php');
 ?>
